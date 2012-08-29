@@ -1,5 +1,8 @@
 import nflgame.game as game
+import nflgame.player as player
 import nflgame.schedule as schedule
+
+NoPlayers = player.Players(None)
 
 def __search_schedule(year, week=None, home=None, away=None, preseason=False):
     ids = []
