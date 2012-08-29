@@ -3,6 +3,8 @@ import os.path as path
 import gzip
 import urllib2
 
+import nflgame.player as player
+
 jsonf = path.join(path.split(__file__)[0], 'gamecenter-json', '%s.json.gz')
 json_base_url = "http://www.nfl.com/liveupdate/game-center/%s/%s_gtd.json"
 
@@ -22,7 +24,7 @@ class Game (object):
         if data is None:
             return
         self.eid = eid
-        self.players = player.Players(data[self.eid])
+        # self.players = player.Players(data[self.eid]) 
         if self.game_over():
             print >> gzip.open(jsonf % eid, 'w+'), data,
 
