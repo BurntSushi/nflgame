@@ -1,0 +1,15 @@
+It should be as straight-forward as
+
+  sudo python2 setup.py install
+
+You should now be able to run a Python interpreter and e.g., find out who
+quarterbacked the home team in the 2011 season opener:
+
+[andrew@Ocelot ~] python2
+Python 2.7.3 (default, Apr 24 2012, 00:00:54) 
+[GCC 4.7.0 20120414 (prerelease)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import nflgame
+>>> print nflgame.games(2011, 1)[0].players.passing().filter(home=True)
+[A.Rodgers]
+

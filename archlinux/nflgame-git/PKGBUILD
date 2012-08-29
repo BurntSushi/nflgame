@@ -1,0 +1,45 @@
+# Contributor: Andrew Gallant <andrew@burntsushi.net>
+# Maintainer: Andrew Gallant
+pkgname=nflgame-git
+pkgver=20120829
+pkgrel=1
+pkgdesc="An API to retrieve and read NFL Game Center JSON data. It can work with real-time data, which can be used for fantasy football."
+arch=('any')
+url="https://github.com/BurntSushi/nflgame"
+license=('GPL')
+groups=()
+makedepends=('git')
+depends=('python2>=2.7')
+source=()
+noextract=()
+md5sums=()
+
+_gitroot="git://github.com/BurntSushi/nflgame.git"
+_gitname=nflgame
+_gitbranch="master"
+
+build() {
+  cd "$srcdir"
+  msg "Connecting to GIT server...."
+
+  if [ -d $_gitname ]; then
+    cd $_gitname && git pull origin
+    msg "The local files are updated."
+  else
+    git clone $_gitroot $_gitname
+  fi
+
+  msg "GIT checkout done or server timeout"
+  msg "Starting make..."
+
+  if [ -d "$srcdir/$_gitname-build" ]; then
+    rm -r "$srcdir/$_gitname-build"
+  fi
+  cp -r "$srcdir/$_gitname" "$srcdir/$_gitname-build"
+  cd "$srcdir/$_gitname-build"
+
+  msg "Clone finished, checking out branch $_gitbranch"
+  git checkout $_gitbranch
+
+  python2 ./setup.py install --root=$pkgdir || return 1
+}
