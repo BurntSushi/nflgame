@@ -9,9 +9,6 @@ start_year = 2009 # Years before this don't seem to have JSON feeds.
 end_year = 2012
 season_types = (('PRE', 4), ('REG', 16))
 
-# start_year = end_year = 2012 
-# season_types = (('PRE', 4),) 
-
 print '# This file was automatically generated on %s by %s.' \
       % (datetime.now(), 'scripts/create-schedule')
 print
