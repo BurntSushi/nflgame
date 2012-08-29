@@ -1,0 +1,13 @@
+#!/usr/bin/env python2.7
+
+import gzip
+import json
+import os.path
+import sys
+
+if len(sys.argv) != 2:
+    print >> sys.stderr, "Usage: %s json-file" % os.path.basename(sys.argv[0])
+    sys.exit(1)
+
+print json.dumps(json.load(gzip.open(sys.argv[1])), sort_keys=True, indent=4)
+
