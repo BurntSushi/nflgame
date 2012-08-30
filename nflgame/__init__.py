@@ -177,6 +177,8 @@ import nflgame.game as game
 import nflgame.player as player
 import nflgame.schedule as schedule
 
+VERSION = "1.0.4"
+
 NoPlayers = player.Players(None)
 """
 NoPlayers corresponds to the identity element of a Players sequences.
