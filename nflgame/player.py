@@ -277,6 +277,7 @@ class Player (object):
         self.playerid = playerid
         self.name = name
         self.home = home
+        self.games = 1
         self.__stats = OrderedDict()
         for category in categories:
             self.__dict__[category] = False
@@ -343,6 +344,7 @@ class Player (object):
         """
         assert self.playerid == player.playerid
         new_player = Player(self.playerid, self.name, None)
+        new_player.games = self.games + player.games
         stats1 = self.__stats
         stats2 = player.__stats
 
