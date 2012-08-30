@@ -3,6 +3,7 @@ import os
 import os.path as path
 import gzip
 import json
+import sys
 import urllib2
 
 import nflgame.player as player
@@ -75,7 +76,11 @@ class Game (object):
 
         fpath = _jsonf % eid
         if self.game_over() and not os.access(fpath, os.R_OK):
-            print >> gzip.open(fpath, 'w+'), self.rawData,
+            try:
+                print >> gzip.open(fpath, 'w+'), self.rawData,
+            except IOError:
+                print >> sys.stderr, "Could not cache JSON data. Please make " \
+                                     "'%s' writable." % os.path.dirname(fpath)
 
     def game_over(self):
         """game_over returns true if the game is no longer being played."""
