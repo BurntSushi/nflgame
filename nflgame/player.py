@@ -359,6 +359,9 @@ class Player (object):
             else:
                 assert category in new_player.__stats
                 for k, v in stats.iteritems():
+                    if k == 'name':
+                        continue
+                    new_player.__dict__['%s_%s' % (category, k)] += v
                     new_player.__stats[category][k] += v
 
         return new_player
