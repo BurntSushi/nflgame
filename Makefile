@@ -15,3 +15,7 @@ schedule:
 
 json:
 	scripts/download-json
+
+push:
+	git push origin master
+	git push github master

@@ -163,12 +163,12 @@ with programs like Excel, Google Docs, Open Office and Libre Office.
 
 You could dump every statistic from a game like so::
 
-    game.players.csv(open('player-stats.csv', 'w+'))
+    game.players.csv('player-stats.csv')
 
 Or if you want to get crazy, you could dump the statistics of every player
 from an entire season::
 
-    nflgame.combine(nflgame.games(2010)).csv(open('season2010.csv', 'w+'))
+    nflgame.combine(nflgame.games(2010)).csv('season2010.csv')
 """
 
 from collections import OrderedDict
@@ -245,8 +245,11 @@ def __search_schedule(year, week=None, home=None, away=None, preseason=False):
     for (y, t, w, h, a), eid in schedule.gameids:
         if y != year:
             continue
-        if week is not None and w != week:
-            continue
+        if week is not None:
+            if isinstance(week, list) and w not in week:
+                continue
+            if not isinstance(week, list) and w != week:
+                continue
         if home is not None and h != home:
             continue
         if away is not None and a != away:

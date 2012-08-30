@@ -10,6 +10,9 @@ categories is a list of all individual statistical categories reported by
 NFL's GameCenter.
 """
 
+_tdfields = ('passing_tds', 'rushing_tds', 'receiving_tds',
+              'kickret_tds', 'puntret_tds')
+
 class Players (object):
     """
     Players implements a sequence type and provides a convenient API for
@@ -72,11 +75,9 @@ class Players (object):
         It is essentially a filter on the following fields: passing_tds,
         rushing_tds, receiving_tds, kickret_tds and puntret_tds.
         """
-        tdfields = ('passing_tds', 'rushing_tds', 'receiving_tds',
-                    'kickret_tds', 'puntret_tds')
         def gen():
             for p in self:
-                for f in tdfields:
+                for f in _tdfields:
                     if f not in p.__dict__:
                         continue
                     if p.__dict__[f] > 0:
@@ -155,7 +156,7 @@ class Players (object):
 
     def defense(self):
         """Returns players that have a "kicking" statistical category."""
-        return self._kicking()
+        return self._defense()
 
     def limit(self, n):
         """
@@ -180,10 +181,10 @@ class Players (object):
         return Players(sorted(self.__players, reverse=descending,
                               key=lambda p: p.__dict__[field]))
 
-    def csv(self, csvfile):
+    def csv(self, fileName):
         """
-        Given a file-like object `csvfile`, csv will write the contents of
-        the Players sequence to csvfile formatted as comma-separated values.
+        Given a file-name fileName, csv will write the contents of
+        the Players sequence to fileName formatted as comma-separated values.
         The resulting file can then be opened directly with programs like
         Excel, Google Docs, Libre Office and Open Office.
 
@@ -216,7 +217,7 @@ class Players (object):
 
         fieldNames = ["name", "id", "home"] + fields
         rows = [{f: f for f in fieldNames}] + rows
-        csv.DictWriter(csvfile, fieldNames).writerows(rows)
+        csv.DictWriter(open(fileName, 'w+'), fieldNames).writerows(rows)
 
     def __add__(self, other):
         """
@@ -279,6 +280,17 @@ class Player (object):
         self.__stats = OrderedDict()
         for category in categories:
             self.__dict__[category] = False
+
+    def tds(self):
+        """
+        Returns the total number of touchdowns credited to this player across
+        all statistical categories.
+        """
+        n = 0
+        for f in _tdfields:
+            if f in self.__dict__:
+                n += self.__dict__[f]
+        return n
 
     def all_stats(self):
         """

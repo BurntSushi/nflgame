@@ -17,33 +17,6 @@ class Game (object):
     the winner of the game, the score and a list of all the scoring plays.
     """
 
-    eid = 0
-    """The identifier of the player used by NFL's GameCenter live update."""
-
-    players = None
-    """A sequence of all players that can be searched, sorted and filtered."""
-
-    data = None
-    """The raw decoded JSON."""
-
-    home = ""
-    """Abbreviation for the home team."""
-
-    away = ""
-    """Abbreviation for the away team."""
-
-    score_home_final = 0
-    """Final score for the home team."""
-
-    score_away_final = 0
-    """Final score for the away team."""
-
-    winner = ""
-    """Abbreviated team name of the winner of the game."""
-
-    scores = []
-    """A list of scoring plays in the order in which they occurred."""
-
     def __new__(cls, eid):
         # If we can't get a valid JSON data, exit out and return None.
         rawData = _get_json_data(eid)
@@ -74,36 +47,43 @@ class Game (object):
         self.__load_all_players(self.data)
         self.players = player.Players(self.__players)
 
-        fpath = _jsonf % eid
-        if self.game_over() and not os.access(fpath, os.R_OK):
-            print >> gzip.open(fpath, 'w+'), self.rawData,
-
         # Load up some simple static values.
+        self.qtr = self.data['qtr']
+        self.clock = self.data['clock']
         self.home = self.data['home']['abbr']
         self.away = self.data['away']['abbr']
-        self.score_home_final = int(self.data['home']['score']['T'])
-        self.score_away_final = int(self.data['away']['score']['T'])
+        self.score_home = int(self.data['home']['score']['T'])
+        self.score_away = int(self.data['away']['score']['T'])
         for q in (1, 2, 3, 4, 5):
             for team in ('home', 'away'):
                 score = self.data[team]['score'][str(q)]
                 self.__dict__['score_%s_q%d' % (team, q)] = int(score)
-        if self.score_home_final > self.score_away_final:
+        if self.score_home > self.score_away:
             self.winner = self.home
-        elif self.score_away_final > self.score_home_final:
+        elif self.score_away > self.score_home:
             self.winner = self.away
         else:
             self.winner = 'TIE'
 
         # Load the scoring summary into a simple list of strings.
+        self.scores = []
         for k in sorted(map(int, self.data['scrsummary'])):
             play = self.data['scrsummary'][str(k)]
             s = '%s - Q%d - %s - %s' \
                 % (play['team'], play['qtr'], play['type'], play['desc'])
             self.scores.append(s)
 
+        fpath = _jsonf % eid
+        if self.game_over() and not os.access(fpath, os.R_OK):
+            print >> gzip.open(fpath, 'w+'), self.rawData,
+
     def game_over(self):
         """game_over returns true if the game is no longer being played."""
-        return self.data['qtr'] == 'Final'
+        return self.qtr == 'Final'
+
+    def playing(self):
+        """playing returns true if the game is currently being played."""
+        return self.qtr != 'Pregame' and self.qtr != 'Final'
 
     def __load_all_players(self, gameData):
         self.__players = OrderedDict()
