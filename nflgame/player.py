@@ -11,7 +11,8 @@ NFL's GameCenter.
 """
 
 _tdfields = ('passing_tds', 'rushing_tds', 'receiving_tds',
-              'kickret_tds', 'puntret_tds')
+             'kickret_tds', 'puntret_tds')
+
 
 class Players (object):
     """
@@ -116,6 +117,7 @@ class Players (object):
                     return value(player.__dict__[field])
                 return player.__dict__[field] == value
             preds.append(functools.partial(pred, k, v))
+
         def gen():
             for p in self:
                 if all([f(p) for f in preds]):
@@ -204,8 +206,8 @@ class Players (object):
                     fields.append(field)
         for p in players:
             d = {
-                'name': p.name, 
-                'id': p.playerid, 
+                'name': p.name,
+                'id': p.playerid,
                 'home': p.home and 'yes' or 'no',
             }
             for field in fields:
@@ -226,6 +228,7 @@ class Players (object):
         """
         if other is None:
             return self
+
         def gen():
             for p in self:
                 yield p
@@ -248,6 +251,7 @@ class Players (object):
     def __reversed__(self):
         """Satisfy the built in reversed."""
         return reversed(self.__players)
+
 
 class Player (object):
     """
@@ -313,8 +317,8 @@ class Player (object):
 
     def _add_stats(self, category, stats):
         assert category not in self.__stats, \
-                'Cannot add two sets of stats from the same category ' \
-                'to the same player "%s"' % self.name
+            'Cannot add two sets of stats from the same category ' \
+            'to the same player "%s"' % self.name
         self.__dict__[category] = True
         for stat, val in stats.iteritems():
             if stat == "name":
@@ -332,7 +336,7 @@ class Player (object):
         """
         Adds two players together. Only two player objects that correspond
         to the same human (i.e., GameCenter identifier) can be added together.
-        
+
         If two different players are added together, an assertion will
         be raised.
 
@@ -367,4 +371,3 @@ class Player (object):
                     new_player.__stats[category][k] += v
 
         return new_player
-

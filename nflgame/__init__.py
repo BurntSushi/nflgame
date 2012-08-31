@@ -9,7 +9,7 @@ GameCenter. Therefore, nflgame can be used to report game statistics while
 a game is being played.
 
 The package comes pre-loaded with game data from every pre- and regular
-season game from 2009 up until August 28, 2012. Therefore, querying such data 
+season game from 2009 up until August 28, 2012. Therefore, querying such data
 does not actually ping NFL.com.
 
 However, if you try to search for data in a game that is being currently
@@ -55,7 +55,7 @@ See every player that made an interception
 We can filter all players on whether they had more than zero defensive
 interceptions, and then sort those players by the number of picks::
 
-    for p in game.players.filter(defense_int=lambda x: x>0).sort("defense_int"):
+    for p in game.players.filter(defense_int=lambda x:x>0).sort("defense_int"):
         print p, p.defense_int
 
 Output::
@@ -76,7 +76,8 @@ that played in week 10 of 2009::
 
 And then to list all rushers with at least 10 carries sorted by rushing yards::
 
-    for p in players.rushing().filter(rushing_att=lambda x: x > 10).sort("rushing_yds"):
+    rushers = players.rushing()
+    for p in rushers.filter(rushing_att=lambda x: x > 10).sort("rushing_yds"):
         print p, p.rushing_att, p.rushing_yds, p.rushing_tds
 
 And the final output::
@@ -186,6 +187,7 @@ NoPlayers corresponds to the identity element of a Players sequences.
 Namely, adding it to any other Players sequence has no effect.
 """
 
+
 def games(year, week=None, home=None, away=None, preseason=False):
     """
     games returns a list of all games matching the given criteria. Each
@@ -201,6 +203,7 @@ def games(year, week=None, home=None, away=None, preseason=False):
     if not eids:
         return None
     return [game.Game(eid) for eid in eids]
+
 
 def one(year, week, home, away, preseason=False):
     """
@@ -222,6 +225,7 @@ def one(year, week, home, away, preseason=False):
     assert len(eids) == 1, 'More than one game matches the given criteria.'
     return game.Game(eids[0])
 
+
 def combine(games):
     """
     Combines a list of games into one big player sequence.
@@ -238,13 +242,14 @@ def combine(games):
                 players[p.playerid] += p
     return player.Players(players)
 
+
 def __search_schedule(year, week=None, home=None, away=None, preseason=False):
     """
     Searches the schedule to find the game identifiers matching the criteria
     given.
     """
     ids = []
-    for (y, t, w, h, a), eid in schedule.gameids:
+    for (y, t, w, h, a), info in schedule.games:
         if y != year:
             continue
         if week is not None:
@@ -260,5 +265,5 @@ def __search_schedule(year, week=None, home=None, away=None, preseason=False):
             continue
         if not preseason and t != "REG":
             continue
-        ids.append(eid)
+        ids.append(info['eid'])
     return ids

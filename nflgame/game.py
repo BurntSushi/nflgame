@@ -11,6 +11,7 @@ import nflgame.player as player
 _jsonf = path.join(path.split(__file__)[0], 'gamecenter-json', '%s.json.gz')
 _json_base_url = "http://www.nfl.com/liveupdate/game-center/%s/%s_gtd.json"
 
+
 class Game (object):
     """
     Game represents a single pre- or regular-season game. It provides a window
@@ -79,8 +80,9 @@ class Game (object):
             try:
                 print >> gzip.open(fpath, 'w+'), self.rawData,
             except IOError:
-                print >> sys.stderr, "Could not cache JSON data. Please make " \
-                                     "'%s' writable." % os.path.dirname(fpath)
+                print >> sys.stderr, "Could not cache JSON data. Please " \
+                                     "make '%s' writable." \
+                                     % os.path.dirname(fpath)
 
     def game_over(self):
         """game_over returns true if the game is no longer being played."""
@@ -89,6 +91,18 @@ class Game (object):
     def playing(self):
         """playing returns true if the game is currently being played."""
         return self.qtr != 'Pregame' and self.qtr != 'Final'
+
+    def time(self):
+        """
+        Returns a nicely formatted string indicating the current time of the
+        game. Examples include "Q1 10:52", "Q4 1:25", "Pregame", "Halftime"
+        and "Final".
+        """
+        try:
+            q = int(self.qtr)
+            return 'Q%d %s' % (q, self.clock)
+        except ValueError:
+            return self.qtr
 
     def __load_all_players(self, gameData):
         self.__players = OrderedDict()
@@ -109,6 +123,7 @@ class Game (object):
         self.__players[playerid] = p
         return p
 
+
 def _get_json_data(eid):
     """
     Returns the JSON data corresponding to the game represented by eid.
@@ -122,7 +137,7 @@ def _get_json_data(eid):
     if os.access(fpath, os.R_OK):
         return gzip.open(fpath).read()
     try:
-        return urllib2.urlopen(_json_base_url % (eid, eid)).read() 
+        return urllib2.urlopen(_json_base_url % (eid, eid)).read()
     except urllib2.HTTPError:
         pass
     return None
