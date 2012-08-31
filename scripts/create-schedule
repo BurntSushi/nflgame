@@ -12,7 +12,7 @@ season_types = (('PRE', 4), ('REG', 17))
 print '# This file was automatically generated on %s by %s.' \
       % (datetime.now(), 'scripts/create-schedule')
 print
-print 'gameids = ['
+print 'games = ['
 
 for year in xrange(start_year, end_year + 1):
     for season_type, num_weeks in season_types:
@@ -24,8 +24,17 @@ for year in xrange(start_year, end_year + 1):
                 eid = g.getAttribute('eid')
                 home = g.getAttribute('h')
                 away = g.getAttribute('v')
-                print '    ((%d, "%s", %d, "%s", "%s"), "%s"),' \
-                      % (year, season_type, week, home, away, eid)
+                info = {
+                    'eid': eid,
+                    'wday': g.getAttribute('d'),
+                    'year': int(eid[:4]),
+                    'month': int(eid[4:6]),
+                    'day': int(eid[6:8]),
+                    'time': g.getAttribute('t'),
+                }
+
+                gameinfo = ((year, season_type, week, home, away), info)
+                print '    %s,' % repr(gameinfo)
 
 print ']'
 
