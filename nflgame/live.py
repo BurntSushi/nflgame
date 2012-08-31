@@ -4,7 +4,7 @@ being actively played.
 
 It requires the third party library pytz to be
 installed, which makes sure game times are compared properly with respect
-to time zones. pytz can be downloaded from PyPI: 
+to time zones. pytz can be downloaded from PyPI:
 http://pypi.python.org/pypi/pytz/
 
 It works by periodically downloading data from NFL.com for games that started
@@ -231,7 +231,7 @@ def _game_is_active(gameinfo, inactive_interval):
     """
     Returns true if the game is active. A game is considered active if the
     game start time is in the past and not in the completed list (which is
-    a private module level variable that is populated automatically) or if the 
+    a private module level variable that is populated automatically) or if the
     game start time is within inactive_interval seconds from starting.
     """
     gametime = _game_datetime(gameinfo)
