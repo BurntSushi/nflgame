@@ -39,23 +39,6 @@ confusion include "data is inconsistent" or "this looks like a duplicate" all
 the way to "I have no fucking clue."
 """
 
-super_fields = [
-    'passing_yds',
-    'rushing_yds',
-    'receiving_yds', 'receiving_rec',
-    'kicking_yds', 'kicking_cnt', 'kicking_tbacks', 'kicking_fielded',
-    'kickret_ret',
-    'defense_tkl',
-]
-"""
-super_fields is a list of all fields that *may* be derivative of statistical
-categories. For example, 'kicking_cnt' is a completely derivative field, since 
-it is composed of the sum of instances of other statistical categories like
-'kicking_outendzone_fielded' and 'kicking_touchback'. Conversely, a field
-like 'kickret_ret' is a parent to 'kickret_ret_td' but is also its own
-statistical category.
-"""
-
 categories = {
     2: {
         'cat': 'punting',
@@ -209,7 +192,8 @@ categories = {
         'value': 1,
         'desc': 'Lateral catch on offense',
     },
-    24: { # This is a guess.
+    24: {
+        # This is a guess.
         'cat': 'lateral',
         'field': 'lateral_rec_tds',
         'yds': 'lateral_rec_yds',
@@ -305,7 +289,8 @@ categories = {
         'value': 1,
         'desc': 'Lateral catch after punt',
     },
-    36: { # This is a guess.
+    36: {
+        # This is a guess.
         'cat': 'lateral',
         'field': 'lateral_punt_rec_tds',
         'yds': 'lateral_punt_rec_yds',
@@ -398,7 +383,7 @@ categories = {
         'field': None,
         'yds': '',
         'value': 0,
-        'desc': 'Unknown (lateral after kickoff; player name is inconsistent?)',
+        'desc': 'Unknown (lateral after kickoff; name is inconsistent?)',
     },
     48: {
         'cat': 'lateral',
@@ -503,7 +488,8 @@ categories = {
         'value': 1,
         'desc': 'Lateral catch after fumble recovery',
     },
-    62: { # This is a guess.
+    62: {
+        # This is a guess.
         'cat': 'lateral',
         'field': 'lateral_fumble_rec_tds',
         'yds': 'lateral_fumble_rec_yds',
