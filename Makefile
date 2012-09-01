@@ -11,7 +11,7 @@ pypi-meta:
 	python2 setup.py register
 
 pep8:
-	pep8 nflgame/{__init__,game,player,live}.py
+	pep8 nflgame/{__init__,game,player,live,stats}.py
 
 schedule:
 	scripts/create-schedule > schedule.py
