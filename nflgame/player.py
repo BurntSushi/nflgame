@@ -4,7 +4,7 @@ import functools
 
 categories = ("passing", "rushing", "receiving",
               "fumbles", "kicking", "punting", "kickret", "puntret",
-              "defense")
+              "defense", "penalty", "lateral")
 """
 categories is a list of all individual statistical categories reported by
 NFL's GameCenter.
