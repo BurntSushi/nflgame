@@ -43,7 +43,7 @@ def google_voice_login(email, passwd):
     _voice.login(email, passwd)
 
 
-def sms(phone_number, msg):
+def sms(phone_number, msg, provider=None):
     """
     Sends an SMS message to phone_number (which should be a string) with
     a message containing msg.
@@ -55,6 +55,10 @@ def sms(phone_number, msg):
     Note that these are SMS messages, and each SMS message is limited to
     160 characters. If msg is longer than that, it will be broken up into
     multiple SMS messages (hopefully).
+
+    The provider parameter is not currently used, but is anticipated if this
+    module provides a way to send SMS messages via emails. A provider will be
+    required to look up the email domain. (i.e., for Verizon it's 'vtext.com'.)
     """
     _google_voice_sms(phone_number, msg)
 
