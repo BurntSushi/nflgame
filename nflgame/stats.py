@@ -30,7 +30,7 @@ be listed as a parent field. Parent fields always correspond to the sum of
 all their child fields.
 
 value specifies how much each statistic is worth. This is 1 in every case
-except for sacks.
+except for split sacks.
 
 desc specifies a human readable description for the statistic. It should be
 concise and clear. If a statistical category is unknown, then desc should
@@ -50,59 +50,59 @@ categories = {
     },
     3: {
         'cat': 'team',
-        'field': None,
+        'field': 'rushing_first_down',
         'yds': '',
-        'super': [],
-        'value': 0,
-        'desc': 'Unknown (rushing; first down OR td?)',
+        'super': ['first_down'],
+        'value': 1,
+        'desc': 'First down (rush)',
     },
     4: {
         'cat': 'team',
-        'field': None,
+        'field': 'passing_first_down',
         'yds': '',
-        'super': [],
-        'value': 0,
-        'desc': 'Unknown (passing; first down OR td?)',
+        'super': ['first_down'],
+        'value': 1,
+        'desc': 'First down (pass)',
     },
     5: {
         'cat': 'team',
-        'field': None,
+        'field': 'penalty_first_down',
         'yds': '',
-        'super': [],
-        'value': 0,
-        'desc': 'Unknown (penalty; first down?)',
+        'super': ['first_down'],
+        'value': 1,
+        'desc': 'First down (penalty)',
     },
     6: {
         'cat': 'team',
-        'field': None,
+        'field': 'third_down_conv',
         'yds': '',
-        'super': [],
-        'value': 0,
-        'desc': 'Unknown (passing or rushing? first down?)',
+        'super': ['third_down_att'],
+        'value': 1,
+        'desc': 'Third down conversion',
     },
     7: {
         'cat': 'team',
         'field': 'third_down_failed',
         'yds': '',
-        'super': [],
+        'super': ['third_down_att'],
         'value': 1,
         'desc': 'Third down failed',
     },
     8: {
         'cat': 'team',
-        'field': None,
+        'field': 'fourth_down_conv',
         'yds': '',
-        'super': [],
-        'value': 0,
-        'desc': 'Unknown (fourth down success?)',
+        'super': ['fourth_down_att'],
+        'value': 1,
+        'desc': 'Fourth down conversion',
     },
     9: {
         'cat': 'team',
-        'field': None,
+        'field': 'fourth_down_failed',
         'yds': '',
-        'super': [],
+        'super': ['fourth_down_att'],
         'value': 0,
-        'desc': 'Unknown (fourth down failed?)',
+        'desc': 'Fourth down failed',
     },
     10: {
         'cat': 'rushing',
@@ -300,19 +300,19 @@ categories = {
     },
     37: {
         'cat': 'team',
-        'field': None,
+        'field': 'puntret_oob',
         'yds': '',
         'super': [],
         'value': 1,
-        'desc': 'Unknown (Punt out of bounds by kicking team?)',
+        'desc': 'Punt out of bounds (receiving team)',
     },
     38: {
         'cat': 'team',
-        'field': None,
+        'field': 'puntret_downed',
         'yds': '',
         'super': [],
         'value': 1,
-        'desc': 'Unknown (Punt downed by kicking team?)',
+        'desc': 'Punt downed by kicking team',
     },
     39: {
         'cat': 'puntret',
@@ -324,11 +324,11 @@ categories = {
     },
     40: {
         'cat': 'team',
-        'field': None,
+        'field': 'puntret_touchback',
         'yds': '',
         'super': [],
         'value': 1,
-        'desc': 'Touchback (team)',
+        'desc': 'Punt return touchback',
     },
     41: {
         'cat': 'kicking',
@@ -344,7 +344,7 @@ categories = {
         'yds': '',
         'super': [],
         'value': 0,
-        'desc': 'Unknown (kicking)',
+        'desc': 'Unknown (kick fielded? redundant?)',
     },
     43: {
         'cat': 'kicking',
@@ -394,11 +394,11 @@ categories = {
     },
     49: {
         'cat': 'team',
-        'field': None,
+        'field': 'kickret_oob',
         'yds': '',
         'super': [],
         'value': 1,
-        'desc': 'Kickoff out of bounds',
+        'desc': 'Kickoff return out of bounds',
     },
     50: {
         'cat': 'kickret',
