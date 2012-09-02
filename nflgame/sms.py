@@ -29,8 +29,7 @@ def login(email, passwd):
     """
     Logs into to your Google Voice account with your full email address
     (i.e., 'something@gmail.com') and password. This MUST be called once before
-    using gv_send. gv_login only needs to be called once per program
-    execution.
+    using send. login only needs to be called once per program execution.
 
     Note that your Google Voice login information is probably the same as your
     gmail login information. Please be careful with your login credentials!
@@ -45,7 +44,7 @@ def send(phone_number, msg):
     Sends an SMS message to phone_number (which should be a string) with
     a message containing msg.
 
-    gv_login MUST be called before gv_send should be called. gv_login only
+    login MUST be called before send should be called. login only
     needs to be called once per program execution.
 
     Note that these are SMS messages, and each SMS message is limited to
@@ -59,7 +58,7 @@ def _gv_login(email, passwd):
     """
     Logs into to your Google Voice account with your full email address
     (i.e., 'something@gmail.com') and password. This MUST be called once before
-    using gv_send. gv_login only needs to be called once per program
+    using _gv_send. _gv_login only needs to be called once per program
     execution.
 
     Note that your Google Voice login information is probably the same as your
@@ -78,7 +77,7 @@ def _gv_send(phone_number, msg):
     Sends an SMS message to phone_number (which should be a string) with
     a message containing msg.
 
-    gv_login MUST be called before gv_send should be called. gv_login only
+    _gv_login MUST be called before _gv_send should be called. _gv_login only
     needs to be called once per program execution.
 
     Note that these are SMS messages, and each SMS message is limited to
