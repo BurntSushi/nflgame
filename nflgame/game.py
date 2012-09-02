@@ -60,12 +60,19 @@ class Game (object):
             for team in ('home', 'away'):
                 score = self.data[team]['score'][str(q)]
                 self.__dict__['score_%s_q%d' % (team, q)] = int(score)
-        if self.score_home > self.score_away:
-            self.winner = self.home
-        elif self.score_away > self.score_home:
-            self.winner = self.away
+
+        if not self.game_over():
+            self.winner = None
         else:
-            self.winner = 'TIE'
+            if self.score_home > self.score_away:
+                self.winner = self.home
+                self.loser = self.away
+            elif self.score_away > self.score_home:
+                self.winner = self.away
+                self.loser = self.home
+            else:
+                self.winner = '%s/%s' % (self.home, self.away)
+                self.loser = '%s/%s' % (self.home, self.away)
 
         # Load the scoring summary into a simple list of strings.
         self.scores = []
