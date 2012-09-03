@@ -595,9 +595,9 @@ categories = {
     },
     78: {
         'cat': 'passing',
-        'field': 'rushing_twoptmissed',
+        'field': 'passing_twoptmissed',
         'yds': '',
-        'super': ['rushing_twopta'],
+        'super': ['passing_twopta'],
         'value': 1,
         'desc': '2pt conversion failed (pass)',
     },
