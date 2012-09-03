@@ -1,4 +1,3 @@
-from collections import OrderedDict
 import os
 import os.path as path
 import gzip
@@ -6,6 +5,7 @@ import json
 import sys
 import urllib2
 
+from nflgame import OrderedDict
 import nflgame.player as player
 
 _jsonf = path.join(path.split(__file__)[0], 'gamecenter-json', '%s.json.gz')
@@ -24,7 +24,7 @@ class Game (object):
         rawData = _get_json_data(eid)
         if rawData is None or rawData.strip() == '{}':
             return None
-        game = object.__new__(cls, eid)
+        game = object.__new__(cls)
         game.rawData = rawData
         return game
 

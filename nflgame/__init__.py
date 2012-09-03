@@ -172,7 +172,10 @@ from an entire season::
     nflgame.combine(nflgame.games(2010)).csv('season2010.csv')
 """
 
-from collections import OrderedDict
+try:
+    from collections import OrderedDict
+except:
+    from ordereddict import OrderedDict  # from PyPI
 
 import nflgame.game as game
 import nflgame.player as player

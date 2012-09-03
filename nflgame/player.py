@@ -1,6 +1,7 @@
-from collections import OrderedDict
 import csv
 import functools
+
+from nflgame import OrderedDict
 
 categories = ("passing", "rushing", "receiving",
               "fumbles", "kicking", "punting", "kickret", "puntret",
@@ -218,7 +219,7 @@ class Players (object):
             rows.append(d)
 
         fieldNames = ["name", "id", "home"] + fields
-        rows = [{f: f for f in fieldNames}] + rows
+        rows = [dict((f, f) for f in fieldNames)] + rows
         csv.DictWriter(open(fileName, 'w+'), fieldNames).writerows(rows)
 
     def __add__(self, other):
