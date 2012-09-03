@@ -184,7 +184,7 @@ import nflgame.game as game
 import nflgame.player as player
 import nflgame.schedule as schedule
 
-VERSION = "1.0.4"
+VERSION = "1.0.6"
 
 NoPlayers = player.Players(None)
 """

@@ -19,7 +19,7 @@ setup(
     name='nflgame',
     author='Andrew Gallant',
     author_email='andrew@burntsushi.net',
-    version='1.0.5',
+    version='1.0.6',
     license='WTFPL',
     description='An API to retrieve and read NFL Game Center JSON data. '
                 'It can work with real-time data, which can be used for '
@@ -34,6 +34,7 @@ setup(
         'Intended Audience :: End Users/Desktop',
         'Intended Audience :: Other Audience',
         'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Topic :: Database',
         'Topic :: Home Automation',
