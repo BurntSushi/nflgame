@@ -19,6 +19,9 @@ If you ask for data for a particular game that hasn't been cached to disk
 but is no longer being played, it will be automatically cached to disk
 so that no further downloads are required.
 
+nflgame requires Python 2.6 or Python 2.7. It does not (yet) work with
+Python 3.
+
 Examples
 ========
 
