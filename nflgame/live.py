@@ -37,7 +37,10 @@ import time
 import urllib2
 import xml.dom.minidom as xml
 
-import pytz
+try:
+    import pytz
+except ImportError:
+    pass
 
 import nflgame.game
 import nflgame.schedule
@@ -79,6 +82,21 @@ _completed = []
 A list of game eids that have been completed since the live module started
 checking for updated game stats.
 """
+
+
+def current_year_and_week():
+    """
+    Returns a tuple (year, week) where year is the current year of the season
+    and week is the current week number of games being played.
+    i.e., (2012, 3).
+
+    N.B. This always downloads the schedule XML data.
+    """
+    dom = xml.parse(urllib2.urlopen(_CUR_SCHEDULE_URL))
+    gms = dom.getElementsByTagName('gms')[0]
+    year = int(gms.getAttribute('y'))
+    week = int(gms.getAttribute('w'))
+    return (year, week)
 
 
 def run(callback, active_interval=15, inactive_interval=900, stop=None):
