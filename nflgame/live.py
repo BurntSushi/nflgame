@@ -45,6 +45,9 @@ except ImportError:
 import nflgame.game
 import nflgame.schedule
 
+# [00:21] <rasher> burntsushi: Alright, the schedule changes on Wednesday 7:00
+# UTC during the regular season
+
 _MAX_GAME_TIME = 60 * 60 * 6
 """
 The assumed maximum time allowed for a game to complete. This is used to
