@@ -62,6 +62,14 @@ Pinged infrequently to discover the current week number, year and week type.
 The actual schedule of games is taken from the schedule module.
 """
 
+_POST_URL = "http://static.nfl.com/liveupdate/scorestrip/postseason/ss.xml"
+"""
+The URL for the XML schedule of the post season. This is only used
+during the post season.
+
+TODO: How do we know if it's the post season?
+"""
+
 _EASTERN_TZ = pytz.timezone('US/Eastern')
 """Used to convert game times in EST to UTC."""
 
