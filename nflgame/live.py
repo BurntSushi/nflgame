@@ -31,6 +31,12 @@ With this strategy, if the live module is working properly, you could
 theoretically keep it running for the entire season.
 
 (N.B. Half-time is ignored. Games are either being actively played or not.)
+
+Alpha status
+------------
+This module is emphatically in alpha status. I believe things will work OK for
+the regular season, but the postseason brings new challenges. Moreover, it
+will probably affect the API at least a little bit.
 """
 import datetime
 import time
@@ -108,6 +114,46 @@ def current_year_and_week():
     year = int(gms.getAttribute('y'))
     week = int(gms.getAttribute('w'))
     return (year, week)
+
+
+def current_games(year=None, week=None,
+                  regular=True, postseason=False, preseason=False):
+    """
+    Returns a list of game.Games of games that are currently playing.
+    This fetches all current information from NFL.com.
+
+    If either year or week is none, then the current year and week are
+    fetched from the schedule on NFL.com. If they are *both* provided, then
+    the schedule from NFL.com won't need to be downloaded, and thus saving
+    time.
+
+    So for example::
+
+        year, week = nflgame.live.current_year_and_week()
+        while True:
+            games = nflgame.live.current_games(year, week)
+            # Do something with games
+            time.sleep(60)
+
+    Finally, if the optional parameter postseason/preseason is True, then the
+    week parameter will refer to the postseason/preseason week rather than the
+    regular season week.
+    """
+    if year is None or week is None:
+        year, week = current_year_and_week()
+
+    games = []
+    now = _now()
+    gen = _games_in_week(year, week, regular=regular, postseason=postseason,
+                         preseason=preseason)
+    for info in gen:
+        gametime = _game_datetime(info)
+        if gametime >= now:
+            if (gametime - now).total_seconds() <= 60 * 60 * 36:
+                games.append(info['eid'])
+        elif (now - gametime).total_seconds() <= _MAX_GAME_TIME:
+            games.append(info['eid'])
+    return games
 
 
 def run(callback, active_interval=15, inactive_interval=900, stop=None):
@@ -240,20 +286,33 @@ def _active_games(inactive_interval):
     that will start within inactive_interval seconds, or has started within
     _MAX_GAME_TIME seconds in the past.
     """
+    gen = _games_in_week(_cur_year, _cur_week,
+                         regular=_regular,
+                         postseason=False,
+                         preseason=_preseason)
     games = []
-    for (year, t, week, _, _), info in nflgame.schedule.games:
-        if year != _cur_year:
-            continue
-        if week != _cur_week:
-            continue
-        if t == 'PRE' and not _preseason:
-            continue
-        if t == 'REG' and not _regular:
-            continue
+    for info in gen:
         if not _game_is_active(info, inactive_interval):
             continue
         games.append(info)
     return games
+
+
+def _games_in_week(year, week,
+                   regular=True, postseason=False, preseason=False):
+    """
+    A generator for the games matching the year/week/preseason parameters.
+    """
+    for (y, t, w, _, _), info in nflgame.schedule.games:
+        if y != year:
+            continue
+        if w != week:
+            continue
+        if t == 'PRE' and not preseason:
+            continue
+        if t == 'REG' and not regular:
+            continue
+        yield info
 
 
 def _game_is_active(gameinfo, inactive_interval):
@@ -266,20 +325,8 @@ def _game_is_active(gameinfo, inactive_interval):
     gametime = _game_datetime(gameinfo)
     now = _now()
     if gametime >= now:
-        return (gametime - now).seconds <= inactive_interval
+        return (gametime - now).total_seconds() <= inactive_interval
     return gameinfo['eid'] not in _completed
-
-
-def _seconds_before_game(gametime):
-    now = _now()
-    assert now <= gametime
-    return (gametime - now).seconds
-
-
-def _seconds_after_game(gametime):
-    now = _now()
-    assert now >= gametime
-    return (now - gametime).seconds
 
 
 def _game_datetime(gameinfo):
