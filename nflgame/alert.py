@@ -246,7 +246,12 @@ def _google_voice_sms(phone_number, msg):
     160 characters. If msg is longer than that, it will be broken up into
     multiple SMS messages.
     """
-    _voice.send_sms(phone_number, msg)
+    try:
+        _voice.send_sms(phone_number, msg)
+    except googlevoice.ValidationError:
+        # I seem to be getting these but the text messages still go
+        # through (eventually).
+        pass
 
 
 def _send_email(from_email, to_email, msg):
