@@ -4,30 +4,28 @@ GameCenter JSON feed to a representation of what we believe that statistical
 category means. This mapping has been reverse engineered with a lot of help
 from reddit users rasherdk and curien.
 
+B{Note}: We now have a data dictionary mapping statistical category id to
+a description from nflgsis.com. An original copy is in the root directory
+of the nflgame repository (StatIDs.html).
+
 If you think anything here is wrong (or can figure out some of the unknowns),
 please let me know by filing an issue here:
 https://github.com/BurntSushi/nflgame/issues
 
 For each statistical category identifier, we create a dict of 6 fields
-describing that statistical category. The fields are cat, field, yds, super,
-value and desc.
+describing that statistical category. The fields are cat, fields, yds, value,
+desc and long.
 
 cat specifies which statistical category the particular stat belong in. Only
 statistical categories in nflgame.player.categories should be used.
 
-field specifies the actual statistical field corresponding to the stat. This
-will manifest itself as a property on statistical objects via the API.
+fields specifies the actual statistical field corresponding to the stat. This
+will manifest itself as a property on statistical objects via the API. These
+fields should correspond to counters; i.e., number of receptions, rushing
+attempts, tackles, etc.
 
 yds specifies a field that contains the yardage totals relevant to the stat.
 If a stat does not specify yards, this field should be blank (an empty string).
-
-super specifies parent statistical fields that must be derived (either
-partially or in full) from the stat. For example, the kicking_cnt field
-has no corresponding statistical category id, but it can be derived through
-multiple other fields (kicking_outendzone_fielded, kicking_inendzone_fielded,
-and kicking_touchback). Thus, in each of the child fields, kicking_cnt should
-be listed as a parent field. Parent fields always correspond to the sum of
-all their child fields.
 
 value specifies how much each statistic is worth. This is 1 in every case
 except for split sacks.
@@ -37,6 +35,10 @@ concise and clear. If a statistical category is unknown, then desc should
 contain a string like 'Unknown (reason for confusion)'. Valid reasons for
 confusion include "data is inconsistent" or "this looks like a duplicate" all
 the way to "I have no fucking clue."
+
+long contains a verbatim description from nflgsis.com. Some of the information
+clearly references legacy systems, but alas, it is included as it adds to the
+context of each statistical category.
 """
 
 categories = {
