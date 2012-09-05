@@ -71,6 +71,7 @@ Pinged infrequently to discover the current week number, year and week type.
 The actual schedule of games is taken from the schedule module.
 """
 
+# http://www.nfl.com/ajax/scorestrip?season=2009&seasonType=POST&week=22
 _POST_URL = "http://static.nfl.com/liveupdate/scorestrip/postseason/ss.xml"
 """
 The URL for the XML schedule of the post season. This is only used
