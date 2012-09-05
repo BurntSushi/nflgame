@@ -33,7 +33,7 @@ theoretically keep it running for the entire season.
 (N.B. Half-time is ignored. Games are either being actively played or not.)
 
 Alpha status
-------------
+============
 This module is emphatically in alpha status. I believe things will work OK for
 the regular season, but the postseason brings new challenges. Moreover, it
 will probably affect the API at least a little bit.
