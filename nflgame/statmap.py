@@ -41,7 +41,36 @@ clearly references legacy systems, but alas, it is included as it adds to the
 context of each statistical category.
 """
 
-categories = {
+
+def values(category_id, yards):
+    """
+    Returns a dictionary of field names to statistical values for a
+    particular category id defined in idmap.
+    """
+    assert category_id in idmap, \
+        'Category identifier %d is not known.' % category_id
+    info = idmap[category_id]
+    try:
+        yards = int(yards)
+    except ValueError:
+        yards = 0
+
+    vals = {}
+    if info['yds']:
+        vals[info['yds']] = yards
+    for f in info['fields']:
+        vals[f] = info.get('value', 1)
+    return vals
+
+categories = ("passing", "rushing", "receiving",
+              "fumbles", "kicking", "punting", "kickret", "puntret",
+              "defense", "penalty")
+"""
+categories is a list of all statistical categories reported by NFL's
+GameCenter.
+"""
+
+idmap = {
     2: {
         'cat': 'punting',
         'fields': ['punting_blk', 'punting_cnt'],
@@ -294,7 +323,7 @@ categories = {
     },
     33: {
         'cat': 'puntret',
-        'fields': 'puntret_tot',
+        'fields': ['puntret_tot'],
         'yds': 'puntret_yds',
         'desc': 'Punt return yards',
         'long': 'Punt return and yards.',
@@ -634,7 +663,7 @@ categories = {
     },
     79: {
         'cat': 'defense',
-        'fields': 'defense_tkl',
+        'fields': ['defense_tkl'],
         'yds': '',
         'desc': 'Solo tackle',
         'long': 'Tackle with no assists. Note: There are no official '
@@ -682,7 +711,7 @@ categories = {
     },
     86: {
         'cat': 'defense',
-        'fields': 'defense_puntblk',
+        'fields': ['defense_puntblk'],
         'yds': '',
         'desc': 'Punt blocked (defense)',
         'long': 'Player blocked a punt.',
@@ -784,7 +813,7 @@ categories = {
     },
     106: {
         'cat': 'fumbles',
-        'fields': 'fumbles_lost',
+        'fields': ['fumbles_lost'],
         'yds': '',
         'desc': 'Fumble - lost',
         'long': '',
@@ -807,7 +836,7 @@ categories = {
     },
     110: {
         'cat': 'defense',
-        'fields': 'defense_qbhit',
+        'fields': ['defense_qbhit'],
         'yds': '',
         'desc': 'Quarterback hit',
         'long': 'Player knocked the quarterback to the ground, quarterback '
@@ -861,7 +890,7 @@ categories = {
     # 201, 211, 212 and 213 are for NFL Europe.
     301: {
         'cat': 'team',
-        'fields': 'xp_aborted',
+        'fields': ['xp_aborted'],
         'yds': '',
         'desc': 'Extra point - aborted',
         'long': '',

@@ -181,12 +181,12 @@ except:
     from ordereddict import OrderedDict  # from PyPI
 
 import nflgame.game as game
-import nflgame.player as player
 import nflgame.schedule as schedule
+import nflgame.seq as seq
 
 VERSION = "1.0.6"
 
-NoPlayers = player.Players(None)
+NoPlayers = seq.GenPlayerStats(None)
 """
 NoPlayers corresponds to the identity element of a Players sequences.
 
@@ -239,14 +239,7 @@ def combine(games):
     This can be used, for example, to get Player objects corresponding to
     statistics across an entire week, some number of weeks or an entire season.
     """
-    players = OrderedDict()
-    for game in games:
-        for p in game.players:
-            if p.playerid not in players:
-                players[p.playerid] = p
-            else:
-                players[p.playerid] += p
-    return player.Players(players)
+    return reduce(lambda ps1, ps2: ps1 + ps2, map(lambda g: g.players, games))
 
 
 def __search_schedule(year, week=None, home=None, away=None, preseason=False):
@@ -263,10 +256,14 @@ def __search_schedule(year, week=None, home=None, away=None, preseason=False):
                 continue
             if not isinstance(week, list) and w != week:
                 continue
-        if home is not None and h != home:
-            continue
-        if away is not None and a != away:
-            continue
+        if home is not None and away is not None and home == away:
+            if h != home and a != home:
+                continue
+        else:
+            if home is not None and h != home:
+                continue
+            if away is not None and a != away:
+                continue
         if preseason and t != "PRE":
             continue
         if not preseason and t != "REG":
