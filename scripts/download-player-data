@@ -1,26 +1,33 @@
 #!/usr/bin/env python2
 
+import argparse
 import json
+import os
+import os.path
 import sys
+import urllib2
+
+from bs4 import BeautifulSoup
 
 import nflgame
 
-# Regrettably, this is using unreleased code. The YQL module itself exists,
-# but fantasy.ffyql is a convenience module for logging in with my
-# account details.
-from fantasy.ffyql import yqlquery
+parser = argparse.ArgumentParser(
+    description='Player data web scraper from NFL.com',
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+aa = parser.add_argument
+aa('mode', type=str, metavar='MODE',
+    help='One of "download" or "parse". Modes are exclusive to prevent '
+         'the download process from being interrupted. In "parse" mode, '
+         'player JSON data will be echoed to stdout.')
+aa('dir', type=str, metavar='DIRECTORY',
+    help='The directory where the HTML files are/will be stored.')
+conf = parser.parse_args()
 
-if len(sys.argv) < 2:
-    print >> sys.stderr, "Usage: download-player-data output-file"
-    sys.exit(1)
+assert conf.mode in ('download', 'parse'), \
+    'Mode must be "download" or "parse".'
 
-# Any ol' league key should do.
-league_key = '273.l.104464'
-
-# The players dictionary that we dump to JSON.
 players = {}
-# games = nflgame.games(2011) + nflgame.games(2012, preseason=True) 
-games = nflgame.games(2012, preseason=True)
+games = nflgame.games(2011) + nflgame.games(2012, preseason=True)
 for p in nflgame.combine(games):
     if p.playerid in players:
         continue
@@ -31,40 +38,48 @@ for p in nflgame.combine(games):
         'gsid': p.playerid,
     }
 
-# We must traverse YQL results in 25 result increments. PITA.
-yql_players = []
-for start in xrange(0, 200, 25):
-    res = yqlquery('SELECT * FROM fantasysports.players '
-                   'WHERE league_key = "%s" AND start = %d'
-                   % (league_key, start))
-    for row in res.rows:
-        name = row['name']['full']
-        first = row['name']['first']
-        last = row['name']['last']
-        team = row['editorial_team_abbr'].upper()
-        yql_players.append((team, name, first, last))
-        print name
+if conf.mode == 'download':
+    if os.access(conf.dir, os.R_OK):
+        print >> sys.stderr, 'Directory %s already exists.' % conf.dir
+        sys.exit(1)
+    os.mkdir(conf.dir)
 
-# Now try to match the YQL players with the GameCenter JSON players.
-pids = set()
-for pid, info in players.iteritems():
-    if pid in pids:
-        assert False, '%s - %s' % (pid, info['gsis_name'], info['full_name'])
-    pids.add(pid)
-    dot = info['gsis_name'].rindex('.')
-    gsis_first = info['gsis_name'][:dot]
-    gsis_last = info['gsis_name'][dot+1:]
-    for team, full_name, first, last in yql_players:
-        match_first = first.lower().startswith(gsis_first.lower())
-        match_last = last.lower().startswith(gsis_last.lower())
-        if match_first and match_last:
-            assert not info['team'] and not info['full_name'], \
-                'Player %s (%s) already filled with %s but also matches ' \
-                '%s.' % (info['gsis_name'], info['gsid'],
-                         info['full_name'], full_name)
-            info['team'] = team
-            info['full_name'] = full_name
+    base_url = "http://www.nfl.com/players/profile?id=%s"
+
+    total = len(players)
+    for i, (pid, info) in enumerate(players.iteritems(), 1):
+        url = base_url % pid
+        fpath = os.path.join(conf.dir, '%s.html' % pid)
+        try:
+            html = urllib2.urlopen(url).read()
+            print >> open(fpath, 'w+'), html,
+        except urllib2.HTTPError:
+            pass
+        s = '\r%d/%d complete. (%0.2f%%)' % (i, total, float(i) / float(total))
+        print s,
+
+elif conf.mode == 'parse':
+    files = os.listdir(conf.dir)
+    total = len(files)
+    for i, f in enumerate(os.listdir(conf.dir), 1):
+        s = '\r%d/%d complete. (%0.2f%%)' % (i, total, float(i) / float(total))
+        print s,
+
+        if not f.endswith('.html'):
             continue
 
-print >> open(sys.argv[1], 'w+'), json.dumps(players, indent=4),
+        playerid, _ = os.path.splitext(os.path.basename(f))
+        player = players[playerid]
+        soup = BeautifulSoup(open(os.path.join(conf.dir, f)).read())
+        for meta in soup.find_all('meta'):
+            kind, value = meta.get('id'), meta.get('content')
+            if kind == 'playerName':
+                player['full_name'] = value.strip()
+            if kind == 'playerTeam':
+                player['team'] = value.strip()
+    print json.dumps(players, indent=4),
+else:
+    assert False
+
+# select * from fantasysports.teams.roster where team_key='273.l.104464.t.11' 
 
