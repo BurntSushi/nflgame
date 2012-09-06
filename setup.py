@@ -19,7 +19,7 @@ setup(
     name='nflgame',
     author='Andrew Gallant',
     author_email='andrew@burntsushi.net',
-    version='1.0.6',
+    version='1.0.7',
     license='WTFPL',
     description='An API to retrieve and read NFL Game Center JSON data. '
                 'It can work with real-time data, which can be used for '
@@ -42,7 +42,7 @@ setup(
     platforms='ANY',
     packages=['nflgame'],
     package_dir={'nflgame': 'nflgame'},
-    package_data={'nflgame': ['gamecenter-json/*.json.gz']},
+    package_data={'nflgame': ['players.json', 'gamecenter-json/*.json.gz']},
     data_files=[('share/doc/nflgame', ['README', 'COPYING', 'INSTALL']),
                 ('share/doc/nflgame/doc', docfiles)],
     scripts=[]

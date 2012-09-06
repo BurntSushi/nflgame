@@ -1,5 +1,60 @@
+import json
+import os.path
+
 from nflgame import OrderedDict
+import nflgame.seq
 import nflgame.statmap
+
+
+def _create_players(jsonf=None):
+    """
+    Creates a dict of Player objects from the players.json file, keyed
+    by GSIS ids.
+    """
+    if jsonf is None:
+        jsonf = os.path.join(os.path.split(__file__)[0], 'players.json')
+    data = json.loads(open(jsonf).read())
+
+    players = {}
+    for playerid in data:
+        players[playerid] = Player(data[playerid])
+    return players
+
+
+class Player (object):
+    """
+    Player instances represent meta information about a single player.
+    This information includes name, team, position, status, height,
+    weight, college, jersey number, birth date, years, pro, etc.
+
+    Player information is populated from NFL.com profile pages.
+    """
+    def __init__(self, data):
+        self.playerid = data['gsisid']
+        self.name = data['name']
+        self.team = data['team']
+        self.position = data['position']
+        self.profile_url = data['profile_url']
+        self.number = data['number']
+        self.status = data['status']
+        self.weight = data['weight']
+        self.height = data['height']
+        self.college = data['college']
+        self.years_pro = data['years_pro']
+        self.birthdate = data['birthdate']
+
+    def stats(self, year, week=None):
+        games = nflgame.games(year, week)
+        players = nflgame.combine(games).filter(playerid=self.playerid)
+        return list(players)[0]
+
+    def plays(self, year, week=None):
+        plays = []
+        games = nflgame.games(year, week)
+        for g in games:
+            plays += filter(lambda p: p.has_player(self.playerid),
+                            list(g.drives.plays()))
+        return nflgame.seq.GenPlays(plays)
 
 
 class PlayerStats (object):

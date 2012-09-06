@@ -518,7 +518,7 @@ idmap = {
     57: {
         'cat': 'fumbles',
         'fields': [],
-        'yds': 'fumble_rec_yds',
+        'yds': 'fumbles_rec_yds',
         'desc': 'Own recovery yards, No recovery',
         'long': 'If a player recovered a fumble by his own team, then '
                 'lateraled to a teammate, the yardage gained/lost by teammate '
@@ -526,8 +526,8 @@ idmap = {
     },
     58: {
         'cat': 'fumbles',
-        'fields': ['fumble_rec_tds'],
-        'yds': 'fumble_rec_yds',
+        'fields': ['fumbles_rec_tds'],
+        'yds': 'fumbles_rec_yds',
         'desc': 'Own recovery yards, TD, No recovery',
         'long': 'Same as previous (57), except when the play results in a '
                 'touchdown.',

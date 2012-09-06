@@ -180,18 +180,37 @@ try:
 except:
     from ordereddict import OrderedDict  # from PyPI
 
-import nflgame.game as game
-import nflgame.schedule as schedule
-import nflgame.seq as seq
+import nflgame.game
+import nflgame.player
+import nflgame.schedule
+import nflgame.seq
 
-VERSION = "1.0.6"
+VERSION = "1.0.7"
 
-NoPlayers = seq.GenPlayerStats(None)
+NoPlayers = nflgame.seq.GenPlayerStats(None)
 """
 NoPlayers corresponds to the identity element of a Players sequences.
 
 Namely, adding it to any other Players sequence has no effect.
 """
+
+players = nflgame.player._create_players()
+"""
+A dict of all players and meta information about each player keyed
+by GSIS ID. (The identifiers used by NFL.com GameCenter.)
+"""
+
+
+def find(name):
+    """
+    Finds a player (or players) with a name matching (case insensitive)
+    name and returns them as a list.
+    """
+    hits = []
+    for player in players.itervalues():
+        if player.name.lower() == name.lower():
+            hits.append(player)
+    return hits
 
 
 def games(year, week=None, home=None, away=None, preseason=False):
@@ -199,6 +218,9 @@ def games(year, week=None, home=None, away=None, preseason=False):
     games returns a list of all games matching the given criteria. Each
     game can then be queried for player statistics and information about
     the game itself (score, winner, scoring plays, etc.).
+
+    As a special case, if the home and away teams are set to the same team,
+    then all games where that team played are returned.
 
     Note that if a game's JSON data is not cached to disk, it is retrieved
     from the NFL web site. A game's JSON data is *only* cached to disk once
@@ -208,7 +230,7 @@ def games(year, week=None, home=None, away=None, preseason=False):
     eids = __search_schedule(year, week, home, away, preseason)
     if not eids:
         return None
-    return [game.Game(eid) for eid in eids]
+    return [nflgame.game.Game(eid) for eid in eids]
 
 
 def one(year, week, home, away, preseason=False):
@@ -229,7 +251,7 @@ def one(year, week, home, away, preseason=False):
     if not eids:
         return None
     assert len(eids) == 1, 'More than one game matches the given criteria.'
-    return game.Game(eids[0])
+    return nflgame.game.Game(eids[0])
 
 
 def combine(games):
@@ -248,7 +270,7 @@ def __search_schedule(year, week=None, home=None, away=None, preseason=False):
     given.
     """
     ids = []
-    for (y, t, w, h, a), info in schedule.games:
+    for (y, t, w, h, a), info in nflgame.schedule.games:
         if y != year:
             continue
         if week is not None:

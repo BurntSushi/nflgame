@@ -464,6 +464,10 @@ class Play (object):
         self.__players = _json_play_players(self, data['players'])
         self.players = nflgame.seq.GenPlayerStats(self.__players)
 
+    def has_player(self, playerid):
+        """Whether a player with id playerid participated in this play."""
+        return playerid in self.__players
+
     def __str__(self):
         return self.desc
 
