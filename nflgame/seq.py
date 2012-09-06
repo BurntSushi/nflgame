@@ -19,7 +19,7 @@ the predicate it corresponds to. For example, this::
 
     players.filter(receiving_rec=lambda v: v > 0)
 
-Is equivalent to:
+Is equivalent to::
 
     players.filter(receiving_rec__gt=0)
 
@@ -68,7 +68,7 @@ class Gen (object):
 
             players.filter(receiving_rec=lambda v: v > 0)
 
-        Is equivalent to:
+        Is equivalent to::
 
             players.filter(receiving_rec__gt=0)
 
