@@ -1,8 +1,30 @@
 import csv
 import functools
 import itertools
+import operator
 
 from nflgame import OrderedDict
+
+_BUILTIN_PREDS = {
+    '__lt': operator.lt,
+    '__le': operator.le,
+    '__ne': operator.ne,
+    '__ge': operator.ge,
+    '__gt': operator.gt,
+}
+"""
+A dictionary of suffixes to predicates that can be used in Gen.filter.
+The suffix corresponds to what to add to the end of a field name to invoke
+the predicate it corresponds to. For example, this::
+
+    players.filter(receiving_rec=lambda v: v > 0)
+
+Is equivalent to:
+
+    players.filter(receiving_rec__gt=0)
+
+(Django users should feel right at home.)
+"""
 
 
 class Gen (object):
@@ -39,15 +61,30 @@ class Gen (object):
         If a field is set to a function---which must be a predicate---then
         only items with field values satisfying that function will
         be returned.
+
+        Also, special suffixes that begin with '__' may be added to the
+        end of a field name to invoke built in predicates.
+        For example, this::
+
+            players.filter(receiving_rec=lambda v: v > 0)
+
+        Is equivalent to:
+
+            players.filter(receiving_rec__gt=0)
+
+        Other suffixes includes gt, le, lt, ne, ge, etc.
+
+        (Django users should feel right at home.)
         """
         preds = []
         for k, v in kwargs.iteritems():
             def pred(field, value, item):
-                if field.endswith('__gt'):
-                    f = field[:field.index('__gt')]
-                    if f not in item.__dict__:
-                        return False
-                    return item.__dict__[f] > value
+                for suffix, p in _BUILTIN_PREDS.iteritems():
+                    if field.endswith(suffix):
+                        f = field[:field.index(suffix)]
+                        if f not in item.__dict__:
+                            return False
+                        return p(item.__dict__[f], value)
                 if field not in item.__dict__:
                     return False
                 if isinstance(value, type(lambda x: x)):
