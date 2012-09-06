@@ -34,7 +34,8 @@ if conf.mode == 'download':
     base_url = "http://www.nfl.com/players/profile?id=%s"
     players = {}
     # for p in nflgame.one(2011, 17, "NE", "BUF").players.passing(): 
-    for p in nflgame.combine(nflgame.games(2011)):
+    games = nflgame.games(2011) + nflgame.games(2012, preseason=True)
+    for p in nflgame.combine(games):
         if p.playerid in players:
             continue
         players[p.playerid] = {
@@ -46,8 +47,10 @@ if conf.mode == 'download':
 
     total = len(players)
     for i, (pid, info) in enumerate(players.iteritems(), 1):
+        url = base_url % pid
+        print url
         fpath = os.path.join(conf.dir, '%s.html' % pid)
-        print >> open(fpath, 'w+'), urllib2.urlopen(base_url % pid).read(),
+        print >> open(fpath, 'w+'), urllib2.urlopen(url).read(),
         s = '\r%d/%d complete. (%0.2f%%)' % (i, total, float(i) / float(total))
         print s,
 
