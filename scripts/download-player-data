@@ -10,24 +10,51 @@ import urllib2
 from bs4 import BeautifulSoup
 
 import nflgame
+import nflgame.live
 
 parser = argparse.ArgumentParser(
     description='Player data web scraper from NFL.com',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 aa = parser.add_argument
 aa('mode', type=str, metavar='MODE',
-    help='One of "download" or "parse". Modes are exclusive to prevent '
-         'the download process from being interrupted. In "parse" mode, '
-         'player JSON data will be echoed to stdout.')
-aa('dir', type=str, metavar='DIRECTORY',
-    help='The directory where the HTML files are/will be stored.')
+    help='One of "download", "parse" or "update". Modes are exclusive to '
+         'prevent the download process from being interrupted. In "parse" '
+         'mode, player JSON data will be echoed to stdout.')
+aa('fdir', type=str, metavar='FILE_OR_DIRECTORY',
+    help='The directory where the HTML files are/will be stored in the '
+         'download or parse modes. In update mode, this should be the '
+         'file where the player JSON data is stored.')
 conf = parser.parse_args()
 
-assert conf.mode in ('download', 'parse'), \
-    'Mode must be "download" or "parse".'
+assert conf.mode in ('download', 'parse', 'update'), \
+    'Mode must be "download", "parse" or "update".'
 
+nfl_profile_url = 'http://www.nfl.com/players/profile?id=%s'
+cur_year, cur_week = nflgame.live.current_year_and_week()
 players = {}
-games = nflgame.games(2011) + nflgame.games(2012, preseason=True)
+games = nflgame.games(2011)
+games += nflgame.games(2012, preseason=True)
+games += filter(lambda g: g is not None,
+                nflgame.games(2012, week=range(1, cur_week + 1)))
+
+def get_name_and_team(html):
+    name, team = None, None
+    soup = BeautifulSoup(html)
+    for meta in soup.find_all('meta'):
+        kind, value = meta.get('id'), meta.get('content')
+        if kind == 'playerName':
+            name = value.strip()
+        if kind == 'playerTeam':
+            team = value.strip()
+
+    return (name, team)
+
+def get_html(playerid):
+    try:
+        return urllib2.urlopen(nfl_profile_url % playerid).read()
+    except urllib2.HTTPError:
+        return ''
+
 for p in nflgame.combine(games):
     if p.playerid in players:
         continue
@@ -39,29 +66,25 @@ for p in nflgame.combine(games):
     }
 
 if conf.mode == 'download':
-    if os.access(conf.dir, os.R_OK):
-        print >> sys.stderr, 'Directory %s already exists.' % conf.dir
+    if os.access(conf.fdir, os.R_OK):
+        print >> sys.stderr, 'Directory %s already exists.' % conf.fdir
         sys.exit(1)
-    os.mkdir(conf.dir)
+    os.mkdir(conf.fdir)
 
     base_url = "http://www.nfl.com/players/profile?id=%s"
 
     total = len(players)
     for i, (pid, info) in enumerate(players.iteritems(), 1):
-        url = base_url % pid
-        fpath = os.path.join(conf.dir, '%s.html' % pid)
-        try:
-            html = urllib2.urlopen(url).read()
+        html = get_html(pid)
+        if html:
+            fpath = os.path.join(conf.fdir, '%s.html' % pid)
             print >> open(fpath, 'w+'), html,
-        except urllib2.HTTPError:
-            pass
         s = '\r%d/%d complete. (%0.2f%%)' % (i, total, float(i) / float(total))
         print s,
-
 elif conf.mode == 'parse':
-    files = os.listdir(conf.dir)
+    files = os.listdir(conf.fdir)
     total = len(files)
-    for i, f in enumerate(os.listdir(conf.dir), 1):
+    for i, f in enumerate(os.listdir(conf.fdir), 1):
         s = '\r%d/%d complete. (%0.2f%%)' % (i, total, float(i) / float(total))
         print s,
 
@@ -70,14 +93,19 @@ elif conf.mode == 'parse':
 
         playerid, _ = os.path.splitext(os.path.basename(f))
         player = players[playerid]
-        soup = BeautifulSoup(open(os.path.join(conf.dir, f)).read())
-        for meta in soup.find_all('meta'):
-            kind, value = meta.get('id'), meta.get('content')
-            if kind == 'playerName':
-                player['full_name'] = value.strip()
-            if kind == 'playerTeam':
-                player['team'] = value.strip()
+        name, team = get_name_and_team(open(os.path.join(conf.fdir, f)).read())
+        if name is not None and team is not None:
+            player['full_name'] = name
+            player['team'] = team
     print json.dumps(players, indent=4),
+elif conf.mode == 'update':
+    old_players = json.loads(open('nflgame/players.json').read())
+    for pid, info in players.iteritems():
+        if pid in old_players and old_players[pid]['full_name']:
+            info['full_name'] = old_players[pid]['full_name']
+            info['team'] = old_players[pid]['team']
+        if not info['full_name']:
+            print info['gsid'], info['gsis_name']
 else:
     assert False
 
