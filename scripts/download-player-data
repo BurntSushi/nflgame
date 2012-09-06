@@ -1,0 +1,70 @@
+#!/usr/bin/env python2
+
+import json
+import sys
+
+import nflgame
+
+# Regrettably, this is using unreleased code. The YQL module itself exists,
+# but fantasy.ffyql is a convenience module for logging in with my
+# account details.
+from fantasy.ffyql import yqlquery
+
+if len(sys.argv) < 2:
+    print >> sys.stderr, "Usage: download-player-data output-file"
+    sys.exit(1)
+
+# Any ol' league key should do.
+league_key = '273.l.104464'
+
+# The players dictionary that we dump to JSON.
+players = {}
+# games = nflgame.games(2011) + nflgame.games(2012, preseason=True) 
+games = nflgame.games(2012, preseason=True)
+for p in nflgame.combine(games):
+    if p.playerid in players:
+        continue
+    players[p.playerid] = {
+        'full_name': '',
+        'team': '',
+        'gsis_name': p.name,
+        'gsid': p.playerid,
+    }
+
+# We must traverse YQL results in 25 result increments. PITA.
+yql_players = []
+for start in xrange(0, 200, 25):
+    res = yqlquery('SELECT * FROM fantasysports.players '
+                   'WHERE league_key = "%s" AND start = %d'
+                   % (league_key, start))
+    for row in res.rows:
+        name = row['name']['full']
+        first = row['name']['first']
+        last = row['name']['last']
+        team = row['editorial_team_abbr'].upper()
+        yql_players.append((team, name, first, last))
+        print name
+
+# Now try to match the YQL players with the GameCenter JSON players.
+pids = set()
+for pid, info in players.iteritems():
+    if pid in pids:
+        assert False, '%s - %s' % (pid, info['gsis_name'], info['full_name'])
+    pids.add(pid)
+    dot = info['gsis_name'].rindex('.')
+    gsis_first = info['gsis_name'][:dot]
+    gsis_last = info['gsis_name'][dot+1:]
+    for team, full_name, first, last in yql_players:
+        match_first = first.lower().startswith(gsis_first.lower())
+        match_last = last.lower().startswith(gsis_last.lower())
+        if match_first and match_last:
+            assert not info['team'] and not info['full_name'], \
+                'Player %s (%s) already filled with %s but also matches ' \
+                '%s.' % (info['gsis_name'], info['gsid'],
+                         info['full_name'], full_name)
+            info['team'] = team
+            info['full_name'] = full_name
+            continue
+
+print >> open(sys.argv[1], 'w+'), json.dumps(players, indent=4),
+
