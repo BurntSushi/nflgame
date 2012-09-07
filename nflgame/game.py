@@ -465,9 +465,23 @@ class Play (object):
                                                   info['yards'])
                 for k, v in statvals.iteritems():
                     self.__dict__[k] = self.__dict__.get(k, 0) + v
+        
+        # Load the sequence of "events" in a play into a list of dictionaries.
+        self.events = _json_play_events(data['players'])
+
+        # Now load cumulative player data for this play into
+        # a GenPlayerStats generator. We then flatten this data
+        # and add it to the play itself so that plays can be
+        # filter by these statistics.
         self.__players = _json_play_players(self, data['players'])
         self.players = nflgame.seq.GenPlayerStats(self.__players)
-        self.events = _json_play_events(data['players'])
+        for p in self.players:
+            for k, v in p.stats.iteritems():
+                # Sometimes we may see duplicate statistics (like tackle
+                # assists). Let's just overwrite in this case, since this
+                # data is from the perspective of the play. i.e., there
+                # is one assisted tackle rather than two.
+                self.__dict__[k] = v
 
     def has_player(self, playerid):
         """Whether a player with id playerid participated in this play."""
