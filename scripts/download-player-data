@@ -45,7 +45,6 @@ if __name__ == '__main__':
         perri(s)
 
         html = get_html(roster_team_url % team)
-        # html = open('ne.html').read() 
         if html is None:
             perr('Could not get HTML for team %s.' % team)
             continue
@@ -104,4 +103,3 @@ if __name__ == '__main__':
     print json.dumps(output, indent=4)
     
     perr('\nDone.')
-
