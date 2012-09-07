@@ -424,6 +424,10 @@ class Drive (object):
         new_drive.time_end = None
         return new_drive
 
+    def __str__(self):
+        return '%s (Start: %s, End: %s) %s' \
+               % (self.team, self.time_start, self.time_end, self.result)
+
 
 class Play (object):
     """
