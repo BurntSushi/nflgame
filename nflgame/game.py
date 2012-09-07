@@ -467,6 +467,7 @@ class Play (object):
                     self.__dict__[k] = self.__dict__.get(k, 0) + v
         self.__players = _json_play_players(self, data['players'])
         self.players = nflgame.seq.GenPlayerStats(self.__players)
+        self.events = _json_play_events(data['players'])
 
     def has_player(self, playerid):
         """Whether a player with id playerid participated in this play."""
@@ -562,6 +563,23 @@ def _json_play_players(play, data):
             statvals = nflgame.statmap.values(info['statId'], info['yards'])
             players[playerid]._add_stats(statvals)
     return players
+
+
+def _json_play_events(data):
+    """
+    Takes a single JSON play entry (data) and converts it to a list of events.
+    """
+    temp = list()
+    for playerid, statcats in data.iteritems():
+        for info in statcats:
+            if info['statId'] not in nflgame.statmap.idmap:
+                continue
+            statvals = nflgame.statmap.values(info['statId'], info['yards'])
+            statvals['playerid'] = None if playerid == '0' else playerid
+            statvals['playername'] = info['playerName'] or None
+            statvals['team'] = info['clubcode']
+            temp.append((int(info['sequence']), statvals))
+    return [t[1] for t in sorted(temp, key=lambda t: t[0])]
 
 
 def _json_game_player_stats(data):
