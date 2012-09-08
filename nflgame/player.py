@@ -56,6 +56,9 @@ class Player (object):
                             list(g.drives.plays()))
         return nflgame.seq.GenPlays(plays)
 
+    def __str__(self):
+        return '%s (%s, %s)' % (self.name, self.position, self.team)
+
 
 class PlayerStats (object):
     """

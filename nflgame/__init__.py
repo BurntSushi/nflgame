@@ -200,17 +200,75 @@ A dict of all players and meta information about each player keyed
 by GSIS ID. (The identifiers used by NFL.com GameCenter.)
 """
 
+teams = [
+    ['ARI', 'Arizona', 'Cardinals', 'Arizona Cardinals'],
+    ['ATL', 'Atlanta', 'Falcons', 'Atlana Falcons'],
+    ['BAL', 'Baltimore', 'Ravens', 'Baltimore Ravens'],
+    ['BUF', 'Buffalo', 'Bills', 'Buffalo Bills'],
+    ['CAR', 'Carolina', 'Panthers', 'Caroline Panthers'],
+    ['CHI', 'Chicago', 'Bears', 'Chicago Bears'],
+    ['CIN', 'Cincinnati', 'Bengals', 'Cincinnati Bengals'],
+    ['CLE', 'Cleveland', 'Browns', 'Cleveland Browns'],
+    ['DAL', 'Dallas', 'Cowboys', 'Dallas Cowboys'],
+    ['DEN', 'Denver', 'Broncos', 'Denver Broncos'],
+    ['DET', 'Detroit', 'Lions', 'Detroit Lions'],
+    ['GB', 'Green Bay', 'Packers', 'Green Bay Packers', 'G.B.'],
+    ['HOU', 'Houston', 'Texans', 'Houston Texans'],
+    ['IND', 'Indianapolis', 'Colts', 'Indianapolis Colts'],
+    ['JAC', 'Jacksonville', 'Jaguars', 'Jacksonville Jaguars', 'JAX'],
+    ['KC', 'Kansas City', 'Chiefs', 'Kansas City Chiefs', 'K.C.'],
+    ['MIA', 'Miami', 'Dolphins', 'Miami Dolphins'],
+    ['MIN', 'Minnesota', 'Vikings', 'Minnesota Vikings'],
+    ['NE', 'New England', 'Patriots', 'New England Patriots', 'N.E.'],
+    ['NO', 'New Orleans', 'Saints', 'New Orleans Saints', 'N.O.'],
+    ['NYG', 'Giants', 'New York Giants', 'N.Y.G.'],
+    ['NYJ', 'Jets', 'New York Jets', 'N.Y.J.'],
+    ['OAK', 'Oakland', 'Raiders', 'Oakland Raiders'],
+    ['PHI', 'Philadelphia', 'Eagles', 'Philadelphia Eagles'],
+    ['PIT', 'Pittsburgh', 'Steelers', 'Pittsburgh Steelers'],
+    ['SD', 'San Diego', 'Chargers', 'San Diego Chargers', 'S.D.'],
+    ['SEA', 'Seattle', 'Seahawks', 'Seattle Seahawks'],
+    ['SF', 'San Francisco', '49ers', 'San Francisco 49ers', 'S.F.'],
+    ['STL', 'St. Louis', 'Rams', 'St. Louis Rams', 'S.T.L.'],
+    ['TB', 'Tampa Bay', 'Buccaneers', 'Tampa Bay Buccaneers', 'T.B.'],
+    ['TEN', 'Tennessee', 'Titans', 'Tennessee Titans'],
+    ['WAS', 'Washington', 'Redskins', 'Washington Redskins', 'WSH'],
+]
+"""
+A list of all teams. Each item is a list of different ways to
+describe a team. (i.e., JAC, JAX, Jacksonville, Jaguars, etc.).
+The first item in each list is always the standard NFL.com
+team abbreviation (two or three letters).
+"""
 
-def find(name):
+
+def find(name, team=None):
     """
     Finds a player (or players) with a name matching (case insensitive)
     name and returns them as a list.
+
+    If team is not None, it is used as an additional search constraint.
     """
     hits = []
     for player in players.itervalues():
         if player.name.lower() == name.lower():
-            hits.append(player)
+            if team is None or team.lower() == player.team.lower():
+                hits.append(player)
     return hits
+
+
+def standard_team(team):
+    """
+    Returns a standard abbreviation when team corresponds to a team in 
+    nflgame.teams (case insensitive).  All known variants of a team name are 
+    searched. If no team is found, None is returned.
+    """
+    team = team.lower()
+    for variants in teams:
+        for variant in variants:
+            if team == variant.lower():
+                return variants[0]
+    return None
 
 
 def games(year, week=None, home=None, away=None, preseason=False):
@@ -292,3 +350,4 @@ def __search_schedule(year, week=None, home=None, away=None, preseason=False):
             continue
         ids.append(info['eid'])
     return ids
+
