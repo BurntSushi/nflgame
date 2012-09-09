@@ -171,7 +171,10 @@ class Game (object):
 
     def __new__(cls, eid=None, fpath=None):
         # If we can't get a valid JSON data, exit out and return None.
-        rawData = _get_json_data(eid, fpath)
+        try:
+            rawData = _get_json_data(eid, fpath)
+        except urllib2.URLError:
+            return None
         if rawData is None or rawData.strip() == '{}':
             return None
         game = object.__new__(cls)
