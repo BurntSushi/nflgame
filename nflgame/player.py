@@ -188,6 +188,9 @@ class PlayerStats (object):
         new_player = GamePlayerStats(self.playerid, self.name, self.home)
         new_player._add_stats(self._stats)
         for bk, bv in other._stats.iteritems():
+            if bk not in new_player._stats:  # stat was taken away? ignore.
+                continue
+
             new_player._stats[bk] -= bv
             if new_player._stats[bk] == 0:
                 del new_player._stats[bk]
