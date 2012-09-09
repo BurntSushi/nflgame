@@ -600,8 +600,8 @@ idmap = {
     },
     71: {
         'cat': 'kicking',
-        'fields': ['kicking_fga', 'kicking_fgb'],
-        'yds': 'kicking_fgb_yds',
+        'fields': ['kicking_fga', 'kicking_fgmissed', 'kicking_fgb'],
+        'yds': 'kicking_fgmissed_yds',
         'desc': 'Field goal blocked (offense)',
         'long': 'The length of an attempted field goal that was blocked. '
                 'Unlike a punt, a field goal is statistically blocked even '
