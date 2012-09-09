@@ -60,6 +60,23 @@ class Player (object):
         return '%s (%s, %s)' % (self.name, self.position, self.team)
 
 
+class PlayerDefense (Player):
+    def __init__(self, team):
+        self.playerid = None
+        self.name = team
+        self.team = team
+        self.position = 'DEF'
+
+    def stats(self, year, week=None):
+        assert False, 'Cannot be called on a defense.'
+
+    def plays(self, year, week=None):
+        assert False, 'Cannot be called on a defense.'
+
+    def __str__(self):
+        return '%s Defense' % self.team
+
+
 class PlayerStats (object):
     """
     Player represents a single player and all of his statistical categories.
