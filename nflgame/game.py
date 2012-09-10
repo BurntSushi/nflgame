@@ -446,6 +446,7 @@ class Play (object):
         self.drive = drive
         self.playid = playid
         self.team = data['posteam']
+        self.home = self.drive.home
         self.desc = data['desc']
         self.note = data['note']
         self.down = int(data['down'])
