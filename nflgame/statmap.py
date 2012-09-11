@@ -565,18 +565,25 @@ idmap = {
         'long': 'Same as previous, except when the play results in a '
                 'touchdown.',
     },
-    # I'm not really sure what to do with these miscellaneous yards. Do they
-    # belong in the defense category? Or should they be their own separate
-    # category?
-
-    # 63: Miscellaneous yards
-    # This is sort of a catch-all for yardage that doesn't fall into any other
-    # category. According to Elias, it does not include loose ball yardage.
-    # Examples are yardage on missed field goal, blocked punt. This stat is
-    # not used to "balance the books."
-
-    # 64: Miscellaneous yards, TD
-    # Same as previous (63), except when the play results in a touchdown.
+    63: {
+        'cat': 'defense',
+        'fields': [],
+        'yds': 'defense_misc_yds',
+        'desc': 'Miscellaneous yards',
+        'long': 'This is sort of a catch-all for yardage that doesn\'t '
+                'fall into any other category. According to Elias, it does '
+                'not include loose ball yardage. Examples are yardage on '
+                'missed field goal, blocked punt. This stat is not used '
+                'to "balance the books."',
+    },
+    64: {
+        'cat': 'defense',
+        'fields': ['defense_misc_tds'],
+        'yds': 'defense_misc_yds',
+        'desc': 'Miscellaneous yards, TD',
+        'long': 'Same as previous (63), except when the play results in a '
+                'touchdown.',
+    },
     68: {
         'cat': 'team',
         'fields': ['timeout'],
