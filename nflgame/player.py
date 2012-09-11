@@ -104,9 +104,12 @@ class PlayerStats (object):
         player is playing in a home game or not.
         """
         self.playerid = playerid
+        self.player = None
         self.name = name
         self.home = home
         self._stats = OrderedDict()
+        if self.playerid in nflgame.players:
+            self.player = nflgame.players[self.playerid]
 
     def has_cat(self, cat):
         return self.__dict__.get(cat, False)
