@@ -253,7 +253,7 @@ idmap = {
     },
     26: {
         'cat': 'defense',
-        'fields': ['defense_int', 'defense_int_tds'],
+        'fields': ['defense_int', 'defense_tds', 'defense_int_tds'],
         'yds': 'defense_int_yds',
         'desc': 'Interception yards, TD',
         'long': 'Same as previous (25), except when the play results in a '
@@ -272,7 +272,7 @@ idmap = {
     },
     28: {
         'cat': 'defense',
-        'fields': ['defense_int_tds'],
+        'fields': ['defense_tds', 'defense_int_tds'],
         'yds': 'defense_int_yds',
         'also': [],
         'desc': 'Interception yards, TD, No interception',
@@ -542,7 +542,7 @@ idmap = {
     },
     60: {
         'cat': 'defense',
-        'fields': ['defense_frec', 'defense_frec_tds'],
+        'fields': ['defense_frec', 'defense_tds', 'defense_frec_tds'],
         'yds': 'defense_frec_yds',
         'desc': 'Opponent recovery yards, TD',
         'long': 'Same as previous (59), except when the play results in a '
@@ -559,7 +559,7 @@ idmap = {
     },
     62: {
         'cat': 'defense',
-        'fields': ['defense_frec_tds'],
+        'fields': ['defense_tds', 'defense_frec_tds'],
         'yds': 'defense_frec_yds',
         'desc': 'Opponent recovery yards, TD, No recovery',
         'long': 'Same as previous, except when the play results in a '
@@ -578,7 +578,7 @@ idmap = {
     },
     64: {
         'cat': 'defense',
-        'fields': ['defense_misc_tds'],
+        'fields': ['defense_tds', 'defense_misc_tds'],
         'yds': 'defense_misc_yds',
         'desc': 'Miscellaneous yards, TD',
         'long': 'Same as previous (63), except when the play results in a '
