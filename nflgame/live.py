@@ -48,6 +48,7 @@ try:
 except ImportError:
     pass
 
+import nflgame
 import nflgame.game
 import nflgame.schedule
 
@@ -117,8 +118,7 @@ def current_year_and_week():
     return (year, week)
 
 
-def current_games(year=None, week=None,
-                  regular=True, postseason=False, preseason=False):
+def current_games(year=None, week=None, kind='REG'):
     """
     Returns a list of game.Games of games that are currently playing.
     This fetches all current information from NFL.com.
@@ -136,25 +136,33 @@ def current_games(year=None, week=None,
             # Do something with games
             time.sleep(60)
 
-    Finally, if the optional parameter postseason/preseason is True, then the
-    week parameter will refer to the postseason/preseason week rather than the
-    regular season week.
+    The kind parameter specifies whether to fetch preseason, regular season
+    or postseason games. Valid values are PRE, REG and POST.
     """
     if year is None or week is None:
         year, week = current_year_and_week()
 
-    games = []
+    guesses = []
     now = _now()
-    gen = _games_in_week(year, week, regular=regular, postseason=postseason,
-                         preseason=preseason)
-    for info in gen:
+    games = _games_in_week(year, week, kind='REG')
+    for info in games:
         gametime = _game_datetime(info)
         if gametime >= now:
-            if (gametime - now).total_seconds() <= 60 * 60 * 36:
-                games.append(info['eid'])
+            if (gametime - now).total_seconds() <= 60 * 15:
+                guesses.append(info['eid'])
         elif (now - gametime).total_seconds() <= _MAX_GAME_TIME:
-            games.append(info['eid'])
-    return games
+            guesses.append(info['eid'])
+
+    # Now we have a list of all games that are currently playing, are
+    # about to start in less than 15 minutes or have already been playing
+    # for _MAX_GAME_TIME (6 hours?). Now fetch data for each of them and
+    # rule out games in the last two categories.
+    current = []
+    for guess in guesses:
+        game = nflgame.game.Game(guess['eid'])
+        if game.playing():
+            current.append(game)
+    return current
 
 
 def run(callback, active_interval=15, inactive_interval=900, stop=None):
@@ -287,33 +295,23 @@ def _active_games(inactive_interval):
     that will start within inactive_interval seconds, or has started within
     _MAX_GAME_TIME seconds in the past.
     """
-    gen = _games_in_week(_cur_year, _cur_week,
-                         regular=_regular,
-                         postseason=False,
-                         preseason=_preseason)
-    games = []
-    for info in gen:
+    games = _games_in_week(_cur_year, _cur_week, kind='REG')
+    active = []
+    for info in games:
         if not _game_is_active(info, inactive_interval):
             continue
-        games.append(info)
-    return games
+        active.append(info)
+    return active
 
 
-def _games_in_week(year, week,
-                   regular=True, postseason=False, preseason=False):
+def _games_in_week(year, week, kind='REG'):
     """
-    A generator for the games matching the year/week/preseason parameters.
+    A list for the games matching the year/week/kind parameters.
+
+    The kind parameter specifies whether to fetch preseason, regular season
+    or postseason games. Valid values are PRE, REG and POST.
     """
-    for (y, t, w, _, _), info in nflgame.schedule.games:
-        if y != year:
-            continue
-        if w != week:
-            continue
-        if t == 'PRE' and not preseason:
-            continue
-        if t == 'REG' and not regular:
-            continue
-        yield info
+    return nflgame._search_schedule(year, week, kind=kind)
 
 
 def _game_is_active(gameinfo, inactive_interval):

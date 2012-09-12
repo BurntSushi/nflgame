@@ -298,6 +298,9 @@ class Game (object):
     def __sub__(self, other):
         return diff(other, self)
 
+    def __str__(self):
+        return self.nice_score()
+
 
 def diff(before, after):
     """
@@ -443,6 +446,7 @@ class Play (object):
     play was a first down, a fourth down failure, etc.
     """
     def __init__(self, drive, playid, data):
+        self.data = data
         self.drive = drive
         self.playid = playid
         self.team = data['posteam']
@@ -469,7 +473,7 @@ class Play (object):
                                                   info['yards'])
                 for k, v in statvals.iteritems():
                     self.__dict__[k] = self.__dict__.get(k, 0) + v
-        
+
         # Load the sequence of "events" in a play into a list of dictionaries.
         self.events = _json_play_events(data['players'])
 
@@ -492,6 +496,14 @@ class Play (object):
         return playerid in self.__players
 
     def __str__(self):
+        if self.team:
+            if self.down != 0:
+                return '(%s, %s, %d and %d) %s' \
+                       % (self.team, self.data['yrdln'],
+                          self.down, self.yards_togo, self.desc)
+            else:
+                return '(%s, %s) %s' \
+                       % (self.team, self.data['yrdln'], self.desc)
         return self.desc
 
     def __eq__(self, other):
@@ -500,6 +512,9 @@ class Play (object):
         play description can be changed. (Like when a play is reversed.)
         """
         return self.playid == other.playid and self.desc == other.desc
+
+    def __getattr__(self, name):
+        return 0
 
 
 def _json_team_stats(data):

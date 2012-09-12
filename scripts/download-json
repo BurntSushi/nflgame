@@ -4,12 +4,15 @@ import nflgame
 
 # All we really have to do is load up all of the Game objects. The JSON will
 # be automatically cached for us.
-# nflgame.games(2009, preseason=True) 
-# nflgame.games(2009, preseason=False) 
-# nflgame.games(2010, preseason=True) 
-# nflgame.games(2010, preseason=False) 
-# nflgame.games(2011, preseason=True) 
-# nflgame.games(2011, preseason=False) 
-# nflgame.games(2012, preseason=True) 
-nflgame.games(2012, week=[1], preseason=False)
+# nflgame.games(2009, kind='PRE') 
+# nflgame.games(2009, kind='REG') 
+# nflgame.games(2009, kind='POST') 
+# nflgame.games(2010, kind='PRE') 
+# nflgame.games(2010, kind='REG') 
+# nflgame.games(2010, kind='POST') 
+# nflgame.games(2011, kind='PRE') 
+# nflgame.games(2011, kind='REG') 
+# nflgame.games(2011, kind='POST') 
+# nflgame.games(2012, kind='PRE') 
+nflgame.games(2012, week=[1], kind='REG')
 

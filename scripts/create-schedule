@@ -7,7 +7,9 @@ import xml.dom.minidom as xml
 xml_base_url = 'http://www.nfl.com/ajax/scorestrip?'
 start_year = 2009 # Years before this don't seem to have JSON feeds.
 end_year = 2012
-season_types = (('PRE', xrange(1, 4 + 1)), ('REG', xrange(1, 17 + 1)), ('POST', [ 18, 19, 20, 22 ]))
+season_types = (('PRE', xrange(1, 4 + 1)),
+                ('REG', xrange(1, 17 + 1)),
+                ('POST', [18, 19, 20, 22]))
 
 print '# This file was automatically generated on %s by %s.' \
       % (datetime.now(), 'scripts/create-schedule')
@@ -16,9 +18,9 @@ print 'games = ['
 
 for year in xrange(start_year, end_year + 1):
     for season_type, weeks in season_types:
-        for week in weeks:
+        for week, real_week in enumerate(weeks, 1):
             url = '%sseason=%d&seasonType=%s&week=%d' \
-                  % (xml_base_url, year, season_type, week)
+                  % (xml_base_url, year, season_type, real_week)
             dom = xml.parse(urllib2.urlopen(url))
             for g in dom.getElementsByTagName("g"):
                 eid = g.getAttribute('eid')

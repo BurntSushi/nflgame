@@ -37,7 +37,7 @@ Or pin-pointed exactly, e.g., the Patriots week 17 whomping against the Bills::
 
 This season's (2012) pre-season games can also be accessed::
 
-    pregames = nflgame.games(2012, preseason=True)
+    pregames = nflgame.games(2012, kind='PRE')
 
 Find passing leaders of a game
 ------------------------------
@@ -179,6 +179,7 @@ try:
     from collections import OrderedDict
 except:
     from ordereddict import OrderedDict  # from PyPI
+import itertools
 
 import nflgame.game
 import nflgame.player
@@ -259,8 +260,8 @@ def find(name, team=None):
 
 def standard_team(team):
     """
-    Returns a standard abbreviation when team corresponds to a team in 
-    nflgame.teams (case insensitive).  All known variants of a team name are 
+    Returns a standard abbreviation when team corresponds to a team in
+    nflgame.teams (case insensitive).  All known variants of a team name are
     searched. If no team is found, None is returned.
     """
     team = team.lower()
@@ -271,27 +272,48 @@ def standard_team(team):
     return None
 
 
-def games(year, week=None, home=None, away=None, preseason=False):
+def games(year, week=None, home=None, away=None, kind='REG'):
     """
-    games returns a list of all games matching the given criteria. Each
+    games returns a generator of all games matching the given criteria. Each
     game can then be queried for player statistics and information about
     the game itself (score, winner, scoring plays, etc.).
 
     As a special case, if the home and away teams are set to the same team,
     then all games where that team played are returned.
 
+    The kind parameter specifies whether to fetch preseason, regular season
+    or postseason games. Valid values are PRE, REG and POST.
+
+    The week parameter is relative to the value of the kind parameter, and
+    may be set to a list of week numbers.
+    In the regular season, the week parameter corresponds to the normal
+    week numbers 1 through 17. Similarly in the preseason, valid week numbers
+    are 1 through 4. In the post season, the week number corresponds to the
+    numerical round of the playoffs. So the wild card round is week 1,
+    the divisional round is week 2, the conference round is week 3
+    and the Super Bowl is week 4.
+
+    The year parameter specifies the season, and not necessarily the actual
+    year that a game was played in. For example, a Super Bowl taking place
+    in the year 2011 actually belongs to the 2010 season. Also, the year
+    parameter may be set to a list of seasons just like the week parameter.
+
     Note that if a game's JSON data is not cached to disk, it is retrieved
     from the NFL web site. A game's JSON data is *only* cached to disk once
     the game is over, so be careful with the number of times you call this
     while a game is going on. (i.e., don't piss off NFL.com.)
     """
-    eids = __search_schedule(year, week, home, away, preseason)
-    if not eids:
+    infos = _search_schedule(year, week, home, away, kind)
+    if not infos:
         return None
-    return [nflgame.game.Game(eid) for eid in eids]
+
+    def gen():
+        for info in infos:
+            yield nflgame.game.Game(info['eid'])
+    return gen()
 
 
-def one(year, week, home, away, preseason=False):
+def one(year, week, home, away, kind='REG'):
     """
     one returns a single game matching the given criteria. The
     game can then be queried for player statistics and information about
@@ -300,37 +322,94 @@ def one(year, week, home, away, preseason=False):
     one returns either a single game or no games. If there are multiple games
     matching the given criteria, an assertion is raised.
 
+    The kind parameter specifies whether to fetch preseason, regular season
+    or postseason games. Valid values are PRE, REG and POST.
+
+    The week parameter is relative to the value of the kind parameter, and
+    may be set to a list of week numbers.
+    In the regular season, the week parameter corresponds to the normal
+    week numbers 1 through 17. Similarly in the preseason, valid week numbers
+    are 1 through 4. In the post season, the week number corresponds to the
+    numerical round of the playoffs. So the wild card round is week 1,
+    the divisional round is week 2, the conference round is week 3
+    and the Super Bowl is week 4.
+
+    The year parameter specifies the season, and not necessarily the actual
+    year that a game was played in. For example, a Super Bowl taking place
+    in the year 2011 actually belongs to the 2010 season. Also, the year
+    parameter may be set to a list of seasons just like the week parameter.
+
     Note that if a game's JSON data is not cached to disk, it is retrieved
     from the NFL web site. A game's JSON data is *only* cached to disk once
     the game is over, so be careful with the number of times you call this
     while a game is going on. (i.e., don't piss off NFL.com.)
     """
-    eids = __search_schedule(year, week, home, away, preseason)
-    if not eids:
+    infos = _search_schedule(year, week, home, away, kind)
+    if not infos:
         return None
-    assert len(eids) == 1, 'More than one game matches the given criteria.'
-    return nflgame.game.Game(eids[0])
+    assert len(infos) == 1, 'More than one game matches the given criteria.'
+    return nflgame.game.Game(infos[0]['eid'])
 
 
-def combine(games):
+def combine(games, plays=False):
     """
-    Combines a list of games into one big player sequence.
+    Combines a list of games into one big player sequence containing game
+    level statistics.
 
-    This can be used, for example, to get Player objects corresponding to
+    This can be used, for example, to get PlayerStat objects corresponding to
     statistics across an entire week, some number of weeks or an entire season.
+
+    If the plays parameter is True, then statistics will be dervied from
+    play by play data. This mechanism is slower but will contain more detailed
+    statistics like receiver targets, yards after the catch, punt and field
+    goal blocks, etc.
     """
-    return reduce(lambda ps1, ps2: ps1 + ps2, map(lambda g: g.players, games))
+    if plays:
+        return reduce(lambda ps1, ps2: ps1 + ps2,
+                      [g.drives.players() for g in games])
+    else:
+        return reduce(lambda ps1, ps2: ps1 + ps2,
+                      [g.players for g in games])
 
 
-def __search_schedule(year, week=None, home=None, away=None, preseason=False):
+def combine_plays(games):
+    """
+    Combines a list of games into one big play generator that can be searched
+    as if it were a single game.
+    """
+    chain = itertools.chain(*[g.drives.plays() for g in games])
+    return nflgame.seq.GenPlays(chain)
+
+
+def _search_schedule(year, week=None, home=None, away=None, kind='REG'):
     """
     Searches the schedule to find the game identifiers matching the criteria
     given.
+
+    The kind parameter specifies whether to fetch preseason, regular season
+    or postseason games. Valid values are PRE, REG and POST.
+
+    The week parameter is relative to the value of the kind parameter, and
+    may be set to a list of week numbers.
+    In the regular season, the week parameter corresponds to the normal
+    week numbers 1 through 17. Similarly in the preseason, valid week numbers
+    are 1 through 4. In the post season, the week number corresponds to the
+    numerical round of the playoffs. So the wild card round is week 1,
+    the divisional round is week 2, the conference round is week 3
+    and the Super Bowl is week 4.
+
+    The year parameter specifies the season, and not necessarily the actual
+    year that a game was played in. For example, a Super Bowl taking place
+    in the year 2011 actually belongs to the 2010 season. Also, the year
+    parameter may be set to a list of seasons just like the week parameter.
     """
-    ids = []
+    infos = []
     for (y, t, w, h, a), info in nflgame.schedule.games:
-        if y != year:
-            continue
+        if year is not None:
+            if isinstance(year, list) and y not in year:
+                continue
+            if not isinstance(year, list) and y != year:
+                continue
         if week is not None:
             if isinstance(week, list) and w not in week:
                 continue
@@ -344,10 +423,7 @@ def __search_schedule(year, week=None, home=None, away=None, preseason=False):
                 continue
             if away is not None and a != away:
                 continue
-        if preseason and t != "PRE":
+        if t != kind:
             continue
-        if not preseason and t != "REG":
-            continue
-        ids.append(info['eid'])
-    return ids
-
+        infos.append(info)
+    return infos
