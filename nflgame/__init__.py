@@ -186,7 +186,7 @@ import nflgame.player
 import nflgame.schedule
 import nflgame.seq
 
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 
 NoPlayers = nflgame.seq.GenPlayerStats(None)
 """
@@ -273,6 +273,40 @@ def standard_team(team):
 
 
 def games(year, week=None, home=None, away=None, kind='REG'):
+    """
+    games returns a list of all games matching the given criteria. Each
+    game can then be queried for player statistics and information about
+    the game itself (score, winner, scoring plays, etc.).
+
+    As a special case, if the home and away teams are set to the same team,
+    then all games where that team played are returned.
+
+    The kind parameter specifies whether to fetch preseason, regular season
+    or postseason games. Valid values are PRE, REG and POST.
+
+    The week parameter is relative to the value of the kind parameter, and
+    may be set to a list of week numbers.
+    In the regular season, the week parameter corresponds to the normal
+    week numbers 1 through 17. Similarly in the preseason, valid week numbers
+    are 1 through 4. In the post season, the week number corresponds to the
+    numerical round of the playoffs. So the wild card round is week 1,
+    the divisional round is week 2, the conference round is week 3
+    and the Super Bowl is week 4.
+
+    The year parameter specifies the season, and not necessarily the actual
+    year that a game was played in. For example, a Super Bowl taking place
+    in the year 2011 actually belongs to the 2010 season. Also, the year
+    parameter may be set to a list of seasons just like the week parameter.
+
+    Note that if a game's JSON data is not cached to disk, it is retrieved
+    from the NFL web site. A game's JSON data is *only* cached to disk once
+    the game is over, so be careful with the number of times you call this
+    while a game is going on. (i.e., don't piss off NFL.com.)
+    """
+    return list(games_gen(year, week, home, away, kind))
+
+
+def games_gen(year, week=None, home=None, away=None, kind='REG'):
     """
     games returns a generator of all games matching the given criteria. Each
     game can then be queried for player statistics and information about
