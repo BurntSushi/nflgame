@@ -111,8 +111,10 @@ class Gen (object):
         Note that if field does not exist in any item being sorted, a
         KeyError will be raised.
         """
-        return self.__class__(sorted(self, reverse=descending,
-                                     key=lambda item: item.__dict__[field]))
+        def attrget(item):
+            return item.__dict__.get(field, 0)
+
+        return self.__class__(sorted(self, reverse=descending, key=attrget))
 
     def __str__(self):
         """Returns a list of items in the sequence."""
