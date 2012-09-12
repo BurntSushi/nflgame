@@ -186,7 +186,7 @@ import nflgame.player
 import nflgame.schedule
 import nflgame.seq
 
-VERSION = "1.0.7"
+VERSION = "1.1.0"
 
 NoPlayers = nflgame.seq.GenPlayerStats(None)
 """
