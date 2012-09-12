@@ -43,7 +43,7 @@ Or pin-pointed exactly, e.g., the Patriots week 17 whomping against the Bills::
 
 This season's (2012) pre-season games can also be accessed::
 
-    pregames = nflgame.games(2012, preseason=True)
+    pregames = nflgame.games(2012, kind='PRE')
 
 Find passing leaders of a game
 ------------------------------
