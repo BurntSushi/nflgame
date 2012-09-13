@@ -199,7 +199,7 @@ class Game (object):
         if eid is not None:
             self.eid = eid
             self.data = json.loads(self.rawData)[self.eid]
-        else:
+        else:  # For when we have rawData (fpath) and no eid.
             self.eid = None
             self.data = json.loads(self.rawData)
             for k, v in self.data.iteritems():
@@ -284,6 +284,43 @@ class Game (object):
         """
         return '%s (%d) vs. %s (%d)' \
                % (self.home, self.score_home, self.away, self.score_away)
+
+    def max_player_stats(self):
+        """
+        Returns a GenPlayers sequence of player statistics that combines
+        game statistics and play statistics by taking the max value of
+        each corresponding statistic.
+
+        This is useful when accuracy is desirable. Namely, using only
+        play-by-play data or using only game statistics can be unreliable.
+        That is, both are inconsistently correct.
+
+        Taking the max values of each statistic reduces the chance of being
+        wrong (particularly for stats that are in both play-by-play data
+        and game statistics), but does not eliminate them.
+        """
+        game_players = list(self.players)
+        play_players = list(self.drives.plays().players())
+        max_players = OrderedDict()
+        for pgame in game_players:
+            for pplay in play_players:
+                if pgame.playerid != pplay.playerid:
+                    continue
+
+                newp = nflgame.player.GamePlayerStats(pgame.playerid,
+                                                      pgame.name,
+                                                      pgame.home)
+                maxstats = {}
+                for stat, val in pgame._stats.iteritems():
+                    maxstats[stat] = val
+                for stat, val in pplay._stats.iteritems():
+                    maxstats[stat] = max([val, maxstats.get(stat, 0)])
+
+                newp._add_stats(maxstats)
+                max_players[pgame.playerid] = newp
+
+                break
+        return nflgame.seq.GenPlayerStats(max_players)
 
     def __getattr__(self, name):
         if name == 'players':

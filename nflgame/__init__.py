@@ -387,6 +387,9 @@ def one(year, week, home, away, kind='REG'):
 
 def combine(games, plays=False):
     """
+    DEPRECATED. Please use one of nflgame.combine_{game,play,max}_stats
+    instead.
+
     Combines a list of games into one big player sequence containing game
     level statistics.
 
@@ -399,11 +402,55 @@ def combine(games, plays=False):
     goal blocks, etc.
     """
     if plays:
-        return reduce(lambda ps1, ps2: ps1 + ps2,
-                      [g.drives.players() for g in games])
+        return combine_play_stats(games)
     else:
-        return reduce(lambda ps1, ps2: ps1 + ps2,
-                      [g.players for g in games])
+        return combine_game_stats(games)
+
+
+def combine_game_stats(games):
+    """
+    Combines a list of games into one big player sequence containing game
+    level statistics.
+
+    This can be used, for example, to get GamePlayerStats objects corresponding 
+    to statistics across an entire week, some number of weeks or an entire 
+    season.
+    """
+    return reduce(lambda ps1, ps2: ps1 + ps2, [g.players for g in games])
+
+
+def combine_play_stats(games):
+    """
+    Combines a list of games into one big player sequence containing play
+    level statistics.
+
+    This can be used, for example, to get PlayPlayerStats objects corresponding 
+    to statistics across an entire week, some number of weeks or an entire 
+    season.
+
+    This function should be used in lieu of combine_game_stats when more
+    detailed statistics such as receiver targets, yards after the catch and
+    punt/FG blocks are needed.
+    
+    N.B. Since this combines *all* play data, this function may take a while
+    to complete depending on the number of games passed in.
+    """
+    return reduce(lambda p1, p2: p1 + p2, [g.drives.players() for g in games])
+
+
+def combine_max_stats(games):
+    """
+    Combines a list of games into one big player sequence containing maximum
+    statistics based on game and play level statistics.
+
+    This can be used, for example, to get GamePlayerStats objects corresponding 
+    to statistics across an entire week, some number of weeks or an entire 
+    season.
+
+    This function should be used in lieu of combine_game_stats or
+    combine_play_stats when the best possible accuracy is desired.
+    """
+    return reduce(lambda a, b: a + b, [g.max_player_stats() for g in games])
 
 
 def combine_plays(games):

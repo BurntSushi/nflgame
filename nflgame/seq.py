@@ -82,14 +82,14 @@ class Gen (object):
                 for suffix, p in _BUILTIN_PREDS.iteritems():
                     if field.endswith(suffix):
                         f = field[:field.index(suffix)]
-                        if f not in item.__dict__:
+                        if not hasattr(item, f):
                             return False
-                        return p(item.__dict__[f], value)
-                if field not in item.__dict__:
+                        return p(getattr(item, f), value)
+                if not hasattr(item, field):
                     return False
                 if isinstance(value, type(lambda x: x)):
-                    return value(item.__dict__[field])
-                return item.__dict__[field] == value
+                    return value(getattr(item, field))
+                return getattr(item, field) == value
             preds.append(functools.partial(pred, k, v))
 
         gen = itertools.ifilter(lambda item: all([f(item) for f in preds]),
@@ -112,7 +112,7 @@ class Gen (object):
         KeyError will be raised.
         """
         def attrget(item):
-            return item.__dict__.get(field, 0)
+            return getattr(item, field, 0)
 
         return self.__class__(sorted(self, reverse=descending, key=attrget))
 
