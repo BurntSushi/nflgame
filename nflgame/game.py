@@ -11,6 +11,8 @@ import nflgame.player
 import nflgame.seq
 import nflgame.statmap
 
+_MAX_INT = sys.maxint
+
 _jsonf = path.join(path.split(__file__)[0], 'gamecenter-json', '%s.json.gz')
 _json_base_url = "http://www.nfl.com/liveupdate/game-center/%s/%s_gtd.json"
 
@@ -314,7 +316,7 @@ class Game (object):
                 for stat, val in pgame._stats.iteritems():
                     maxstats[stat] = val
                 for stat, val in pplay._stats.iteritems():
-                    maxstats[stat] = max([val, maxstats.get(stat, 0)])
+                    maxstats[stat] = max([val, maxstats.get(stat, -_MAX_INT)])
 
                 newp._add_stats(maxstats)
                 max_players[pgame.playerid] = newp
