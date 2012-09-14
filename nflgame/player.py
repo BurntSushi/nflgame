@@ -140,8 +140,8 @@ class PlayerStats (object):
         the passing, rushing and receiving categories.
         """
         return (self.passing_twopta
-               + self.rushing_twopta
-               + self.receiving_twopta)
+                + self.rushing_twopta
+                + self.receiving_twopta)
 
     @property
     def twoptm(self):
@@ -150,8 +150,8 @@ class PlayerStats (object):
         the passing, rushing and receiving categories.
         """
         return (self.passing_twoptm
-               + self.rushing_twoptm
-               + self.receiving_twoptm)
+                + self.rushing_twoptm
+                + self.receiving_twoptm)
 
     @property
     def twoptmissed(self):
@@ -160,8 +160,8 @@ class PlayerStats (object):
         the passing, rushing and receiving categories.
         """
         return (self.passing_twoptmissed
-               + self.rushing_twoptmissed
-               + self.receiving_twoptmissed)
+                + self.rushing_twoptmissed
+                + self.receiving_twoptmissed)
 
     @property
     def stats(self):

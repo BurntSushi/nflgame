@@ -412,8 +412,8 @@ def combine_game_stats(games):
     Combines a list of games into one big player sequence containing game
     level statistics.
 
-    This can be used, for example, to get GamePlayerStats objects corresponding 
-    to statistics across an entire week, some number of weeks or an entire 
+    This can be used, for example, to get GamePlayerStats objects corresponding
+    to statistics across an entire week, some number of weeks or an entire
     season.
     """
     return reduce(lambda ps1, ps2: ps1 + ps2, [g.players for g in games])
@@ -424,14 +424,14 @@ def combine_play_stats(games):
     Combines a list of games into one big player sequence containing play
     level statistics.
 
-    This can be used, for example, to get PlayPlayerStats objects corresponding 
-    to statistics across an entire week, some number of weeks or an entire 
+    This can be used, for example, to get PlayPlayerStats objects corresponding
+    to statistics across an entire week, some number of weeks or an entire
     season.
 
     This function should be used in lieu of combine_game_stats when more
     detailed statistics such as receiver targets, yards after the catch and
     punt/FG blocks are needed.
-    
+
     N.B. Since this combines *all* play data, this function may take a while
     to complete depending on the number of games passed in.
     """
@@ -443,8 +443,8 @@ def combine_max_stats(games):
     Combines a list of games into one big player sequence containing maximum
     statistics based on game and play level statistics.
 
-    This can be used, for example, to get GamePlayerStats objects corresponding 
-    to statistics across an entire week, some number of weeks or an entire 
+    This can be used, for example, to get GamePlayerStats objects corresponding
+    to statistics across an entire week, some number of weeks or an entire
     season.
 
     This function should be used in lieu of combine_game_stats or
