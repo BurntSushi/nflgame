@@ -182,6 +182,7 @@ except:
 import itertools
 
 import nflgame.game
+import nflgame.live
 import nflgame.player
 import nflgame.schedule
 import nflgame.seq
@@ -272,7 +273,7 @@ def standard_team(team):
     return None
 
 
-def games(year, week=None, home=None, away=None, kind='REG'):
+def games(year, week=None, home=None, away=None, kind='REG', started=False):
     """
     games returns a list of all games matching the given criteria. Each
     game can then be queried for player statistics and information about
@@ -302,11 +303,18 @@ def games(year, week=None, home=None, away=None, kind='REG'):
     from the NFL web site. A game's JSON data is *only* cached to disk once
     the game is over, so be careful with the number of times you call this
     while a game is going on. (i.e., don't piss off NFL.com.)
+
+    If started is True, then only games that have already started (or are
+    about to start in less than 5 minutes) will be returned. Note that the
+    started parameter requires pytz to be installed. This is useful when
+    you only want to collect stats from games that have JSON data available
+    (as opposed to waiting for a 404 error from NFL.com).
     """
-    return list(games_gen(year, week, home, away, kind))
+    return list(games_gen(year, week, home, away, kind, started))
 
 
-def games_gen(year, week=None, home=None, away=None, kind='REG'):
+def games_gen(year, week=None, home=None, away=None,
+              kind='REG', started=False):
     """
     games returns a generator of all games matching the given criteria. Each
     game can then be queried for player statistics and information about
@@ -336,8 +344,14 @@ def games_gen(year, week=None, home=None, away=None, kind='REG'):
     from the NFL web site. A game's JSON data is *only* cached to disk once
     the game is over, so be careful with the number of times you call this
     while a game is going on. (i.e., don't piss off NFL.com.)
+
+    If started is True, then only games that have already started (or are
+    about to start in less than 5 minutes) will be returned. Note that the
+    started parameter requires pytz to be installed. This is useful when
+    you only want to collect stats from games that have JSON data available
+    (as opposed to waiting for a 404 error from NFL.com).
     """
-    infos = _search_schedule(year, week, home, away, kind)
+    infos = _search_schedule(year, week, home, away, kind, started)
     if not infos:
         return None
 
@@ -347,7 +361,7 @@ def games_gen(year, week=None, home=None, away=None, kind='REG'):
     return gen()
 
 
-def one(year, week, home, away, kind='REG'):
+def one(year, week, home, away, kind='REG', started=False):
     """
     one returns a single game matching the given criteria. The
     game can then be queried for player statistics and information about
@@ -377,8 +391,14 @@ def one(year, week, home, away, kind='REG'):
     from the NFL web site. A game's JSON data is *only* cached to disk once
     the game is over, so be careful with the number of times you call this
     while a game is going on. (i.e., don't piss off NFL.com.)
+
+    If started is True, then only games that have already started (or are
+    about to start in less than 5 minutes) will be returned. Note that the
+    started parameter requires pytz to be installed. This is useful when
+    you only want to collect stats from games that have JSON data available
+    (as opposed to waiting for a 404 error from NFL.com).
     """
-    infos = _search_schedule(year, week, home, away, kind)
+    infos = _search_schedule(year, week, home, away, kind, started)
     if not infos:
         return None
     assert len(infos) == 1, 'More than one game matches the given criteria.'
@@ -462,7 +482,8 @@ def combine_plays(games):
     return nflgame.seq.GenPlays(chain)
 
 
-def _search_schedule(year, week=None, home=None, away=None, kind='REG'):
+def _search_schedule(year, week=None, home=None, away=None, kind='REG',
+                     started=False):
     """
     Searches the schedule to find the game identifiers matching the criteria
     given.
@@ -483,6 +504,12 @@ def _search_schedule(year, week=None, home=None, away=None, kind='REG'):
     year that a game was played in. For example, a Super Bowl taking place
     in the year 2011 actually belongs to the 2010 season. Also, the year
     parameter may be set to a list of seasons just like the week parameter.
+
+    If started is True, then only games that have already started (or are
+    about to start in less than 5 minutes) will be returned. Note that the
+    started parameter requires pytz to be installed. This is useful when
+    you only want to collect stats from games that have JSON data available
+    (as opposed to waiting for a 404 error from NFL.com).
     """
     infos = []
     for (y, t, w, h, a), info in nflgame.schedule.games:
@@ -506,5 +533,10 @@ def _search_schedule(year, week=None, home=None, away=None, kind='REG'):
                 continue
         if t != kind:
             continue
+        if started:
+            gametime = nflgame.live._game_datetime(info)
+            now = nflgame.live._now()
+            if gametime > now and (gametime - now).total_seconds() > 300:
+                continue
         infos.append(info)
     return infos
