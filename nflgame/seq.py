@@ -298,12 +298,10 @@ class GenPlayerStats (Gen):
         fields, rows = [], []
         players = list(self)
         for p in players:
-            for category, stats in p.all_stats().iteritems():
-                for stat in stats:
-                    field = '%s_%s' % (category, stat)
-                    if field in fields:
-                        continue
-                    fields.append(field)
+            for field, stat in p.stats.iteritems():
+                if field in fields:
+                    continue
+                fields.append(field)
         for p in players:
             d = {
                 'name': p.name,
