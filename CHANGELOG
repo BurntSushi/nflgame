@@ -1,0 +1,33 @@
+1.1.2
+=====
+Added a couple of convenience methods to the API and fixed a few bugs.
+
+- Added a 'started' parameter to nflgame.{games,games_gen,one} that when set,
+  will only return games that have already started or will start in five
+  minutes. This is useful for preemptying 404 errors that may be too costly.
+
+- Added a max_player_stats method to the Game class. It works by combining
+  player statistics reported at the game level and player statistics reported
+  at the play level. Each statistic is combined by taking the max of each
+  value. (This is a heuristic designed to mitigate errors in the GameCenter
+  JSON data. It is not perfect.)
+
+- Deprecated the nflgame.combine function. It has been replaced by three
+  different ways of combining player data across games: combine game level
+  player statistics with nflgame.combine_game_stats, combine play level
+  player statistics with nflgame.combine_play_stats and combine the maximum
+  of game and play level statistics with nflgame.combine_max_stats.
+
+- Added three two point conversion properties to player stats objects: twopta,
+  twoptm and twoptmissed. These group the two point conversion statistics that
+  exist only as individual passing, rushing and receiving statistics.
+
+- Fixed a bug in the main sequence generator where decorated properties
+  could not be used as a field in 'filter'. (i.e., use 'getattr' instead of
+  accessing '__dict__' directly.)
+
+- Fixed bug 9. (Updated PlayerStats.csv to work with recent API changes.)
+
+- Added a 'defense_tds' statistical field in the nflgame.statmap module for
+  convenience purposes.
+
