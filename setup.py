@@ -43,7 +43,8 @@ setup(
     packages=['nflgame'],
     package_dir={'nflgame': 'nflgame'},
     package_data={'nflgame': ['players.json', 'gamecenter-json/*.json.gz']},
-    data_files=[('share/doc/nflgame', ['README', 'COPYING', 'INSTALL']),
+    data_files=[('share/doc/nflgame', ['README', 'CHANGELOG', 'COPYING',
+                                       'INSTALL']),
                 ('share/doc/nflgame/doc', docfiles)],
     scripts=[]
 )
