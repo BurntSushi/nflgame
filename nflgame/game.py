@@ -79,6 +79,9 @@ class PossessionTime (object):
         self.minutes, self.seconds = map(int, self.clock.split(':'))
 
     def total_seconds(self):
+        """
+        Returns the total number of seconds that this possession lasted for.
+        """
         return self.seconds + self.minutes * 60
 
     def __cmp__(self, other):
