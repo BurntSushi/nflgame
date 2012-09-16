@@ -81,9 +81,6 @@ during the post season.
 TODO: How do we know if it's the post season?
 """
 
-_EASTERN_TZ = pytz.timezone('US/Eastern')
-"""Used to convert game times in EST to UTC."""
-
 _cur_week = None
 """The current week. It is updated infrequently automatically."""
 
@@ -332,7 +329,7 @@ def _game_datetime(gameinfo):
     hour, minute = gameinfo['time'].strip().split(':')
     d = datetime.datetime(gameinfo['year'], gameinfo['month'], gameinfo['day'],
                           (int(hour) + 12) % 24, int(minute))
-    return _EASTERN_TZ.localize(d).astimezone(pytz.utc)
+    return pytz.timezone('US/Eastern').localize(d).astimezone(pytz.utc)
 
 
 def _now():
