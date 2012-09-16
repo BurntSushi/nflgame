@@ -104,22 +104,19 @@ class PlayerStats (object):
         player is playing in a home game or not.
         """
         self.playerid = playerid
-        self.player = None
         self.name = name
         self.home = home
         self._stats = OrderedDict()
+
+        self.player = None
         if self.playerid in nflgame.players:
             self.player = nflgame.players[self.playerid]
 
     def has_cat(self, cat):
-        return self.__dict__.get(cat, False)
-
-    def __refresh_categories(self):
-        for cat in nflgame.statmap.categories:
-            for f in self.__dict__:
-                if f.startswith(cat):
-                    self.__dict__[cat] = True
-                    break
+        for f in self._stats:
+            if f.startswith(cat):
+                return True
+        return False
 
     @property
     def tds(self):
@@ -183,13 +180,11 @@ class PlayerStats (object):
         for k, v in stats.iteritems():
             self.__dict__[k] = self.__dict__.get(k, 0) + v
             self._stats[k] = self.__dict__[k]
-        self.__refresh_categories()
 
     def _overwrite_stats(self, stats):
         for k, v in stats.iteritems():
             self.__dict__[k] = v
             self._stats[k] = self.__dict__[k]
-        self.__refresh_categories()
 
     def __str__(self):
         """
