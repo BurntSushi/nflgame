@@ -93,6 +93,12 @@ _preseason = False
 _regular = False
 """True when it's the regular season."""
 
+_last = None
+"""
+A list of the last iteration of games. These are diffed with the current
+iteration of games.
+"""
+
 _completed = []
 """
 A list of game eids that have been completed since the live module started
@@ -249,6 +255,8 @@ def _run_active(callback, games):
     list if it has finished. In the latter case, it is added to a global store
     of completed games and will never be passed to callback again.
     """
+    global _last
+
     # There are no active games, so just quit and return False. Which means
     # we'll transition to inactive mode.
     if len(games) == 0:
@@ -270,7 +278,17 @@ def _run_active(callback, games):
         else:
             active.append(game)
 
-    callback(active, completed)
+    # Create a list of game diffs between the active + completed games and
+    # whatever is in _last.
+    diffs = []
+    for game in active + completed:
+        for last_game in _last:
+            if game.eid != last_game.eid:
+                continue
+            diffs.append(game - last_game)
+
+    _last = active
+    callback(active, completed, diffs)
     return True
 
 

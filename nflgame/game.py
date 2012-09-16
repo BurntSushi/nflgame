@@ -16,7 +16,7 @@ _MAX_INT = sys.maxint
 _jsonf = path.join(path.split(__file__)[0], 'gamecenter-json', '%s.json.gz')
 _json_base_url = "http://www.nfl.com/liveupdate/game-center/%s/%s_gtd.json"
 
-GameDiff = namedtuple('GameDiff', ['plays', 'players'])
+GameDiff = namedtuple('GameDiff', ['before', 'after', 'plays', 'players'])
 """
 Represents the difference between two points in time of the same game
 in terms of plays and player statistics.
@@ -363,14 +363,7 @@ def diff(before, after):
 
     This is useful for sending alerts where you're guaranteed to see each
     play statistic only once (assuming NFL.com behaves itself).
-
-    XXX: There is an assertion that requires after's game clock be the same
-    or later than before's game clock. This may need to be removed if NFL.com
-    allows its game clock to be rolled back due to corrections from refs.
     """
-    assert after.time >= before.time, \
-        'When diffing two games, "after" (%s) must be later or the ' \
-        'same time as "before" (%s).' % (after.time, before.time)
     assert after.eid == before.eid
 
     plays = []
@@ -386,8 +379,8 @@ def diff(before, after):
     # updated (late call? play review? etc.)
     # Thus, we do a diff on the play statistics for player data too.
     _players = OrderedDict()
-    after_players = list(after.drives.players())
-    before_players = list(before.drives.players())
+    after_players = list(after.max_player_stats())
+    before_players = list(before.max_player_stats())
     for aplayer in after_players:
         has_before = False
         for bplayer in before_players:
@@ -400,7 +393,7 @@ def diff(before, after):
             _players[aplayer.playerid] = aplayer
     players = nflgame.seq.GenPlayerStats(_players)
 
-    return GameDiff(plays=plays, players=players)
+    return GameDiff(before=before, after=after, plays=plays, players=players)
 
 
 class Drive (object):
