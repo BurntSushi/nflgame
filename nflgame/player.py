@@ -185,6 +185,12 @@ class PlayerStats (object):
             self._stats[k] = self.__dict__[k]
         self.__refresh_categories()
 
+    def _overwrite_stats(self, stats):
+        for k, v in stats.iteritems():
+            self.__dict__[k] = v
+            self._stats[k] = self.__dict__[k]
+        self.__refresh_categories()
+
     def __str__(self):
         """
         Simply returns the player's name, e.g., "T.Brady".
@@ -203,12 +209,16 @@ class PlayerStats (object):
         sums of all statistical values.
 
         Note that as soon as two players have been added, the 'home' property
-        becomes undefined.
+        becomes undefined if the two operands have different values of 'home'.
         """
         assert self.playerid == other.playerid
         assert type(self) == type(other)
 
-        new_player = self.__class__(self.playerid, self.name, None)
+        if self.home != other.home:
+            home = None
+        else:
+            home = self.home
+        new_player = self.__class__(self.playerid, self.name, home)
         new_player._add_stats(self._stats)
         new_player._add_stats(other._stats)
 
