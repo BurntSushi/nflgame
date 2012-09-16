@@ -307,23 +307,33 @@ class Game (object):
         game_players = list(self.players)
         play_players = list(self.drives.plays().players())
         max_players = OrderedDict()
-        for pgame in game_players:
-            for pplay in play_players:
-                if pgame.playerid != pplay.playerid:
+
+        # So this is a little tricky. It's possible for a player to have
+        # only statistics at the play level, and therefore not be represented
+        # in the game level statistics. Therefore, we initialize our
+        # max_players with play-by-play stats first. Then go back through
+        # and combine them with available game statistics.
+        for pplay in play_players:
+            newp = nflgame.player.GamePlayerStats(pplay.playerid,
+                                                  pplay.name, pplay.home)
+            maxstats = {}
+            for stat, val in pplay._stats.iteritems():
+                maxstats[stat] = val
+
+            newp._overwrite_stats(maxstats)
+            max_players[pplay.playerid] = newp
+
+        for newp in max_players.itervalues():
+            for pgame in game_players:
+                if pgame.playerid != newp.playerid:
                     continue
 
-                newp = nflgame.player.GamePlayerStats(pgame.playerid,
-                                                      pgame.name,
-                                                      pgame.home)
                 maxstats = {}
                 for stat, val in pgame._stats.iteritems():
-                    maxstats[stat] = val
-                for stat, val in pplay._stats.iteritems():
-                    maxstats[stat] = max([val, maxstats.get(stat, -_MAX_INT)])
+                    maxstats[stat] = max([val,
+                                          newp._stats.get(stat, -_MAX_INT)])
 
-                newp._add_stats(maxstats)
-                max_players[pgame.playerid] = newp
-
+                newp._overwrite_stats(maxstats)
                 break
         return nflgame.seq.GenPlayerStats(max_players)
 
