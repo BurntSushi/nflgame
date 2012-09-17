@@ -282,7 +282,7 @@ def _run_active(callback, games):
     # whatever is in _last.
     diffs = []
     for game in active + completed:
-        for last_game in _last:
+        for last_game in _last or []:
             if game.eid != last_game.eid:
                 continue
             diffs.append(game - last_game)
