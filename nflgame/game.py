@@ -184,7 +184,6 @@ class Game (object):
         game = object.__new__(cls)
         game.rawData = rawData
 
-
         try:
             if eid is not None:
                 game.eid = eid
