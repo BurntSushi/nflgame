@@ -119,11 +119,10 @@ class GameClock (object):
         self.qtr = qtr
         self.clock = clock
 
-        # Make it easy for comparison.
-        # try:
-        self.__minutes, self.__seconds = map(int, self.clock.split(':'))
-        # except ValueError:
-            # self.__minutes, self.__seconds = 0, 0
+        try:
+            self.__minutes, self.__seconds = map(int, self.clock.split(':'))
+        except ValueError:
+            self.__minutes, self.__seconds = 0, 0
         try:
             self.__qtr = int(self.qtr)
             if self.__qtr >= 3:
@@ -184,6 +183,24 @@ class Game (object):
             return None
         game = object.__new__(cls)
         game.rawData = rawData
+
+
+        try:
+            if eid is not None:
+                game.eid = eid
+                game.data = json.loads(game.rawData)[game.eid]
+            else:  # For when we have rawData (fpath) and no eid.
+                game.eid = None
+                game.data = json.loads(game.rawData)
+                for k, v in game.data.iteritems():
+                    if isinstance(v, dict):
+                        game.eid = k
+                        game.data = v
+                        break
+                assert game.eid is not None
+        except ValueError:
+            return None
+
         return game
 
     def __init__(self, eid=None, fpath=None):
@@ -200,19 +217,6 @@ class Game (object):
 
         When the JSON data is written to disk, it is compressed using gzip.
         """
-
-        if eid is not None:
-            self.eid = eid
-            self.data = json.loads(self.rawData)[self.eid]
-        else:  # For when we have rawData (fpath) and no eid.
-            self.eid = None
-            self.data = json.loads(self.rawData)
-            for k, v in self.data.iteritems():
-                if isinstance(v, dict):
-                    self.eid = k
-                    self.data = v
-                    break
-            assert self.eid is not None
 
         # Home and team cumulative statistics.
         self.home = self.data['home']['abbr']
