@@ -357,7 +357,10 @@ def games_gen(year, week=None, home=None, away=None,
 
     def gen():
         for info in infos:
-            yield nflgame.game.Game(info['eid'])
+            g = nflgame.game.Game(info['eid'])
+            if g is None:
+                continue
+            yield g
     return gen()
 
 
