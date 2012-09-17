@@ -436,7 +436,8 @@ def combine_game_stats(games):
     to statistics across an entire week, some number of weeks or an entire
     season.
     """
-    return reduce(lambda ps1, ps2: ps1 + ps2, [g.players for g in games])
+    return reduce(lambda ps1, ps2: ps1 + ps2,
+                  [g.players for g in games if g is not None])
 
 
 def combine_play_stats(games):
@@ -455,7 +456,8 @@ def combine_play_stats(games):
     N.B. Since this combines *all* play data, this function may take a while
     to complete depending on the number of games passed in.
     """
-    return reduce(lambda p1, p2: p1 + p2, [g.drives.players() for g in games])
+    return reduce(lambda p1, p2: p1 + p2,
+                  [g.drives.players() for g in games if g is not None])
 
 
 def combine_max_stats(games):
@@ -470,7 +472,8 @@ def combine_max_stats(games):
     This function should be used in lieu of combine_game_stats or
     combine_play_stats when the best possible accuracy is desired.
     """
-    return reduce(lambda a, b: a + b, [g.max_player_stats() for g in games])
+    return reduce(lambda a, b: a + b,
+                  [g.max_player_stats() for g in games if g is not None])
 
 
 def combine_plays(games):
