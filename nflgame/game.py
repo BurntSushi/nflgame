@@ -504,6 +504,7 @@ class Play (object):
         self.down = int(data['down'])
         self.yards_togo = int(data['ydstogo'])
         self.touchdown = 'touchdown' in self.desc.lower()
+        self._stats = {}
 
         if not self.team:
             self.time, self.yardline = None, None
@@ -520,7 +521,9 @@ class Play (object):
                 statvals = nflgame.statmap.values(info['statId'],
                                                   info['yards'])
                 for k, v in statvals.iteritems():
-                    self.__dict__[k] = self.__dict__.get(k, 0) + v
+                    v = self.__dict__.get(k, 0) + v
+                    self.__dict__[k] = v
+                    self._stats[k] = v
 
         # Load the sequence of "events" in a play into a list of dictionaries.
         self.events = _json_play_events(data['players'])
@@ -538,6 +541,7 @@ class Play (object):
                 # data is from the perspective of the play. i.e., there
                 # is one assisted tackle rather than two.
                 self.__dict__[k] = v
+                self._stats[k] = v
 
     def has_player(self, playerid):
         """Whether a player with id playerid participated in this play."""
