@@ -162,7 +162,7 @@ def current_games(year=None, week=None, kind='REG'):
     # rule out games in the last two categories.
     current = []
     for guess in guesses:
-        game = nflgame.game.Game(guess['eid'])
+        game = nflgame.game.Game(guess)
         if game.playing():
             current.append(game)
     return current
