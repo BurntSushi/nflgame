@@ -82,10 +82,10 @@ class Gen (object):
                 for suffix, p in _BUILTIN_PREDS.iteritems():
                     if field.endswith(suffix):
                         f = field[:field.index(suffix)]
-                        if not hasattr(item, f):
+                        if not hasattr(item, f) or getattr(item, f) is None:
                             return False
                         return p(getattr(item, f), value)
-                if not hasattr(item, field):
+                if not hasattr(item, field) or getattr(item, field) is None:
                     return False
                 if isinstance(value, type(lambda x: x)):
                     return value(getattr(item, field))
