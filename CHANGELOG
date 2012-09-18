@@ -1,3 +1,41 @@
+1.1.4
+=====
+Bug fixes and added game diffs to the nflgame.live callback API.
+
+- Fixed a bug where Game.max_player_stats didn't include statistics from 
+  players that only had stats recorded in play-by-play data.
+
+- When player stats are combined over a game or multiple games, keep the 'home' 
+  attribute if the two objects agree on its value.
+
+- Added Week 2 data from the 2012 season.
+
+- The callback function used in the nflgame.live module now requires a third 
+  parameter: a list of diffs between the games reported in the last interval 
+  and the games reported in the current interval. It is hopefully useful in 
+  inspecting statistics and plays that have been added or changed since the 
+  last inspection of the game data. (The diffs list is orthogonal to the first 
+  two parameters: active and completed.)
+
+- Fixed bug #14. Games that hadn't started yet weren't filtered out of the 
+  return list of nflgame.games and related functions.
+
+- Fixed a bug where if JSON data from NFL.com is totally unparseable, then we 
+  return None when constructing a Game object rather than crash the program.
+
+- Added a team attribute to PlayerStats objects.
+
+- When filtering by a particular field, if that fields value is None, then 
+  always return False.
+
+
+1.1.3
+=====
+Bug fixes.
+
+- Fixed a bug that made pytz a hard dependency when importing nflgame.
+
+
 1.1.2
 =====
 Added a couple of convenience methods to the API and fixed a few bugs.
