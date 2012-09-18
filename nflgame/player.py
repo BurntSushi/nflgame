@@ -97,7 +97,7 @@ class PlayerStats (object):
         if 'passing_yds' in player.__dict__:
             # Do something with player.passing_yds
     """
-    def __init__(self, playerid, name, home):
+    def __init__(self, playerid, name, home, team):
         """
         Create a new Player instance with the player id (from NFL.com's
         GameCenter), the player's name (e.g., "T.Brady") and whether the
@@ -106,6 +106,7 @@ class PlayerStats (object):
         self.playerid = playerid
         self.name = name
         self.home = home
+        self.team = team
         self._stats = OrderedDict()
 
         self.player = None
@@ -213,7 +214,7 @@ class PlayerStats (object):
             home = None
         else:
             home = self.home
-        new_player = self.__class__(self.playerid, self.name, home)
+        new_player = self.__class__(self.playerid, self.name, home, self.team)
         new_player._add_stats(self._stats)
         new_player._add_stats(other._stats)
 
@@ -255,8 +256,8 @@ class PlayerStats (object):
 
 
 class GamePlayerStats (PlayerStats):
-    def __init__(self, playerid, name, home):
-        super(GamePlayerStats, self).__init__(playerid, name, home)
+    def __init__(self, playerid, name, home, team):
+        super(GamePlayerStats, self).__init__(playerid, name, home, team)
         self.games = 1
 
     def __add__(self, other):

@@ -318,7 +318,8 @@ class Game (object):
         # and combine them with available game statistics.
         for pplay in play_players:
             newp = nflgame.player.GamePlayerStats(pplay.playerid,
-                                                  pplay.name, pplay.home)
+                                                  pplay.name, pplay.home,
+                                                  pplay.team)
             maxstats = {}
             for stat, val in pplay._stats.iteritems():
                 maxstats[stat] = val
@@ -342,7 +343,7 @@ class Game (object):
 
     def __getattr__(self, name):
         if name == 'players':
-            self.__players = _json_game_player_stats(self.data)
+            self.__players = _json_game_player_stats(self, self.data)
             self.players = nflgame.seq.GenPlayerStats(self.__players)
             return self.players
         if name == 'drives':
@@ -641,9 +642,13 @@ def _json_play_players(play, data):
                 continue
             if playerid not in players:
                 home = play.drive.game.is_home(info['clubcode'])
+                if home:
+                    team_name = play.drive.game.home
+                else:
+                    team_name = play.drive.game.away
                 stats = nflgame.player.PlayPlayerStats(playerid,
                                                        info['playerName'],
-                                                       home)
+                                                       home, team_name)
                 players[playerid] = stats
             statvals = nflgame.statmap.values(info['statId'], info['yards'])
             players[playerid]._add_stats(statvals)
@@ -667,7 +672,7 @@ def _json_play_events(data):
     return [t[1] for t in sorted(temp, key=lambda t: t[0])]
 
 
-def _json_game_player_stats(data):
+def _json_game_player_stats(game, data):
     """
     Parses the 'home' and 'away' team stats and returns an OrderedDict
     mapping player id to their total game statistics as instances of
@@ -686,9 +691,14 @@ def _json_game_player_stats(data):
                     stats['%s_%s' % (category, k)] = v
                 if pid not in players:
                     home = team == 'home'
+                    if home:
+                        team_name = game.home
+                    else:
+                        team_name = game.away
                     players[pid] = nflgame.player.GamePlayerStats(pid,
                                                                   raw['name'],
-                                                                  home)
+                                                                  home,
+                                                                  team_name)
                 players[pid]._add_stats(stats)
     return players
 
