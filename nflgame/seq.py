@@ -307,7 +307,12 @@ class GenPlayerStats (Gen):
                 'name': p.name,
                 'id': p.playerid,
                 'home': p.home and 'yes' or 'no',
+                'team': p.team,
+                'pos': 'N/A',
             }
+            if p.player is not None:
+                d['pos'] = p.player.position
+
             for field in fields:
                 if field in p.__dict__:
                     d[field] = p.__dict__[field]
@@ -315,7 +320,7 @@ class GenPlayerStats (Gen):
                     d[field] = ""
             rows.append(d)
 
-        fieldNames = ["name", "id", "home"] + fields
+        fieldNames = ["name", "id", "home", "team", "pos"] + fields
         rows = [dict((f, f) for f in fieldNames)] + rows
         csv.DictWriter(open(fileName, 'w+'), fieldNames).writerows(rows)
 
