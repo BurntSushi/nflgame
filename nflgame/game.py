@@ -723,7 +723,7 @@ def _get_json_data(eid=None, fpath=None):
     if os.access(fpath, os.R_OK):
         return gzip.open(fpath).read()
     try:
-        return urllib2.urlopen(_json_base_url % (eid, eid), timeout=10).read()
+        return urllib2.urlopen(_json_base_url % (eid, eid), timeout=5).read()
     except urllib2.HTTPError:
         pass
     return None
