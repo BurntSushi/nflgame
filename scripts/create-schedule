@@ -1,27 +1,36 @@
 #!/usr/bin/env python2.7
 
 from datetime import datetime
+import sys
 import urllib2
 import xml.dom.minidom as xml
 
 xml_base_url = 'http://www.nfl.com/ajax/scorestrip?'
 start_year = 2009 # Years before this don't seem to have JSON feeds.
 end_year = 2012
-season_types = (('PRE', xrange(1, 4 + 1)),
-                ('REG', xrange(1, 17 + 1)),
-                ('POST', [18, 19, 20, 22]))
+season_types = (
+    ('PRE', xrange(1, 4 + 1)),
+    ('REG', xrange(1, 17 + 1)),
+    ('POST', [18, 19, 20, 22]),
+)
 
 print '# This file was automatically generated on %s by %s.' \
       % (datetime.now(), 'scripts/create-schedule')
 print
 print 'games = ['
 
+byid = {}
 for year in xrange(start_year, end_year + 1):
     for season_type, weeks in season_types:
         for week, real_week in enumerate(weeks, 1):
             url = '%sseason=%d&seasonType=%s&week=%d' \
                   % (xml_base_url, year, season_type, real_week)
-            dom = xml.parse(urllib2.urlopen(url))
+            try:
+                dom = xml.parse(urllib2.urlopen(url))
+            except urllib2.HTTPError:
+                print >> sys.stderr, 'Could not load %s' % url
+                continue
+
             for g in dom.getElementsByTagName("g"):
                 eid = g.getAttribute('eid')
                 home = g.getAttribute('h')
@@ -33,10 +42,22 @@ for year in xrange(start_year, end_year + 1):
                     'month': int(eid[4:6]),
                     'day': int(eid[6:8]),
                     'time': g.getAttribute('t'),
+                    'season_type': season_type,
+                    'week': week,
+                    'home': home,
+                    'away': away,
                 }
 
                 gameinfo = ((year, season_type, week, home, away), info)
+                byid[eid] = info
                 print '    %s,' % repr(gameinfo)
 
 print ']'
+print
+print
+
+print 'games_byid = {'
+for eid, info in byid.iteritems():
+    print '\t%s: %s,' % (repr(eid), repr(info))
+print '}'
 
