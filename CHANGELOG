@@ -1,3 +1,8 @@
+1.1.6
+=====
+Data update. And made parsing game times a bit more robust with respect to
+errant or malformed data.
+
 1.1.5
 =====
 Added player team and position information to CSV output. Team information
