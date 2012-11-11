@@ -224,7 +224,8 @@ class PlayerStats (object):
         assert self.playerid == other.playerid
         assert type(self) == type(other)
 
-        new_player = GamePlayerStats(self.playerid, self.name, self.home)
+        new_player = GamePlayerStats(self.playerid,
+                                     self.name, self.home, self.team)
         new_player._add_stats(self._stats)
         for bk, bv in other._stats.iteritems():
             if bk not in new_player._stats:  # stat was taken away? ignore.

@@ -76,7 +76,11 @@ class PossessionTime (object):
     """
     def __init__(self, clock):
         self.clock = clock
-        self.minutes, self.seconds = map(int, self.clock.split(':'))
+
+        try:
+            self.minutes, self.seconds = map(int, self.clock.split(':'))
+        except ValueError:
+            self.minutes, self.seconds = 0, 0
 
     def total_seconds(self):
         """
@@ -122,6 +126,8 @@ class GameClock (object):
         try:
             self.__minutes, self.__seconds = map(int, self.clock.split(':'))
         except ValueError:
+            self.__minutes, self.__seconds = 0, 0
+        except AttributeError:
             self.__minutes, self.__seconds = 0, 0
         try:
             self.__qtr = int(self.qtr)
