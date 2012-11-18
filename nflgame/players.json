@@ -1,4 +1,33 @@
 {
+
+    "00-0028787": {
+        "status": "ACT",
+        "weight": "0",
+        "number": "0",
+        "height": "0'0\"",
+        "college": "",
+        "name": "Kai Forbath",
+        "years_pro": 0,
+        "birthdate": "00/00/0000",
+        "gsisid": "00-0028787",
+        "team": "WAS",
+        "position": "K",
+        "profile_url": "http://www.nfl.com/player/kaiforbath/2495150/profile"
+    },
+    "00-0027912": {
+        "status": "ACT",
+        "weight": "0",
+        "number": "0",
+        "height": "0'0\"",
+        "college": "",
+        "name": "Danario Alexander",
+        "years_pro": 0,
+        "birthdate": "00/00/0000",
+        "gsisid": "00-0027912",
+        "team": "SD",
+        "position": "WR",
+        "profile_url": "http://www.nfl.com/player/danarioalexander/497262/profile"
+    },
     "00-0026221": {
         "status": "ACT", 
         "weight": "212", 
