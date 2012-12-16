@@ -163,7 +163,7 @@ def current_games(year=None, week=None, kind='REG'):
     current = []
     for guess in guesses:
         game = nflgame.game.Game(guess)
-        if game.playing():
+        if game is not None and game.playing():
             current.append(game)
     return current
 
