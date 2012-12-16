@@ -1805,6 +1805,34 @@
         "position": "MLB", 
         "profile_url": "http://www.nfl.com/player/brianurlacher/2504098/profile"
     }, 
+    "00-0025824": {
+        "status": "ACT",
+        "weight": "0",
+        "number": "0",
+        "height": "",
+        "college": "",
+        "name": "Garrett Hartley",
+        "years_pro": 0,
+        "birthdate": "",
+        "gsisid": "00-0025824",
+        "team": "NO",
+        "position": "K",
+        "profile_url": "http://www.nfl.com/player/garretthartley/4381/profile"
+    },
+    "00-0027985": {
+        "status": "ACT",
+        "weight": "0",
+        "number": "0",
+        "height": "",
+        "college": "",
+        "name": "Lance Kendricks",
+        "years_pro": 0,
+        "birthdate": "",
+        "gsisid": "00-0027985",
+        "team": "STL",
+        "position": "TE",
+        "profile_url": "http://www.nfl.com/player/lancekendricks/2495187/profile"
+    },
     "00-0029409": {
         "status": "ACT", 
         "weight": "239", 
