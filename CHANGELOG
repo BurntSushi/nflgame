@@ -1,7 +1,17 @@
+1.1.7
+=====
+Data updates:
+
+  - Player database (end of 2012 regular season)
+  - Game data (full 2012 regular season)
+  - Game schedule up to first week of 2012 postseason
+
+
 1.1.6
 =====
 Data update. And made parsing game times a bit more robust with respect to
 errant or malformed data.
+
 
 1.1.5
 =====
