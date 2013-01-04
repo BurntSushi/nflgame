@@ -6,7 +6,7 @@ import urllib2
 import xml.dom.minidom as xml
 
 xml_base_url = 'http://www.nfl.com/ajax/scorestrip?'
-start_year = 2009 # Years before this don't seem to have JSON feeds.
+start_year = 2009 # Years before 2009 don't seem to have JSON feeds.
 end_year = 2012
 season_types = (
     ('PRE', xrange(1, 4 + 1)),
