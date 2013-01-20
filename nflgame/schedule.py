@@ -1,4 +1,4 @@
-# This file was automatically generated on 2013-01-07 00:47:14.080045 by scripts/create-schedule.
+# This file was automatically generated on 2013-01-16 23:34:42.145558 by scripts/create-schedule.
 
 games = [
     ((2009, 'PRE', 1, u'PHI', u'NE'), {'time': u'7:30', 'week': 1, 'eid': u'2009081351', 'year': 2009, 'home': u'PHI', 'season_type': 'PRE', 'away': u'NE', 'wday': u'Thu', 'day': 13, 'month': 8}),
@@ -1322,6 +1322,8 @@ games = [
     ((2012, 'POST', 2, u'SF', u'GB'), {'time': u'8:00', 'week': 2, 'eid': u'2013011201', 'year': 2013, 'home': u'SF', 'season_type': 'POST', 'away': u'GB', 'wday': u'Sat', 'day': 12, 'month': 1}),
     ((2012, 'POST', 2, u'ATL', u'SEA'), {'time': u'1:00', 'week': 2, 'eid': u'2013011301', 'year': 2013, 'home': u'ATL', 'season_type': 'POST', 'away': u'SEA', 'wday': u'Sun', 'day': 13, 'month': 1}),
     ((2012, 'POST', 2, u'NE', u'HOU'), {'time': u'4:30', 'week': 2, 'eid': u'2013011300', 'year': 2013, 'home': u'NE', 'season_type': 'POST', 'away': u'HOU', 'wday': u'Sun', 'day': 13, 'month': 1}),
+    ((2012, 'POST', 3, u'ATL', u'SF'), {'time': u'3:00', 'week': 3, 'eid': u'2013012001', 'year': 2013, 'home': u'ATL', 'season_type': 'POST', 'away': u'SF', 'wday': u'Sun', 'day': 20, 'month': 1}),
+    ((2012, 'POST', 3, u'NE', u'BAL'), {'time': u'6:30', 'week': 3, 'eid': u'2013012000', 'year': 2013, 'home': u'NE', 'season_type': 'POST', 'away': u'BAL', 'wday': u'Sun', 'day': 20, 'month': 1}),
 ]
 
 
@@ -1349,6 +1351,8 @@ games_byid = {
 	u'2011081851': {'time': u'7:30', 'week': 2, 'eid': u'2011081851', 'year': 2011, 'home': u'TB', 'season_type': 'PRE', 'away': u'NE', 'wday': u'Thu', 'day': 18, 'month': 8},
 	u'2010012400': {'time': u'3:00', 'week': 3, 'eid': u'2010012400', 'year': 2010, 'home': u'IND', 'season_type': 'POST', 'away': u'NYJ', 'wday': u'Sun', 'day': 24, 'month': 1},
 	u'2010012401': {'time': u'6:40', 'week': 3, 'eid': u'2010012401', 'year': 2010, 'home': u'NO', 'season_type': 'POST', 'away': u'MIN', 'wday': u'Sun', 'day': 24, 'month': 1},
+	u'2013012001': {'time': u'3:00', 'week': 3, 'eid': u'2013012001', 'year': 2013, 'home': u'ATL', 'season_type': 'POST', 'away': u'SF', 'wday': u'Sun', 'day': 20, 'month': 1},
+	u'2013012000': {'time': u'6:30', 'week': 3, 'eid': u'2013012000', 'year': 2013, 'home': u'NE', 'season_type': 'POST', 'away': u'BAL', 'wday': u'Sun', 'day': 20, 'month': 1},
 	u'2011111308': {'time': u'1:00', 'week': 10, 'eid': u'2011111308', 'year': 2011, 'home': u'ATL', 'season_type': 'REG', 'away': u'NO', 'wday': u'Sun', 'day': 13, 'month': 11},
 	u'2011111309': {'time': u'1:00', 'week': 10, 'eid': u'2011111309', 'year': 2011, 'home': u'MIA', 'season_type': 'REG', 'away': u'WAS', 'wday': u'Sun', 'day': 13, 'month': 11},
 	u'2012102801': {'time': u'1:00', 'week': 8, 'eid': u'2012102801', 'year': 2012, 'home': u'NYJ', 'season_type': 'REG', 'away': u'MIA', 'wday': u'Sun', 'day': 28, 'month': 10},
