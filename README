@@ -39,7 +39,7 @@ Games can be selected in bulk, e.g., every game in week 1 of 2010::
 
 Or pin-pointed exactly, e.g., the Patriots week 17 whomping against the Bills::
 
-    game = nflgame.game(2011, 17, "NE", "BUF")
+    game = nflgame.one(2011, 17, "NE", "BUF")
 
 This season's (2012) pre-season games can also be accessed::
 
