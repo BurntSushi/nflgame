@@ -1,3 +1,12 @@
+1.1.8
+=====
+Data updates:
+
+  - Schedule (end of 2012 postseason)
+  - README inconsistency.
+  - Make the CSV function output consistent column headings/ordering.
+
+
 1.1.7
 =====
 Data updates:
