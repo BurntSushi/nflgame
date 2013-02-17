@@ -4,6 +4,7 @@ import itertools
 import operator
 
 from nflgame import OrderedDict
+from nflgame import statmap
 
 _BUILTIN_PREDS = {
     '__lt': operator.lt,
@@ -283,7 +284,7 @@ class GenPlayerStats (Gen):
         """Returns players that have a "penalty" statistical category."""
         return self.__filter_category('penalty')
 
-    def csv(self, fileName):
+    def csv(self, fileName, allfields=False):
         """
         Given a file-name fileName, csv will write the contents of
         the Players sequence to fileName formatted as comma-separated values.
@@ -293,15 +294,21 @@ class GenPlayerStats (Gen):
         Note that since each player in a Players sequence may have differing
         statistical categories (like a quarterback and a receiver), the
         minimum constraining set of statisical categories is used as the
-        header row for the resulting CSV file.
+        header row for the resulting CSV file. This behavior can be changed
+        by setting 'allfields' to True, which will use every available field
+        in the header.
         """
-        fields, rows = [], []
+        fields, rows = set([]), []
         players = list(self)
         for p in players:
             for field, stat in p.stats.iteritems():
-                if field in fields:
-                    continue
-                fields.append(field)
+                fields.add(field)
+        if allfields:
+            for statId, info in statmap.idmap.iteritems():
+                for field in info['fields']:
+                    fields.add(field)
+        fields = sorted(list(fields))
+
         for p in players:
             d = {
                 'name': p.name,
