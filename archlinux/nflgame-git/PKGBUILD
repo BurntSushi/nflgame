@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="An API to retrieve and read NFL Game Center JSON data. It can work with real-time data, which can be used for fantasy football."
 arch=('any')
 url="https://github.com/BurntSushi/nflgame"
-license=('GPL')
+license=('WTFPL')
 groups=()
 makedepends=('git')
 depends=('python2>=2.7')
