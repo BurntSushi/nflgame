@@ -46,6 +46,7 @@ for year in xrange(start_year, end_year + 1):
                     'week': week,
                     'home': home,
                     'away': away,
+                    'gamekey': g.getAttribute('gsis'),
                 }
 
                 gameinfo = ((year, season_type, week, home, away), info)

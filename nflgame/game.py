@@ -8,6 +8,7 @@ import urllib2
 
 from nflgame import OrderedDict
 import nflgame.player
+import nflgame.schedule
 import nflgame.seq
 import nflgame.statmap
 
@@ -230,6 +231,7 @@ class Game (object):
         self.stats_away = _json_team_stats(self.data['away']['stats']['team'])
 
         # Load up some simple static values.
+        self.gamekey = nflgame.schedule.games_byid[self.eid]['gamekey']
         self.time = GameClock(self.data['qtr'], self.data['clock'])
         self.down = _tryint(self.data['down'])
         self.togo = _tryint(self.data['togo'])
