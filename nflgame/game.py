@@ -151,7 +151,7 @@ class GameClock (object):
         return self.qtr == 'Halftime'
 
     def is_final(self):
-        return self.qtr == 'Final' or self.qtr == 'final overtime'
+        return 'final' in self.qtr.lower()
 
     def __cmp__(self, other):
         if self.__qtr != other.__qtr:
@@ -270,6 +270,14 @@ class Game (object):
     def is_home(self, team):
         """Returns true if team (i.e., 'NE') is the home team."""
         return team == self.home
+    
+    def season(self):
+        """Returns the year of the season this game belongs to."""
+        year = int(self.eid[0:4])
+        month = int(self.eid[4:6])
+        if month <= 3:
+            year -= 1
+        return year
 
     def game_over(self):
         """game_over returns true if the game is no longer being played."""
