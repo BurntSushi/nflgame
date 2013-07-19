@@ -1,3 +1,19 @@
+1.1.9
+=====
+  - Manually fixed the ATL/SF 2012 playoff game so that it
+    reports itself as being "over".
+  - Make the license field in setup.py accurate.
+  - Added "gamekey" or "gsis" identifiers to nflgame's
+    schedule data. These ids are used in other services,
+    like Neulion's content delivery network.
+  - Added a method to the Game class that returns the season
+    year that the game was played. In particular, games
+    played in January or February of 2013 will still return
+    2012.
+  - Added a new "schedule" field to the Game class which contains
+    the meta data in nflgame/schedule.py.
+
+
 1.1.8
 =====
 Data updates:
