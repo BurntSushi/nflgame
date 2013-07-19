@@ -223,6 +223,8 @@ class Game (object):
 
         When the JSON data is written to disk, it is compressed using gzip.
         """
+        # Make the schedule info more accessible.
+        self.schedule = nflgame.schedule.games_byid.get(self.eid, None)
 
         # Home and team cumulative statistics.
         self.home = self.data['home']['abbr']
