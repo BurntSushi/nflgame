@@ -272,7 +272,7 @@ class Game (object):
     def is_home(self, team):
         """Returns true if team (i.e., 'NE') is the home team."""
         return team == self.home
-    
+
     def season(self):
         """Returns the year of the season this game belongs to."""
         year = int(self.eid[0:4])
