@@ -42,17 +42,26 @@ class FieldPosition (object):
 
     e.g., NE has the ball on the NE 45, the offset is -5.
     e.g., NE has the ball on the NYG 2, the offset is 48.
+
+    This representation allows for gains in any particular play to be added
+    to the field offset to get the new field position as the result of the
+    play.
     """
-    def __new__(cls, pos_team, yardline):
-        if not yardline:
+    def __new__(cls, pos_team=None, yardline=None, offset=None):
+        if not yardline and offset is None:
             return None
         return object.__new__(cls)
 
-    def __init__(self, pos_team, yardline):
+    def __init__(self, pos_team=None, yardline=None, offset=None):
         """
         pos_team is the team on offense, and yardline is a string formatted
         like 'team-territory yard-line'. e.g., "NE 32".
+
+        An offset can be given directly by specifying an integer for offset.
         """
+        if isinstance(offset, int):
+            self.offset = offset
+            return
         if yardline == '50':
             self.offset = 0
             return
@@ -65,10 +74,25 @@ class FieldPosition (object):
             self.offset = 50 - yd
 
     def __cmp__(self, other):
+        if isinstance(other, int):
+            return cmp(self.offset, other)
         return cmp(self.offset, other.offset)
 
     def __str__(self):
-        return '%d' % self.offset
+        if self.offset > 0:
+            return 'OPP %d' % (50 - self.offset)
+        elif self.offset < 0:
+            return 'OWN %d' % (50 + self.offset)
+        else:
+            return 'MIDFIELD'
+
+    def add_yards(self, yards):
+        """
+        Returns a new field position with the yards added to self.
+        Yards may be negative.
+        """
+        newoffset = max(-50, min(50, self.offset + yards))
+        return FieldPosition(offset=newoffset)
 
 
 class PossessionTime (object):
