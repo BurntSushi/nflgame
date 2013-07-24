@@ -332,8 +332,8 @@ class Game (object):
         Returns a string of the score of the game.
         e.g., "NE (32) vs. NYG (0)".
         """
-        return '%s (%d) vs. %s (%d)' \
-               % (self.home, self.score_home, self.away, self.score_away)
+        return '%s (%d) at %s (%d)' \
+               % (self.away, self.score_away, self.home, self.score_home)
 
     def max_player_stats(self):
         """
