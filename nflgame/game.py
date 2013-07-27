@@ -666,16 +666,7 @@ def _json_drives(game, home_team, data):
         except:
             pass
     drives = []
-    playids = set()  # Plays can be repeated! Ah!
     for i, drive_num in enumerate(sorted(drive_nums), 1):
-        repeat_drive = False
-        for playid in data[str(drive_num)]['plays']:
-            if playid in playids:
-                repeat_drive = True
-                break
-            playids.add(playid)
-        if repeat_drive:
-            continue
         drives.append(Drive(game, i, home_team, data[str(drive_num)]))
     return drives
 
@@ -683,10 +674,19 @@ def _json_drives(game, home_team, data):
 def _json_plays(drive, data):
     """
     Takes a single JSON drive entry (data) and converts it to a list
-    of Play objects.
+    of Play objects. This includes trying to resolve duplicate play
+    conflicts by only taking the first instance of a play.
     """
     plays = []
+    seen_ids = set()
+    seen_desc = set()  # Sometimes duplicates have different play ids...
     for playid in map(str, sorted(map(int, data))):
+        p = data[playid]
+        desc = (p['desc'], p['time'], p['yrdln'], p['qtr'])
+        if playid in seen_ids or desc in seen_desc:
+            continue
+        seen_ids.add(playid)
+        seen_desc.add(desc)
         plays.append(Play(drive, playid, data[playid]))
     return plays
 
