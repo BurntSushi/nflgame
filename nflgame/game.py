@@ -168,6 +168,20 @@ class GameClock (object):
             else:
                 assert False, 'Unknown QTR value: "%s"' % self.qtr
 
+    @property
+    def quarter(self):
+        return self.__qtr
+
+    @quarter.setter
+    def quarter(self, value):
+        if isinstance(value, int):
+            assert value >= 0 and value <= 4
+            self.qtr = str(value)
+            self.__qtr = value
+        else:
+            self.qtr = value
+            self.__qtr = 0
+
     def is_pregame(self):
         return self.qtr == 'Pregame'
 
@@ -485,11 +499,21 @@ class Drive (object):
                 self.field_end = FieldPosition(self.team, '50')
 
         # When a drive lasts from Q1 to Q2 or Q3 to Q4, the 'end' doesn't
-        # seem to change to the proper quarter. So look at the last play and
-        # use that quarter instead.
-        lastplayid = str(sorted(map(int, data['plays'].keys()))[-1])
-        endqtr = data['plays'][lastplayid]['qtr']
-        self.time_end = GameClock(endqtr, data['end']['time'])
+        # seem to change to the proper quarter. So scan all of the plays
+        # and use the maximal quarter listed. (Just taking the last doesn't
+        # seem to always work.)
+        # lastplayid = str(max(map(int, data['plays'].keys()))) 
+        # endqtr = data['plays'][lastplayid]['qtr'] 
+        maxq = str(max(map(int, [p['qtr'] for p in data['plays'].values()])))
+        self.time_end = GameClock(maxq, data['end']['time'])
+
+        # One last sanity check. If the end time is less than the start time,
+        # then bump the quarter if it seems reasonable.
+        # This technique will blow up if a drive lasts more than fifteen
+        # minutes and the quarter numbering is messed up.
+        if self.time_end <= self.time_start \
+                and self.time_end.quarter in (1, 3):
+            self.time_end.quarter += 1
 
         self.__plays = _json_plays(self, data['plays'])
         self.plays = nflgame.seq.GenPlays(self.__plays)
