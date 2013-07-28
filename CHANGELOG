@@ -1,3 +1,24 @@
+1.1.10
+======
+  - Make the FieldPosition type constructor more accepting of
+    different inputs. e.g., an integer. Also, added an add_yards
+    method to FieldPosition that returns a new FieldPosition
+    with the given yards added to it.
+  - Make the default string representation of a game unambiguous.
+  - Modified the quarter numbering correction of drives to be
+    smarter by looking at all plays of a drive instead of just
+    the last one.
+  - Modified the play duplication logic to be heuristically smarter.
+    Namely, instead of just looking at play ids, nflgame now
+    inspects play data to see if two plays are semantically
+    equivalent. This was necessary because duplicate plays could
+    have different ids.
+  - Manually corrected some seriously corrupt data in the
+    Week 13 match up DET at NO. Also updated a couple other
+    games from 2012 with updates from upstream.
+  - Updated players.json with most recent player meta data.
+
+
 1.1.9
 =====
   - Manually fixed the ATL/SF 2012 playoff game so that it

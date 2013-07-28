@@ -502,8 +502,8 @@ class Drive (object):
         # seem to change to the proper quarter. So scan all of the plays
         # and use the maximal quarter listed. (Just taking the last doesn't
         # seem to always work.)
-        # lastplayid = str(max(map(int, data['plays'].keys()))) 
-        # endqtr = data['plays'][lastplayid]['qtr'] 
+        # lastplayid = str(max(map(int, data['plays'].keys())))
+        # endqtr = data['plays'][lastplayid]['qtr']
         maxq = str(max(map(int, [p['qtr'] for p in data['plays'].values()])))
         self.time_end = GameClock(maxq, data['end']['time'])
 
