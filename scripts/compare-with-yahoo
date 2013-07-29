@@ -1,0 +1,138 @@
+#!/usr/bin/env python2
+
+# The purpose of this script is to test the aggregate accuracy of statistics
+# reported by nflgame. This is done by assuming a ground truth, which we take
+# from Yahoo for each position: http://sports.yahoo.com/nfl/stats/byposition.
+# The output of the test is a mirror of the input: a new csv file for each
+# input csv file where the data represents the difference between nflgame's
+# statistics and Yahoo's statistics. They are reported in terms of the ground
+# truth. e.g., "5" means nflgame reports a number 5 more than Yahoo and
+# "-5" means nflgame reports a number 5 fewer than Yahoo.
+#
+# The secondary purpose of this script is to facilitate debugging. Namely, it
+# should provide command line parameters to alter the way nflgame computes
+# statistics (play-by-play, game-level or heuristically combined), and provide
+# a means to drill down into the relevant statistics of a particular player on
+# a game-by-game basis.
+#
+# Finally, this program makes a few assumptions about the input data:
+#
+#   - That each file has the suffix `{POSITION}.csv`, where position is
+#     one of the 12 positions offered by Yahoo (e.g., DE, DT, QB, etc.).
+#   - That the columns in the data correspond exactly to the columns on
+#     the Yahoo page. The order does not matter, but the names must match.
+#   - The names of players match those on NFL.com.
+#     (I might be able to relax this assumption with fuzzy matching. Dunno.)
+
+# N.B. As of now, this script is an atrocious mess. I plan to upend it once
+# nfldb rounds out. I'll test nflgame by proxy with nfldb (it'll be much
+# much quicker). The player name matching crap below will be built into
+# nfldb too.
+
+import argparse
+import csv
+import heapq
+import os
+import sys
+
+import Levenshtein
+
+import nflgame
+
+
+def eprint(s):
+    print >> sys.stderr, s
+
+
+parser = argparse.ArgumentParser(
+    description='Test the aggregate accuracy of nflgame\'s statistics.',
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+aa = parser.add_argument
+aa('output_dir', type=str,
+   help='The output directory to store the differences of each statistic '
+        'at all positions given.')
+aa('season', type=int, help='The year of the season to test.')
+aa('yahoo_data_files', type=str, nargs='+',
+   help='The yahoo data files to use to test nflgame with. '
+        'They should each have a suffix like {POSITION}.csv.')
+# aa('--threads', default=threads, type=int, 
+   # help='The number of concurrent ffmpeg instances to run.') 
+args = parser.parse_args()
+
+if not os.access(args.output_dir, os.R_OK):
+    os.makedirs(args.output_dir)
+
+def standard_position(pos):
+    pos = pos.upper()
+    if pos in ('QB', 'RB', 'WR', 'K', 'P'):
+        return pos
+    if pos == 'FB':
+        return 'RB'
+    if pos == 'TE':
+        return 'WR'
+    return 'DEF'
+
+def standard_name(player):
+    if player.player is not None:
+        return player.player.name.lower()
+    else:
+        return player.name.lower()
+
+def shrink_name(name):
+    first, rest = name.split(' ', 1)
+    return '%s.%s' % (first[0], rest)
+
+def ratio(n1, n2):
+    return Levenshtein.ratio(unicode(n1.lower()), unicode(n2.lower()))
+
+def edit_name(p, name):
+    if p.player is not None:
+        return ratio(p.player.name, name)
+    else:
+        name = shrink_name(name)
+        if p.name[0].lower() != name[0].lower():
+            return 0.0
+        return ratio(p.name, name)
+
+players = nflgame.combine_max_stats(nflgame.games_gen(args.season))
+indexed = {}
+for p in players:
+    indexed[p.playerid] = p
+
+def find(name, team=None, pos=None):
+    if pos is not None:
+        pos = standard_position(pos)
+
+    result = []
+    for pid, p in indexed.iteritems():
+        if pos is not None and pos != standard_position(p.guess_position):
+            continue
+
+        r = edit_name(p, name)
+        if r >= 0.8:
+            result.append((r, pid))
+    if len(result) == 0:
+        return None, 0.0
+
+    result = heapq.nlargest(1, result)
+    if team is not None and result[0][0] < 0.85:
+        sameteam = lambda (r, pid): \
+            nflgame.standard_team(team) == indexed[pid].team
+        result = filter(sameteam, result)
+        if len(result) == 0:
+            return None, 0.0
+    return indexed[result[0][1]], result[0][0]
+
+for f in args.yahoo_data_files:
+    pos = os.path.basename(f)[0:-4].upper()
+    rows = csv.DictReader(open(f), delimiter='\t')
+    for row in rows:
+        n, t = row['Name'], row['Team']
+        m, r = find(n, t, pos)
+        if m is None:
+            print 'NO MATCH FOR', n, t, pos
+        else:
+            print n, t, pos, 'with', \
+                  standard_name(m), m.team, m.guess_position, \
+                  'ratio: %f' % r
+
