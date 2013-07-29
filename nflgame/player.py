@@ -120,6 +120,37 @@ class PlayerStats (object):
         return False
 
     @property
+    def guess_position(self):
+        """
+        Guesses the position of this player based on the statistical
+        categories present in this object when player meta is not
+        present.
+
+        Note that if this resorts to a guess, then it will be more
+        effective on aggregate data rather than data from just a
+        single play. (e.g., if a QB runs the ball, and that's the
+        only data available, the position returned will be RB.)
+
+        When a position is guessed, only the following positions will
+        be returned: QB, RB, WR, DEF, K and P.
+        """
+        # Look for the player meta first. Duh.
+        if self.player is not None:
+            return self.player.position
+
+        stats = [
+            (self.passing_att, 'QB'),
+            (self.rushing_att, 'RB'),
+            (self.receiving_tar, 'WR'),
+            (self.defense_tkl, 'DEF'),
+            (self.defense_ast, 'DEF'),
+            (self.kicking_tot, 'K'),
+            (self.kicking_fga, 'K'),
+            (self.punting_tot, 'P'),
+        ]
+        return sorted(stats, reverse=True)[0][1]
+
+    @property
     def tds(self):
         """
         Returns the total number of touchdowns credited to this player across
