@@ -1,0 +1,10 @@
+The results of the `compare-with-yahoo` script for the 2012 season.
+The test is done by assuming a ground truth, which we take
+from Yahoo for each position: http://sports.yahoo.com/nfl/stats/byposition.
+The output of the test is a mirror of the input: a new csv file for each
+input csv file where the data represents the difference between nflgame's
+statistics and Yahoo's statistics. They are reported in terms of the ground
+truth. e.g., "5" means nflgame reports a number 5 more than Yahoo and
+"-5" means nflgame reports a number 5 fewer than Yahoo. Consequently, "0"
+means they agree exactly.
+

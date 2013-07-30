@@ -7,7 +7,15 @@
 # input csv file where the data represents the difference between nflgame's
 # statistics and Yahoo's statistics. They are reported in terms of the ground
 # truth. e.g., "5" means nflgame reports a number 5 more than Yahoo and
-# "-5" means nflgame reports a number 5 fewer than Yahoo.
+# "-5" means nflgame reports a number 5 fewer than Yahoo. Consequently, "0"
+# means they agree exactly.
+#
+# Note that I've had to do some manual post-processing to the Yahoo data.
+# In particular, the column names are not unique. So for example, in the
+# QB data, there are two "Yds" columns. The first refers to passing yards
+# while the second refers to rushing yards. I renamed the second to "RYds".
+# I did something similar for other columns and other positions. See the
+# "statmap" dictionary below for the correct names.
 #
 # The secondary purpose of this script is to facilitate debugging. Namely, it
 # should provide command line parameters to alter the way nflgame computes
@@ -30,9 +38,11 @@
 # nfldb too.
 
 import argparse
+from collections import OrderedDict
 import csv
 import heapq
 import os
+import os.path as path
 import sys
 
 import Levenshtein
@@ -123,16 +133,211 @@ def find(name, team=None, pos=None):
             return None, 0.0
     return indexed[result[0][1]], result[0][0]
 
+# Create a mapping between fields in the Yahoo CSV file and statistical
+# categories in nflgame.
+# Anything not in the mapping is skipped.
+negatives = ['passing_sk_yds', 'defense_sk_yds']
+statmap = {
+    'QB': OrderedDict([
+        ('G', 'games'),
+        ('Comp', 'passing_cmp'),
+        ('Att', 'passing_att'),
+        ('Yds', 'passing_yds'),
+        ('TD', 'passing_tds'),
+        ('Int', 'passing_int'),
+        ('Rush', 'rushing_att'),
+        ('RYds', 'rushing_yds'),
+        ('RTD', 'rushing_tds'),
+        ('Sack', 'passing_sk'),
+        ('YdsL', 'passing_sk_yds'),
+        ('Fum', 'fumbles_tot'),
+        ('FumL', 'fumbles_lost'),
+    ]),
+    'RB': OrderedDict([
+        ('G', 'games'),
+        ('Rush', 'rushing_att'),
+        ('Yds', 'rushing_yds'),
+        ('TD', 'rushing_tds'),
+        ('Rec', 'receiving_rec'),
+        ('Tgt', 'receiving_tar'),
+        ('RcYds', 'receiving_yds'),
+        # ('YAC', 'receiving_yac_yds'), # this is an average? wtf?
+        ('RcTD', 'receiving_tds'),
+        ('Fum', 'fumbles_tot'),
+        ('FumL', 'fumbles_lost'),
+    ]),
+    'WR': OrderedDict([
+        ('G', 'games'),
+        ('Rec', 'receiving_rec'),
+        ('Tgt', 'receiving_tar'),
+        ('Yds', 'receiving_yds'),
+        # ('YAC', 'receiving_yac_yds'), # this is an average? wtf?
+        ('TD', 'receiving_tds'),
+        ('Fum', 'fumbles_tot'),
+        ('FumL', 'fumbles_lost'),
+    ]),
+    'TE': OrderedDict([
+        ('G', 'games'),
+        ('Rec', 'receiving_rec'),
+        ('Tgt', 'receiving_tar'),
+        ('Yds', 'receiving_yds'),
+        # ('YAC', 'receiving_yac_yds'), # this is an average? wtf?
+        ('TD', 'receiving_tds'),
+        ('Rush', 'rushing_att'),
+        ('RYds', 'rushing_yds'),
+        ('RTD', 'rushing_tds'),
+        ('Fum', 'fumbles_tot'),
+        ('FumL', 'fumbles_lost'),
+    ]),
+    'K': OrderedDict([
+        ('G', 'games'),
+        # Lame. Want to test field goal ranges too.
+        # Can do it, but it isn't included in the aggregate data.
+        # Maybe in nfldb?
+        ('FGM', 'kicking_fgm'),
+        ('FGA', 'kicking_fga'),
+        ('XPM', 'kicking_xpmade'),
+        ('XPA', 'kicking_xpa'),
+    ]),
+    'P': OrderedDict([
+        ('G', 'games'),
+        ('Punt', 'punting_tot'),
+        ('Yds', 'punting_yds'),
+        ('In20', 'punting_i20'),
+        # No aggregate stats for "inside 10" :-(
+        # No aggregate stats for fair catches either (for punters).
+        ('TB', 'punting_touchback'),
+        ('Blk', 'punting_blk'),
+    ]),
+    'CB': OrderedDict([
+        ('G', 'games'),
+        ('Solo', 'defense_tkl'),
+        ('Ast', 'defense_ast'),
+        ('Sack', 'defense_sk'),
+        ('YdsL', 'defense_sk_yds'),
+        ('Int', 'defense_int'),
+        ('Yds', 'defense_int_yds'),
+        ('IntTD', 'defense_int_tds'),
+        ('DefTD', 'defense_tds'),
+        ('FFum', 'defense_ffum'),
+        ('PD', 'defense_pass_def'),
+        ('Sfty', 'defense_safe'),
+    ]),
+    'S': OrderedDict([
+        ('G', 'games'),
+        ('Solo', 'defense_tkl'),
+        ('Ast', 'defense_ast'),
+        ('Sack', 'defense_sk'),
+        ('YdsL', 'defense_sk_yds'),
+        ('Int', 'defense_int'),
+        ('Yds', 'defense_int_yds'),
+        ('IntTD', 'defense_int_tds'),
+        ('DefTD', 'defense_tds'),
+        ('FFum', 'defense_ffum'),
+        ('PD', 'defense_pass_def'),
+        ('Sfty', 'defense_safe'),
+    ]),
+    'LB': OrderedDict([
+        ('G', 'games'),
+        ('Solo', 'defense_tkl'),
+        ('Ast', 'defense_ast'),
+        ('Sack', 'defense_sk'),
+        ('YdsL', 'defense_sk_yds'),
+        ('Int', 'defense_int'),
+        ('Yds', 'defense_int_yds'),
+        ('IntTD', 'defense_int_tds'),
+        ('DefTD', 'defense_tds'),
+        ('FFum', 'defense_ffum'),
+        ('PD', 'defense_pass_def'),
+        ('Sfty', 'defense_safe'),
+    ]),
+    'DE': OrderedDict([
+        ('G', 'games'),
+        ('Solo', 'defense_tkl'),
+        ('Ast', 'defense_ast'),
+        ('Sack', 'defense_sk'),
+        ('YdsL', 'defense_sk_yds'),
+        ('Int', 'defense_int'),
+        ('Yds', 'defense_int_yds'),
+        ('IntTD', 'defense_int_tds'),
+        ('DefTD', 'defense_tds'),
+        ('FFum', 'defense_ffum'),
+        ('PD', 'defense_pass_def'),
+        ('Sfty', 'defense_safe'),
+    ]),
+    'DT': OrderedDict([
+        ('G', 'games'),
+        ('Solo', 'defense_tkl'),
+        ('Ast', 'defense_ast'),
+        ('Sack', 'defense_sk'),
+        ('YdsL', 'defense_sk_yds'),
+        ('Int', 'defense_int'),
+        ('Yds', 'defense_int_yds'),
+        ('IntTD', 'defense_int_tds'),
+        ('DefTD', 'defense_tds'),
+        ('FFum', 'defense_ffum'),
+        ('PD', 'defense_pass_def'),
+        ('Sfty', 'defense_safe'),
+    ]),
+    'NT': OrderedDict([
+        ('G', 'games'),
+        ('Solo', 'defense_tkl'),
+        ('Ast', 'defense_ast'),
+        ('Sack', 'defense_sk'),
+        ('YdsL', 'defense_sk_yds'),
+        ('Int', 'defense_int'),
+        ('Yds', 'defense_int_yds'),
+        ('IntTD', 'defense_int_tds'),
+        ('DefTD', 'defense_tds'),
+        ('FFum', 'defense_ffum'),
+        ('PD', 'defense_pass_def'),
+        ('Sfty', 'defense_safe'),
+    ]),
+}
+
+def number(s):
+    try:
+        return int(s)
+    except ValueError:
+        try:
+            return float(s)
+        except ValueError:
+            return 0
+
+def player_cmp(pos, yahoo_row, pobj):
+    assert pos in statmap
+
+    result = {
+        'Name': yahoo_row['Name'],
+        'Team': yahoo_row['Team'],
+    }
+    for yahoo_field, nflgame_field in statmap[pos].iteritems():
+        truth = number(yahoo_row[yahoo_field])
+        test = 0
+        if hasattr(pobj, nflgame_field):
+            test = getattr(pobj, nflgame_field)
+        if nflgame_field in negatives:
+            result[yahoo_field] = test + truth
+        else:
+            result[yahoo_field] = test - truth
+    return result
+
 for f in args.yahoo_data_files:
     pos = os.path.basename(f)[0:-4].upper()
+    if pos not in statmap:
+        continue
+
+    csvf = open(path.join(args.output_dir, '%s.csv' % pos.lower()), 'w+')
+    fieldnames = ['Name', 'Team'] + statmap[pos].keys()
+    out = csv.DictWriter(csvf, fieldnames=fieldnames, delimiter='\t')
+    out.writerow({ k: k for k in fieldnames })
     rows = csv.DictReader(open(f), delimiter='\t')
     for row in rows:
         n, t = row['Name'], row['Team']
         m, r = find(n, t, pos)
         if m is None:
-            print 'NO MATCH FOR', n, t, pos
-        else:
-            print n, t, pos, 'with', \
-                  standard_name(m), m.team, m.guess_position, \
-                  'ratio: %f' % r
+            eprint('NO MATCH (skipping): %s %s %s' % (n, t, pos))
+            continue
+        out.writerow(player_cmp(pos, row, m))
+    csvf.flush()
 
