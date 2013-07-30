@@ -73,7 +73,7 @@ GameCenter.
 idmap = {
     2: {
         'cat': 'punting',
-        'fields': ['punting_blk', 'punting_cnt'],
+        'fields': ['punting_blk'],
         'yds': '',
         'desc': 'Punt blocked (offense)',
         'long': 'Punt was blocked. A blocked punt is a punt that is touched '
