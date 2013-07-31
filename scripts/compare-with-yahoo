@@ -49,11 +49,6 @@ import Levenshtein
 
 import nflgame
 
-
-def eprint(s):
-    print >> sys.stderr, s
-
-
 parser = argparse.ArgumentParser(
     description='Test the aggregate accuracy of nflgame\'s statistics.',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -65,10 +60,14 @@ aa('season', type=int, help='The year of the season to test.')
 aa('yahoo_data_files', type=str, nargs='+',
    help='The yahoo data files to use to test nflgame with. '
         'They should each have a suffix like {POSITION}.csv.')
-# aa('--threads', default=threads, type=int, 
-   # help='The number of concurrent ffmpeg instances to run.') 
+aa('--which-stats', type=str, choices=['max', 'game', 'play'], default='max',
+   help='The type of statistical combination to use. Max is the default '
+        'and tries to use both game and play statistics. Game uses only '
+        'game level statistics, which is not as detailed. Play uses only '
+        'play-by-play statistics in the aggregate.')
 args = parser.parse_args()
 
+args.output_dir += '-%s' % args.which_stats
 if not os.access(args.output_dir, os.R_OK):
     os.makedirs(args.output_dir)
 
@@ -104,7 +103,12 @@ def edit_name(p, name):
             return 0.0
         return ratio(p.name, name)
 
-players = nflgame.combine_max_stats(nflgame.games_gen(args.season))
+if args.which_stats == 'game':
+    players = nflgame.combine_game_stats(nflgame.games_gen(args.season))
+elif args.which_stats == 'play':
+    players = nflgame.combine_play_stats(nflgame.games_gen(args.season))
+else:
+    players = nflgame.combine_max_stats(nflgame.games_gen(args.season))
 indexed = {}
 for p in players:
     indexed[p.playerid] = p
@@ -336,7 +340,7 @@ for f in args.yahoo_data_files:
         n, t = row['Name'], row['Team']
         m, r = find(n, t, pos)
         if m is None:
-            eprint('NO MATCH (skipping): %s %s %s' % (n, t, pos))
+            print >> sys.stderr, 'NO MATCH (skipping): %s %s %s' % (n, t, pos)
             continue
         out.writerow(player_cmp(pos, row, m))
     csvf.flush()
