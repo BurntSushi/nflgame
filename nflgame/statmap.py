@@ -909,4 +909,13 @@ idmap = {
         'desc': 'Tackle for a loss yards',
         'long': '',
     },
+    410: {
+        'cat': 'kicking',
+        'fields': [],
+        'yds': 'kicking_all_yds',
+        'desc': 'Kickoff and length of kick',
+        'long': 'Kickoff and length of kick. Includes end zone yards '
+                'for all kicks into the end zone, including kickoffs '
+                'ending in a touchback.',
+    },
 }
