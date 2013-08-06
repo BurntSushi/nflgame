@@ -1,3 +1,20 @@
+1.1.11
+======
+  - Update schedule for the 2013 preseason and regular season.
+  - Updated the players.json meta data file.
+  - Added nflgame's first test. It compares aggregate statistics
+    from 2012 against statistics reported by Yahoo. Overall, the
+    prognosis is good, but there are definitely some inaccuracies.
+    But I do think `nflgame` is doing the best it can without
+    another source. Look in `test-data` for test results and look
+    in `scripts/compare-with-yahoo` for more details on the
+    methodology.
+  - Added some more team abbreviations from Yahoo. (Weird ones.)
+  - Added a method to player objects to guess their position
+    based on available statistics.
+  - Corrected a few typos (or artifacts from old names) in the
+    `nflgame.statmap` module.
+
 1.1.10
 ======
   - Make the FieldPosition type constructor more accepting of
