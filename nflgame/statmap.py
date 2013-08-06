@@ -764,8 +764,8 @@ idmap = {
     },
     95: {
         'cat': 'team',
-        'fields': ['rush_loss'],
-        'yds': 'rush_loss_yds',
+        'fields': ['rushing_loss'],
+        'yds': 'rushing_loss_yds',
         'desc': 'Tackled for a loss',
         'long': 'Tackled for a loss (TFL) is an offensive stat. A team is '
                 'charged with a TFL if its rush ends behind the line of '
@@ -787,7 +787,7 @@ idmap = {
     # See "Extra point - safety".
     102: {
         'cat': 'team',
-        'fields': ['kickoff_downed'],
+        'fields': ['kicking_downed'],
         'yds': '',
         'desc': 'Kickoff - kick downed',
         'long': 'SuperStat didn\'t have this code. A kickoff is "downed" when '
