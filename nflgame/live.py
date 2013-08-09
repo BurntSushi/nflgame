@@ -72,7 +72,6 @@ Pinged infrequently to discover the current week number, year and week type.
 The actual schedule of games is taken from the schedule module.
 """
 
-# http://www.nfl.com/ajax/scorestrip?season=2009&seasonType=POST&week=22
 _POST_URL = "http://static.nfl.com/liveupdate/scorestrip/postseason/ss.xml"
 """
 The URL for the XML schedule of the post season. This is only used
@@ -87,8 +86,8 @@ _cur_week = None
 _cur_year = None
 """The current year. It is updated infrequently automatically."""
 
-_preseason = False
-"""True when it's the preseason."""
+_cur_season_phase = 'PRE'
+"""The current phase of the season."""
 
 _regular = False
 """True when it's the regular season."""
@@ -147,7 +146,7 @@ def current_games(year=None, week=None, kind='REG'):
 
     guesses = []
     now = _now()
-    games = _games_in_week(year, week, kind='REG')
+    games = _games_in_week(year, week, kind=kind)
     for info in games:
         gametime = _game_datetime(info)
         if gametime >= now:
@@ -310,7 +309,7 @@ def _active_games(inactive_interval):
     that will start within inactive_interval seconds, or has started within
     _MAX_GAME_TIME seconds in the past.
     """
-    games = _games_in_week(_cur_year, _cur_week, kind='REG')
+    games = _games_in_week(_cur_year, _cur_week, _cur_season_phase)
     active = []
     for info in games:
         if not _game_is_active(info, inactive_interval):
@@ -355,12 +354,18 @@ def _now():
 
 
 def _update_week_number():
-    global _cur_week, _cur_year, _preseason, _regular
+    global _cur_week, _cur_year, _cur_season_phase
 
     dom = xml.parse(urllib2.urlopen(_CUR_SCHEDULE_URL))
     gms = dom.getElementsByTagName('gms')[0]
     _cur_week = int(gms.getAttribute('w'))
     _cur_year = int(gms.getAttribute('y'))
-    _preseason = gms.getAttribute('t').strip() == 'P'
-    _regular = gms.getAttribute('t').strip() == 'R'
+
+    phase = gms.getAttribute('t').strip()
+    if phase == 'P':
+        _cur_season_phase = 'PRE'
+    elif phase == 'POST':
+        _cur_season_phase = 'POST'
+    else:
+        _cur_season_phase = 'REG'
     return time.time()
