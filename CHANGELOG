@@ -1,3 +1,10 @@
+1.1.12
+======
+  - Fixed a bug where `nflgame.live` was not properly interpreting
+    the phase of the season. (It thought it was always the regular
+    season.) Now it should automatically infer preseason, regular
+    season or postseason.
+
 1.1.11
 ======
   - Update schedule for the 2013 preseason and regular season.
