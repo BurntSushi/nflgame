@@ -1,8 +1,8 @@
+all:
+	@echo "Specify a target."
+
 docs:
-	scripts/generate-docs
-	rsync -rh --inplace \
-		doc/* \
-		Geils:~/www/burntsushi.net/public_html/doc/nflgame/
+	pdoc --html --html-dir ./doc --overwrite ./nflgame
 
 pypi: docs
 	sudo python2 setup.py register sdist bdist_wininst upload
@@ -10,14 +10,14 @@ pypi: docs
 pypi-meta:
 	python2 setup.py register
 
+dev-install: docs
+	[[ -n "$$VIRTUAL_ENV" ]] || exit
+	rm -rf ./dist
+	python2 setup.py sdist
+	pip install -U dist/*.tar.gz
+
 pep8:
 	pep8-python2 nflgame/{__init__,alert,game,live,player,seq,statmap}.py
-
-schedule:
-	scripts/create-schedule > schedule.py
-
-json:
-	scripts/download-json
 
 push:
 	git push origin master

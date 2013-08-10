@@ -1,5 +1,5 @@
 from distutils.core import setup
-import os
+from glob import glob
 
 longdesc = \
 '''An API to retrieve and read NFL Game Center JSON data. It can work with real-time data, which can be used for fantasy football.
@@ -9,11 +9,6 @@ nflgame works by parsing the same JSON data that powers NFL.com's live GameCente
 The package comes pre-loaded with game data from every pre- and regular season game from 2009 up until August 28, 2012. Querying such data does not actually ping NFL.com.
 
 However, if you try to search for data in a game that is being currently played, the JSON data will be downloaded from NFL.com at each request (so be careful not to inspect for data too many times while a game is being played). If you ask for data for a particular game that hasn't been cached to disk but is no longer being played, it will be automatically cached to disk so that no further downloads are required.'''
-
-try:
-    docfiles = map(lambda s: 'doc/%s' % s, list(os.walk('doc'))[0][2])
-except IndexError:
-    docfiles = []
 
 setup(
     name='nflgame',
@@ -45,6 +40,6 @@ setup(
     package_data={'nflgame': ['players.json', 'gamecenter-json/*.json.gz']},
     data_files=[('share/doc/nflgame', ['README', 'CHANGELOG', 'COPYING',
                                        'INSTALL']),
-                ('share/doc/nflgame/doc', docfiles)],
+                ('share/doc/nflgame/doc', glob('doc/nflgame/*.html'))],
     scripts=[]
 )
