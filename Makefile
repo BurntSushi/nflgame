@@ -7,9 +7,6 @@ docs:
 pypi: docs
 	sudo python2 setup.py register sdist bdist_wininst upload
 
-pypi-meta:
-	python2 setup.py register
-
 dev-install: docs
 	[[ -n "$$VIRTUAL_ENV" ]] || exit
 	rm -rf ./dist
