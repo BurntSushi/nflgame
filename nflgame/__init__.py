@@ -1,6 +1,4 @@
 """
-Introduction
-============
 An API to retrieve and read NFL Game Center JSON data.
 It can work with real-time data, which can be used for fantasy football.
 
@@ -186,8 +184,9 @@ import nflgame.live
 import nflgame.player
 import nflgame.schedule
 import nflgame.seq
+from nflgame.version import __version__
 
-VERSION = "1.1.12"
+VERSION = __version__  # Deprecated. Backwards compatibility.
 
 NoPlayers = nflgame.seq.GenPlayerStats(None)
 """

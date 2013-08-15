@@ -1,3 +1,8 @@
+1.1.13
+======
+  - Mostly a maintenance release with some reorganization.
+    I'm beginning migration to a new documentation tool `pdoc`.
+
 1.1.12
 ======
   - Fixed a bug where `nflgame.live` was not properly interpreting
