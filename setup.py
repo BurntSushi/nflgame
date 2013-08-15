@@ -1,20 +1,22 @@
+import codecs
 from distutils.core import setup
 from glob import glob
+import os.path as path
 
-longdesc = \
-'''An API to retrieve and read NFL Game Center JSON data. It can work with real-time data, which can be used for fantasy football.
+cwd = path.dirname(__file__)
+longdesc = codecs.open(path.join(cwd, 'longdesc.rst'), 'r', 'utf-8').read()
 
-nflgame works by parsing the same JSON data that powers NFL.com's live GameCenter. Therefore, nflgame can be used to report game statistics while a game is being played.
-
-The package comes pre-loaded with game data from every pre- and regular season game from 2009 up until August 28, 2012. Querying such data does not actually ping NFL.com.
-
-However, if you try to search for data in a game that is being currently played, the JSON data will be downloaded from NFL.com at each request (so be careful not to inspect for data too many times while a game is being played). If you ask for data for a particular game that hasn't been cached to disk but is no longer being played, it will be automatically cached to disk so that no further downloads are required.'''
+version = '0.0.0'
+with codecs.open(path.join(cwd, 'nflgame/version.py'), 'r', 'utf-8') as f:
+    exec(f.read())
+    version = __version__
+assert version != '0.0.0'
 
 setup(
     name='nflgame',
     author='Andrew Gallant',
     author_email='andrew@burntsushi.net',
-    version='1.1.12',
+    version=version,
     license='WTFPL',
     description='An API to retrieve and read NFL Game Center JSON data. '
                 'It can work with real-time data, which can be used for '
@@ -39,7 +41,7 @@ setup(
     package_dir={'nflgame': 'nflgame'},
     package_data={'nflgame': ['players.json', 'gamecenter-json/*.json.gz']},
     data_files=[('share/doc/nflgame', ['README', 'CHANGELOG', 'COPYING',
-                                       'INSTALL']),
+                                       'INSTALL', 'longdesc.rst']),
                 ('share/doc/nflgame/doc', glob('doc/nflgame/*.html'))],
     scripts=[]
 )
