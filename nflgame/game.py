@@ -617,12 +617,13 @@ class Play (object):
     def __str__(self):
         if self.team:
             if self.down != 0:
-                return '(%s, %s, %d and %d) %s' \
-                       % (self.team, self.data['yrdln'],
+                return '(%s, %s, Q%d, %d and %d) %s' \
+                       % (self.team, self.data['yrdln'], self.time.qtr,
                           self.down, self.yards_togo, self.desc)
             else:
-                return '(%s, %s) %s' \
-                       % (self.team, self.data['yrdln'], self.desc)
+                return '(%s, %s, Q%d) %s' \
+                       % (self.team, self.data['yrdln'], self.time.qtr,
+                          self.desc)
         return self.desc
 
     def __eq__(self, other):
