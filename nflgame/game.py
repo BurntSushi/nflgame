@@ -149,11 +149,11 @@ class GameClock (object):
         self.clock = clock
 
         try:
-            self.__minutes, self.__seconds = map(int, self.clock.split(':'))
+            self._minutes, self._seconds = map(int, self.clock.split(':'))
         except ValueError:
-            self.__minutes, self.__seconds = 0, 0
+            self._minutes, self._seconds = 0, 0
         except AttributeError:
-            self.__minutes, self.__seconds = 0, 0
+            self._minutes, self._seconds = 0, 0
         try:
             self.__qtr = int(self.qtr)
             if self.__qtr >= 3:
@@ -194,9 +194,9 @@ class GameClock (object):
     def __cmp__(self, other):
         if self.__qtr != other.__qtr:
             return cmp(self.__qtr, other.__qtr)
-        elif self.__minutes != other.__minutes:
-            return cmp(other.__minutes, self.__minutes)
-        return cmp(other.__seconds, self.__seconds)
+        elif self._minutes != other._minutes:
+            return cmp(other._minutes, self._minutes)
+        return cmp(other._seconds, self._seconds)
 
     def __str__(self):
         """
