@@ -105,6 +105,10 @@ def initial_mappings():
             reverse[meta['profile_id']] = gsis_id
     except IOError as e:
         eprint('Could not open "%s": %s' % (args.json_update_file, e))
+    # Delete the team key in every entry. We do this to stay fresh.
+    # Namely, any player with "team" set should be actively on a roster.
+    for k in metas:
+        metas[k].pop('team', None)
     return metas, reverse
 
 
