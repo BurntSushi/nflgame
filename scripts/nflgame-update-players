@@ -224,12 +224,15 @@ errors = []
 if len(metas) == 0 or args.full_scan:
     eprint('Loading players in games since 2009, this may take a while...')
     players = {}
-    for game_id, schedule in nflgame.schedule.games_byid.iteritems():
+
+    # Grab players one game a time to avoid obscene memory requirements.
+    for schedule in nflgame.schedule.games.itervalues():
         # If the game is too far in the future, skip it...
         if nflgame.live._game_datetime(schedule) > nflgame.live._now():
             continue
-        for pid, nm in players_from_games(metas, [nflgame.game.Game(game_id)]):
-            players[pid] = nm
+        g = nflgame.game.Game(schedule['eid'])
+        for pid, name in players_from_games(metas, [g]):
+            players[pid] = name
     eprint('Done.')
 else:
     nflgame.live._update_week_number()
