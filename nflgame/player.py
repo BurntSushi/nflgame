@@ -283,7 +283,6 @@ class PlayerStats (object):
         for cat in nflgame.statmap.categories:
             if name.startswith(cat):
                 return 0
-        print name
         raise AttributeError
 
 

@@ -406,6 +406,7 @@ class Game (object):
             self.__drives = _json_drives(self, self.home, self.data['drives'])
             self.drives = nflgame.seq.GenDrives(self.__drives)
             return self.drives
+        raise AttributeError
 
     def __sub__(self, other):
         return diff(other, self)
@@ -634,6 +635,8 @@ class Play (object):
         return self.playid == other.playid and self.desc == other.desc
 
     def __getattr__(self, name):
+        if name.startswith('__'):
+            raise AttributeError
         return 0
 
 
