@@ -32,18 +32,27 @@ class Player (object):
     Player information is populated from NFL.com profile pages.
     """
     def __init__(self, data):
-        self.playerid = data['gsisid']
-        self.name = data['name']
-        self.team = data['team']
-        self.position = data['position']
-        self.profile_url = data['profile_url']
-        self.number = data['number']
-        self.status = data['status']
-        self.weight = data['weight']
-        self.height = data['height']
-        self.college = data['college']
-        self.years_pro = data['years_pro']
-        self.birthdate = data['birthdate']
+        self.player_id = data['gsis_id']
+        self.gsis_name = data.get('gsis_name', '')
+        self.full_name = data.get('full_name', '')
+        self.first_name = data.get('first_name', '')
+        self.last_name = data.get('last_name', '')
+        self.team = data.get('team', '')
+        self.position = data.get('position', '')
+        self.profile_id = data.get('profile_id', 0)
+        self.profile_url = data.get('profile_url', '')
+        self.uniform_number = data.get('uniform_number', 0)
+        self.birthdate = data.get('birthdate', '')
+        self.college = data.get('college', '')
+        self.height = data.get('height', '')
+        self.weight = data.get('weight', '')
+        self.years_pro = data.get('years_pro', 0)
+        self.status = data.get('status', '')
+
+        # API backwards compatibility.
+        self.playerid = self.player_id
+        self.name = self.full_name
+        self.number = self.uniform_number
 
     def stats(self, year, week=None):
         games = nflgame.games(year, week)
