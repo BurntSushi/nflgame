@@ -54,5 +54,6 @@ setup(
     data_files=[('share/doc/nflgame', ['README', 'CHANGELOG', 'COPYING',
                                        'INSTALL', 'longdesc.rst']),
                 ('share/doc/nflgame/doc', glob('doc/nflgame/*.html'))],
-    scripts=[]
+    scripts=['scripts/nflgame-update-players'],
+    install_requires=['pytz==2013b', 'httplib2', 'eventlet', 'beautifulsoup4']
 )
