@@ -25,6 +25,7 @@ dev-install: docs longdesc.rst
 
 pep8:
 	pep8-python2 nflgame/{__init__,alert,game,live,player,seq,statmap,version}.py
+	pep8-python2 scripts/nflgame-update-players
 
 push:
 	git push origin master
