@@ -32,13 +32,13 @@
 # recorded any statistics. e.g., Rookies, benchwarmers or offensive linemen.)
 #
 # We overwrite the initial dictionary of player meta data for each player in
-# the roster data, including adding new entries for new players. We then save 
+# the roster data, including adding new entries for new players. We then save
 # the updated mapping from GSIS identifier to player meta data to disk as JSON.
 # (The JSON dump is sorted by key so that diffs are meaningful.)
 #
 # This approach requires a few thousand HEAD requests to NFL.com on the first
 # run. But after that, most runs will only require 32 requests for the roster
-# list (small potatoes) and perhaps a few HEAD/GET requests if there happens to 
+# list (small potatoes) and perhaps a few HEAD/GET requests if there happens to
 # be a new player found.
 
 from __future__ import absolute_import, division, print_function
@@ -56,38 +56,6 @@ from bs4 import BeautifulSoup
 import nflgame
 import nflgame.live
 import nflgame.player
-
-parser = argparse.ArgumentParser(
-    description='Efficiently download player meta data from NFL.com. Note '
-                'that each invocation of this program guarantees at least '
-                '32 HTTP requests to NFL.com',
-    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-aa = parser.add_argument
-aa('--json-update-file', type=str, default=None,
-   help='When set, the file provided will be updated in place with new meta '
-        'data from NFL.com. If this option is not set, then the '
-        '"players.json" file that comes with nflgame will be updated instead.')
-aa('--simultaneous-reqs', type=int, default=3,
-   help='The number of simultaneous HTTP requests sent to NFL.com at a time. '
-        'Set this lower if you are worried about hitting their servers.')
-aa('--full-scan', action='store_true',
-   help='Forces a full scan of nflgame player data since 2009. Typically, '
-        'this is only done when starting with a fresh JSON player database. '
-        'But it can be useful to re-scan all of the players if past errors '
-        'went ignored and data is missing. The advantage of using this option '
-        'over starting fresh is that an existing (gsis_id <-> profile_id) '
-        'mapping can be used for the majority of players, instead of querying '
-        'NFL.com for the mapping all over again.')
-args = parser.parse_args()
-
-if args.json_update_file is None:
-    args.json_update_file = nflgame.player._player_json_file
-urls = {
-    'roster': 'http://www.nfl.com/teams/roster?team=%s',
-    'gsis_profile': 'http://www.nfl.com/players/profile?id=%s',
-}
-teams = [team[0] for team in nflgame.teams]
-green_pool = eventlet.GreenPool(args.simultaneous_reqs)
 
 
 def new_http():
@@ -206,117 +174,157 @@ def progress_done():
     eprint('\nDone!')
 
 
-# Fetch the initial mapping of players.
-metas, reverse = initial_mappings()
-if len(metas) == 0:
-    eprint("nflgame doesn't know about any players.")
-    eprint("Updating player data will require several thousand HTTP HEAD "
-           "requests to NFL.com.")
-    eprint("It is strongly recommended to find the 'players.json' file that "
-           "comes with nflgame.")
-    eprint("Are you sure you want to continue? [y/n] ", end='')
-    answer = raw_input()
-    if answer[0].lower() != 'y':
-        eprint("Quitting...")
-        sys.exit(1)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='Efficiently download player meta data from NFL.com. Note '
+                    'that each invocation of this program guarantees at least '
+                    '32 HTTP requests to NFL.com',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    aa = parser.add_argument
+    aa('--json-update-file', type=str, default=None,
+       help='When set, the file provided will be updated in place with new '
+            'meta data from NFL.com. If this option is not set, then the '
+            '"players.json" file that comes with nflgame will be updated '
+            'instead.')
+    aa('--simultaneous-reqs', type=int, default=3,
+       help='The number of simultaneous HTTP requests sent to NFL.com at a '
+            'time. Set this lower if you are worried about hitting their '
+            'servers.')
+    aa('--full-scan', action='store_true',
+       help='Forces a full scan of nflgame player data since 2009. Typically, '
+            'this is only done when starting with a fresh JSON player '
+            'database. But it can be useful to re-scan all of the players if '
+            'past errors went ignored and data is missing. The advantage of '
+            'using this option over starting fresh is that an existing '
+            '(gsis_id <-> profile_id) mapping can be used for the majority of '
+            'players, instead of querying NFL.com for the mapping all over '
+            'again.')
+    args = parser.parse_args()
 
-# Accumulate errors as we go. Dump them at the end.
-errors = []
+    if args.json_update_file is None:
+        args.json_update_file = nflgame.player._player_json_file
+    urls = {
+        'roster': 'http://www.nfl.com/teams/roster?team=%s',
+        'gsis_profile': 'http://www.nfl.com/players/profile?id=%s',
+    }
+    teams = [team[0] for team in nflgame.teams]
+    green_pool = eventlet.GreenPool(args.simultaneous_reqs)
 
-# Now fetch a set of players that aren't in our mapping already.
-# Restrict the search to the current week if we have a non-empty mapping.
-if len(metas) == 0 or args.full_scan:
-    eprint('Loading players in games since 2009, this may take a while...')
-    players = {}
+    # Fetch the initial mapping of players.
+    metas, reverse = initial_mappings()
+    if len(metas) == 0:
+        eprint("nflgame doesn't know about any players.")
+        eprint("Updating player data will require several thousand HTTP HEAD "
+               "requests to NFL.com.")
+        eprint("It is strongly recommended to find the 'players.json' file "
+               "that comes with nflgame.")
+        eprint("Are you sure you want to continue? [y/n] ", end='')
+        answer = raw_input()
+        if answer[0].lower() != 'y':
+            eprint("Quitting...")
+            sys.exit(1)
 
-    # Grab players one game a time to avoid obscene memory requirements.
-    for schedule in nflgame.schedule.games.itervalues():
-        # If the game is too far in the future, skip it...
-        if nflgame.live._game_datetime(schedule) > nflgame.live._now():
+    # Accumulate errors as we go. Dump them at the end.
+    errors = []
+
+    # Now fetch a set of players that aren't in our mapping already.
+    # Restrict the search to the current week if we have a non-empty mapping.
+    if len(metas) == 0 or args.full_scan:
+        eprint('Loading players in games since 2009, this may take a while...')
+        players = {}
+
+        # Grab players one game a time to avoid obscene memory requirements.
+        for schedule in nflgame.schedule.games.itervalues():
+            # If the game is too far in the future, skip it...
+            if nflgame.live._game_datetime(schedule) > nflgame.live._now():
+                continue
+            g = nflgame.game.Game(schedule['eid'])
+            for pid, name in players_from_games(metas, [g]):
+                players[pid] = name
+        eprint('Done.')
+    else:
+        nflgame.live._update_week_number()
+        phase = nflgame.live._cur_season_phase
+        year, week = nflgame.live.current_year_and_week()
+        eprint('Loading games for %s %d week %d' % (phase, year, week))
+        games = nflgame.games(year, week, kind=phase)
+        players = dict(players_from_games(metas, games))
+
+    # Find the profile ID for each new player.
+    if len(players) > 0:
+        eprint('Finding (profile id -> gsis id) mapping for players...')
+
+        def fetch(t):  # t[0] is the gsis_id and t[1] is the gsis name
+            return t[0], t[1], profile_id(t[0])
+        for i, t in enumerate(green_pool.imap(fetch, players.items()), 1):
+            gid, name, pid = t
+            progress(i, len(players))
+            if pid is None:
+                errors.append('Could not get profile id for (%s, %s)'
+                              % (gid, name))
+                continue
+
+            assert gid not in metas
+            metas[gid] = {'gsis_id': gid, 'gsis_name': name, 'profile_id': pid}
+            reverse[pid] = gid
+        progress_done()
+
+    # Get the soup for each team roster.
+    eprint('Downloading team rosters...')
+    roster = []
+
+    def fetch(team):
+        return team, roster_soup(team)
+    for i, (team, soup) in enumerate(green_pool.imap(fetch, teams), 1):
+        progress(i, len(teams))
+
+        if soup is None:
+            errors.append('Could not get roster for team %s' % team)
             continue
-        g = nflgame.game.Game(schedule['eid'])
-        for pid, name in players_from_games(metas, [g]):
-            players[pid] = name
-    eprint('Done.')
-else:
-    nflgame.live._update_week_number()
-    phase = nflgame.live._cur_season_phase
-    year, week = nflgame.live.current_year_and_week()
-    eprint('Loading games for %s %d week %d' %  (phase, year, week))
-    games = nflgame.games(year, week, kind=phase)
-    players = dict(players_from_games(metas, games))
-
-# Find the profile ID for each new player.
-if len(players) > 0:
-    eprint('Finding (profile id -> gsis id) mapping for players...')
-    def fetch(t):  # t[0] is the gsis_id and t[1] is the gsis name
-        return t[0], t[1], profile_id(t[0])
-    for i, t in enumerate(green_pool.imap(fetch, players.items()), 1):
-        gid, name, pid = t
-        progress(i, len(players))
-        if pid is None:
-            errors.append('Could not get profile id for (%s, %s)'
-                          % (gid, name))
-            continue
-
-        assert gid not in metas
-        metas[gid] = { 'gsis_id': gid, 'gsis_name': name, 'profile_id': pid }
-        reverse[pid] = gid
+        for row in soup.find(id='result').find('tbody').find_all('tr'):
+            roster.append(meta_from_soup_row(team, row))
     progress_done()
 
-# Get the soup for each team roster.
-eprint('Downloading team rosters...')
-roster = []
-def fetch(team):
-    return team, roster_soup(team)
-for i, (team, soup) in enumerate(green_pool.imap(fetch, teams), 1):
-    progress(i, len(teams))
+    # Find the gsis identifiers for players that are in the roster but haven't
+    # recorded a statistic yet. (i.e., Not in nflgame play data.)
+    purls = [r['profile_url']
+             for r in roster if r['profile_id'] not in reverse]
+    if len(purls) > 0:
+        eprint('Fetching GSIS identifiers for players not in nflgame...')
 
-    if soup is None:
-        errors.append('Could not get roster for team %s' % team)
-        continue
-    for row in soup.find(id='result').find('tbody').find_all('tr'):
-        roster.append(meta_from_soup_row(team, row))
-progress_done()
+        def fetch(purl):
+            return purl, gsis_id(purl)
+        for i, (purl, gid) in enumerate(green_pool.imap(fetch, purls), 1):
+            progress(i, len(purls))
 
-# Find the gsis identifiers for players that are in the roster but haven't
-# recorded a statistic yet. (i.e., Not in nflgame play data.)
-purls = [r['profile_url'] for r in roster if r['profile_id'] not in reverse]
-if len(purls) > 0:
-    eprint('Fetching GSIS identifiers for players not in nflgame...')
-    def fetch(purl):
-        return purl, gsis_id(purl)
-    for i, (purl, gid) in enumerate(green_pool.imap(fetch, purls), 1):
-        progress(i, len(purls))
+            if gid is None:
+                errors.append('Could not get GSIS id at %s' % purl)
+                continue
+            reverse[profile_id_from_url(purl)] = gid
+        progress_done()
 
-        if gid is None:
-            errors.append('Could not get GSIS id at %s' % purl)
+    # Now merge the data from `rosters` into `metas` by using `reverse` to
+    # establish the correspondence.
+    for data in roster:
+        gsisid = reverse.get(data['profile_id'], None)
+        if gsisid is None:
+            errors.append('Could not find gsis_id for %s' % data)
             continue
-        reverse[profile_id_from_url(purl)] = gid
-    progress_done()
+        merged = dict(metas.get(gsisid, {}), **data)
+        merged['gsis_id'] = gsisid
+        metas[gsisid] = merged
 
-# Now merge the data from `rosters` into `metas` by using `reverse` to
-# establish the correspondence.
-for data in roster:
-    gsisid = reverse.get(data['profile_id'], None)
-    if gsisid is None:
-        errors.append('Could not find gsis_id for %s' % data)
-        continue
-    merged = dict(metas.get(gsisid, {}), **data)
-    merged['gsis_id'] = gsisid
-    metas[gsisid] = merged
+    assert len(metas) > 0, "Have no players to add... ???"
+    with open(args.json_update_file, 'w+') as fp:
+        json.dump(metas, fp, indent=4, sort_keys=True)
 
-assert len(metas) > 0, "Have no players to add... ???"
-with open(args.json_update_file, 'w+') as fp:
-    json.dump(metas, fp, indent=4, sort_keys=True)
-
-if len(errors) > 0:
-    eprint('\n')
-    eprint('There were some errors during the download. Usually this is a\n'
-           'result of an HTTP request timing out, which means the resulting\n'
-           'players.json file is probably missing some data.\n'
-           'An appropriate solution is to re-run the script until there are\n'
-           'no more errors (or when the errors are problems on NFL.com side.)')
-    eprint('-' * 79)
-    eprint(('\n' + ('-' * 79) + '\n').join(errors))
-
+    if len(errors) > 0:
+        eprint('\n')
+        eprint('There were some errors during the download. Usually this is a')
+        eprint('result of an HTTP request timing out, which means the')
+        eprint('resulting "players.json" file is probably missing some data.')
+        eprint('An appropriate solution is to re-run the script until there')
+        eprint('are no more errors (or when the errors are problems on ')
+        eprint('NFL.com side.)')
+        eprint('-' * 79)
+        eprint(('\n' + ('-' * 79) + '\n').join(errors))
