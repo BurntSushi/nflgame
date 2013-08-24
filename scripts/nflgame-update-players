@@ -307,11 +307,12 @@ with open(args.json_update_file, 'w+') as fp:
     json.dump(metas, fp, indent=4, sort_keys=True)
 
 if len(errors) > 0:
+    eprint('\n')
     eprint('There were some errors during the download. Usually this is a\n'
            'result of an HTTP request timing out, which means the resulting\n'
            'players.json file is probably missing some data.\n'
            'An appropriate solution is to re-run the script until there are\n'
-           'no more errors (or when the errors are problems on NFL.com side.')
+           'no more errors (or when the errors are problems on NFL.com side.)')
     eprint('-' * 79)
     eprint(('\n' + ('-' * 79) + '\n').join(errors))
 
