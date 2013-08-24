@@ -218,8 +218,6 @@ if len(metas) == 0 or args.full_scan:
     eprint('Loading players in games since 2009, this may take a while...')
     players = {}
     for game_id in nflgame.schedule.games_byid:
-        if nflgame.schedule.games_byid[game_id]['year'] != 2012:
-            continue
         for pid, nm in players_from_games(metas, [nflgame.game.Game(game_id)]):
             players[pid] = nm
     eprint('Done.')
@@ -300,7 +298,7 @@ if len(errors) > 0:
            'result of an HTTP request timing out, which means the resulting\n'
            'players.json file is probably missing some data.\n'
            'An appropriate solution is to re-run the script until there are\n'
-           'no more errors.')
+           'no more errors (or when the errors are problems on NFL.com side.')
     eprint('-' * 79)
     eprint(('\n' + ('-' * 79) + '\n').join(errors))
 
