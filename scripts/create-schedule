@@ -58,7 +58,7 @@ print
 print
 
 print 'games_byid = {'
-for eid, info in byid.iteritems():
-    print '\t%s: %s,' % (repr(eid), repr(info))
+for eid in sorted(byid, key=int):
+    print '\t%s: %s,' % (repr(eid), repr(byid[eid]))
 print '}'
 
