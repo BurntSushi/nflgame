@@ -5,6 +5,8 @@ from nflgame import OrderedDict
 import nflgame.seq
 import nflgame.statmap
 
+_player_json_file = os.path.join(os.path.dirname(__file__), 'players.json')
+
 
 def _create_players(jsonf=None):
     """
@@ -12,7 +14,7 @@ def _create_players(jsonf=None):
     by GSIS ids.
     """
     if jsonf is None:
-        jsonf = os.path.join(os.path.split(__file__)[0], 'players.json')
+        jsonf = _player_json_file
     data = json.loads(open(jsonf).read())
 
     players = {}
