@@ -285,8 +285,7 @@ if len(purls) > 0:
 for data in roster:
     gsisid = reverse.get(data['profile_id'], None)
     if gsisid is None:
-        errors.append('Could not find gsis_id for %s at %s'
-                      % (data['name'], data['profile_url']))
+        errors.append('Could not find gsis_id for %s' % data)
         continue
     merged = dict(metas.get(gsisid, {}), **data)
     merged['gsis_id'] = gsisid
