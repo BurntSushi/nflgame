@@ -59,7 +59,7 @@ aa('output_dir', type=str,
 aa('season', type=int, help='The year of the season to test.')
 aa('yahoo_data_files', type=str, nargs='+',
    help='The yahoo data files to use to test nflgame with. '
-        'They should each have a suffix like {POSITION}.csv.')
+        'They should each have a suffix like {POSITION}.tsv.')
 aa('--which-stats', type=str, choices=['max', 'game', 'play'], default='max',
    help='The type of statistical combination to use. Max is the default '
         'and tries to use both game and play statistics. Game uses only '
@@ -331,9 +331,9 @@ for f in args.yahoo_data_files:
     if pos not in statmap:
         continue
 
-    csvf = open(path.join(args.output_dir, '%s.csv' % pos.lower()), 'w+')
+    tsvf = open(path.join(args.output_dir, '%s.tsv' % pos.lower()), 'w+')
     fieldnames = ['Name', 'Team'] + statmap[pos].keys()
-    out = csv.DictWriter(csvf, fieldnames=fieldnames, delimiter='\t')
+    out = csv.DictWriter(tsvf, fieldnames=fieldnames, delimiter='\t')
     out.writerow({ k: k for k in fieldnames })
     rows = csv.DictReader(open(f), delimiter='\t')
     for row in rows:
@@ -343,5 +343,5 @@ for f in args.yahoo_data_files:
             print >> sys.stderr, 'NO MATCH (skipping): %s %s %s' % (n, t, pos)
             continue
         out.writerow(player_cmp(pos, row, m))
-    csvf.flush()
+    tsvf.flush()
 
