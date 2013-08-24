@@ -125,7 +125,12 @@ def gsis_id(profile_url):
     if resp['status'] != '200':
         return None
     m = re.search('GSIS\s+ID:\s+([0-9-]+)', content)
-    return None if m is None else m.group(1)
+    if m is None:
+        return None
+    gid = m.group(1).strip()
+    if len(gid) != 10:  # Can't be valid...
+        return None
+    return gid
 
 
 def roster_soup(team):
@@ -219,7 +224,10 @@ errors = []
 if len(metas) == 0 or args.full_scan:
     eprint('Loading players in games since 2009, this may take a while...')
     players = {}
-    for game_id in nflgame.schedule.games_byid:
+    for game_id, schedule in nflgame.schedule.games_byid.iteritems():
+        # If the game is too far in the future, skip it...
+        if nflgame.live._game_datetime(schedule) > nflgame.live._now():
+            continue
         for pid, nm in players_from_games(metas, [nflgame.game.Game(game_id)]):
             players[pid] = nm
     eprint('Done.')
