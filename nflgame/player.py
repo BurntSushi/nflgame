@@ -15,7 +15,10 @@ def _create_players(jsonf=None):
     """
     if jsonf is None:
         jsonf = _player_json_file
-    data = json.loads(open(jsonf).read())
+    try:
+        data = json.loads(open(jsonf).read())
+    except IOError:
+        return {}
 
     players = {}
     for playerid in data:
