@@ -44,6 +44,7 @@
 from __future__ import absolute_import, division, print_function
 import argparse
 import json
+import os
 import re
 import sys
 
@@ -215,6 +216,13 @@ if __name__ == '__main__':
     }
     teams = [team[0] for team in nflgame.teams]
     green_pool = eventlet.GreenPool(args.simultaneous_reqs)
+
+    # Before doing anything laborious, make sure we have write access to
+    # the JSON database.
+    if not os.access(args.json_update_file, os.W_OK):
+        eprint('I do not have write access to "%s".' % args.json_update_file)
+        eprint('Without write access, I cannot update the player database.')
+        sys.exit(1)
 
     # Fetch the initial mapping of players.
     metas, reverse = initial_mappings()
