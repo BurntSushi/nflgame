@@ -199,6 +199,12 @@ if __name__ == '__main__':
             '(gsis_id <-> profile_id) mapping can be used for the majority of '
             'players, instead of querying NFL.com for the mapping all over '
             'again.')
+    aa('--no-block', action='store_true',
+       help='When set, this program will exit with an error instead of '
+            'displaying a prompt to continue. This is useful when calling '
+            'this program from another script. The idea here is not to block '
+            'indefinitely if something goes wrong and the program wants to '
+            'do a fresh update.')
     args = parser.parse_args()
 
     if args.json_update_file is None:
@@ -213,6 +219,11 @@ if __name__ == '__main__':
     # Fetch the initial mapping of players.
     metas, reverse = initial_mappings()
     if len(metas) == 0:
+        if args.no_block:
+            eprint('I want to do a full update, but I have been told to\n'
+                   'exit instead of asking if you want to continue.')
+            sys.exit(1)
+
         eprint("nflgame doesn't know about any players.")
         eprint("Updating player data will require several thousand HTTP HEAD "
                "requests to NFL.com.")
@@ -234,7 +245,7 @@ if __name__ == '__main__':
         players = {}
 
         # Grab players one game a time to avoid obscene memory requirements.
-        for schedule in nflgame.schedule.games.itervalues():
+        for _, schedule in nflgame.schedule.games:
             # If the game is too far in the future, skip it...
             if nflgame.live._game_datetime(schedule) > nflgame.live._now():
                 continue
