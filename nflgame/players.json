@@ -51929,6 +51929,11 @@
         "weight": "305", 
         "years_pro": 0
     }, 
+    "00-0029834": {
+        "gsis_id": "00-0029834", 
+        "gsis_name": "J.Cook", 
+        "profile_id": 2541582
+    }, 
     "00-0029835": {
         "birthdate": "4/26/1991", 
         "college": "Central Arkansas", 
@@ -62755,15 +62760,15 @@
     "00-0030572": {
         "birthdate": "6/27/1990", 
         "college": "Houston", 
-        "first_name": "D.J.", 
-        "full_name": "D.J. Hayden", 
+        "first_name": "DJ", 
+        "full_name": "DJ Hayden", 
         "gsis_id": "00-0030572", 
         "height": "5'11\"", 
         "last_name": "Hayden", 
         "number": 25, 
         "position": "CB", 
         "profile_id": 2539237, 
-        "profile_url": "http://www.nfl.com/player/d.j.hayden/2539237/profile", 
+        "profile_url": "http://www.nfl.com/player/djhayden/2539237/profile", 
         "status": "ACT", 
         "team": "OAK", 
         "weight": "190", 
