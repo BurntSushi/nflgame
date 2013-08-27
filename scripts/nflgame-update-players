@@ -151,8 +151,8 @@ def meta_from_soup_row(team, soup_row):
 
 
 def meta_from_profile_html(html):
-    if html is None:
-        return None
+    if not html:
+        return html
     try:
         soup = BeautifulSoup(html)
         pinfo = soup.find(id='player-bio').find(class_='player-info')
@@ -389,7 +389,10 @@ if __name__ == '__main__':
         gid, purl = t
         resp, content = new_http().request(purl, 'GET')
         if resp['status'] != '200':
-            return gid, purl, None
+            if resp['status'] == '404':
+                return gid, purl, False
+            else:
+                return gid, purl, None
         return gid, purl, content
     gids_get = [(gid, meta['profile_url'])
                 for gid, meta in metas.iteritems()
@@ -397,8 +400,10 @@ if __name__ == '__main__':
     for i, (gid, purl, html) in enumerate(green_pool.imap(fetch, gids_get), 1):
         progress(i, len(gids_get))
         more_meta = meta_from_profile_html(html)
-        if more_meta is None:
-            errors.append('Could not fetch HTML for %s' % purl)
+        if not more_meta:
+            # If more_meta is False, then it was a 404. Not our problem.
+            if more_meta is None:
+                errors.append('Could not fetch HTML for %s' % purl)
             continue
         metas[gid] = dict(metas[gid], **more_meta)
     progress_done()
