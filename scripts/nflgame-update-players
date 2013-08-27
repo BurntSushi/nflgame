@@ -86,11 +86,11 @@ def profile_id_from_url(url):
     return None if m is None else int(m.group(1))
 
 
-def profile_id(gsis_id):
+def profile_url(gsis_id):
     resp, content = new_http().request(urls['gsis_profile'] % gsis_id, 'HEAD')
     if resp['status'] != '301':
         return None
-    return profile_id_from_url(resp['location'])
+    return resp['location']
 
 
 def gsis_id(profile_url):
@@ -148,6 +148,52 @@ def meta_from_soup_row(team, soup_row):
         'years_pro': try_int(data[7]),
         'college': data[8],
     }
+
+
+def meta_from_profile_html(html):
+    try:
+        soup = BeautifulSoup(html)
+        pinfo = soup.find(id='player-bio').find(class_='player-info')
+
+        # Get the full name and split it into first and last.
+        # Assume that if there are no spaces, then the name is the last name.
+        # Otherwise, all words except the last make up the first name.
+        # Is that right?
+        name = pinfo.find(class_='player-name').get_text().strip()
+        name_pieces = name.split(' ')
+        if len(name_pieces) == 1:
+            first, last = '', name
+        else:
+            first, last = ' '.join(name_pieces[0:-1]), name_pieces[-1]
+        meta = {
+            'first_name': first,
+            'last_name': last,
+            'full_name': name,
+        }
+
+        # The position is only in the <title>... Weird.
+        title = soup.find('title').get_text()
+        m = re.search(',\s+(\S+)', title)
+        if m is not None:
+            meta['position'] = m.group(1)
+
+        # Look for a whole bunch of fields in the format "Field: Value".
+        search = pinfo.get_text()
+        fields = {'Height': 'height', 'Weight': 'weight', 'Born': 'birthdate',
+                  'College': 'college'}
+        for f, key in fields.items():
+            m = re.search('%s:\s+(\S+)' % f, search)
+            if m is not None:
+                meta[key] = m.group(1)
+
+        # Experience is a little weirder...
+        m = re.search('Experience:\s+([0-9]+)', search)
+        if m is not None:
+            meta['years_pro'] = int(m.group(1))
+
+        return meta
+    except AttributeError:
+        return None
 
 
 def players_from_games(existing, games):
@@ -274,17 +320,19 @@ if __name__ == '__main__':
         eprint('Finding (profile id -> gsis id) mapping for players...')
 
         def fetch(t):  # t[0] is the gsis_id and t[1] is the gsis name
-            return t[0], t[1], profile_id(t[0])
+            return t[0], t[1], profile_url(t[0])
         for i, t in enumerate(green_pool.imap(fetch, players.items()), 1):
-            gid, name, pid = t
+            gid, name, purl = t
             progress(i, len(players))
             if pid is None:
-                errors.append('Could not get profile id for (%s, %s)'
+                errors.append('Could not get profile URL for (%s, %s)'
                               % (gid, name))
                 continue
 
             assert gid not in metas
-            metas[gid] = {'gsis_id': gid, 'gsis_name': name, 'profile_id': pid}
+            pid = profile_id_from_url(purl)
+            metas[gid] = {'gsis_id': gid, 'gsis_name': name,
+                          'profile_url': purl, 'profile_id': pid}
             reverse[pid] = gid
         progress_done()
 
@@ -332,6 +380,27 @@ if __name__ == '__main__':
         merged = dict(metas.get(gsisid, {}), **data)
         merged['gsis_id'] = gsisid
         metas[gsisid] = merged
+
+    # Temp fix.
+    eprint('Getting profile URLs...')
+    def fetch(gid):
+        return gid, profile_url(gid)
+    pids_toget = [meta['gsis_id']
+                  for meta in metas.itervalues()
+                  if 'profile_url' not in meta and 'profile_id' in meta]
+    for i, (gid, purl) in enumerate(green_pool.imap(fetch, pids_toget), 1):
+        progress(i, len(pids_toget))
+        metas[gid]['profile_url'] = purl
+    progress_done()
+
+    # Finally, try to scrape meta data for players who aren't on a roster
+    # but have recorded a statistic in nflgame.
+    # for meta in metas.itervalues(): 
+        # if meta.get('full_name', None):  # Player already has meta data. 
+            # continue 
+        # purl = meta.get('profile_url', None) 
+        # if not purl:  # No valid profile URL, so skip. 
+            # continue 
 
     assert len(metas) > 0, "Have no players to add... ???"
     with open(args.json_update_file, 'w+') as fp:
