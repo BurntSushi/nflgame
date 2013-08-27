@@ -175,7 +175,7 @@ def meta_from_profile_html(html):
 
         # The position is only in the <title>... Weird.
         title = soup.find('title').get_text()
-        m = re.search(',\s+(\S+)', title)
+        m = re.search(',\s+([A-Z]+)', title)
         if m is not None:
             meta['position'] = m.group(1)
 
