@@ -21,6 +21,7 @@ Terence Newman	CIN	0	-2	0	0.0	0	0	0	0	0	0	0	0
 Josh Wilson	WAS	0	0	0	0.0	0	0	0	0	0	0	0	0
 Javier Arenas	KAN	0	-1	0	0.0	0	0	0	0	0	-1	0	0
 Robert McClain	ATL	-1	0	0	0.0	0	0	0	0	0	0	0	0
+Sheldon Brown	CLE	-1	-1	-1	0.0	0	0	0	0	0	0	0	0
 Sean Smith	MIA	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Richard Sherman	SEA	0	-1	0	0.0	0	0	0	0	1	-1	0	0
 Josh Robinson	MIN	-1	0	0	0.0	0	0	0	0	0	0	0	0
@@ -70,6 +71,7 @@ Jerraud Powers	IND	0	0	0	0.0	0	0	0	0	0	0	0	0
 Aqib Talib	NWE	3	0	0	0.0	0	0	0	0	0	0	-1	0
 Justin Rogers	BUF	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Jayron Hosley	NYG	0	0	0	0.0	0	0	0	0	0	0	0	0
+Pat Lee	DET	4	0	0	0.0	0	0	0	0	0	0	0	0
 Jimmy Smith	BAL	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Antonio Cromartie	NYJ	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Jacob Lacey	DET	0	0	0	0.0	0	0	0	0	0	0	0	0
@@ -81,6 +83,7 @@ D.J. Moore	CHI	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Chris Cook	MIN	0	0	0	0.0	0	0	0	0	0	0	0	0
 Kelvin Hayden	CHI	-4	0	0	0.0	0	0	0	0	0	0	0	0
 Greg Toler	ARI	-2	0	0	0.0	0	0	0	0	0	0	1	0
+Cedric Griffin	WAS	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Ike Taylor	PIT	0	1	0	0.0	0	0	0	0	0	1	0	0
 Jalil Brown	KAN	-3	0	0	0.0	0	0	0	0	0	1	0	0
 Corey White	NOR	-1	1	0	0.0	0	0	0	0	0	0	0	0
@@ -101,6 +104,8 @@ Davon House	GNB	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Ron Bartell	DET	6	0	0	0.0	0	0	0	0	0	0	0	0
 Brice McCain	HOU	-1	0	0	0.0	-4	0	0	0	0	0	0	0
 Leodis McKelvin	BUF	0	0	0	0.0	0	0	0	0	0	0	0	0
+Rashean Mathis	JAC	-3	0	0	0.0	0	0	0	0	0	0	0	0
+Stanford Routt	KAN	1	0	0	0.0	0	0	0	0	0	0	0	0
 Chris Owens	ATL	-6	-1	0	0.0	0	0	0	0	0	0	0	0
 Ron Brooks	BUF	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Richard Marshall	MIA	0	0	0	0.0	0	0	0	0	0	0	0	0
@@ -109,6 +114,7 @@ Sterling Moore	DAL	6	0	0	0.0	0	0	0	0	0	0	0	0
 Brandian Ross	OAK	-6	0	0	0.0	0	0	0	0	0	0	0	0
 Shareece Wright	SDG	-2	1	0	1.0	0	0	0	0	0	0	0	0
 Drayton Florence	DET	-2	0	0	0.0	0	0	0	0	0	0	0	0
+Justin Tryon	NYG	-4	0	0	0.0	0	0	0	0	0	0	0	0
 Perrish Cox	SFO	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Jarrett Bush	GNB	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Orlando Scandrick	DAL	0	0	0	0.0	0	0	0	0	0	0	1	0
@@ -117,6 +123,7 @@ Johnson Bademosi	CLE	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Josh Gordy	IND	-6	0	0	0.0	0	0	0	0	0	0	0	0
 Tracy Porter	DEN	-1	0	0	0.0	0	0	0	0	0	0	0	0
 William Middleton	JAC	-5	0	0	0.0	0	0	0	0	0	0	0	0
+Brandon McDonald	TAM	-3	0	-1	0.0	0	0	0	0	0	0	0	0
 Marquice Cole	NWE	-7	0	0	0.0	0	0	0	0	0	0	0	0
 James Dockery	CAR	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Tramaine Brock	SFO	-4	0	0	0.0	0	0	0	0	0	1	0	0
@@ -126,7 +133,7 @@ Isaiah Trufant	NYJ	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Richard Crawford	WAS	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Tommie Campbell	TEN	-6	0	0	0.0	0	0	0	0	0	0	0	0
 Trevin Wade	CLE	-6	0	0	0.0	0	0	0	0	0	0	0	0
-Michael Coe	DAL	3	-12	-2	0.0	0	0	0	0	0	0	-2	0
+Michael Coe	DAL	4	0	0	0.0	0	0	0	0	0	0	0	0
 Omar Bolden	DEN	-4	-1	0	0.0	0	0	0	0	0	0	0	0
 Justin Bethel	ARI	-6	0	0	0.0	0	0	0	0	1	0	0	0
 Michael Adams	ARI	-4	0	0	0.0	0	0	0	0	0	0	0	0
@@ -144,10 +151,14 @@ Brandon Hughes	PHI	-6	1	0	0.0	0	0	0	0	0	0	0	0
 Jeremy Lane	SEA	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Kevin Rutland	JAC	-9	0	0	0.0	0	0	0	0	0	0	0	0
 Elbert Mack	NOR	-2	0	0	0.0	0	0	0	0	0	0	0	0
+David Jones	WAS	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Marcus Sherels	MIN	0	-1	0	0.0	0	0	0	0	0	0	0	0
 Darrelle Revis	NYJ	0	0	0	0.0	0	0	0	0	0	-1	0	0
 Roc Carmichael	HOU	-1	0	0	0.0	0	0	0	0	0	0	0	0
+Chris Gamble	CAR	0	0	0	0.0	0	0	0	0	0	0	0	0
+Alphonso Smith	DET	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Chris Johnson	BAL	-1	0	0	0.0	0	0	0	0	0	0	0	0
+Terrence McGee	BUF	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Brent Grimes	ATL	0	0	0	0.0	0	0	0	0	0	0	0	0
 Myron Lewis	TAM	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Anthony Gaitor	TAM	0	0	0	0.0	0	0	0	0	0	0	0	0
@@ -157,7 +168,11 @@ Neiko Thorpe	KAN	-5	0	0	0.0	0	0	0	0	0	0	0	0
 Sherrick McManis	CHI	-5	0	0	0.0	0	0	0	0	0	0	0	0
 Dre Kirkpatrick	CIN	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Chimdi Chekwa	OAK	0	0	0	0.0	0	0	0	0	0	1	0	0
+Jacques Reeves	KAN	-1	0	0	0.0	0	0	0	0	0	0	0	0
+Shawntae Spencer	OAK	0	0	0	0.0	0	0	0	0	0	0	0	0
+Coye Francies	OAK	-5	0	0	0.0	0	0	0	0	0	0	0	0
 Chris Carr	SDG	-3	0	0	0.0	0	0	0	0	0	0	0	0
+Jason Allen	CIN	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Jerome Murphy	DET	3	0	0	0.0	0	0	0	0	0	0	0	0
 Marshay Green	IND	0	0	0	0.0	0	0	0	0	0	0	0	0
 Walter Thurmond	SEA	-1	0	0	0.0	0	0	0	0	0	0	0	0
@@ -167,7 +182,10 @@ Terrence Frederick	NYG	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Darrin Walls	NYJ	-4	0	0	0.0	0	0	0	0	0	0	0	0
 Aaron Berry	NYJ	-6	0	0	0.0	0	0	0	0	0	0	0	0
 Chris Lewis-Harris	CIN	-1	0	0	0.0	0	0	0	0	0	0	0	0
+Malcolm Williams	NWE	0	0	0	0.0	0	0	0	0	0	0	0	0
 Donnie Fletcher	NYJ	-2	0	0	0.0	0	0	0	0	0	0	0	0
 DeMarcus Van Dyke	PIT	-5	0	0	0.0	0	0	0	0	0	0	0	0
 Asa Jackson	BAL	-2	0	0	0.0	0	0	0	0	0	0	0	0
+Justin King	IND	0	0	0	0.0	0	0	0	0	0	0	0	0
+Antwaun Molden	JAC	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Brandon Burton	MIN	-3	1	0	0.0	0	0	0	0	0	0	0	0

@@ -30,6 +30,7 @@ William Hayes	STL	-1	0	-1	-0.5	0	0	0	0	0	0	0	0
 Israel Idonije	CHI	0	-1	1	-0.5	-13	0	0	0	0	0	0	0
 Frostee Rucker	CLE	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Jason Babin	PHI	4	0	-1	-0.5	2	0	0	0	0	0	0	0
+Kyle Vanden Bosch	DET	0	1	0	1.0	-7	0	0	0	0	0	0	0
 Cliff Avril	DET	-1	-1	0	-2.0	-5	0	0	0	0	0	0	0
 Arthur Jones	BAL	-1	0	0	0.0	-4	0	0	0	0	0	0	0
 Osi Umenyiora	NYG	0	0	0	0.0	0	0	0	0	0	0	0	0
@@ -54,6 +55,7 @@ Austen Lane	JAC	0	0	0	0.0	0	0	0	0	0	0	0	0
 Cory Redding	IND	0	-1	1	0.0	0	0	0	0	0	0	0	0
 Corey Wootton	CHI	-1	1	-1	0.5	-13	0	0	0	1	0	0	0
 Pernell McPhee	BAL	-2	0	0	0.0	-6	0	0	0	0	0	0	0
+Juqua Parker	CLE	-1	0	1	0.5	-8	0	0	0	0	0	0	0
 Jermaine Cunningham	NWE	0	0	0	0.0	-7	0	0	0	0	0	0	0
 Kendall Reyes	SDG	0	1	0	0.0	-3	0	0	0	0	0	0	0
 Tyrone Crawford	DAL	-5	0	0	1.0	0	0	0	0	0	0	0	0
@@ -69,6 +71,7 @@ Cameron Heyward	PIT	-5	0	0	0.0	-2	0	0	0	0	0	0	0
 Andre Carter	OAK	-2	0	0	0.0	-1	0	0	0	0	0	0	0
 Jared Crick	HOU	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Darryl Tapp	PHI	-3	1	-1	0.0	-3	0	0	0	0	0	0	0
+Chris Kelsay	BUF	-4	0	0	0.0	0	0	0	0	0	0	0	0
 Vaughn Martin	SDG	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Lawrence Guy	IND	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Mike Daniels	GNB	-5	0	0	0.0	0	0	0	0	0	0	0	0
@@ -77,20 +80,24 @@ Kenyon Coleman	DAL	0	0	0	0.0	0	0	0	0	0	0	0	0
 Jarvis Jenkins	WAS	-3	-1	0	0.0	0	0	0	0	0	0	0	0
 Jerel Worthy	GNB	-4	0	0	0.0	-4	0	0	0	0	0	0	0
 Lawrence Jackson	DET	-4	0	1	0.0	-4	0	0	0	0	0	0	0
+Shawne Merriman	BUF	-2	0	0	0.5	-6	0	0	0	0	0	0	0
 Bruce Irvin	SEA	-2	0	0	0.0	-6	0	0	0	0	0	0	0
 George Selvie	JAC	0	0	0	0.0	0	0	0	0	0	0	0	0
 Brandon Deaderick	NWE	-4	0	0	0.0	0	0	0	0	0	0	0	0
 Frank Alexander	CAR	-3	0	0	0.0	-5	0	0	0	0	0	0	0
+Mark Anderson	BUF	-1	-1	-1	0.0	0	0	0	0	0	0	0	0
 Da'Quan Bowers	TAM	-2	-1	0	0.0	0	0	0	0	0	0	0	0
 Adrian Tracy	NYG	-9	0	0	0.0	0	0	0	0	0	1	0	0
 Andre Branch	JAC	-4	0	1	0.0	0	0	0	0	0	0	0	0
-Shaun Smith	KAN	7	44	4	0.0	0	2	31	0	0	3	12	0
+Shaun Smith	KAN	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Phillip Hunt	PHI	-6	0	0	0.0	0	0	0	0	0	0	0	0
+Emmanuel Stephens	CLE	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Kedric Golston	WAS	-7	0	0	0.0	0	0	0	0	0	0	0	0
 Mike Neal	GNB	-2	0	0	0.0	-4	0	0	0	0	0	0	0
 Robert Ayers	DEN	-5	0	0	0.0	0	0	0	0	0	0	0	0
 Mario Addison	IND	2	0	0	0.0	0	0	0	0	0	0	0	0
 Vinny Curry	PHI	-2	0	0	0.0	0	0	0	0	0	0	0	0
+Trevor Scott	NWE	-2	0	1	0.5	-4	0	0	0	0	0	0	0
 Derrick Shelby	MIA	-7	0	0	0.0	0	0	0	0	0	0	0	0
 Marcus Spears	DAL	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Justin Francis	NWE	-4	-1	0	0.0	0	0	0	0	0	0	0	0
@@ -98,6 +105,10 @@ Shea McClellin	CHI	-6	0	0	0.0	-6	0	0	0	0	0	0	0
 Jason Jones	SEA	-2	1	0	1.0	-12	0	0	0	0	0	0	0
 Willie Young	DET	-6	0	0	0.0	0	0	0	0	0	0	0	0
 Cliff Matthews	ATL	-6	0	0	0.0	0	0	0	0	0	0	0	0
+Ray Edwards	ATL	-2	0	0	0.0	0	0	0	0	0	0	0	0
+Turk McBride	NOR	-1	0	0	0.0	0	0	0	0	0	0	0	0
+Vonnie Holliday	ARI	-6	0	0	0.0	0	0	0	0	0	0	0	0
+David Tollefson	OAK	-9	0	-1	-0.5	3	0	0	0	0	0	0	0
 Jarius Wynn	TEN	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Greg Scruggs	SEA	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Ronald Talley	ARI	0	0	0	0.0	0	0	0	0	0	0	0	0
@@ -119,6 +130,7 @@ Tim Jamison	HOU	-3	0	0	0.0	0	0	0	0	0	0	0	0
 Lazarius Levingston	TAM	-2	0	0	0.0	0	0	0	0	0	0	0	0
 Doug Worthington	WAS	-3	0	0	0.0	0	0	0	0	0	0	0	0
 John Denney	MIA	-14	0	0	0.0	0	0	0	0	0	1	0	0
+John Chick	JAC	-4	0	0	0.0	0	0	0	0	0	0	0	0
 Keyunta Dawson	TEN	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Phillip Merling	GNB	-1	0	0	0.0	0	0	0	0	0	0	0	0
 Adam Carriker	WAS	-1	0	0	0.0	0	0	0	0	0	0	0	0
