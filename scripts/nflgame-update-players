@@ -385,28 +385,31 @@ if __name__ == '__main__':
 
     # Finally, try to scrape meta data for players who aren't on a roster
     # but have recorded a statistic in nflgame.
-    def fetch(t):
-        gid, purl = t
-        resp, content = new_http().request(purl, 'GET')
-        if resp['status'] != '200':
-            if resp['status'] == '404':
-                return gid, purl, False
-            else:
-                return gid, purl, None
-        return gid, purl, content
-    gids_get = [(gid, meta['profile_url'])
-                for gid, meta in metas.iteritems()
-                if 'full_name' not in meta and 'profile_url' in meta]
-    for i, (gid, purl, html) in enumerate(green_pool.imap(fetch, gids_get), 1):
-        progress(i, len(gids_get))
-        more_meta = meta_from_profile_html(html)
-        if not more_meta:
-            # If more_meta is False, then it was a 404. Not our problem.
-            if more_meta is None:
-                errors.append('Could not fetch HTML for %s' % purl)
-            continue
-        metas[gid] = dict(metas[gid], **more_meta)
-    progress_done()
+    gids = [(gid, meta['profile_url'])
+            for gid, meta in metas.iteritems()
+            if 'full_name' not in meta and 'profile_url' in meta]
+    if len(gids):
+        eprint('Fetching meta data for players not on a roster...')
+
+        def fetch(t):
+            gid, purl = t
+            resp, content = new_http().request(purl, 'GET')
+            if resp['status'] != '200':
+                if resp['status'] == '404':
+                    return gid, purl, False
+                else:
+                    return gid, purl, None
+            return gid, purl, content
+        for i, (gid, purl, html) in enumerate(green_pool.imap(fetch, gids), 1):
+            progress(i, len(gids))
+            more_meta = meta_from_profile_html(html)
+            if not more_meta:
+                # If more_meta is False, then it was a 404. Not our problem.
+                if more_meta is None:
+                    errors.append('Could not fetch HTML for %s' % purl)
+                continue
+            metas[gid] = dict(metas[gid], **more_meta)
+        progress_done()
 
     assert len(metas) > 0, "Have no players to add... ???"
     with open(args.json_update_file, 'w+') as fp:
