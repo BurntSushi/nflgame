@@ -151,6 +151,8 @@ def meta_from_soup_row(team, soup_row):
 
 
 def meta_from_profile_html(html):
+    if html is None:
+        return None
     try:
         soup = BeautifulSoup(html)
         pinfo = soup.find(id='player-bio').find(class_='player-info')
@@ -381,26 +383,25 @@ if __name__ == '__main__':
         merged['gsis_id'] = gsisid
         metas[gsisid] = merged
 
-    # Temp fix.
-    eprint('Getting profile URLs...')
-    def fetch(gid):
-        return gid, profile_url(gid)
-    pids_toget = [meta['gsis_id']
-                  for meta in metas.itervalues()
-                  if 'profile_url' not in meta and 'profile_id' in meta]
-    for i, (gid, purl) in enumerate(green_pool.imap(fetch, pids_toget), 1):
-        progress(i, len(pids_toget))
-        metas[gid]['profile_url'] = purl
-    progress_done()
-
     # Finally, try to scrape meta data for players who aren't on a roster
     # but have recorded a statistic in nflgame.
-    # for meta in metas.itervalues(): 
-        # if meta.get('full_name', None):  # Player already has meta data. 
-            # continue 
-        # purl = meta.get('profile_url', None) 
-        # if not purl:  # No valid profile URL, so skip. 
-            # continue 
+    def fetch(t):
+        gid, purl = t
+        resp, content = new_http().request(purl, 'GET')
+        if resp['status'] != '200':
+            return gid, purl, None
+        return gid, purl, content
+    gids_get = [(gid, meta['profile_url'])
+                for gid, meta in metas.iteritems()
+                if 'full_name' not in meta and 'profile_url' in meta]
+    for i, (gid, purl, html) in enumerate(green_pool.imap(fetch, gids_get), 1):
+        progress(i, len(gids_get))
+        more_meta = meta_from_profile_html(html)
+        if more_meta is None:
+            errors.append('Could not fetch HTML for %s' % purl)
+            continue
+        metas[gid] = dict(metas[gid], **more_meta)
+    progress_done()
 
     assert len(metas) > 0, "Have no players to add... ???"
     with open(args.json_update_file, 'w+') as fp:
