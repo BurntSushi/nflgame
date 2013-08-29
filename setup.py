@@ -55,5 +55,5 @@ setup(
                                        'INSTALL', 'longdesc.rst']),
                 ('share/doc/nflgame/doc', glob('doc/nflgame/*.html'))],
     scripts=['scripts/nflgame-update-players'],
-    install_requires=['pytz==2013b', 'httplib2', 'eventlet', 'beautifulsoup4']
+    install_requires=['pytz==2013b', 'httplib2', 'beautifulsoup4']
 )

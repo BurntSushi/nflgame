@@ -44,13 +44,12 @@
 from __future__ import absolute_import, division, print_function
 import argparse
 import json
+import multiprocessing.pool
 import os
 import re
 import sys
 
-import eventlet
-
-httplib2 = eventlet.import_patched('httplib2')
+import httplib2
 
 from bs4 import BeautifulSoup
 
@@ -263,7 +262,7 @@ if __name__ == '__main__':
         'gsis_profile': 'http://www.nfl.com/players/profile?id=%s',
     }
     teams = [team[0] for team in nflgame.teams]
-    green_pool = eventlet.GreenPool(args.simultaneous_reqs)
+    pool = multiprocessing.pool.ThreadPool(args.simultaneous_reqs)
 
     # Before doing anything laborious, make sure we have write access to
     # the JSON database.
@@ -323,7 +322,7 @@ if __name__ == '__main__':
 
         def fetch(t):  # t[0] is the gsis_id and t[1] is the gsis name
             return t[0], t[1], profile_url(t[0])
-        for i, t in enumerate(green_pool.imap(fetch, players.items()), 1):
+        for i, t in enumerate(pool.imap(fetch, players.items()), 1):
             gid, name, purl = t
             progress(i, len(players))
             if pid is None:
@@ -344,7 +343,7 @@ if __name__ == '__main__':
 
     def fetch(team):
         return team, roster_soup(team)
-    for i, (team, soup) in enumerate(green_pool.imap(fetch, teams), 1):
+    for i, (team, soup) in enumerate(pool.imap(fetch, teams), 1):
         progress(i, len(teams))
 
         if soup is None:
@@ -363,7 +362,7 @@ if __name__ == '__main__':
 
         def fetch(purl):
             return purl, gsis_id(purl)
-        for i, (purl, gid) in enumerate(green_pool.imap(fetch, purls), 1):
+        for i, (purl, gid) in enumerate(pool.imap(fetch, purls), 1):
             progress(i, len(purls))
 
             if gid is None:
@@ -400,7 +399,7 @@ if __name__ == '__main__':
                 else:
                     return gid, purl, None
             return gid, purl, content
-        for i, (gid, purl, html) in enumerate(green_pool.imap(fetch, gids), 1):
+        for i, (gid, purl, html) in enumerate(pool.imap(fetch, gids), 1):
             progress(i, len(gids))
             more_meta = meta_from_profile_html(html)
             if not more_meta:
