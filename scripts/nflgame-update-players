@@ -59,7 +59,7 @@ import nflgame.player
 
 
 def new_http():
-    http = httplib2.Http(timeout=5)
+    http = httplib2.Http(timeout=10)
     http.follow_redirects = False
     return http
 
