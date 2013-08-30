@@ -1,3 +1,16 @@
+1.1.14
+======
+  - Data updates for preseason weeks 2-4 (4 isn't complete yet).
+  - A complete rewrite of the JSON player database. Meta data is
+    now much more complete (with the vast majority of every player
+    in nflgame data back to 2009 having some meta data). Also,
+    nflgame now includes a `nflgame-update-players` script to
+    update the JSON player database using a minimal number of
+    HTTP requests.
+  - Use `tsv` extension so GitHub shows test results better.
+  - Recover gracefully if there is a socket timeout when downloading
+    JSON data.
+
 1.1.13
 ======
   - Mostly a maintenance release with some reorganization.
