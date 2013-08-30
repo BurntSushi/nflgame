@@ -3,6 +3,7 @@ import os
 import os.path as path
 import gzip
 import json
+import socket
 import sys
 import urllib2
 
@@ -795,6 +796,8 @@ def _get_json_data(eid=None, fpath=None):
     try:
         return urllib2.urlopen(_json_base_url % (eid, eid), timeout=5).read()
     except urllib2.HTTPError:
+        pass
+    except socket.timeout:
         pass
     return None
 
