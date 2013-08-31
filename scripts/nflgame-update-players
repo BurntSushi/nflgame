@@ -253,6 +253,12 @@ if __name__ == '__main__':
             'this program from another script. The idea here is not to block '
             'indefinitely if something goes wrong and the program wants to '
             'do a fresh update.')
+    aa('--phase', default=None, choices=['PRE', 'REG', 'POST'],
+       help='Force the update to use the given phase of the season.')
+    aa('--year', default=None, type=int,
+       help='Force the update to use nflgame players from a specific year.')
+    aa('--week', default=None, type=int,
+       help='Force the update to use nflgame players from a specific week.')
     args = parser.parse_args()
 
     if args.json_update_file is None:
@@ -312,6 +318,13 @@ if __name__ == '__main__':
         nflgame.live._update_week_number()
         phase = nflgame.live._cur_season_phase
         year, week = nflgame.live.current_year_and_week()
+        if args.phase is not None:
+            phase = args.phase
+        if args.year is not None:
+            year = args.year
+        if args.week is not None:
+            week = args.week
+
         eprint('Loading games for %s %d week %d' % (phase, year, week))
         games = nflgame.games(year, week, kind=phase)
         players = dict(players_from_games(metas, games))
