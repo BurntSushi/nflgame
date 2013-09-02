@@ -1,4 +1,3 @@
-import csv
 import functools
 import itertools
 import operator
@@ -298,6 +297,8 @@ class GenPlayerStats (Gen):
         by setting 'allfields' to True, which will use every available field
         in the header.
         """
+        import csv
+
         fields, rows = set([]), []
         players = list(self)
         for p in players:
