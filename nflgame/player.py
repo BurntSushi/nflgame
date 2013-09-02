@@ -53,6 +53,7 @@ class Player (object):
         self.status = data.get('status', '')
 
         # API backwards compatibility.
+        self.gsis_id = self.player_id
         self.playerid = self.player_id
         self.name = self.full_name
         self.number = self.uniform_number
