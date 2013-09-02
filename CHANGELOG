@@ -1,3 +1,14 @@
+1.1.15
+======
+  - Player database updates.
+  - Changed the player update script to stay fresh on position and status
+    data (in addition to team data). Namely, if the attributes become
+    unavailable, then they should be empty, regardless of their previous
+    values.
+  - Changed the `csv` import to be local to the csv export function as a
+    bandaide for QPython on Android (see issue #32).
+  - Expose player identifiers as `gsis_id` in addition to `player_id`.
+
 1.1.14
 ======
   - Data updates for preseason weeks 2-4 (4 isn't complete yet).
