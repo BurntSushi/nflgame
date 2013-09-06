@@ -2119,15 +2119,19 @@
     }, 
     "00-0018584": {
         "birthdate": "2/18/1977", 
-        "college": "North", 
+        "college": "North Texas", 
         "first_name": "Brian", 
         "full_name": "Brian Waters", 
         "gsis_id": "00-0018584", 
         "gsis_name": "B.Waters", 
-        "height": "6-3", 
+        "height": "6'3\"", 
         "last_name": "Waters", 
+        "number": 0, 
+        "position": "G", 
         "profile_id": 2503872, 
         "profile_url": "http://www.nfl.com/player/brianwaters/2503872/profile", 
+        "status": "ACT", 
+        "team": "DAL", 
         "weight": "320", 
         "years_pro": 13
     }, 
@@ -4771,7 +4775,7 @@
         "profile_url": "http://www.nfl.com/player/robbironas/2504934/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "210", 
+        "weight": "208", 
         "years_pro": 9
     }, 
     "00-0020969": {
@@ -4811,11 +4815,14 @@
         "gsis_name": "B.Cundiff", 
         "height": "6'1\"", 
         "last_name": "Cundiff", 
-        "number": 6, 
+        "number": 0, 
+        "position": "K", 
         "profile_id": 2504941, 
         "profile_url": "http://www.nfl.com/player/billycundiff/2504941/profile", 
+        "status": "ACT", 
+        "team": "CLE", 
         "weight": "212", 
-        "years_pro": 9
+        "years_pro": 8
     }, 
     "00-0020995": {
         "birthdate": "1/8/1979", 
@@ -4882,13 +4889,13 @@
         "gsis_name": "W.Witherspoon", 
         "height": "6'1\"", 
         "last_name": "Witherspoon", 
-        "number": 92, 
+        "number": 51, 
         "position": "LB", 
         "profile_id": 2504980, 
         "profile_url": "http://www.nfl.com/player/willwitherspoon/2504980/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "240", 
+        "weight": "242", 
         "years_pro": 12
     }, 
     "00-0021092": {
@@ -5076,7 +5083,7 @@
         "gsis_name": "D.Freeney", 
         "height": "6'1\"", 
         "last_name": "Freeney", 
-        "number": 95, 
+        "number": 93, 
         "position": "OLB", 
         "profile_id": 2505016, 
         "profile_url": "http://www.nfl.com/player/dwightfreeney/2505016/profile", 
@@ -6501,13 +6508,13 @@
         "gsis_name": "Q.Mikell", 
         "height": "5'10\"", 
         "last_name": "Mikell", 
-        "number": 0, 
+        "number": 27, 
         "position": "DB", 
         "profile_id": 2505281, 
         "profile_url": "http://www.nfl.com/player/quintinmikell/2505281/profile", 
         "status": "ACT", 
         "team": "CAR", 
-        "weight": "204", 
+        "weight": "205", 
         "years_pro": 11
     }, 
     "00-0021525": {
@@ -8731,7 +8738,7 @@
         "profile_url": "http://www.nfl.com/player/travellewharton/2505687/profile", 
         "status": "ACT", 
         "team": "CAR", 
-        "weight": "320", 
+        "weight": "315", 
         "years_pro": 10
     }, 
     "00-0022216": {
@@ -8925,7 +8932,7 @@
         "profile_url": "http://www.nfl.com/player/georgewilson/2505745/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "214", 
+        "weight": "210", 
         "years_pro": 8
     }, 
     "00-0022342": {
@@ -10004,7 +10011,7 @@
         "position": "OLB", 
         "profile_id": 2505973, 
         "profile_url": "http://www.nfl.com/player/jonathanvilma/2505973/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "NO", 
         "weight": "230", 
         "years_pro": 10
@@ -10409,7 +10416,7 @@
         "profile_url": "http://www.nfl.com/player/scottwells/2506025/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "300", 
+        "weight": "302", 
         "years_pro": 10
     }, 
     "00-0022836": {
@@ -11831,7 +11838,7 @@
         "profile_url": "http://www.nfl.com/player/harveydahl/2506225/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "308", 
+        "weight": "306", 
         "years_pro": 7
     }, 
     "00-0023186": {
@@ -12183,10 +12190,13 @@
         "height": "6'3\"", 
         "last_name": "Gibson", 
         "number": 95, 
+        "position": "DT", 
         "profile_id": 2506297, 
         "profile_url": "http://www.nfl.com/player/garygibson/2506297/profile", 
+        "status": "ACT", 
+        "team": "TB", 
         "weight": "312", 
-        "years_pro": 8
+        "years_pro": 7
     }, 
     "00-0023331": {
         "birthdate": "8/22/1982", 
@@ -12301,7 +12311,7 @@
         "profile_url": "http://www.nfl.com/player/natewashington/2506313/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "177", 
+        "weight": "183", 
         "years_pro": 9
     }, 
     "00-0023368": {
@@ -12817,7 +12827,7 @@
         "profile_url": "http://www.nfl.com/player/chrisspencer/2506365/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "309", 
+        "weight": "308", 
         "years_pro": 9
     }, 
     "00-0023462": {
@@ -13051,7 +13061,7 @@
         "profile_url": "http://www.nfl.com/player/michaelroos/2506380/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "320", 
+        "weight": "313", 
         "years_pro": 9
     }, 
     "00-0023477": {
@@ -13887,7 +13897,7 @@
         "profile_url": "http://www.nfl.com/player/davidstewart/2506451/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "315", 
+        "weight": "313", 
         "years_pro": 9
     }, 
     "00-0023556": {
@@ -14074,7 +14084,7 @@
         "profile_url": "http://www.nfl.com/player/mattgiordano/2506472/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "204", 
+        "weight": "208", 
         "years_pro": 9
     }, 
     "00-0023570": {
@@ -14759,11 +14769,14 @@
         "gsis_name": "B.Bajema", 
         "height": "6'4\"", 
         "last_name": "Bajema", 
-        "number": 86, 
+        "number": 0, 
+        "position": "TE", 
         "profile_id": 2506578, 
         "profile_url": "http://www.nfl.com/player/billybajema/2506578/profile", 
+        "status": "ACT", 
+        "team": "BAL", 
         "weight": "259", 
-        "years_pro": 9
+        "years_pro": 7
     }, 
     "00-0023682": {
         "birthdate": "11/24/1982", 
@@ -14780,7 +14793,7 @@
         "profile_url": "http://www.nfl.com/player/ryanfitzpatrick/2506581/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "225", 
+        "weight": "223", 
         "years_pro": 9
     }, 
     "00-0023683": {
@@ -15454,8 +15467,11 @@
         "height": "6'9\"", 
         "last_name": "Roland", 
         "number": 74, 
+        "position": "OT", 
         "profile_id": 2495934, 
         "profile_url": "http://www.nfl.com/player/dennisroland/2495934/profile", 
+        "status": "ACT", 
+        "team": "CIN", 
         "weight": "315", 
         "years_pro": 6
     }, 
@@ -16064,7 +16080,7 @@
         "position": "RB", 
         "profile_id": 2506817, 
         "profile_url": "http://www.nfl.com/player/montellowens/2506817/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "DET", 
         "weight": "225", 
         "years_pro": 8
@@ -16590,7 +16606,7 @@
         "profile_url": "http://www.nfl.com/player/kamerionwimbley/2495985/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "255", 
+        "weight": "258", 
         "years_pro": 8
     }, 
     "00-0024229": {
@@ -16952,8 +16968,11 @@
         "height": "6'2\"", 
         "last_name": "McIntosh", 
         "number": 52, 
+        "position": "LB", 
         "profile_id": 2506890, 
         "profile_url": "http://www.nfl.com/player/rockymcintosh/2506890/profile", 
+        "status": "ACT", 
+        "team": "DET", 
         "weight": "242", 
         "years_pro": 8
     }, 
@@ -17138,7 +17157,7 @@
         "profile_url": "http://www.nfl.com/player/kellenclemens/2506895/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "200", 
+        "weight": "221", 
         "years_pro": 8
     }, 
     "00-0024265": {
@@ -17290,14 +17309,14 @@
         "gsis_name": "R.Marshall", 
         "height": "5'11\"", 
         "last_name": "Marshall", 
-        "number": 20, 
+        "number": 31, 
         "position": "DB", 
         "profile_id": 2495894, 
         "profile_url": "http://www.nfl.com/player/richardmarshall/2495894/profile", 
         "status": "ACT", 
         "team": "SD", 
         "weight": "198", 
-        "years_pro": 7
+        "years_pro": 8
     }, 
     "00-0024274": {
         "birthdate": "5/10/1983", 
@@ -18394,14 +18413,14 @@
         "gsis_name": "P.Haralson", 
         "height": "6'0\"", 
         "last_name": "Haralson", 
-        "number": 58, 
+        "number": 98, 
         "position": "LB", 
         "profile_id": 2495846, 
         "profile_url": "http://www.nfl.com/player/parysharalson/2495846/profile", 
         "status": "ACT", 
         "team": "NO", 
         "weight": "255", 
-        "years_pro": 6
+        "years_pro": 8
     }, 
     "00-0024355": {
         "birthdate": "1/10/1983", 
@@ -18413,11 +18432,8 @@
         "height": "6'6\"", 
         "last_name": "Scott", 
         "number": 79, 
-        "position": "T", 
         "profile_id": 2495943, 
         "profile_url": "http://www.nfl.com/player/jonathanscott/2495943/profile", 
-        "status": "ACT", 
-        "team": "CHI", 
         "weight": "318", 
         "years_pro": 7
     }, 
@@ -18709,7 +18725,7 @@
         "profile_url": "http://www.nfl.com/player/delaniewalker/2495966/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "242", 
+        "weight": "248", 
         "years_pro": 8
     }, 
     "00-0024390": {
@@ -19164,7 +19180,7 @@
         "profile_url": "http://www.nfl.com/player/cortlandfinnegan/2506978/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "188", 
+        "weight": "179", 
         "years_pro": 8
     }, 
     "00-0024432": {
@@ -20839,7 +20855,7 @@
         "profile_url": "http://www.nfl.com/player/michaelgriffin/2495614/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "203", 
+        "weight": "215", 
         "years_pro": 7
     }, 
     "00-0025407": {
@@ -20977,9 +20993,12 @@
         "gsis_name": "R.Meachem", 
         "height": "6'2\"", 
         "last_name": "Meachem", 
-        "number": 12, 
+        "number": 0, 
+        "position": "WR", 
         "profile_id": 2495676, 
         "profile_url": "http://www.nfl.com/player/robertmeachem/2495676/profile", 
+        "status": "ACT", 
+        "team": "NO", 
         "weight": "215", 
         "years_pro": 7
     }, 
@@ -21730,7 +21749,7 @@
         "position": "TE", 
         "profile_id": 2507182, 
         "profile_url": "http://www.nfl.com/player/mattspaeth/2507182/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "PIT", 
         "weight": "260", 
         "years_pro": 7
@@ -22779,13 +22798,13 @@
         "gsis_name": "A.Johnson", 
         "height": "6'3\"", 
         "last_name": "Johnson", 
-        "number": 79, 
+        "number": 90, 
         "position": "NT", 
         "profile_id": 2495646, 
         "profile_url": "http://www.nfl.com/player/antoniojohnson/2495646/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "310", 
+        "weight": "328", 
         "years_pro": 7
     }, 
     "00-0025540": {
@@ -22823,15 +22842,15 @@
         "full_name": "Dante Rosario", 
         "gsis_id": "00-0025542", 
         "gsis_name": "D.Rosario", 
-        "height": "6'4\"", 
+        "height": "6'3\"", 
         "last_name": "Rosario", 
-        "number": 0, 
+        "number": 88, 
         "position": "TE", 
         "profile_id": 2495724, 
         "profile_url": "http://www.nfl.com/player/danterosario/2495724/profile", 
         "status": "ACT", 
         "team": "CHI", 
-        "weight": "250", 
+        "weight": "242", 
         "years_pro": 7
     }, 
     "00-0025543": {
@@ -22954,7 +22973,7 @@
         "position": "SS", 
         "profile_id": 2495605, 
         "profile_url": "http://www.nfl.com/player/ericframpton/2495605/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "DAL", 
         "weight": "202", 
         "years_pro": 7
@@ -23635,7 +23654,7 @@
         "profile_url": "http://www.nfl.com/player/michaelotto/2507246/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "310", 
+        "weight": "308", 
         "years_pro": 6
     }, 
     "00-0025611": {
@@ -23833,7 +23852,7 @@
         "profile_url": "http://www.nfl.com/player/keyuntadawson/2507255/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "265", 
+        "weight": "258", 
         "years_pro": 6
     }, 
     "00-0025630": {
@@ -24157,7 +24176,7 @@
         "gsis_name": "J.Battle", 
         "height": "6'2\"", 
         "last_name": "Battle", 
-        "number": 44, 
+        "number": 22, 
         "position": "RB", 
         "profile_id": 2507278, 
         "profile_url": "http://www.nfl.com/player/jackiebattle/2507278/profile", 
@@ -24425,7 +24444,7 @@
         "gsis_name": "R.Turner", 
         "height": "6'4\"", 
         "last_name": "Turner", 
-        "number": 58, 
+        "number": 59, 
         "position": "G", 
         "profile_id": 2507304, 
         "profile_url": "http://www.nfl.com/player/robertturner/2507304/profile", 
@@ -24589,7 +24608,7 @@
         "profile_url": "http://www.nfl.com/player/jakelong/278/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "319", 
+        "weight": "322", 
         "years_pro": 6
     }, 
     "00-0025821": {
@@ -24668,7 +24687,7 @@
         "profile_url": "http://www.nfl.com/player/brettkern/4263/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "217", 
+        "weight": "214", 
         "years_pro": 6
     }, 
     "00-0025826": {
@@ -24740,7 +24759,7 @@
         "profile_url": "http://www.nfl.com/player/patrickbailey/2507329/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "235", 
+        "weight": "243", 
         "years_pro": 6
     }, 
     "00-0025834": {
@@ -25451,7 +25470,7 @@
         "profile_url": "http://www.nfl.com/player/dariusreynaud/784/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "201", 
+        "weight": "208", 
         "years_pro": 5
     }, 
     "00-0025953": {
@@ -25886,7 +25905,7 @@
         "profile_url": "http://www.nfl.com/player/ropatipitoitua/2507408/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "315", 
+        "weight": "298", 
         "years_pro": 4
     }, 
     "00-0026017": {
@@ -26582,7 +26601,7 @@
         "profile_url": "http://www.nfl.com/player/chrislong/276/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "270", 
+        "weight": "268", 
         "years_pro": 6
     }, 
     "00-0026143": {
@@ -26786,7 +26805,7 @@
         "profile_url": "http://www.nfl.com/player/chriswilliams/2507466/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "320", 
+        "weight": "326", 
         "years_pro": 6
     }, 
     "00-0026155": {
@@ -26962,7 +26981,7 @@
         "profile_url": "http://www.nfl.com/player/chrisjohnson/262/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "191", 
+        "weight": "203", 
         "years_pro": 6
     }, 
     "00-0026165": {
@@ -27656,7 +27675,7 @@
         "profile_url": "http://www.nfl.com/player/kendalllangford/270/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "295", 
+        "weight": "313", 
         "years_pro": 6
     }, 
     "00-0026207": {
@@ -27956,7 +27975,7 @@
         "profile_url": "http://www.nfl.com/player/craigstevens/1992/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "268", 
+        "weight": "263", 
         "years_pro": 6
     }, 
     "00-0026226": {
@@ -28250,7 +28269,7 @@
         "profile_url": "http://www.nfl.com/player/williamhayes/4483/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "272", 
+        "weight": "278", 
         "years_pro": 6
     }, 
     "00-0026244": {
@@ -29749,11 +29768,8 @@
         "height": "5'10\"", 
         "last_name": "Nakamura", 
         "number": 43, 
-        "position": "FS", 
         "profile_id": 4295, 
         "profile_url": "http://www.nfl.com/player/harukinakamura/4295/profile", 
-        "status": "RES", 
-        "team": "CAR", 
         "weight": "205", 
         "years_pro": 6
     }, 
@@ -33351,7 +33367,7 @@
         "gsis_name": "R.Walker", 
         "height": "6'0\"", 
         "last_name": "Walker", 
-        "number": 0, 
+        "number": 51, 
         "position": "LB", 
         "profile_id": 2507675, 
         "profile_url": "http://www.nfl.com/player/reggiewalker/2507675/profile", 
@@ -34347,7 +34363,7 @@
         "position": "CB", 
         "profile_id": 2507727, 
         "profile_url": "http://www.nfl.com/player/dannygorrer/2507727/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "TB", 
         "weight": "180", 
         "years_pro": 4
@@ -35002,7 +35018,7 @@
         "profile_url": "http://www.nfl.com/player/shonngreene/79563/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "226", 
+        "weight": "233", 
         "years_pro": 5
     }, 
     "00-0026900": {
@@ -35829,7 +35845,7 @@
         "profile_url": "http://www.nfl.com/player/moisefokou/80638/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "236", 
+        "weight": "243", 
         "years_pro": 5
     }, 
     "00-0026952": {
@@ -36665,7 +36681,7 @@
         "profile_url": "http://www.nfl.com/player/kennybritt/71217/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "215", 
+        "weight": "223", 
         "years_pro": 5
     }, 
     "00-0027007": {
@@ -36751,7 +36767,7 @@
         "profile_url": "http://www.nfl.com/player/jameslaurinaitis/79850/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "250", 
+        "weight": "248", 
         "years_pro": 5
     }, 
     "00-0027012": {
@@ -37014,7 +37030,7 @@
         "profile_url": "http://www.nfl.com/player/andylevitre/71363/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "305", 
+        "weight": "303", 
         "years_pro": 5
     }, 
     "00-0027028": {
@@ -37577,7 +37593,7 @@
         "profile_url": "http://www.nfl.com/player/jaredcook/71265/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "248", 
+        "weight": "254", 
         "years_pro": 5
     }, 
     "00-0027062": {
@@ -37957,7 +37973,7 @@
         "profile_url": "http://www.nfl.com/player/sammieleehill/79571/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "329", 
+        "weight": "328", 
         "years_pro": 5
     }, 
     "00-0027085": {
@@ -38112,7 +38128,7 @@
         "position": "RB", 
         "profile_id": 2507790, 
         "profile_url": "http://www.nfl.com/player/andrebrown/2507790/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "NYG", 
         "weight": "227", 
         "years_pro": 5
@@ -38303,7 +38319,7 @@
         "profile_url": "http://www.nfl.com/player/quinnjohnson/79593/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "263", 
+        "weight": "255", 
         "years_pro": 5
     }, 
     "00-0027107": {
@@ -38750,7 +38766,7 @@
         "profile_url": "http://www.nfl.com/player/jasonmccourty/89756/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "188", 
+        "weight": "193", 
         "years_pro": 5
     }, 
     "00-0027137": {
@@ -38800,7 +38816,7 @@
         "years_pro": 5
     }, 
     "00-0027140": {
-        "birthdate": "5/20/1986", 
+        "birthdate": "5/5/1986", 
         "college": "Texas", 
         "first_name": "Chris", 
         "full_name": "Chris Ogbonnaya", 
@@ -39888,7 +39904,7 @@
         "profile_url": "http://www.nfl.com/player/jermellecudjo/2507846/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "311", 
+        "weight": "304", 
         "years_pro": 4
     }, 
     "00-0027250": {
@@ -43744,7 +43760,7 @@
         "profile_url": "http://www.nfl.com/player/rodgersaffold/497048/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "314", 
+        "weight": "332", 
         "years_pro": 4
     }, 
     "00-0027649": {
@@ -44282,7 +44298,7 @@
         "gsis_name": "DA.Smith", 
         "height": "6'2\"", 
         "last_name": "Smith", 
-        "number": 95, 
+        "number": 94, 
         "position": "DT", 
         "profile_id": 496859, 
         "profile_url": "http://www.nfl.com/player/d'anthonysmith/496859/profile", 
@@ -44894,7 +44910,7 @@
         "position": "TE", 
         "profile_id": 497254, 
         "profile_url": "http://www.nfl.com/player/dennispitta/497254/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "BAL", 
         "weight": "245", 
         "years_pro": 4
@@ -45149,13 +45165,13 @@
         "height": "6'3\"", 
         "last_name": "Schofield", 
         "number": 93, 
-        "position": "DE", 
+        "position": "LB", 
         "profile_id": 496851, 
         "profile_url": "http://www.nfl.com/player/o'brienschofield/496851/profile", 
         "status": "ACT", 
         "team": "SEA", 
         "weight": "242", 
-        "years_pro": 2
+        "years_pro": 4
     }, 
     "00-0027731": {
         "birthdate": "10/27/1986", 
@@ -45395,7 +45411,7 @@
         "gsis_name": "C.Thomas", 
         "height": "6'4\"", 
         "last_name": "Thomas", 
-        "number": 93, 
+        "number": 92, 
         "position": "NT", 
         "profile_id": 496865, 
         "profile_url": "http://www.nfl.com/player/camthomas/496865/profile", 
@@ -45473,13 +45489,13 @@
         "gsis_id": "00-0027750", 
         "height": "6'4\"", 
         "last_name": "Scott", 
-        "number": 63, 
+        "number": 75, 
         "position": "OT", 
         "profile_id": 2508054, 
         "profile_url": "http://www.nfl.com/player/chrisscott/2508054/profile", 
         "status": "ACT", 
         "team": "CAR", 
-        "weight": "360", 
+        "weight": "315", 
         "years_pro": 2
     }, 
     "00-0027751": {
@@ -45559,7 +45575,7 @@
         "profile_url": "http://www.nfl.com/player/davidreed/497318/profile", 
         "status": "ACT", 
         "team": "IND", 
-        "weight": "195", 
+        "weight": "190", 
         "years_pro": 4
     }, 
     "00-0027756": {
@@ -46044,7 +46060,7 @@
         "profile_url": "http://www.nfl.com/player/shelleysmith/497052/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "297", 
+        "weight": "312", 
         "years_pro": 4
     }, 
     "00-0027786": {
@@ -46077,7 +46093,7 @@
         "profile_url": "http://www.nfl.com/player/eugenesims/1037852/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "265", 
+        "weight": "269", 
         "years_pro": 4
     }, 
     "00-0027788": {
@@ -46675,13 +46691,13 @@
         "gsis_name": "S.Lissemore", 
         "height": "6'3\"", 
         "last_name": "Lissemore", 
-        "number": 95, 
+        "number": 98, 
         "position": "DT", 
         "profile_id": 1037896, 
         "profile_url": "http://www.nfl.com/player/seanlissemore/1037896/profile", 
         "status": "ACT", 
         "team": "SD", 
-        "weight": "314", 
+        "weight": "303", 
         "years_pro": 4
     }, 
     "00-0027827": {
@@ -47341,7 +47357,7 @@
         "profile_url": "http://www.nfl.com/player/derrickmorgan/496828/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "278", 
+        "weight": "271", 
         "years_pro": 4
     }, 
     "00-0027869": {
@@ -47780,7 +47796,7 @@
         "profile_url": "http://www.nfl.com/player/damianwilliams/497336/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "199", 
+        "weight": "193", 
         "years_pro": 4
     }, 
     "00-0027894": {
@@ -48074,7 +48090,7 @@
         "position": "WR", 
         "profile_id": 2508097, 
         "profile_url": "http://www.nfl.com/player/andrewhawkins/2508097/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "CIN", 
         "weight": "180", 
         "years_pro": 3
@@ -48375,7 +48391,7 @@
         "profile_url": "http://www.nfl.com/player/jakelocker/2495194/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "234", 
+        "weight": "223", 
         "years_pro": 3
     }, 
     "00-0027947": {
@@ -48639,7 +48655,7 @@
         "gsis_name": "D.Watkins", 
         "height": "6'3\"", 
         "last_name": "Watkins", 
-        "number": 0, 
+        "number": 62, 
         "position": "OG", 
         "profile_id": 2495360, 
         "profile_url": "http://www.nfl.com/player/dannywatkins/2495360/profile", 
@@ -48929,7 +48945,7 @@
         "profile_url": "http://www.nfl.com/player/akeemayers/2495491/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "254", 
+        "weight": "253", 
         "years_pro": 3
     }, 
     "00-0027978": {
@@ -49069,7 +49085,7 @@
         "profile_url": "http://www.nfl.com/player/lancekendricks/2495187/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "247", 
+        "weight": "250", 
         "years_pro": 3
     }, 
     "00-0027986": {
@@ -49434,7 +49450,7 @@
         "gsis_name": "K.Sheppard", 
         "height": "6'2\"", 
         "last_name": "Sheppard", 
-        "number": 59, 
+        "number": 52, 
         "position": "MLB", 
         "profile_id": 2495229, 
         "profile_url": "http://www.nfl.com/player/kelvinsheppard/2495229/profile", 
@@ -49507,7 +49523,7 @@
         "height": "6'4\"", 
         "last_name": "Wilson", 
         "number": 95, 
-        "position": "DE", 
+        "position": "LB", 
         "profile_id": 2495496, 
         "profile_url": "http://www.nfl.com/player/martezwilson/2495496/profile", 
         "status": "ACT", 
@@ -49602,7 +49618,7 @@
         "profile_url": "http://www.nfl.com/player/jurrellcasey/2495476/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "300", 
+        "weight": "305", 
         "years_pro": 3
     }, 
     "00-0028016": {
@@ -49620,7 +49636,7 @@
         "profile_url": "http://www.nfl.com/player/austinpettis/2495212/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "207", 
+        "weight": "203", 
         "years_pro": 3
     }, 
     "00-0028017": {
@@ -49773,7 +49789,7 @@
         "gsis_name": "D.Nevis", 
         "height": "6'1\"", 
         "last_name": "Nevis", 
-        "number": 94, 
+        "number": 75, 
         "position": "DT", 
         "profile_id": 2495208, 
         "profile_url": "http://www.nfl.com/player/drakenevis/2495208/profile", 
@@ -49863,13 +49879,13 @@
         "gsis_name": "J.Barksdale", 
         "height": "6'5\"", 
         "last_name": "Barksdale", 
-        "number": 68, 
+        "number": 72, 
         "position": "T", 
         "profile_id": 2508117, 
         "profile_url": "http://www.nfl.com/player/joebarksdale/2508117/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "329", 
+        "weight": "326", 
         "years_pro": 3
     }, 
     "00-0028031": {
@@ -50165,7 +50181,7 @@
         "profile_url": "http://www.nfl.com/player/colinmccarthy/2495199/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "238", 
+        "weight": "243", 
         "years_pro": 3
     }, 
     "00-0028048": {
@@ -50722,7 +50738,7 @@
         "profile_url": "http://www.nfl.com/player/karlklug/2495300/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "275", 
+        "weight": "278", 
         "years_pro": 3
     }, 
     "00-0028081": {
@@ -50860,7 +50876,7 @@
         "position": "G", 
         "profile_id": 2495214, 
         "profile_url": "http://www.nfl.com/player/jasonpinkston/2495214/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "CLE", 
         "weight": "305", 
         "years_pro": 3
@@ -51290,7 +51306,7 @@
         "profile_url": "http://www.nfl.com/player/byronstingily/2499254/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "313", 
+        "weight": "318", 
         "years_pro": 3
     }, 
     "00-0028114": {
@@ -51330,7 +51346,7 @@
         "years_pro": 3
     }, 
     "00-0028116": {
-        "birthdate": "9/24/1988", 
+        "birthdate": "11/24/1988", 
         "college": "Southern Methodist", 
         "first_name": "Aldrick", 
         "full_name": "Aldrick Robinson", 
@@ -52135,11 +52151,8 @@
         "height": "6'5\"", 
         "last_name": "Kearse", 
         "number": 99, 
-        "position": "DT", 
         "profile_id": 2499273, 
         "profile_url": "http://www.nfl.com/player/frankkearse/2499273/profile", 
-        "status": "RES", 
-        "team": "CAR", 
         "weight": "310", 
         "years_pro": 3
     }, 
@@ -52442,7 +52455,7 @@
         "profile_url": "http://www.nfl.com/player/tommiecampbell/2499284/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "205", 
+        "weight": "198", 
         "years_pro": 3
     }, 
     "00-0028191": {
@@ -53304,7 +53317,7 @@
         "profile_url": "http://www.nfl.com/player/timbarnes/2530479/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "300", 
+        "weight": "306", 
         "years_pro": 2
     }, 
     "00-0028275": {
@@ -53983,8 +53996,11 @@
         "height": "6'4\"", 
         "last_name": "Adams", 
         "number": 86, 
+        "position": "TE", 
         "profile_id": 2530473, 
         "profile_url": "http://www.nfl.com/player/kyleadams/2530473/profile", 
+        "status": "ACT", 
+        "team": "CHI", 
         "weight": "255", 
         "years_pro": 3
     }, 
@@ -54273,7 +54289,7 @@
         "profile_url": "http://www.nfl.com/player/michaelpreston/2530798/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "206", 
+        "weight": "213", 
         "years_pro": 1
     }, 
     "00-0028364": {
@@ -54596,7 +54612,7 @@
         "profile_url": "http://www.nfl.com/player/jakemcquaide/2530852/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "247", 
+        "weight": "244", 
         "years_pro": 3
     }, 
     "00-0028398": {
@@ -57215,7 +57231,7 @@
         "profile_url": "http://www.nfl.com/player/mikemcneill/2530977/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "235", 
+        "weight": "240", 
         "years_pro": 3
     }, 
     "00-0028652": {
@@ -58441,7 +58457,7 @@
         "profile_url": "http://www.nfl.com/player/chasereynolds/2531218/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "200", 
+        "weight": "205", 
         "years_pro": 1
     }, 
     "00-0028798": {
@@ -59139,7 +59155,7 @@
         "profile_url": "http://www.nfl.com/player/quintonpointer/2535668/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "186", 
+        "weight": "194", 
         "years_pro": 2
     }, 
     "00-0028871": {
@@ -59157,7 +59173,7 @@
         "profile_url": "http://www.nfl.com/player/mattdaniels/2534785/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "211", 
+        "weight": "212", 
         "years_pro": 2
     }, 
     "00-0028872": {
@@ -59175,7 +59191,7 @@
         "profile_url": "http://www.nfl.com/player/johnnyhekker/2535663/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "227", 
+        "weight": "236", 
         "years_pro": 2
     }, 
     "00-0028874": {
@@ -59237,7 +59253,7 @@
         "profile_url": "http://www.nfl.com/player/mattconrath/2534836/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "290", 
+        "weight": "306", 
         "years_pro": 2
     }, 
     "00-0028879": {
@@ -59438,7 +59454,7 @@
         "profile_url": "http://www.nfl.com/player/rodneymcleod/2534832/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "183", 
+        "weight": "195", 
         "years_pro": 2
     }, 
     "00-0028902": {
@@ -60008,7 +60024,7 @@
         "profile_url": "http://www.nfl.com/player/coryharkey/2533353/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "260", 
+        "weight": "259", 
         "years_pro": 2
     }, 
     "00-0028959": {
@@ -60377,8 +60393,11 @@
         "height": "6'3\"", 
         "last_name": "Jones", 
         "number": 46, 
+        "position": "TE", 
         "profile_id": 2535724, 
         "profile_url": "http://www.nfl.com/player/dominiquejones/2535724/profile", 
+        "status": "ACT", 
+        "team": "IND", 
         "weight": "270", 
         "years_pro": 2
     }, 
@@ -61933,7 +61952,7 @@
         "profile_url": "http://www.nfl.com/player/beaubrinkley/2535701/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "237", 
+        "weight": "248", 
         "years_pro": 2
     }, 
     "00-0029135": {
@@ -62401,7 +62420,7 @@
         "status": "ACT", 
         "team": "CAR", 
         "weight": "305", 
-        "years_pro": 0
+        "years_pro": 1
     }, 
     "00-0029169": {
         "birthdate": "1/28/1989", 
@@ -63750,11 +63769,8 @@
         "height": "5'11\"", 
         "last_name": "Adams", 
         "number": 15, 
-        "position": "WR", 
         "profile_id": 2532782, 
         "profile_url": "http://www.nfl.com/player/joeadams/2532782/profile", 
-        "status": "RES", 
-        "team": "CAR", 
         "weight": "185", 
         "years_pro": 2
     }, 
@@ -64052,7 +64068,7 @@
         "status": "ACT", 
         "team": "SD", 
         "weight": "330", 
-        "years_pro": 1
+        "years_pro": 0
     }, 
     "00-0029289": {
         "birthdate": "12/9/1988", 
@@ -64092,7 +64108,7 @@
         "gsis_name": "T.Manning", 
         "height": "6'2\"", 
         "last_name": "Manning", 
-        "number": 56, 
+        "number": 53, 
         "position": "LB", 
         "profile_id": 2533055, 
         "profile_url": "http://www.nfl.com/player/terrellmanning/2533055/profile", 
@@ -64397,14 +64413,14 @@
         "gsis_name": "C.Johnson", 
         "height": "6'3\"", 
         "last_name": "Johnson", 
-        "number": 0, 
-        "position": "DE", 
+        "number": 59, 
+        "position": "LB", 
         "profile_id": 2533452, 
         "profile_url": "http://www.nfl.com/player/camjohnson/2533452/profile", 
         "status": "ACT", 
         "team": "IND", 
         "weight": "268", 
-        "years_pro": 2
+        "years_pro": 1
     }, 
     "00-0029311": {
         "birthdate": "12/27/1988", 
@@ -65063,8 +65079,11 @@
         "height": "6'4\"", 
         "last_name": "Ojomo", 
         "number": 71, 
+        "position": "DE", 
         "profile_id": 2535949, 
         "profile_url": "http://www.nfl.com/player/adewaleojomo/2535949/profile", 
+        "status": "ACT", 
+        "team": "NYG", 
         "weight": "270", 
         "years_pro": 2
     }, 
@@ -65384,7 +65403,7 @@
         "height": "6'4\"", 
         "last_name": "Chandler", 
         "number": 78, 
-        "position": "DT", 
+        "position": "T", 
         "profile_id": 2535973, 
         "profile_url": "http://www.nfl.com/player/natechandler/2535973/profile", 
         "status": "ACT", 
@@ -65810,7 +65829,7 @@
         "profile_url": "http://www.nfl.com/player/brandonwashington/2533044/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "320", 
+        "weight": "318", 
         "years_pro": 1
     }, 
     "00-0029427": {
@@ -67003,7 +67022,7 @@
         "profile_url": "http://www.nfl.com/player/cotysensabaugh/2532946/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "189", 
+        "weight": "187", 
         "years_pro": 2
     }, 
     "00-0029530": {
@@ -67209,7 +67228,7 @@
         "profile_url": "http://www.nfl.com/player/mikemartin/2532901/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "306", 
+        "weight": "298", 
         "years_pro": 2
     }, 
     "00-0029545": {
@@ -67512,7 +67531,7 @@
         "profile_url": "http://www.nfl.com/player/zachbrown/2532804/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "242", 
+        "weight": "248", 
         "years_pro": 2
     }, 
     "00-0029567": {
@@ -67644,7 +67663,7 @@
         "gsis_id": "00-0029574", 
         "height": "6'0\"", 
         "last_name": "Chapman", 
-        "number": 61, 
+        "number": 96, 
         "position": "DT", 
         "profile_id": 2532811, 
         "profile_url": "http://www.nfl.com/player/joshchapman/2532811/profile", 
@@ -67901,7 +67920,7 @@
         "profile_url": "http://www.nfl.com/player/taylorthompson/2534742/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "280", 
+        "weight": "268", 
         "years_pro": 2
     }, 
     "00-0029592": {
@@ -68211,7 +68230,7 @@
         "profile_url": "http://www.nfl.com/player/darylrichardson/2534789/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "196", 
+        "weight": "206", 
         "years_pro": 2
     }, 
     "00-0029613": {
@@ -68247,7 +68266,7 @@
         "profile_url": "http://www.nfl.com/player/chrisgivens/2535634/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "198", 
+        "weight": "203", 
         "years_pro": 2
     }, 
     "00-0029615": {
@@ -68363,7 +68382,7 @@
         "profile_url": "http://www.nfl.com/player/gregzuerlein/2534797/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "187", 
+        "weight": "196", 
         "years_pro": 2
     }, 
     "00-0029622": {
@@ -68483,7 +68502,7 @@
         "profile_url": "http://www.nfl.com/player/michaelbrockers/2533050/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "322", 
+        "weight": "326", 
         "years_pro": 2
     }, 
     "00-0029631": {
@@ -68649,7 +68668,7 @@
         "profile_url": "http://www.nfl.com/player/brianquick/2532933/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "220", 
+        "weight": "218", 
         "years_pro": 2
     }, 
     "00-0029641": {
@@ -69067,7 +69086,7 @@
         "full_name": "Nick Toon", 
         "gsis_id": "00-0029667", 
         "gsis_name": "N.Toon", 
-        "height": "6'3\"", 
+        "height": "6'4\"", 
         "last_name": "Toon", 
         "number": 88, 
         "position": "WR", 
@@ -69273,7 +69292,7 @@
         "profile_url": "http://www.nfl.com/player/janorisjenkins/2532875/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "193", 
+        "weight": "198", 
         "years_pro": 2
     }, 
     "00-0029682": {
@@ -69416,7 +69435,7 @@
         "profile_url": "http://www.nfl.com/player/trumainejohnson/2532877/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "204", 
+        "weight": "208", 
         "years_pro": 2
     }, 
     "00-0029691": {
@@ -69682,7 +69701,7 @@
         "profile_url": "http://www.nfl.com/player/kendallwright/2532977/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "196", 
+        "weight": "191", 
         "years_pro": 2
     }, 
     "00-0029709": {
@@ -70615,13 +70634,13 @@
         "gsis_id": "00-0029794", 
         "height": "5'11\"", 
         "last_name": "Bates", 
-        "number": 51, 
+        "number": 53, 
         "position": "LB", 
         "profile_id": 2541539, 
         "profile_url": "http://www.nfl.com/player/darenbates/2541539/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "212", 
+        "weight": "225", 
         "years_pro": 0
     }, 
     "00-0029795": {
@@ -70632,13 +70651,13 @@
         "gsis_id": "00-0029795", 
         "height": "5'10\"", 
         "last_name": "Cunningham", 
-        "number": 45, 
+        "number": 36, 
         "position": "RB", 
         "profile_id": 2541544, 
         "profile_url": "http://www.nfl.com/player/bennycunningham/2541544/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "209", 
+        "weight": "217", 
         "years_pro": 0
     }, 
     "00-0029796": {
@@ -71695,7 +71714,7 @@
         "profile_url": "http://www.nfl.com/player/jonathanstewart/2540007/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "242", 
+        "weight": "254", 
         "years_pro": 0
     }, 
     "00-0029882": {
@@ -72492,7 +72511,7 @@
         "years_pro": 0
     }, 
     "00-0029945": {
-        "birthdate": "5/9/1990", 
+        "birthdate": "5/4/1990", 
         "college": "Western Michigan", 
         "first_name": "Paul", 
         "full_name": "Paul Hazel", 
@@ -73065,11 +73084,8 @@
         "height": "6'5\"", 
         "last_name": "McDonald", 
         "number": 64, 
-        "position": "G", 
         "profile_id": 2541150, 
         "profile_url": "http://www.nfl.com/player/chrismcdonald/2541150/profile", 
-        "status": "RES", 
-        "team": "NE", 
         "weight": "298", 
         "years_pro": 0
     }, 
@@ -73461,7 +73477,7 @@
         "gsis_id": "00-0030027", 
         "height": "6'1\"", 
         "last_name": "Greene", 
-        "number": 60, 
+        "number": 59, 
         "position": "OLB", 
         "profile_id": 2539297, 
         "profile_url": "http://www.nfl.com/player/khaseemgreene/2539297/profile", 
@@ -73549,8 +73565,11 @@
         "height": "6'3\"", 
         "last_name": "Garvin", 
         "number": 49, 
+        "position": "LB", 
         "profile_id": 2541777, 
         "profile_url": "http://www.nfl.com/player/terencegarvin/2541777/profile", 
+        "status": "ACT", 
+        "team": "PIT", 
         "weight": "221", 
         "years_pro": 0
     }, 
@@ -73770,7 +73789,7 @@
         "gsis_id": "00-0030048", 
         "height": "6'4\"", 
         "last_name": "Washington", 
-        "number": 78, 
+        "number": 94, 
         "position": "DE", 
         "profile_id": 2539232, 
         "profile_url": "http://www.nfl.com/player/corneliuswashington/2539232/profile", 
@@ -73810,7 +73829,7 @@
         "profile_url": "http://www.nfl.com/player/ray-rayarmstrong/2541792/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "227", 
+        "weight": "234", 
         "years_pro": 0
     }, 
     "00-0030051": {
@@ -73844,7 +73863,7 @@
         "profile_url": "http://www.nfl.com/player/geraldrivers/2541795/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "249", 
+        "weight": "258", 
         "years_pro": 0
     }, 
     "00-0030054": {
@@ -73929,7 +73948,7 @@
         "first_name": "Kenny", 
         "full_name": "Kenny Vaccaro", 
         "gsis_id": "00-0030060", 
-        "height": "6'1\"", 
+        "height": "6'0\"", 
         "last_name": "Vaccaro", 
         "number": 32, 
         "position": "SS", 
@@ -74186,7 +74205,7 @@
         "gsis_id": "00-0030075", 
         "height": "6'3\"", 
         "last_name": "Holmes", 
-        "number": 56, 
+        "number": 62, 
         "position": "C", 
         "profile_id": 2539307, 
         "profile_url": "http://www.nfl.com/player/khaledholmes/2539307/profile", 
@@ -74305,7 +74324,7 @@
         "gsis_id": "00-0030082", 
         "height": "6'4\"", 
         "last_name": "Hughes", 
-        "number": 73, 
+        "number": 94, 
         "position": "DT", 
         "profile_id": 2539944, 
         "profile_url": "http://www.nfl.com/player/montorihughes/2539944/profile", 
@@ -74427,7 +74446,7 @@
         "profile_url": "http://www.nfl.com/player/lukewillson/2541199/profile", 
         "status": "ACT", 
         "team": "SEA", 
-        "weight": "251", 
+        "weight": "252", 
         "years_pro": 0
     }, 
     "00-0030090": {
@@ -75160,7 +75179,7 @@
         "gsis_id": "00-0030137", 
         "height": "6'1\"", 
         "last_name": "Minter", 
-        "number": 76, 
+        "number": 96, 
         "position": "DT", 
         "profile_id": 2541869, 
         "profile_url": "http://www.nfl.com/player/zachminter/2541869/profile", 
@@ -75219,7 +75238,7 @@
         "gsis_id": "00-0030141", 
         "height": "5'11\"", 
         "last_name": "Wilson", 
-        "number": 39, 
+        "number": 25, 
         "position": "CB", 
         "profile_id": 2541907, 
         "profile_url": "http://www.nfl.com/player/c.j.wilson/2541907/profile", 
@@ -75524,8 +75543,11 @@
         "height": "6'1\"", 
         "last_name": "McDougald", 
         "number": 48, 
+        "position": "FS", 
         "profile_id": 2539243, 
         "profile_url": "http://www.nfl.com/player/bradleymcdougald/2539243/profile", 
+        "status": "ACT", 
+        "team": "KC", 
         "weight": "209", 
         "years_pro": 0
     }, 
@@ -75750,13 +75772,13 @@
         "gsis_id": "00-0030181", 
         "height": "6'5\"", 
         "last_name": "Doyle", 
-        "number": 46, 
+        "number": 84, 
         "position": "TE", 
         "profile_id": 2540232, 
         "profile_url": "http://www.nfl.com/player/jackdoyle/2540232/profile", 
         "status": "ACT", 
         "team": "IND", 
-        "weight": "254", 
+        "weight": "258", 
         "years_pro": 0
     }, 
     "00-0030184": {
@@ -76031,7 +76053,7 @@
         "gsis_id": "00-0030210", 
         "height": "5'11\"", 
         "last_name": "Lotulelei", 
-        "number": 46, 
+        "number": 58, 
         "position": "ILB", 
         "profile_id": 2539992, 
         "profile_url": "http://www.nfl.com/player/johnlotulelei/2539992/profile", 
@@ -76076,7 +76098,7 @@
         "gsis_id": "00-0030215", 
         "height": "6'4\"", 
         "last_name": "Foster", 
-        "number": 74, 
+        "number": 97, 
         "position": "DE", 
         "profile_id": 2541160, 
         "profile_url": "http://www.nfl.com/player/glennfoster/2541160/profile", 
@@ -76566,7 +76588,7 @@
         "gsis_id": "00-0030251", 
         "height": "6'5\"", 
         "last_name": "Horton", 
-        "number": 61, 
+        "number": 96, 
         "position": "DE", 
         "profile_id": 2539306, 
         "profile_url": "http://www.nfl.com/player/weshorton/2539306/profile", 
@@ -77424,7 +77446,7 @@
         "gsis_id": "00-0030318", 
         "height": "6'6\"", 
         "last_name": "Geathers", 
-        "number": 92, 
+        "number": 95, 
         "position": "NT", 
         "profile_id": 2540188, 
         "profile_url": "http://www.nfl.com/player/kwamegeathers/2540188/profile", 
@@ -78290,7 +78312,7 @@
         "years_pro": 0
     }, 
     "00-0030387": {
-        "birthdate": "12/5/1989", 
+        "birthdate": "9/16/1990", 
         "college": "Buffalo", 
         "first_name": "Steven", 
         "full_name": "Steven Means", 
@@ -78519,7 +78541,7 @@
         "years_pro": 0
     }, 
     "00-0030403": {
-        "birthdate": "1/7/1990", 
+        "birthdate": "5/3/1990", 
         "college": "William & Mary", 
         "first_name": "B.W.", 
         "full_name": "B.W. Webb", 
@@ -79150,7 +79172,7 @@
         "gsis_id": "00-0030448", 
         "height": "6'3\"", 
         "last_name": "Short", 
-        "number": 68, 
+        "number": 99, 
         "position": "DT", 
         "profile_id": 2539296, 
         "profile_url": "http://www.nfl.com/player/kawannshort/2539296/profile", 
@@ -79380,7 +79402,7 @@
         "position": "CB", 
         "profile_id": 2539229, 
         "profile_url": "http://www.nfl.com/player/sanderscommings/2539229/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "KC", 
         "weight": "223", 
         "years_pro": 0
@@ -79704,7 +79726,7 @@
         "profile_url": "http://www.nfl.com/player/brianschwenke/2540216/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "314", 
+        "weight": "318", 
         "years_pro": 0
     }, 
     "00-0030487": {
@@ -79786,7 +79808,7 @@
         "profile_url": "http://www.nfl.com/player/daimionstafford/2539266/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "205", 
+        "weight": "218", 
         "years_pro": 0
     }, 
     "00-0030493": {
@@ -79924,7 +79946,7 @@
         "profile_url": "http://www.nfl.com/player/zaviargooden/2539264/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "234", 
+        "weight": "231", 
         "years_pro": 0
     }, 
     "00-0030503": {
@@ -79975,7 +79997,7 @@
         "profile_url": "http://www.nfl.com/player/d.j.fluker/2540166/profile", 
         "status": "ACT", 
         "team": "SD", 
-        "weight": "319", 
+        "weight": "339", 
         "years_pro": 0
     }, 
     "00-0030506": {
@@ -80151,15 +80173,15 @@
         "first_name": "David", 
         "full_name": "David Bass", 
         "gsis_id": "00-0030517", 
-        "height": "6'5\"", 
+        "height": "6'4\"", 
         "last_name": "Bass", 
-        "number": 51, 
+        "number": 91, 
         "position": "DE", 
         "profile_id": 2540277, 
         "profile_url": "http://www.nfl.com/player/davidbass/2540277/profile", 
         "status": "ACT", 
         "team": "CHI", 
-        "weight": "275", 
+        "weight": "256", 
         "years_pro": 0
     }, 
     "00-0030518": {
@@ -80227,7 +80249,7 @@
         "profile_url": "http://www.nfl.com/player/justinhunter/2540151/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "196", 
+        "weight": "203", 
         "years_pro": 0
     }, 
     "00-0030522": {
@@ -80238,7 +80260,7 @@
         "gsis_id": "00-0030522", 
         "height": "5'10\"", 
         "last_name": "Ball", 
-        "number": 38, 
+        "number": 28, 
         "position": "RB", 
         "profile_id": 2539341, 
         "profile_url": "http://www.nfl.com/player/monteeball/2539341/profile", 
@@ -80295,7 +80317,7 @@
         "profile_url": "http://www.nfl.com/player/tavonaustin/2539336/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "174", 
+        "weight": "176", 
         "years_pro": 0
     }, 
     "00-0030526": {
@@ -80329,7 +80351,7 @@
         "profile_url": "http://www.nfl.com/player/alecogletree/2540143/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "242", 
+        "weight": "245", 
         "years_pro": 0
     }, 
     "00-0030528": {
@@ -80380,7 +80402,7 @@
         "profile_url": "http://www.nfl.com/player/t.j.mcdonald/2539309/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "219", 
+        "weight": "217", 
         "years_pro": 0
     }, 
     "00-0030531": {
@@ -80448,7 +80470,7 @@
         "profile_url": "http://www.nfl.com/player/barrettjones/2539195/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "306", 
+        "weight": "308", 
         "years_pro": 0
     }, 
     "00-0030535": {
@@ -80482,7 +80504,7 @@
         "profile_url": "http://www.nfl.com/player/zacstacy/2540273/profile", 
         "status": "ACT", 
         "team": "STL", 
-        "weight": "216", 
+        "weight": "224", 
         "years_pro": 0
     }, 
     "00-0030537": {
@@ -80564,7 +80586,7 @@
         "profile_url": "http://www.nfl.com/player/blidiwreh-wilson/2539219/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "195", 
+        "weight": "198", 
         "years_pro": 0
     }, 
     "00-0030542": {
@@ -80749,7 +80771,7 @@
         "years_pro": 0
     }, 
     "00-0030553": {
-        "birthdate": "5/20/1990", 
+        "birthdate": "5/5/1990", 
         "college": "East Central (OK)", 
         "first_name": "Armonty", 
         "full_name": "Armonty Bryant", 
@@ -80918,15 +80940,15 @@
         "first_name": "Bjoern", 
         "full_name": "Bjoern Werner", 
         "gsis_id": "00-0030563", 
-        "height": "6'4\"", 
+        "height": "6'3\"", 
         "last_name": "Werner", 
         "number": 92, 
-        "position": "DE", 
+        "position": "LB", 
         "profile_id": 2540141, 
         "profile_url": "http://www.nfl.com/player/bjoernwerner/2540141/profile", 
         "status": "ACT", 
         "team": "IND", 
-        "weight": "255", 
+        "weight": "260", 
         "years_pro": 0
     }, 
     "00-0030564": {
@@ -81379,7 +81401,7 @@
         "profile_url": "http://www.nfl.com/player/chancewarmack/2539194/profile", 
         "status": "ACT", 
         "team": "TEN", 
-        "weight": "317", 
+        "weight": "323", 
         "years_pro": 0
     }, 
     "00-0030594": {
