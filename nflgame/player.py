@@ -44,7 +44,7 @@ class Player (object):
         self.position = data.get('position', '')
         self.profile_id = data.get('profile_id', 0)
         self.profile_url = data.get('profile_url', '')
-        self.uniform_number = data.get('uniform_number', 0)
+        self.uniform_number = data.get('number', 0)
         self.birthdate = data.get('birthdate', '')
         self.college = data.get('college', '')
         self.height = data.get('height', '')
