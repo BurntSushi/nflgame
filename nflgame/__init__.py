@@ -203,10 +203,10 @@ by GSIS ID. (The identifiers used by NFL.com GameCenter.)
 
 teams = [
     ['ARI', 'Arizona', 'Cardinals', 'Arizona Cardinals'],
-    ['ATL', 'Atlanta', 'Falcons', 'Atlana Falcons'],
+    ['ATL', 'Atlanta', 'Falcons', 'Atlanta Falcons'],
     ['BAL', 'Baltimore', 'Ravens', 'Baltimore Ravens'],
     ['BUF', 'Buffalo', 'Bills', 'Buffalo Bills'],
-    ['CAR', 'Carolina', 'Panthers', 'Caroline Panthers'],
+    ['CAR', 'Carolina', 'Panthers', 'Carolina Panthers'],
     ['CHI', 'Chicago', 'Bears', 'Chicago Bears'],
     ['CIN', 'Cincinnati', 'Bengals', 'Cincinnati Bengals'],
     ['CLE', 'Cleveland', 'Browns', 'Cleveland Browns'],
