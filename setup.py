@@ -14,6 +14,16 @@ except LookupError:
         return {True: enc}.get(name == 'mbcs')
     codecs.register(wrapper)
 
+install_requires = ['pytz==2013b', 'httplib2', 'beautifulsoup4']
+try:
+    import argparse
+except ImportError:
+    install_requires.append('argparse')
+try:
+    from collections import OrderedDict
+except ImportError:
+    install_requires.append('ordereddict')
+
 cwd = path.dirname(__file__)
 longdesc = codecs.open(path.join(cwd, 'longdesc.rst'), 'r', 'ascii').read()
 
@@ -36,7 +46,7 @@ setup(
     url='https://github.com/BurntSushi/nflgame',
     classifiers=[
         'License :: Public Domain',
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Intended Audience :: End Users/Desktop',
@@ -45,15 +55,13 @@ setup(
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Topic :: Database',
-        'Topic :: Home Automation',
     ],
     platforms='ANY',
     packages=['nflgame'],
-    package_dir={'nflgame': 'nflgame'},
     package_data={'nflgame': ['players.json', 'gamecenter-json/*.json.gz']},
-    data_files=[('share/doc/nflgame', ['README', 'CHANGELOG', 'COPYING',
-                                       'INSTALL', 'longdesc.rst']),
+    data_files=[('share/doc/nflgame', ['README.md', 'CHANGELOG', 'COPYING',
+                                       'longdesc.rst']),
                 ('share/doc/nflgame/doc', glob('doc/nflgame/*.html'))],
     scripts=['scripts/nflgame-update-players'],
-    install_requires=['pytz==2013b', 'httplib2', 'beautifulsoup4']
+    install_requires=install_requires
 )
