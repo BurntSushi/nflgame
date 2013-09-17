@@ -7,15 +7,12 @@ docs:
 pypi: docs
 	sudo python2 setup.py register sdist bdist_wininst upload
 
-longdesc.rst: nflgame/__init__.py
-	./extract-docstring > longdesc.rst
+longdesc.rst: nflgame/__init__.py docstring
+	pandoc -f markdown -t rst -o longdesc.rst docstring
+	rm -f docstring
 
-# longdesc.rst: nflgame/__init__.py docstring 
-	# pandoc -f markdown -t rst -o longdesc.rst docstring 
-	# rm -f docstring 
-
-# docstring: nflgame/__init__.py 
-	# ./extract-docstring > docstring 
+docstring: nflgame/__init__.py
+	./extract-docstring > docstring
 
 dev-install: docs longdesc.rst
 	[[ -n "$$VIRTUAL_ENV" ]] || exit
