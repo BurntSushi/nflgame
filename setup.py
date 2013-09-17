@@ -38,7 +38,7 @@ setup(
     author='Andrew Gallant',
     author_email='andrew@burntsushi.net',
     version=version,
-    license='WTFPL',
+    license='UNLICENSE',
     description='An API to retrieve and read NFL Game Center JSON data. '
                 'It can work with real-time data, which can be used for '
                 'fantasy football.',
