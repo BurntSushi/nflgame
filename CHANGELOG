@@ -1,3 +1,7 @@
+1.1.19
+======
+  - Windows can't handle symlinks in setup.py.
+
 1.1.18
 ======
   - Switched to a more "professional" UNLICENCE.
