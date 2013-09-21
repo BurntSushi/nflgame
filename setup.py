@@ -59,7 +59,7 @@ setup(
     platforms='ANY',
     packages=['nflgame'],
     package_data={'nflgame': ['players.json', 'gamecenter-json/*.json.gz']},
-    data_files=[('share/doc/nflgame', ['README.md', 'CHANGELOG', 'COPYING',
+    data_files=[('share/doc/nflgame', ['README.md', 'CHANGELOG', 'UNLICENSE',
                                        'longdesc.rst']),
                 ('share/doc/nflgame/doc', glob('doc/nflgame/*.html'))],
     scripts=['scripts/nflgame-update-players'],
