@@ -1,3 +1,10 @@
+1.1.18
+======
+  - Switched to a more "professional" UNLICENCE.
+    (There are no practical differences from the WTFPL.)
+  - Player database update and first game of week 3.
+  - Moved nflgame-update-players to its own module. (Fixes issue #43.)
+
 1.1.17
 ======
   - Make the PyPI page look nicer.
