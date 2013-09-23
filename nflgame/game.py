@@ -466,10 +466,9 @@ class Drive (object):
     and stop times and field position, length of possession, the number
     of first downs and a short descriptive string of the result of the
     drive.
-
     """
     def __init__(self, game, drive_num, home_team, data):
-        if data is None:
+        if data is None or 'plays' not in data or len(data['plays']) == 0:
             return
         self.game = game
         self.drive_num = drive_num
@@ -506,7 +505,8 @@ class Drive (object):
         # seem to always work.)
         # lastplayid = str(max(map(int, data['plays'].keys())))
         # endqtr = data['plays'][lastplayid]['qtr']
-        maxq = str(max(map(int, [p['qtr'] for p in data['plays'].values()])))
+        qtrs = [p['qtr'] for p in data['plays'].values()]
+        maxq = str(max(map(int, qtrs)))
         self.time_end = GameClock(maxq, data['end']['time'])
 
         # One last sanity check. If the end time is less than the start time,
