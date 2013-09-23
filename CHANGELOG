@@ -1,3 +1,9 @@
+1.1.20
+======
+  - Fix a bug where drives with no plays (a bug in the source data)
+    causes loading a drive to crash your program.
+  - Player database update.
+
 1.1.19
 ======
   - Windows can't handle symlinks in setup.py.
