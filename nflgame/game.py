@@ -672,7 +672,10 @@ def _json_drives(game, home_team, data):
             pass
     drives = []
     for i, drive_num in enumerate(sorted(drive_nums), 1):
-        drives.append(Drive(game, i, home_team, data[str(drive_num)]))
+        d = Drive(game, i, home_team, data[str(drive_num)])
+        if not hasattr(d, 'game'):  # not a valid drive
+            continue
+        drives.append(d)
     return drives
 
 
