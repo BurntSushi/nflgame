@@ -22,7 +22,7 @@ first week of the 2013 season:
 
     #!python
     import nflgame
-    
+
     games = nflgame.games(2013, week=1)
     players = nflgame.combine_game_stats(games)
     for p in players.rushing().sort('rushing_yds').limit(5):
@@ -41,7 +41,7 @@ Or you could find the top 5 passing plays in the same time period:
 
     #!python
     import nflgame
-    
+
     games = nflgame.games(2013, week=1)
     plays = nflgame.combine_plays(games)
     for p in plays.sort('passing_yds').limit(5):
