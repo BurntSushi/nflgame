@@ -14,7 +14,7 @@ except LookupError:
         return {True: enc}.get(name == 'mbcs')
     codecs.register(wrapper)
 
-install_requires = ['pytz==2013b', 'httplib2', 'beautifulsoup4']
+install_requires = ['pytz', 'httplib2', 'beautifulsoup4']
 try:
     import argparse
 except ImportError:
