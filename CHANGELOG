@@ -1,3 +1,7 @@
+1.1.24
+======
+  - Fix issue #55. Better data sanitization for colleges.
+
 1.1.23
 ======
   - Sanitize height data in the JSON player database. It is
