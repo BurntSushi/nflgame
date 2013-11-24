@@ -135,6 +135,16 @@ def meta_from_soup_row(team, soup_row):
         last_name, first_name = name, ''
     else:
         last_name, first_name = map(lambda s: s.strip(), name.split(','))
+
+    #Format the player's height into inches. If we can't parse the data, defaul height to 0
+    try:
+        #Get the digits only
+        height_pieces = re.findall(r'[\d ]+',  data[4] )
+        #Multiply the first piece (feet) by 12 and add the second piece (inches)
+        height = try_int(height_pieces[0]) * 12 + try_int(height_pieces[1])
+    except:       
+        height = 0
+
     return {
         'team': team,
         'profile_id': profile_id_from_url(profile_url),
@@ -145,7 +155,7 @@ def meta_from_soup_row(team, soup_row):
         'full_name': '%s %s' % (first_name, last_name),
         'position': data[2],
         'status': data[3],
-        'height': data[4],
+        'height': height,
         'weight': data[5],
         'birthdate': data[6],
         'years_pro': try_int(data[7]),
