@@ -138,13 +138,13 @@ def meta_from_soup_row(team, soup_row):
 
     # Format the player's height into inches. If we can't parse the data,
     # defaul height to 0
-    try:
-        #Get the digits only
-        height_pieces = re.findall('[0-9]+', data[4])
-        #Multiply the first piece (feet) by 12 and add the second piece (inches)
-        height = try_int(height_pieces[0]) * 12 + try_int(height_pieces[1])
-    except:       
-        height = 0
+    feet, inches = 0, 0
+    pieces = re.findall('[0-9]+', data[4])
+    if len(pieces) >= 1:
+        feet = try_int(pieces[0])
+        if len(pieces) >= 2:
+            inches = try_int(pieces[1])
+    height = feet * 12 + inches
 
     return {
         'team': team,
