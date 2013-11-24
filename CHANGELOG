@@ -1,3 +1,9 @@
+1.1.23
+======
+  - Sanitize height data in the JSON player database. It is
+    all converted to inches.
+  - Game and player database updates.
+
 1.1.22
 ======
   - No longer depend on a specific version of pytz.
