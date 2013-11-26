@@ -54,6 +54,9 @@ def values(category_id, yards):
         yards = int(yards)
     except ValueError:
         yards = 0
+    except TypeError:
+        #Catch errors if yards is a NoneType
+        yards = 0
 
     vals = {}
     if info['yds']:
