@@ -1,3 +1,10 @@
+1.1.26
+======
+  - Fixed corrupt 2013120806 game file.
+  - Added game data for most games in week 14 of 2013 season.
+  - Player DB updated.
+  - NFL schedule updated.
+
 1.1.25
 ======
   - Merged front9tech's pull request (#58) that is more forgiving toward
