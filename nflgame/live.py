@@ -171,12 +171,15 @@ def run(callback, active_interval=15, inactive_interval=900, stop=None):
     """
     Starts checking for games that are currently playing.
 
-    Every time there is an update, callback will be called with two lists:
-    active and completed. The active list is a list of game.Game that are
-    currently being played. The completed list is a list of game.Game that
-    have just finished. A game will appear in the completed list only once,
-    after which that game will not be in either the active or completed lists.
-    No game can ever be in both lists at the same time.
+    Every time there is an update, callback will be called with three
+    lists: active, completed and diffs. The active list is a list of
+    game.Game that are currently being played. The completed list is
+    a list of game.Game that have just finished. The diffs list is a
+    list of `nflgame.game.GameDiff` objects, which collects statistics
+    that are new since the last time `callback` was called. A game will
+    appear in the completed list only once, after which that game will
+    not be in either the active or completed lists. No game can ever
+    be in both the `active` and `completed` lists at the same time.
 
     It is possible that a game in the active list is not yet playing because
     it hasn't started yet. It ends up in the active list because the "pregame"
