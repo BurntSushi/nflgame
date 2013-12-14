@@ -1,3 +1,10 @@
+1.1.27
+======
+  - Player DB update.
+  - Game updates through first game of week 15 of 2013 season.
+  - Schedule update (pats got bumped from SNF in week 16).
+  - Update documentation for `nflgame.live.run`.
+
 1.1.26
 ======
   - Fixed corrupt 2013120806 game file.
