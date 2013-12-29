@@ -60,8 +60,11 @@ class Player (object):
 
     def stats(self, year, week=None):
         games = nflgame.games(year, week)
-        players = nflgame.combine(games).filter(playerid=self.playerid)
-        return list(players)[0]
+        players = list(nflgame.combine(games).filter(playerid=self.playerid))
+        if len(players) == 0:
+            return GamePlayerStats(self.player_id, self.gsis_name,
+                                   None, self.team)
+        return players[0]
 
     def plays(self, year, week=None):
         plays = []
