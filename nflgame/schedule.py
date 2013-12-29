@@ -1,4 +1,4 @@
-# This file was automatically generated on 2013-12-14 12:18:08.162286 by scripts/create-schedule.
+# This file was automatically generated on 2013-12-29 12:15:51.385026 by scripts/create-schedule.
 
 games = [
     ((2009, 'PRE', 1, u'PHI', u'NE'), {'week': 1, 'month': 8, 'year': 2009, 'home': u'PHI', 'wday': u'Thu', 'day': 13, 'gamekey': u'54725', 'season_type': 'PRE', 'away': u'NE', 'eid': u'2009081351', 'time': u'7:30'}),
@@ -1630,21 +1630,21 @@ games = [
     ((2013, 'REG', 16, u'PHI', u'CHI'), {'week': 16, 'month': 12, 'year': 2013, 'home': u'PHI', 'wday': u'Sun', 'day': 22, 'gamekey': u'56068', 'season_type': 'REG', 'away': u'CHI', 'eid': u'2013122207', 'time': u'8:30'}),
     ((2013, 'REG', 16, u'SF', u'ATL'), {'week': 16, 'month': 12, 'year': 2013, 'home': u'SF', 'wday': u'Mon', 'day': 23, 'gamekey': u'56076', 'season_type': 'REG', 'away': u'ATL', 'eid': u'2013122300', 'time': u'8:40'}),
     ((2013, 'REG', 17, u'ATL', u'CAR'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'ATL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56077', 'season_type': 'REG', 'away': u'CAR', 'eid': u'2013122900', 'time': u'1:00'}),
-    ((2013, 'REG', 17, u'CHI', u'GB'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'CHI', 'wday': u'Sun', 'day': 29, 'gamekey': u'56078', 'season_type': 'REG', 'away': u'GB', 'eid': u'2013122901', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'CIN', u'BAL'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'CIN', 'wday': u'Sun', 'day': 29, 'gamekey': u'56079', 'season_type': 'REG', 'away': u'BAL', 'eid': u'2013122902', 'time': u'1:00'}),
-    ((2013, 'REG', 17, u'DAL', u'PHI'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'DAL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56080', 'season_type': 'REG', 'away': u'PHI', 'eid': u'2013122903', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'IND', u'JAC'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'IND', 'wday': u'Sun', 'day': 29, 'gamekey': u'56081', 'season_type': 'REG', 'away': u'JAC', 'eid': u'2013122904', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'MIA', u'NYJ'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'MIA', 'wday': u'Sun', 'day': 29, 'gamekey': u'56082', 'season_type': 'REG', 'away': u'NYJ', 'eid': u'2013122905', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'MIN', u'DET'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'MIN', 'wday': u'Sun', 'day': 29, 'gamekey': u'56083', 'season_type': 'REG', 'away': u'DET', 'eid': u'2013122906', 'time': u'1:00'}),
-    ((2013, 'REG', 17, u'NE', u'BUF'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'NE', 'wday': u'Sun', 'day': 29, 'gamekey': u'56084', 'season_type': 'REG', 'away': u'BUF', 'eid': u'2013122907', 'time': u'1:00'}),
-    ((2013, 'REG', 17, u'NO', u'TB'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'NO', 'wday': u'Sun', 'day': 29, 'gamekey': u'56085', 'season_type': 'REG', 'away': u'TB', 'eid': u'2013122908', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'NYG', u'WAS'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'NYG', 'wday': u'Sun', 'day': 29, 'gamekey': u'56086', 'season_type': 'REG', 'away': u'WAS', 'eid': u'2013122909', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'PIT', u'CLE'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'PIT', 'wday': u'Sun', 'day': 29, 'gamekey': u'56087', 'season_type': 'REG', 'away': u'CLE', 'eid': u'2013122910', 'time': u'1:00'}),
     ((2013, 'REG', 17, u'TEN', u'HOU'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'TEN', 'wday': u'Sun', 'day': 29, 'gamekey': u'56088', 'season_type': 'REG', 'away': u'HOU', 'eid': u'2013122911', 'time': u'1:00'}),
+    ((2013, 'REG', 17, u'CHI', u'GB'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'CHI', 'wday': u'Sun', 'day': 29, 'gamekey': u'56078', 'season_type': 'REG', 'away': u'GB', 'eid': u'2013122901', 'time': u'4:25'}),
+    ((2013, 'REG', 17, u'NE', u'BUF'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'NE', 'wday': u'Sun', 'day': 29, 'gamekey': u'56084', 'season_type': 'REG', 'away': u'BUF', 'eid': u'2013122907', 'time': u'4:25'}),
+    ((2013, 'REG', 17, u'NO', u'TB'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'NO', 'wday': u'Sun', 'day': 29, 'gamekey': u'56085', 'season_type': 'REG', 'away': u'TB', 'eid': u'2013122908', 'time': u'4:25'}),
     ((2013, 'REG', 17, u'ARI', u'SF'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'ARI', 'wday': u'Sun', 'day': 29, 'gamekey': u'56089', 'season_type': 'REG', 'away': u'SF', 'eid': u'2013122912', 'time': u'4:25'}),
     ((2013, 'REG', 17, u'OAK', u'DEN'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'OAK', 'wday': u'Sun', 'day': 29, 'gamekey': u'56090', 'season_type': 'REG', 'away': u'DEN', 'eid': u'2013122913', 'time': u'4:25'}),
     ((2013, 'REG', 17, u'SD', u'KC'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'SD', 'wday': u'Sun', 'day': 29, 'gamekey': u'56091', 'season_type': 'REG', 'away': u'KC', 'eid': u'2013122914', 'time': u'4:25'}),
     ((2013, 'REG', 17, u'SEA', u'STL'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'SEA', 'wday': u'Sun', 'day': 29, 'gamekey': u'56092', 'season_type': 'REG', 'away': u'STL', 'eid': u'2013122915', 'time': u'4:25'}),
+    ((2013, 'REG', 17, u'DAL', u'PHI'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'DAL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56080', 'season_type': 'REG', 'away': u'PHI', 'eid': u'2013122903', 'time': u'8:30'}),
 ]
 
 
@@ -3278,14 +3278,14 @@ games_byid = {
 	u'2013122214': {'week': 16, 'month': 12, 'year': 2013, 'home': u'BAL', 'wday': u'Sun', 'day': 22, 'gamekey': u'56075', 'season_type': 'REG', 'away': u'NE', 'eid': u'2013122214', 'time': u'4:25'},
 	u'2013122300': {'week': 16, 'month': 12, 'year': 2013, 'home': u'SF', 'wday': u'Mon', 'day': 23, 'gamekey': u'56076', 'season_type': 'REG', 'away': u'ATL', 'eid': u'2013122300', 'time': u'8:40'},
 	u'2013122900': {'week': 17, 'month': 12, 'year': 2013, 'home': u'ATL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56077', 'season_type': 'REG', 'away': u'CAR', 'eid': u'2013122900', 'time': u'1:00'},
-	u'2013122901': {'week': 17, 'month': 12, 'year': 2013, 'home': u'CHI', 'wday': u'Sun', 'day': 29, 'gamekey': u'56078', 'season_type': 'REG', 'away': u'GB', 'eid': u'2013122901', 'time': u'1:00'},
+	u'2013122901': {'week': 17, 'month': 12, 'year': 2013, 'home': u'CHI', 'wday': u'Sun', 'day': 29, 'gamekey': u'56078', 'season_type': 'REG', 'away': u'GB', 'eid': u'2013122901', 'time': u'4:25'},
 	u'2013122902': {'week': 17, 'month': 12, 'year': 2013, 'home': u'CIN', 'wday': u'Sun', 'day': 29, 'gamekey': u'56079', 'season_type': 'REG', 'away': u'BAL', 'eid': u'2013122902', 'time': u'1:00'},
-	u'2013122903': {'week': 17, 'month': 12, 'year': 2013, 'home': u'DAL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56080', 'season_type': 'REG', 'away': u'PHI', 'eid': u'2013122903', 'time': u'1:00'},
+	u'2013122903': {'week': 17, 'month': 12, 'year': 2013, 'home': u'DAL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56080', 'season_type': 'REG', 'away': u'PHI', 'eid': u'2013122903', 'time': u'8:30'},
 	u'2013122904': {'week': 17, 'month': 12, 'year': 2013, 'home': u'IND', 'wday': u'Sun', 'day': 29, 'gamekey': u'56081', 'season_type': 'REG', 'away': u'JAC', 'eid': u'2013122904', 'time': u'1:00'},
 	u'2013122905': {'week': 17, 'month': 12, 'year': 2013, 'home': u'MIA', 'wday': u'Sun', 'day': 29, 'gamekey': u'56082', 'season_type': 'REG', 'away': u'NYJ', 'eid': u'2013122905', 'time': u'1:00'},
 	u'2013122906': {'week': 17, 'month': 12, 'year': 2013, 'home': u'MIN', 'wday': u'Sun', 'day': 29, 'gamekey': u'56083', 'season_type': 'REG', 'away': u'DET', 'eid': u'2013122906', 'time': u'1:00'},
-	u'2013122907': {'week': 17, 'month': 12, 'year': 2013, 'home': u'NE', 'wday': u'Sun', 'day': 29, 'gamekey': u'56084', 'season_type': 'REG', 'away': u'BUF', 'eid': u'2013122907', 'time': u'1:00'},
-	u'2013122908': {'week': 17, 'month': 12, 'year': 2013, 'home': u'NO', 'wday': u'Sun', 'day': 29, 'gamekey': u'56085', 'season_type': 'REG', 'away': u'TB', 'eid': u'2013122908', 'time': u'1:00'},
+	u'2013122907': {'week': 17, 'month': 12, 'year': 2013, 'home': u'NE', 'wday': u'Sun', 'day': 29, 'gamekey': u'56084', 'season_type': 'REG', 'away': u'BUF', 'eid': u'2013122907', 'time': u'4:25'},
+	u'2013122908': {'week': 17, 'month': 12, 'year': 2013, 'home': u'NO', 'wday': u'Sun', 'day': 29, 'gamekey': u'56085', 'season_type': 'REG', 'away': u'TB', 'eid': u'2013122908', 'time': u'4:25'},
 	u'2013122909': {'week': 17, 'month': 12, 'year': 2013, 'home': u'NYG', 'wday': u'Sun', 'day': 29, 'gamekey': u'56086', 'season_type': 'REG', 'away': u'WAS', 'eid': u'2013122909', 'time': u'1:00'},
 	u'2013122910': {'week': 17, 'month': 12, 'year': 2013, 'home': u'PIT', 'wday': u'Sun', 'day': 29, 'gamekey': u'56087', 'season_type': 'REG', 'away': u'CLE', 'eid': u'2013122910', 'time': u'1:00'},
 	u'2013122911': {'week': 17, 'month': 12, 'year': 2013, 'home': u'TEN', 'wday': u'Sun', 'day': 29, 'gamekey': u'56088', 'season_type': 'REG', 'away': u'HOU', 'eid': u'2013122911', 'time': u'1:00'},
