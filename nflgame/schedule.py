@@ -1,4 +1,4 @@
-# This file was automatically generated on 2013-12-29 12:15:51.385026 by scripts/create-schedule.
+# This file was automatically generated on 2014-01-02 21:22:15.173000 by scripts/create-schedule.
 
 games = [
     ((2009, 'PRE', 1, u'PHI', u'NE'), {'week': 1, 'month': 8, 'year': 2009, 'home': u'PHI', 'wday': u'Thu', 'day': 13, 'gamekey': u'54725', 'season_type': 'PRE', 'away': u'NE', 'eid': u'2009081351', 'time': u'7:30'}),
@@ -1645,6 +1645,10 @@ games = [
     ((2013, 'REG', 17, u'SD', u'KC'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'SD', 'wday': u'Sun', 'day': 29, 'gamekey': u'56091', 'season_type': 'REG', 'away': u'KC', 'eid': u'2013122914', 'time': u'4:25'}),
     ((2013, 'REG', 17, u'SEA', u'STL'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'SEA', 'wday': u'Sun', 'day': 29, 'gamekey': u'56092', 'season_type': 'REG', 'away': u'STL', 'eid': u'2013122915', 'time': u'4:25'}),
     ((2013, 'REG', 17, u'DAL', u'PHI'), {'week': 17, 'month': 12, 'year': 2013, 'home': u'DAL', 'wday': u'Sun', 'day': 29, 'gamekey': u'56080', 'season_type': 'REG', 'away': u'PHI', 'eid': u'2013122903', 'time': u'8:30'}),
+    ((2013, 'POST', 1, u'IND', u'KC'), {'week': 1, 'month': 1, 'year': 2014, 'home': u'IND', 'wday': u'Sat', 'day': 4, 'gamekey': u'56158', 'season_type': 'POST', 'away': u'KC', 'eid': u'2014010400', 'time': u'4:35'}),
+    ((2013, 'POST', 1, u'PHI', u'NO'), {'week': 1, 'month': 1, 'year': 2014, 'home': u'PHI', 'wday': u'Sat', 'day': 4, 'gamekey': u'56159', 'season_type': 'POST', 'away': u'NO', 'eid': u'2014010401', 'time': u'8:10'}),
+    ((2013, 'POST', 1, u'CIN', u'SD'), {'week': 1, 'month': 1, 'year': 2014, 'home': u'CIN', 'wday': u'Sun', 'day': 5, 'gamekey': u'56160', 'season_type': 'POST', 'away': u'SD', 'eid': u'2014010500', 'time': u'1:05'}),
+    ((2013, 'POST', 1, u'GB', u'SF'), {'week': 1, 'month': 1, 'year': 2014, 'home': u'GB', 'wday': u'Sun', 'day': 5, 'gamekey': u'56161', 'season_type': 'POST', 'away': u'SF', 'eid': u'2014010501', 'time': u'4:40'}),
 ]
 
 
@@ -3293,4 +3297,8 @@ games_byid = {
 	u'2013122913': {'week': 17, 'month': 12, 'year': 2013, 'home': u'OAK', 'wday': u'Sun', 'day': 29, 'gamekey': u'56090', 'season_type': 'REG', 'away': u'DEN', 'eid': u'2013122913', 'time': u'4:25'},
 	u'2013122914': {'week': 17, 'month': 12, 'year': 2013, 'home': u'SD', 'wday': u'Sun', 'day': 29, 'gamekey': u'56091', 'season_type': 'REG', 'away': u'KC', 'eid': u'2013122914', 'time': u'4:25'},
 	u'2013122915': {'week': 17, 'month': 12, 'year': 2013, 'home': u'SEA', 'wday': u'Sun', 'day': 29, 'gamekey': u'56092', 'season_type': 'REG', 'away': u'STL', 'eid': u'2013122915', 'time': u'4:25'},
+	u'2014010400': {'week': 1, 'month': 1, 'year': 2014, 'home': u'IND', 'wday': u'Sat', 'day': 4, 'gamekey': u'56158', 'season_type': 'POST', 'away': u'KC', 'eid': u'2014010400', 'time': u'4:35'},
+	u'2014010401': {'week': 1, 'month': 1, 'year': 2014, 'home': u'PHI', 'wday': u'Sat', 'day': 4, 'gamekey': u'56159', 'season_type': 'POST', 'away': u'NO', 'eid': u'2014010401', 'time': u'8:10'},
+	u'2014010500': {'week': 1, 'month': 1, 'year': 2014, 'home': u'CIN', 'wday': u'Sun', 'day': 5, 'gamekey': u'56160', 'season_type': 'POST', 'away': u'SD', 'eid': u'2014010500', 'time': u'1:05'},
+	u'2014010501': {'week': 1, 'month': 1, 'year': 2014, 'home': u'GB', 'wday': u'Sun', 'day': 5, 'gamekey': u'56161', 'season_type': 'POST', 'away': u'SF', 'eid': u'2014010501', 'time': u'4:40'},
 }
