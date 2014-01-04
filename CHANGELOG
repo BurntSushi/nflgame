@@ -1,3 +1,11 @@
+1.1.29
+======
+  - Schedule update (PR #68).
+  - Player DB update.
+  - Game updates through week 17 of 2013 season.
+  - Change schedule URL in nflgame.live to the postseason
+    schedule.
+
 1.1.28
 ======
   - Fix issue #65.
