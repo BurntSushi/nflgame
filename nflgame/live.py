@@ -113,11 +113,8 @@ def current_year_and_week():
 
     N.B. This always downloads the schedule XML data.
     """
-    dom = xml.parse(urllib2.urlopen(_CUR_SCHEDULE_URL))
-    gms = dom.getElementsByTagName('gms')[0]
-    year = int(gms.getAttribute('y'))
-    week = int(gms.getAttribute('w'))
-    return (year, week)
+    _update_week_number()
+    return _cur_year, _cur_week
 
 
 def current_games(year=None, week=None, kind='REG'):
@@ -369,6 +366,7 @@ def _update_week_number():
         _cur_season_phase = 'PRE'
     elif phase == 'POST':
         _cur_season_phase = 'POST'
+        _cur_week -= 17
     else:
         _cur_season_phase = 'REG'
     return time.time()
