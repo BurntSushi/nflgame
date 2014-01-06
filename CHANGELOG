@@ -1,3 +1,10 @@
+1.1.31
+======
+  - Fix a bug in nflgame.live where the playoff week was being
+    reported as 18, 19, ... instead of 1, 2, ...
+    This also fixes the nflgame-update-players script.
+  - Player DB update.
+
 1.1.30
 ======
   - Game data for wild card round (2013).
