@@ -1,3 +1,10 @@
+1.2.0
+=====
+  - Schedule data has been moved to JSON, and it now automatically
+    updates.
+    It can also be updated manually with the new script
+    `nflgame-update-schedule`.
+
 1.1.31
 ======
   - Fix a bug in nflgame.live where the playoff week was being
