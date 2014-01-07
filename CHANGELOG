@@ -1,3 +1,8 @@
+1.2.1
+=====
+  - Some touchups made to the formatting of the JSON file so that
+    it is diff friendly.
+
 1.2.0
 =====
   - Schedule data has been moved to JSON, and it now automatically
