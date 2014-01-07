@@ -49,16 +49,23 @@ Or you could find the top 5 passing plays in the same time period:
 
 And the output is:
 
-    (DEN, DEN 22, Q4, 3 and 8) (4:42) (Shotgun) P.Manning pass short left to D.Thomas for 78 yards, TOUCHDOWN. Penalty on BAL-E.Dumervil, Defensive Offside, declined.
-    (DET, DET 23, Q3, 3 and 7) (5:58) (Shotgun) M.Stafford pass short middle to R.Bush for 77 yards, TOUCHDOWN.
-    (NYG, NYG 30, Q2, 1 and 10) (2:01) (No Huddle, Shotgun) E.Manning pass deep left to V.Cruz for 70 yards, TOUCHDOWN. Pass complete on a fly pattern.
-    (NO, NO 24, Q2, 2 and 6) (5:11) (Shotgun) D.Brees pass deep left to K.Stills to ATL 9 for 67 yards (R.McClain; R.Alford). Pass 24, YAC 43
-    (NYG, NYG 20, Q1, 1 and 10) (13:04) E.Manning pass short middle to H.Nicks pushed ob at DAL 23 for 57 yards (M.Claiborne). Pass complete on a slant pattern.
+    (DEN, DEN 22, Q4, 3 and 8) (4:42) (Shotgun) P.Manning pass
+    short left to D.Thomas for 78 yards, TOUCHDOWN. Penalty on
+    BAL-E.Dumervil, Defensive Offside, declined.
+    (DET, DET 23, Q3, 3 and 7) (5:58) (Shotgun) M.Stafford pass short
+    middle to R.Bush for 77 yards, TOUCHDOWN.
+    (NYG, NYG 30, Q2, 1 and 10) (2:01) (No Huddle, Shotgun) E.Manning
+    pass deep left to V.Cruz for 70 yards, TOUCHDOWN. Pass complete on
+    a fly pattern.
+    (NO, NO 24, Q2, 2 and 6) (5:11) (Shotgun) D.Brees pass deep left to
+    K.Stills to ATL 9 for 67 yards (R.McClain; R.Alford). Pass 24, YAC
+    43
+    (NYG, NYG 20, Q1, 1 and 10) (13:04) E.Manning pass short middle
+    to H.Nicks pushed ob at DAL 23 for 57 yards (M.Claiborne). Pass
+    complete on a slant pattern.
 
 If you aren't a programmer, then the
-[tutorial for non
-programmers](https://github.com/BurntSushi/nflgame/wiki/Tutorial-for-non-programmers:-Installation-and-examples)
-is for you.
+[tutorial for non programmers](http://goo.gl/y05fVj) is for you.
 
 If you need help, please come visit us at IRC/FreeNode on channel `#nflgame`.
 If you've never used IRC before, then you can
