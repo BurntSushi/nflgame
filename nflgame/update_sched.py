@@ -95,9 +95,9 @@ def update_week(sched, year, stype, week):
 def write_schedule(fpath, sched):
     alist = []
     for gsis_id in sorted(sched):
-        info = [[k, sched[gsis_id][k]] for k in sorted(sched[gsis_id])]
-        alist.append([gsis_id, info])
-    json.dump({'time': time.time(), 'games': alist}, open(fpath, 'w+'))
+        alist.append([gsis_id, sched[gsis_id]])
+    json.dump({'time': time.time(), 'games': alist},
+              open(fpath, 'w+'), indent=1, sort_keys=True)
 
 
 def eprint(*args, **kwargs):

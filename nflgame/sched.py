@@ -28,7 +28,7 @@ def _create_schedule(jsonf=None):
 
     d = OrderedDict()
     for gsis_id, info in data.get('games', []):
-        d[gsis_id] = dict(info)
+        d[gsis_id] = info
     last_updated = datetime.datetime.utcfromtimestamp(data.get('time', 0))
 
     if (datetime.datetime.utcnow() - last_updated).total_seconds() >= day:
