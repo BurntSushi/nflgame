@@ -9,7 +9,7 @@ import urllib2
 
 from nflgame import OrderedDict
 import nflgame.player
-import nflgame.schedule
+import nflgame.sched
 import nflgame.seq
 import nflgame.statmap
 
@@ -263,7 +263,7 @@ class Game (object):
         When the JSON data is written to disk, it is compressed using gzip.
         """
         # Make the schedule info more accessible.
-        self.schedule = nflgame.schedule.games_byid.get(self.eid, None)
+        self.schedule = nflgame.sched.games.get(self.eid, None)
 
         # Home and team cumulative statistics.
         self.home = self.data['home']['abbr']
@@ -272,7 +272,7 @@ class Game (object):
         self.stats_away = _json_team_stats(self.data['away']['stats']['team'])
 
         # Load up some simple static values.
-        self.gamekey = nflgame.schedule.games_byid[self.eid]['gamekey']
+        self.gamekey = nflgame.sched.games[self.eid]['gamekey']
         self.time = GameClock(self.data['qtr'], self.data['clock'])
         self.down = _tryint(self.data['down'])
         self.togo = _tryint(self.data['togo'])

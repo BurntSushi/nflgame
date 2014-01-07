@@ -1,0 +1,4 @@
+#!/usr/bin/env python2
+
+import nflgame.update_sched
+nflgame.update_sched.run()

@@ -50,7 +50,6 @@ except ImportError:
 
 import nflgame
 import nflgame.game
-import nflgame.schedule
 
 # [00:21] <rasher> burntsushi: Alright, the schedule changes on Wednesday 7:00
 # UTC during the regular season

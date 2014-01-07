@@ -89,7 +89,7 @@ import itertools
 import nflgame.game
 import nflgame.live
 import nflgame.player
-import nflgame.schedule
+import nflgame.sched
 import nflgame.seq
 from nflgame.version import __version__
 
@@ -424,7 +424,9 @@ def _search_schedule(year, week=None, home=None, away=None, kind='REG',
     (as opposed to waiting for a 404 error from NFL.com).
     """
     infos = []
-    for (y, t, w, h, a), info in nflgame.schedule.games:
+    for info in nflgame.sched.games.itervalues():
+        y, t, w = info['year'], info['season_type'], info['week']
+        h, a = info['home'], info['away']
         if year is not None:
             if isinstance(year, list) and y not in year:
                 continue
