@@ -71,6 +71,7 @@ def week_schedule(year, stype, week):
         })
     return games
 
+
 def new_schedule():
     """
     Builds an entire schedule from scratch.
@@ -94,9 +95,9 @@ def update_week(sched, year, stype, week):
 def write_schedule(fpath, sched):
     alist = []
     for gsis_id in sorted(sched):
-        alist.append([gsis_id, sched[gsis_id]])
-    json.dump({'time': time.time(), 'games': alist},
-              open(fpath, 'w+'), indent=2)
+        info = [[k, sched[gsis_id][k]] for k in sorted(sched[gsis_id])]
+        alist.append([gsis_id, info])
+    json.dump({'time': time.time(), 'games': alist}, open(fpath, 'w+'))
 
 
 def eprint(*args, **kwargs):
