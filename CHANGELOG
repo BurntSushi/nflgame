@@ -1,3 +1,9 @@
+1.2.2
+=====
+  - Player DB update.
+  - Fix schedule so that post-season games in Jan/Feb belong to the
+    right season year. (e.g., Games in 01/2014 are in the 2013 season.)
+
 1.2.1
 =====
   - Some touchups made to the formatting of the JSON file so that
