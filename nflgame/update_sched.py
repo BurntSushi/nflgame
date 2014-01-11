@@ -59,7 +59,7 @@ def week_schedule(year, stype, week):
         games.append({
             'eid': gsis_id,
             'wday': g.getAttribute('d'),
-            'year': int(gsis_id[:4]),
+            'year': year,
             'month': int(gsis_id[4:6]),
             'day': int(gsis_id[6:8]),
             'time': g.getAttribute('t'),
