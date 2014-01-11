@@ -35165,7 +35165,7 @@
         "position": "CB", 
         "profile_id": 237680, 
         "profile_url": "http://www.nfl.com/player/gregtoler/237680/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "IND", 
         "weight": 190, 
         "years_pro": 5
@@ -37056,7 +37056,7 @@
         "position": "DE", 
         "profile_id": 80666, 
         "profile_url": "http://www.nfl.com/player/filimoala/80666/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "IND", 
         "weight": 308, 
         "years_pro": 5
@@ -43972,7 +43972,7 @@
         "position": "MLB", 
         "profile_id": 496953, 
         "profile_url": "http://www.nfl.com/player/brandonspikes/496953/profile", 
-        "status": "ACT", 
+        "status": "RES", 
         "team": "NE", 
         "weight": 255, 
         "years_pro": 4
@@ -57246,7 +57246,7 @@
         "years_pro": 2
     }, 
     "00-0028679": {
-        "birthdate": "2/4/1987", 
+        "birthdate": "2/4/1989", 
         "college": "Washington", 
         "first_name": "Victor", 
         "full_name": "Victor Aiyewa", 
@@ -64128,7 +64128,7 @@
         "profile_url": "http://www.nfl.com/player/edwinbaker/2533540/profile", 
         "status": "ACT", 
         "team": "CLE", 
-        "weight": 200, 
+        "weight": 215, 
         "years_pro": 1
     }, 
     "00-0029318": {
@@ -73853,9 +73853,14 @@
         "gsis_name": "J.Lenz", 
         "height": 72, 
         "last_name": "Lenz", 
+        "number": 0, 
+        "position": "WR", 
         "profile_id": 2541853, 
         "profile_url": "http://www.nfl.com/player/joshlenz/2541853/profile", 
-        "weight": 194
+        "status": "ACT", 
+        "team": "IND", 
+        "weight": 194, 
+        "years_pro": 0
     }, 
     "00-0030137": {
         "birthdate": "11/6/1990", 
@@ -76890,7 +76895,7 @@
         "first_name": "Travis", 
         "full_name": "Travis Bond", 
         "gsis_id": "00-0030408", 
-        "height": 79, 
+        "height": 78, 
         "last_name": "Bond", 
         "number": 74, 
         "position": "OG", 
