@@ -352,8 +352,8 @@ def run():
                 players[pid] = name
         eprint('Done.')
     else:
-        phase = nflgame.live._cur_season_phase
         year, week = nflgame.live.current_year_and_week()
+        phase = nflgame.live._cur_season_phase
         if args.phase is not None:
             phase = args.phase
         if args.year is not None:
