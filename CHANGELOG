@@ -1,3 +1,11 @@
+1.2.3
+=====
+  - Player and schedule updates.
+  - Game data for divisional round of 2013 playoffs.
+  - Merge PR #71 that fixes a bug in nflgame-update-players.
+    (The current season phase should only be accessed a call to
+     nflgame.live.current_year_and_week().)
+
 1.2.2
 =====
   - Player DB update.
