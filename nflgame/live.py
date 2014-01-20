@@ -363,7 +363,7 @@ def _update_week_number():
     phase = gms.getAttribute('t').strip()
     if phase == 'P':
         _cur_season_phase = 'PRE'
-    elif phase == 'POST':
+    elif phase == 'POST' or phase == 'PRO':
         _cur_season_phase = 'POST'
         _cur_week -= 17
     else:
