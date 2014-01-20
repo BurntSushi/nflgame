@@ -1,3 +1,9 @@
+1.2.4
+=====
+  - Fixed a bug in nflgame.live where the season phase was being
+    incorrectly determined when the next game was the pro bowl.
+  - Schedule update for Super Bowl.
+
 1.2.3
 =====
   - Player and schedule updates.
