@@ -1,3 +1,8 @@
+1.2.5
+=====
+  - Add data from Super Bowl.
+  - Player DB update.
+
 1.2.4
 =====
   - Fixed a bug in nflgame.live where the season phase was being
