@@ -399,7 +399,10 @@ def run():
         if soup is None:
             errors.append('Could not get roster for team %s' % team)
             continue
-        for row in soup.find(id='result').find('tbody').find_all('tr'):
+
+        tbodys = soup.find(id='result').find_all('tbody')
+
+        for row in tbodys[len(tbodys)-1].find_all('tr'):
             roster.append(meta_from_soup_row(team, row))
     progress_done()
 
