@@ -3137,7 +3137,7 @@
     }, 
     "00-0019714": {
         "birthdate": "8/7/1976", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Shane", 
         "full_name": "Shane Lechler", 
         "gsis_id": "00-0019714", 
@@ -3429,7 +3429,7 @@
     }, 
     "00-0020260": {
         "birthdate": "3/26/1979", 
-        "college": "Texas A&M; - Kingsville", 
+        "college": "Texas A&M - Kingsville", 
         "first_name": "Roberto", 
         "full_name": "Roberto Garza", 
         "gsis_id": "00-0020260", 
@@ -5770,11 +5770,14 @@
         "gsis_name": "L.Foote", 
         "height": 73, 
         "last_name": "Foote", 
-        "number": 50, 
+        "number": 0, 
+        "position": "LB", 
         "profile_id": 2505116, 
         "profile_url": "http://www.nfl.com/player/larryfoote/2505116/profile", 
+        "status": "ACT", 
+        "team": "ARI", 
         "weight": 239, 
-        "years_pro": 12
+        "years_pro": 13
     }, 
     "00-0021250": {
         "birthdate": "1/24/1980", 
@@ -7742,7 +7745,7 @@
     }, 
     "00-0022059": {
         "birthdate": "2/26/1981", 
-        "college": "Alabama A&M;", 
+        "college": "Alabama A&M", 
         "first_name": "Robert", 
         "full_name": "Robert Mathis", 
         "gsis_id": "00-0022059", 
@@ -8266,10 +8269,11 @@
         "gsis_name": "B.James", 
         "height": 74, 
         "last_name": "James", 
+        "number": 0, 
         "profile_id": 2505639, 
         "profile_url": "http://www.nfl.com/player/bradiejames/2505639/profile", 
         "weight": 240, 
-        "years_pro": 10
+        "years_pro": 11
     }, 
     "00-0022139": {
         "birthdate": "8/14/1981", 
@@ -10871,11 +10875,14 @@
         "gsis_name": "W.Smith", 
         "height": 75, 
         "last_name": "Smith", 
-        "number": 91, 
+        "number": 0, 
+        "position": "LB", 
         "profile_id": 2506098, 
         "profile_url": "http://www.nfl.com/player/willsmith/2506098/profile", 
+        "status": "ACT", 
+        "team": "NE", 
         "weight": 282, 
-        "years_pro": 10
+        "years_pro": 11
     }, 
     "00-0022912": {
         "birthdate": "3/12/1981", 
@@ -21837,10 +21844,14 @@
         "gsis_name": "T.Jackson", 
         "height": 72, 
         "last_name": "Jackson", 
+        "number": 34, 
+        "position": "DB", 
         "profile_id": 2495643, 
         "profile_url": "http://www.nfl.com/player/tanardjackson/2495643/profile", 
+        "status": "ACT", 
+        "team": "WAS", 
         "weight": 196, 
-        "years_pro": 6
+        "years_pro": 5
     }, 
     "00-0025494": {
         "birthdate": "12/19/1985", 
@@ -27193,7 +27204,7 @@
     }, 
     "00-0026201": {
         "birthdate": "3/10/1987", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Martellus", 
         "full_name": "Martellus Bennett", 
         "gsis_id": "00-0026201", 
@@ -27917,7 +27928,7 @@
     }, 
     "00-0026247": {
         "birthdate": "11/26/1984", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Cody", 
         "full_name": "Cody Wallace", 
         "gsis_id": "00-0026247", 
@@ -28141,7 +28152,7 @@
     }, 
     "00-0026261": {
         "birthdate": "4/18/1984", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Red", 
         "full_name": "Red Bryant", 
         "gsis_id": "00-0026261", 
@@ -33940,7 +33951,7 @@
     }, 
     "00-0026837": {
         "birthdate": "6/1/1986", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Danny", 
         "full_name": "Danny Gorrer", 
         "gsis_id": "00-0026837", 
@@ -36353,11 +36364,14 @@
         "gsis_name": "B.Robiskie", 
         "height": 76, 
         "last_name": "Robiskie", 
-        "number": 87, 
+        "number": 0, 
+        "position": "WR", 
         "profile_id": 80682, 
         "profile_url": "http://www.nfl.com/player/brianrobiskie/80682/profile", 
+        "status": "ACT", 
+        "team": "TEN", 
         "weight": 212, 
-        "years_pro": 5
+        "years_pro": 6
     }, 
     "00-0027013": {
         "birthdate": "10/20/1985", 
@@ -37462,7 +37476,7 @@
     }, 
     "00-0027080": {
         "birthdate": "5/23/1987", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Mike", 
         "full_name": "Mike Goodson", 
         "gsis_id": "00-0027080", 
@@ -40413,11 +40427,14 @@
         "gsis_name": "A.Jefferson", 
         "height": 73, 
         "last_name": "Jefferson", 
-        "number": 24, 
+        "number": 0, 
+        "position": "DB", 
         "profile_id": 494275, 
         "profile_url": "http://www.nfl.com/player/a.j.jefferson/494275/profile", 
+        "status": "ACT", 
+        "team": "SEA", 
         "weight": 190, 
-        "years_pro": 4
+        "years_pro": 5
     }, 
     "00-0027351": {
         "birthdate": "7/2/1986", 
@@ -40636,7 +40653,7 @@
     }, 
     "00-0027369": {
         "birthdate": "8/4/1987", 
-        "college": "Texas A&M; - Kingsville", 
+        "college": "Texas A&M - Kingsville", 
         "first_name": "Jimmy", 
         "full_name": "Jimmy Saddler-McQueen", 
         "gsis_id": "00-0027369", 
@@ -44674,10 +44691,13 @@
         "height": 75, 
         "last_name": "Schofield", 
         "number": 93, 
+        "position": "LB", 
         "profile_id": 496851, 
         "profile_url": "http://www.nfl.com/player/o'brienschofield/496851/profile", 
+        "status": "ACT", 
+        "team": "SEA", 
         "weight": 242, 
-        "years_pro": 4
+        "years_pro": 5
     }, 
     "00-0027731": {
         "birthdate": "10/27/1986", 
@@ -45584,7 +45604,7 @@
     }, 
     "00-0027787": {
         "birthdate": "3/18/1986", 
-        "college": "West Texas A&M;", 
+        "college": "West Texas A&M", 
         "first_name": "Eugene", 
         "full_name": "Eugene Sims", 
         "gsis_id": "00-0027787", 
@@ -45777,7 +45797,7 @@
     }, 
     "00-0027799": {
         "birthdate": "1/29/1988", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Jordan", 
         "full_name": "Jordan Pugh", 
         "gsis_id": "00-0027799", 
@@ -46441,11 +46461,8 @@
         "height": 75, 
         "last_name": "Robinson", 
         "number": 5, 
-        "position": "QB", 
         "profile_id": 497127, 
         "profile_url": "http://www.nfl.com/player/zacrobinson/497127/profile", 
-        "status": "ACT", 
-        "team": "CIN", 
         "weight": 208, 
         "years_pro": 3
     }, 
@@ -47776,7 +47793,7 @@
     }, 
     "00-0027940": {
         "birthdate": "3/26/1989", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Von", 
         "full_name": "Von Miller", 
         "gsis_id": "00-0027940", 
@@ -48676,8 +48693,12 @@
         "gsis_name": "Austin", 
         "height": 74, 
         "last_name": "Austin", 
+        "number": 0, 
+        "position": "DT", 
         "profile_id": 2495114, 
         "profile_url": "http://www.nfl.com/player/marvinaustin/2495114/profile", 
+        "status": "ACT", 
+        "team": "DEN", 
         "weight": 312, 
         "years_pro": 3
     }, 
@@ -51666,7 +51687,7 @@
     }, 
     "00-0028169": {
         "birthdate": "10/28/1988", 
-        "college": "Alabama A&M;", 
+        "college": "Alabama A&M", 
         "first_name": "Frank", 
         "full_name": "Frank Kearse", 
         "gsis_id": "00-0028169", 
@@ -53898,7 +53919,7 @@
     }, 
     "00-0028370": {
         "birthdate": "7/27/1988", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Jerrod", 
         "full_name": "Jerrod Johnson", 
         "gsis_id": "00-0028370", 
@@ -54878,7 +54899,7 @@
     }, 
     "00-0028458": {
         "birthdate": "5/11/1988", 
-        "college": "Prairie View A&M;", 
+        "college": "Prairie View A&M", 
         "first_name": "Quinton", 
         "full_name": "Quinton Spears", 
         "gsis_id": "00-0028458", 
@@ -55586,7 +55607,7 @@
     }, 
     "00-0028536": {
         "birthdate": "5/4/1987", 
-        "college": "West Texas A&M;", 
+        "college": "West Texas A&M", 
         "first_name": "Bryan", 
         "full_name": "Bryan Braman", 
         "gsis_id": "00-0028536", 
@@ -57566,10 +57587,13 @@
         "height": 77, 
         "last_name": "Bell", 
         "number": 77, 
+        "position": "T", 
         "profile_id": 2531030, 
         "profile_url": "http://www.nfl.com/player/byronbell/2531030/profile", 
+        "status": "ACT", 
+        "team": "CAR", 
         "weight": 340, 
-        "years_pro": 3
+        "years_pro": 4
     }, 
     "00-0028739": {
         "birthdate": "2/14/1988", 
@@ -60249,7 +60273,7 @@
     }, 
     "00-0029007": {
         "birthdate": "11/29/1987", 
-        "college": "Prairie View A&M;", 
+        "college": "Prairie View A&M", 
         "first_name": "Adrian", 
         "full_name": "Adrian Hamilton", 
         "gsis_id": "00-0029007", 
@@ -60856,7 +60880,7 @@
     }, 
     "00-0029055": {
         "birthdate": "12/21/1988", 
-        "college": "Florida A&M;", 
+        "college": "Florida A&M", 
         "first_name": "Kevin", 
         "full_name": "Kevin Elliott", 
         "gsis_id": "00-0029055", 
@@ -62148,7 +62172,7 @@
     }, 
     "00-0029165": {
         "birthdate": "3/29/1990", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Tony", 
         "full_name": "Tony Jerod-Eddie", 
         "gsis_id": "00-0029165", 
@@ -62393,11 +62417,8 @@
         "height": 77, 
         "last_name": "Noble", 
         "number": 88, 
-        "position": "TE", 
         "profile_id": 2535604, 
         "profile_url": "http://www.nfl.com/player/dannynoble/2535604/profile", 
-        "status": "ACT", 
-        "team": "JAC", 
         "weight": 248, 
         "years_pro": 3
     }, 
@@ -62884,7 +62905,7 @@
     }, 
     "00-0029220": {
         "birthdate": "2/10/1990", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Terrence", 
         "full_name": "Terrence Frederick", 
         "gsis_id": "00-0029220", 
@@ -64038,7 +64059,7 @@
     }, 
     "00-0029298": {
         "birthdate": "11/18/1989", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Cyrus", 
         "full_name": "Cyrus Gray", 
         "gsis_id": "00-0029298", 
@@ -64563,7 +64584,7 @@
     }, 
     "00-0029336": {
         "birthdate": "7/20/1988", 
-        "college": "West Texas A&M;", 
+        "college": "West Texas A&M", 
         "first_name": "Brittan", 
         "full_name": "Brittan Golden", 
         "gsis_id": "00-0029336", 
@@ -65552,7 +65573,7 @@
     }, 
     "00-0029421": {
         "birthdate": "12/16/1989", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Randy", 
         "full_name": "Randy Bullock", 
         "gsis_id": "00-0029421", 
@@ -66313,7 +66334,7 @@
     }, 
     "00-0029491": {
         "birthdate": "10/12/1989", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Ben", 
         "full_name": "Ben Bass", 
         "gsis_id": "00-0029491", 
@@ -68196,7 +68217,7 @@
     }, 
     "00-0029619": {
         "birthdate": "2/4/1987", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Jorvorskie", 
         "full_name": "Jorvorskie Lane", 
         "gsis_id": "00-0029619", 
@@ -69494,7 +69515,7 @@
     }, 
     "00-0029701": {
         "birthdate": "7/27/1988", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Ryan", 
         "full_name": "Ryan Tannehill", 
         "gsis_id": "00-0029701", 
@@ -71509,7 +71530,7 @@
     }, 
     "00-0029880": {
         "birthdate": "11/23/1990", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Jonathan", 
         "full_name": "Jonathan Stewart", 
         "gsis_id": "00-0029880", 
@@ -71871,11 +71892,8 @@
         "height": 77, 
         "last_name": "Weaver", 
         "number": 0, 
-        "position": "OT", 
         "profile_id": 2540256, 
         "profile_url": "http://www.nfl.com/player/jasonweaver/2540256/profile", 
-        "status": "ACT", 
-        "team": "MIA", 
         "weight": 305, 
         "years_pro": 1
     }, 
@@ -72357,11 +72375,8 @@
         "height": 77, 
         "last_name": "Milhim", 
         "number": 0, 
-        "position": "OL", 
         "profile_id": 2540254, 
         "profile_url": "http://www.nfl.com/player/stephanemilhim/2540254/profile", 
-        "status": "ACT", 
-        "team": "JAC", 
         "weight": 315, 
         "years_pro": 2
     }, 
@@ -72474,7 +72489,7 @@
     }, 
     "00-0029958": {
         "birthdate": "9/21/1990", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Steven", 
         "full_name": "Steven Terrell", 
         "gsis_id": "00-0029958", 
@@ -72959,10 +72974,13 @@
         "height": 72, 
         "last_name": "Moe", 
         "number": 0, 
+        "position": "WR", 
         "profile_id": 2540264, 
         "profile_url": "http://www.nfl.com/player/t.j.moe/2540264/profile", 
+        "status": "ACT", 
+        "team": "STL", 
         "weight": 200, 
-        "years_pro": 0
+        "years_pro": 2
     }, 
     "00-0029996": {
         "birthdate": "1/12/1991", 
@@ -73941,7 +73959,7 @@
     }, 
     "00-0030069": {
         "birthdate": "9/11/1992", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Damontre", 
         "full_name": "Damontre Moore", 
         "gsis_id": "00-0030069", 
@@ -74921,7 +74939,7 @@
     }, 
     "00-0030124": {
         "birthdate": "12/6/1989", 
-        "college": "Florida A&M;", 
+        "college": "Florida A&M", 
         "first_name": "Brandon", 
         "full_name": "Brandon Hepburn", 
         "gsis_id": "00-0030124", 
@@ -75666,7 +75684,7 @@
     }, 
     "00-0030182": {
         "birthdate": "5/18/1990", 
-        "college": "Florida A&M;", 
+        "college": "Florida A&M", 
         "first_name": "Travis", 
         "full_name": "Travis Harvey", 
         "gsis_id": "00-0030182", 
@@ -76386,7 +76404,7 @@
     }, 
     "00-0030240": {
         "birthdate": "12/15/1990", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Uzoma", 
         "full_name": "Uzoma Nwachukwu", 
         "gsis_id": "00-0030240", 
@@ -76679,7 +76697,7 @@
     }, 
     "00-0030268": {
         "birthdate": "1/30/1991", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Patrick", 
         "full_name": "Patrick Lewis", 
         "gsis_id": "00-0030268", 
@@ -76880,7 +76898,7 @@
     }, 
     "00-0030281": {
         "birthdate": "1/12/1991", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Sean", 
         "full_name": "Sean Porter", 
         "gsis_id": "00-0030281", 
@@ -77140,7 +77158,7 @@
     }, 
     "00-0030298": {
         "birthdate": "3/6/1990", 
-        "college": "Alabama A&M;", 
+        "college": "Alabama A&M", 
         "first_name": "Jamaal", 
         "full_name": "Jamaal Johnson-Webb", 
         "gsis_id": "00-0030298", 
@@ -77691,7 +77709,7 @@
     }, 
     "00-0030348": {
         "birthdate": "12/28/1989", 
-        "college": "West Texas A&M;", 
+        "college": "West Texas A&M", 
         "first_name": "Khiry", 
         "full_name": "Khiry Robinson", 
         "gsis_id": "00-0030348", 
@@ -78845,7 +78863,7 @@
     }, 
     "00-0030432": {
         "birthdate": "11/9/1990", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Christine", 
         "full_name": "Christine Michael", 
         "gsis_id": "00-0030432", 
@@ -79581,7 +79599,7 @@
     }, 
     "00-0030477": {
         "birthdate": "12/8/1989", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Spencer", 
         "full_name": "Spencer Nealy", 
         "gsis_id": "00-0030477", 
@@ -80615,7 +80633,7 @@
     }, 
     "00-0030545": {
         "birthdate": "11/6/1991", 
-        "college": "Texas A&M;", 
+        "college": "Texas A&M", 
         "first_name": "Luke", 
         "full_name": "Luke Joeckel", 
         "gsis_id": "00-0030545", 
