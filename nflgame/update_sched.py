@@ -11,17 +11,23 @@ import nflgame
 from nflgame import OrderedDict
 
 
-def year_phase_week():
+def year_phase_week(year=None, phase=None, week=None):
     cur_year, _ = nflgame.live.current_year_and_week()
     season_types = (
-        ('PRE', xrange(1, 4 + 1)),
+        ('PRE', xrange(0, 4 + 1)),
         ('REG', xrange(1, 17 + 1)),
         ('POST', xrange(1, 4 + 1)),
     )
-    for year in range(2009, cur_year+1):
-        for stype, weeks in season_types:
-            for week in weeks:
-                yield year, stype, week
+    for y in range(2009, cur_year+1):
+        if year is not None and year != y:
+            continue
+        for p, weeks in season_types:
+            if phase is not None and phase != p:
+                continue
+            for w in weeks:
+                if week is not None and week != w:
+                    continue
+                yield y, p, w
 
 
 def schedule_url(year, stype, week):
@@ -29,7 +35,7 @@ def schedule_url(year, stype, week):
     Returns the NFL.com XML schedule URL. `year` should be an
     integer, `stype` should be one of the strings `PRE`, `REG` or
     `POST`, and `gsis_week` should be a value in the range
-    `[1, 17]`.
+    `[0, 17]`.
     """
     xmlurl = 'http://www.nfl.com/ajax/scorestrip?'
     if stype == 'POST':
@@ -119,14 +125,11 @@ def run():
     aa('--rebuild', action='store_true',
        help='When set, the entire schedule will be rebuilt.')
     aa('--year', default=None, type=int,
-       help='Force the update to a specific year. (Must also set --phase '
-            'and --week.)')
+       help='Force the update to a specific year.')
     aa('--phase', default=None, choices=['PRE', 'REG', 'POST'],
-       help='Force the update to a specific phase. (Must also set --year '
-            'and --week.)')
+       help='Force the update to a specific phase.')
     aa('--week', default=None, type=int,
-       help='Force the update to a specific week. (Must also set --year '
-            'and --phase.)')
+       help='Force the update to a specific week.')
     args = parser.parse_args()
 
     if args.json_update_file is None:
@@ -142,15 +145,17 @@ def run():
     if args.rebuild:
         sched = new_schedule()
     else:
-        if None not in (args.year, args.phase, args.week):
-            year, phase, week = args.year, args.phase, args.week
-        else:
-            year, week = nflgame.live.current_year_and_week()
-            phase = nflgame.live._cur_season_phase
-
         sched, last = nflgame.sched._create_schedule(args.json_update_file)
         print('Last updated: %s' % last)
-        update_week(sched, year, phase, week)
+
+        if (args.year, args.phase, args.week) == (None, None, None):
+            year, week = nflgame.live.current_year_and_week()
+            phase = nflgame.live._cur_season_phase
+            update_week(sched, year, phase, week)
+        else:
+            for y, p, w in year_phase_week(args.year, args.phase, args.week):
+                print('Updating (%d, %s, %d)...' % (y, p, w))
+                update_week(sched, y, p, w)
     write_schedule(args.json_update_file, sched)
 
 if __name__ == '__main__':
