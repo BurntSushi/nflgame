@@ -46,6 +46,7 @@ import multiprocessing.pool
 import os
 import re
 import sys
+import traceback
 
 import httplib2
 
@@ -403,7 +404,13 @@ def run():
         tbodys = soup.find(id='result').find_all('tbody')
 
         for row in tbodys[len(tbodys)-1].find_all('tr'):
-            roster.append(meta_from_soup_row(team, row))
+            try:
+                roster.append(meta_from_soup_row(team, row))
+            except Exception:
+                errors.append(
+                    'Could not get player info from roster row:\n\n%s\n\n'
+                    'Exception:\n\n%s\n\n'
+                    % (row, traceback.format_exc()))
     progress_done()
 
     # Find the gsis identifiers for players that are in the roster but haven't
