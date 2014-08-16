@@ -1,3 +1,8 @@
+1.2.7
+=====
+  - Player and preseason 2014 game updates.
+  - Better error reporting when scraping rosters to help debug nfldb#47.
+
 1.2.6
 =====
   - Support hall-of-fame games, and add all HOF games back to 2009.
