@@ -167,7 +167,7 @@ class GameClock (object):
             elif self.is_final():
                 self.__qtr = sys.maxint
             else:
-                assert False, 'Unknown QTR value: "%s"' % self.qtr
+                self.qtr = 'Pregame'
 
     @property
     def quarter(self):
