@@ -31679,7 +31679,71 @@
     "week": 17,
     "year": 2014
    }
+  ],
+  [
+   "2015010300",
+   {
+    "away": "ARI",
+    "day": 3,
+    "eid": "2015010300",
+    "gamekey": "56491",
+    "home": "CAR",
+    "month": 1,
+    "season_type": "POST",
+    "time": "4:35",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2014
+   }
+  ],
+  [
+   "2015010301",
+   {
+    "away": "BAL",
+    "day": 3,
+    "eid": "2015010301",
+    "gamekey": "56492",
+    "home": "PIT",
+    "month": 1,
+    "season_type": "POST",
+    "time": "8:15",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2014
+   }
+  ],
+  [
+   "2015010400",
+   {
+    "away": "CIN",
+    "day": 4,
+    "eid": "2015010400",
+    "gamekey": "56493",
+    "home": "IND",
+    "month": 1,
+    "season_type": "POST",
+    "time": "1:05",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2014
+   }
+  ],
+  [
+   "2015010401",
+   {
+    "away": "DET",
+    "day": 4,
+    "eid": "2015010401",
+    "gamekey": "56494",
+    "home": "DAL",
+    "month": 1,
+    "season_type": "POST",
+    "time": "4:40",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2014
+   }
   ]
  ],
- "time": 1417049381.29046
+ "time": 1420126985.865176
 }
