@@ -472,7 +472,8 @@ def run():
 
     assert len(metas) > 0, "Have no players to add... ???"
     with open(args.json_update_file, 'w+') as fp:
-        json.dump(metas, fp, indent=4, sort_keys=True)
+        json.dump(metas, fp, indent=4, sort_keys=True,
+                  separators=(',', ': '))
 
     if len(errors) > 0:
         eprint('\n')

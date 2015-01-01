@@ -103,7 +103,8 @@ def write_schedule(fpath, sched):
     for gsis_id in sorted(sched):
         alist.append([gsis_id, sched[gsis_id]])
     json.dump({'time': time.time(), 'games': alist},
-              open(fpath, 'w+'), indent=1, sort_keys=True)
+              open(fpath, 'w+'), indent=1, sort_keys=True,
+              separators=(',', ': '))
 
 
 def eprint(*args, **kwargs):
