@@ -31807,7 +31807,39 @@
     "week": 2,
     "year": 2014
    }
+  ],
+  [
+   "2015011800",
+   {
+    "away": "GB",
+    "day": 18,
+    "eid": "2015011800",
+    "gamekey": "56499",
+    "home": "SEA",
+    "month": 1,
+    "season_type": "POST",
+    "time": "3:05",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2014
+   }
+  ],
+  [
+   "2015011801",
+   {
+    "away": "IND",
+    "day": 18,
+    "eid": "2015011801",
+    "gamekey": "56500",
+    "home": "NE",
+    "month": 1,
+    "season_type": "POST",
+    "time": "6:40",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2014
+   }
   ]
  ],
- "time": 1420498420.188137
+ "time": 1421088803.177974
 }
