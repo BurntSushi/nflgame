@@ -1,6 +1,7 @@
+from __future__ import division
+
 import json
 import os.path
-from __future__ import division
 
 from nflgame import OrderedDict
 import nflgame.seq
@@ -303,7 +304,7 @@ class PlayerStats (object):
             if name.startswith(cat):
                 return 0
         raise AttributeError
-		
+
     def passer_rating(self):
         """
         Calculate and return the passer rating using the NFL formula. Passer
@@ -315,7 +316,7 @@ class PlayerStats (object):
         l.append(((self.passing_yds / self.passing_att) - 3) * .25)
         l.append((self.tds / self.passing_att) * 20)
         l.append(2.375 - (self.passing_ints / self.passing_att * 25))
-        
+
         m = []
         for a in l:
             if a < 0:
@@ -327,7 +328,7 @@ class PlayerStats (object):
             else:
                 m.append(a)
 
-            rating = round((sum(m) / 6) * 100, 1)    
+            rating = round((sum(m) / 6) * 100, 1)
         return rating
 
 
