@@ -1,5 +1,6 @@
 import json
 import os.path
+from __future__ import division
 
 from nflgame import OrderedDict
 import nflgame.seq
@@ -302,6 +303,32 @@ class PlayerStats (object):
             if name.startswith(cat):
                 return 0
         raise AttributeError
+		
+    def passer_rating(self):
+        """
+        Calculate and return the passer rating using the NFL formula. Passer
+        rating is calculated using a player's passing attempts, completions,
+        yards, touchdowns, and interceptions. Passer rating in the NFL is on a
+        scale from 0 to 158.3.
+        """
+        l = [((self.passing_cmp / self.passing_att) - .3) * 5]
+        l.append(((self.passing_yds / self.passing_att) - 3) * .25)
+        l.append((self.tds / self.passing_att) * 20)
+        l.append(2.375 - (self.passing_ints / self.passing_att * 25))
+        
+        m = []
+        for a in l:
+            if a < 0:
+                a = 0
+                m.append(a)
+            elif a > 2.375:
+                a = 2.375
+                m.append(a)
+            else:
+                m.append(a)
+
+            rating = round((sum(m) / 6) * 100, 1)    
+        return rating
 
 
 class GamePlayerStats (PlayerStats):
