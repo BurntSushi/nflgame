@@ -343,7 +343,7 @@ def _game_is_active(gameinfo, inactive_interval):
 
 def _game_datetime(gameinfo):
     hour, minute = gameinfo['time'].strip().split(':')
-    d = datetime.datetime(gameinfo['year'], gameinfo['month'], gameinfo['day'],
+    d = datetime.datetime(int(gameinfo['eid'][:4]), gameinfo['month'], gameinfo['day'],
                           (int(hour) + 12) % 24, int(minute))
     return pytz.timezone('US/Eastern').localize(d).astimezone(pytz.utc)
 
