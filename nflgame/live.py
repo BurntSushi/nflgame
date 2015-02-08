@@ -65,13 +65,13 @@ _WEEK_INTERVAL = 60 * 60 * 12
 How often to check what the current week is. By default, it is twice a day.
 """
 
-# _CUR_SCHEDULE_URL = "http://www.nfl.com/liveupdate/scorestrip/ss.xml"
+# _CUR_SCHEDULE = "http://www.nfl.com/liveupdate/scorestrip/ss.xml"
 # """
 # Pinged infrequently to discover the current week number, year and week type.
 # The actual schedule of games is taken from the schedule module.
 # """
 
-_CUR_SCHEDULE_URL = "http://static.nfl.com/liveupdate/scorestrip/postseason/ss.xml"
+_CUR_SCHEDULE = "http://static.nfl.com/liveupdate/scorestrip/postseason/ss.xml"
 """
 The URL for the XML schedule of the post season. This is only used
 during the post season.
@@ -341,9 +341,9 @@ def _game_is_active(gameinfo, inactive_interval):
     return gameinfo['eid'] not in _completed
 
 
-def _game_datetime(gameinfo):
-    hour, minute = gameinfo['time'].strip().split(':')
-    d = datetime.datetime(int(gameinfo['eid'][:4]), gameinfo['month'], gameinfo['day'],
+def _game_datetime(info):
+    hour, minute = info['time'].strip().split(':')
+    d = datetime.datetime(int(info['eid'][:4]), info['month'], info['day'],
                           (int(hour) + 12) % 24, int(minute))
     return pytz.timezone('US/Eastern').localize(d).astimezone(pytz.utc)
 
@@ -355,7 +355,7 @@ def _now():
 def _update_week_number():
     global _cur_week, _cur_year, _cur_season_phase
 
-    dom = xml.parse(urllib2.urlopen(_CUR_SCHEDULE_URL, timeout=5))
+    dom = xml.parse(urllib2.urlopen(_CUR_SCHEDULE, timeout=5))
     gms = dom.getElementsByTagName('gms')[0]
     _cur_week = int(gms.getAttribute('w'))
     _cur_year = int(gms.getAttribute('y'))

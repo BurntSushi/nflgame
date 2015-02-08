@@ -10,6 +10,7 @@ __pdoc__ = {}
 
 _sched_json_file = os.path.join(os.path.dirname(__file__), 'schedule.json')
 
+
 def _create_schedule(jsonf=None):
     """
     Returns an ordered dict of schedule data from the schedule.json
