@@ -93,6 +93,7 @@ import nflgame.sched
 import nflgame.seq
 from nflgame.version import __version__
 
+assert OrderedDict  # Asserting the import for static analysis.
 VERSION = __version__  # Deprecated. Backwards compatibility.
 
 NoPlayers = nflgame.seq.GenPlayerStats(None)

@@ -55,7 +55,7 @@ def values(category_id, yards):
     except ValueError:
         yards = 0
     except TypeError:
-        #Catch errors if yards is a NoneType
+        # Catch errors if yards is a NoneType
         yards = 0
 
     vals = {}

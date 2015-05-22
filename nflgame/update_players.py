@@ -61,6 +61,7 @@ urls = {
     'gsis_profile': 'http://www.nfl.com/players/profile?id=%s',
 }
 
+
 def new_http():
     http = httplib2.Http(timeout=10)
     http.follow_redirects = False
