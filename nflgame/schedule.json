@@ -31855,7 +31855,5143 @@
     "week": 5,
     "year": 2014
    }
+  ],
+  [
+   "2015080951",
+   {
+    "away": "PIT",
+    "day": 9,
+    "eid": "2015080951",
+    "gamekey": "56759",
+    "home": "MIN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 0,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081351",
+   {
+    "away": "NO",
+    "day": 13,
+    "eid": "2015081351",
+    "gamekey": "56760",
+    "home": "BAL",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081352",
+   {
+    "away": "NYJ",
+    "day": 13,
+    "eid": "2015081352",
+    "gamekey": "56761",
+    "home": "DET",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081353",
+   {
+    "away": "GB",
+    "day": 13,
+    "eid": "2015081353",
+    "gamekey": "56762",
+    "home": "NE",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081354",
+   {
+    "away": "WAS",
+    "day": 13,
+    "eid": "2015081354",
+    "gamekey": "56763",
+    "home": "CLE",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081355",
+   {
+    "away": "MIA",
+    "day": 13,
+    "eid": "2015081355",
+    "gamekey": "56764",
+    "home": "CHI",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081356",
+   {
+    "away": "DAL",
+    "day": 13,
+    "eid": "2015081356",
+    "gamekey": "56765",
+    "home": "SD",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081451",
+   {
+    "away": "TEN",
+    "day": 14,
+    "eid": "2015081451",
+    "gamekey": "56766",
+    "home": "ATL",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081452",
+   {
+    "away": "CAR",
+    "day": 14,
+    "eid": "2015081452",
+    "gamekey": "56767",
+    "home": "BUF",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081453",
+   {
+    "away": "NYG",
+    "day": 14,
+    "eid": "2015081453",
+    "gamekey": "56768",
+    "home": "CIN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081454",
+   {
+    "away": "PIT",
+    "day": 14,
+    "eid": "2015081454",
+    "gamekey": "56769",
+    "home": "JAC",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081455",
+   {
+    "away": "STL",
+    "day": 14,
+    "eid": "2015081455",
+    "gamekey": "56770",
+    "home": "OAK",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081456",
+   {
+    "away": "DEN",
+    "day": 14,
+    "eid": "2015081456",
+    "gamekey": "56771",
+    "home": "SEA",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081551",
+   {
+    "away": "TB",
+    "day": 15,
+    "eid": "2015081551",
+    "gamekey": "56772",
+    "home": "MIN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081552",
+   {
+    "away": "SF",
+    "day": 15,
+    "eid": "2015081552",
+    "gamekey": "56773",
+    "home": "HOU",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081553",
+   {
+    "away": "KC",
+    "day": 15,
+    "eid": "2015081553",
+    "gamekey": "56774",
+    "home": "ARI",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015081651",
+   {
+    "away": "IND",
+    "day": 16,
+    "eid": "2015081651",
+    "gamekey": "56775",
+    "home": "PHI",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082051",
+   {
+    "away": "DET",
+    "day": 20,
+    "eid": "2015082051",
+    "gamekey": "56776",
+    "home": "WAS",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082052",
+   {
+    "away": "BUF",
+    "day": 20,
+    "eid": "2015082052",
+    "gamekey": "56777",
+    "home": "CLE",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082151",
+   {
+    "away": "ATL",
+    "day": 21,
+    "eid": "2015082151",
+    "gamekey": "56778",
+    "home": "NYJ",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082152",
+   {
+    "away": "SEA",
+    "day": 21,
+    "eid": "2015082152",
+    "gamekey": "56779",
+    "home": "KC",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082251",
+   {
+    "away": "MIA",
+    "day": 22,
+    "eid": "2015082251",
+    "gamekey": "56780",
+    "home": "CAR",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082252",
+   {
+    "away": "BAL",
+    "day": 22,
+    "eid": "2015082252",
+    "gamekey": "56781",
+    "home": "PHI",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082253",
+   {
+    "away": "CHI",
+    "day": 22,
+    "eid": "2015082253",
+    "gamekey": "56782",
+    "home": "IND",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082254",
+   {
+    "away": "NE",
+    "day": 22,
+    "eid": "2015082254",
+    "gamekey": "56783",
+    "home": "NO",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082255",
+   {
+    "away": "JAC",
+    "day": 22,
+    "eid": "2015082255",
+    "gamekey": "56784",
+    "home": "NYG",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082256",
+   {
+    "away": "DEN",
+    "day": 22,
+    "eid": "2015082256",
+    "gamekey": "56785",
+    "home": "HOU",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082257",
+   {
+    "away": "OAK",
+    "day": 22,
+    "eid": "2015082257",
+    "gamekey": "56786",
+    "home": "MIN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082258",
+   {
+    "away": "SD",
+    "day": 22,
+    "eid": "2015082258",
+    "gamekey": "56787",
+    "home": "ARI",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082351",
+   {
+    "away": "GB",
+    "day": 23,
+    "eid": "2015082351",
+    "gamekey": "56788",
+    "home": "PIT",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082352",
+   {
+    "away": "DAL",
+    "day": 23,
+    "eid": "2015082352",
+    "gamekey": "56789",
+    "home": "SF",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082353",
+   {
+    "away": "STL",
+    "day": 23,
+    "eid": "2015082353",
+    "gamekey": "56790",
+    "home": "TEN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082451",
+   {
+    "away": "CIN",
+    "day": 24,
+    "eid": "2015082451",
+    "gamekey": "56791",
+    "home": "TB",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Mon",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082851",
+   {
+    "away": "NE",
+    "day": 28,
+    "eid": "2015082851",
+    "gamekey": "56792",
+    "home": "CAR",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082852",
+   {
+    "away": "DET",
+    "day": 28,
+    "eid": "2015082852",
+    "gamekey": "56793",
+    "home": "JAC",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082853",
+   {
+    "away": "TEN",
+    "day": 28,
+    "eid": "2015082853",
+    "gamekey": "56794",
+    "home": "KC",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082951",
+   {
+    "away": "PIT",
+    "day": 29,
+    "eid": "2015082951",
+    "gamekey": "56795",
+    "home": "BUF",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "4:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082952",
+   {
+    "away": "MIN",
+    "day": 29,
+    "eid": "2015082952",
+    "gamekey": "56796",
+    "home": "DAL",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082953",
+   {
+    "away": "ATL",
+    "day": 29,
+    "eid": "2015082953",
+    "gamekey": "56797",
+    "home": "MIA",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082954",
+   {
+    "away": "NYJ",
+    "day": 29,
+    "eid": "2015082954",
+    "gamekey": "56798",
+    "home": "NYG",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082955",
+   {
+    "away": "CLE",
+    "day": 29,
+    "eid": "2015082955",
+    "gamekey": "56799",
+    "home": "TB",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082956",
+   {
+    "away": "WAS",
+    "day": 29,
+    "eid": "2015082956",
+    "gamekey": "56800",
+    "home": "BAL",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082957",
+   {
+    "away": "CHI",
+    "day": 29,
+    "eid": "2015082957",
+    "gamekey": "56801",
+    "home": "CIN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082958",
+   {
+    "away": "PHI",
+    "day": 29,
+    "eid": "2015082958",
+    "gamekey": "56802",
+    "home": "GB",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082959",
+   {
+    "away": "IND",
+    "day": 29,
+    "eid": "2015082959",
+    "gamekey": "56803",
+    "home": "STL",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082960",
+   {
+    "away": "SEA",
+    "day": 29,
+    "eid": "2015082960",
+    "gamekey": "56804",
+    "home": "SD",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015082961",
+   {
+    "away": "SF",
+    "day": 29,
+    "eid": "2015082961",
+    "gamekey": "56805",
+    "home": "DEN",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015083051",
+   {
+    "away": "HOU",
+    "day": 30,
+    "eid": "2015083051",
+    "gamekey": "56806",
+    "home": "NO",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "4:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015083052",
+   {
+    "away": "ARI",
+    "day": 30,
+    "eid": "2015083052",
+    "gamekey": "56807",
+    "home": "OAK",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090351",
+   {
+    "away": "BAL",
+    "day": 3,
+    "eid": "2015090351",
+    "gamekey": "56808",
+    "home": "ATL",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090352",
+   {
+    "away": "NO",
+    "day": 3,
+    "eid": "2015090352",
+    "gamekey": "56809",
+    "home": "GB",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090353",
+   {
+    "away": "CIN",
+    "day": 3,
+    "eid": "2015090353",
+    "gamekey": "56810",
+    "home": "IND",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090354",
+   {
+    "away": "TB",
+    "day": 3,
+    "eid": "2015090354",
+    "gamekey": "56811",
+    "home": "MIA",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090355",
+   {
+    "away": "PHI",
+    "day": 3,
+    "eid": "2015090355",
+    "gamekey": "56812",
+    "home": "NYJ",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090356",
+   {
+    "away": "BUF",
+    "day": 3,
+    "eid": "2015090356",
+    "gamekey": "56813",
+    "home": "DET",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090357",
+   {
+    "away": "NYG",
+    "day": 3,
+    "eid": "2015090357",
+    "gamekey": "56814",
+    "home": "NE",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090358",
+   {
+    "away": "CAR",
+    "day": 3,
+    "eid": "2015090358",
+    "gamekey": "56815",
+    "home": "PIT",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090359",
+   {
+    "away": "JAC",
+    "day": 3,
+    "eid": "2015090359",
+    "gamekey": "56816",
+    "home": "WAS",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090360",
+   {
+    "away": "CLE",
+    "day": 3,
+    "eid": "2015090360",
+    "gamekey": "56817",
+    "home": "CHI",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090361",
+   {
+    "away": "HOU",
+    "day": 3,
+    "eid": "2015090361",
+    "gamekey": "56818",
+    "home": "DAL",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090362",
+   {
+    "away": "KC",
+    "day": 3,
+    "eid": "2015090362",
+    "gamekey": "56819",
+    "home": "STL",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090363",
+   {
+    "away": "MIN",
+    "day": 3,
+    "eid": "2015090363",
+    "gamekey": "56820",
+    "home": "TEN",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090364",
+   {
+    "away": "ARI",
+    "day": 3,
+    "eid": "2015090364",
+    "gamekey": "56821",
+    "home": "DEN",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090365",
+   {
+    "away": "SD",
+    "day": 3,
+    "eid": "2015090365",
+    "gamekey": "56822",
+    "home": "SF",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015090366",
+   {
+    "away": "OAK",
+    "day": 3,
+    "eid": "2015090366",
+    "gamekey": "56823",
+    "home": "SEA",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091000",
+   {
+    "away": "PIT",
+    "day": 10,
+    "eid": "2015091000",
+    "gamekey": "56503",
+    "home": "NE",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091300",
+   {
+    "away": "GB",
+    "day": 13,
+    "eid": "2015091300",
+    "gamekey": "56505",
+    "home": "CHI",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091301",
+   {
+    "away": "SEA",
+    "day": 13,
+    "eid": "2015091301",
+    "gamekey": "56509",
+    "home": "STL",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091302",
+   {
+    "away": "CAR",
+    "day": 13,
+    "eid": "2015091302",
+    "gamekey": "56507",
+    "home": "JAC",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091303",
+   {
+    "away": "MIA",
+    "day": 13,
+    "eid": "2015091303",
+    "gamekey": "56510",
+    "home": "WAS",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091304",
+   {
+    "away": "IND",
+    "day": 13,
+    "eid": "2015091304",
+    "gamekey": "56504",
+    "home": "BUF",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091305",
+   {
+    "away": "CLE",
+    "day": 13,
+    "eid": "2015091305",
+    "gamekey": "56508",
+    "home": "NYJ",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091306",
+   {
+    "away": "KC",
+    "day": 13,
+    "eid": "2015091306",
+    "gamekey": "56506",
+    "home": "HOU",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091307",
+   {
+    "away": "NO",
+    "day": 13,
+    "eid": "2015091307",
+    "gamekey": "56511",
+    "home": "ARI",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091308",
+   {
+    "away": "DET",
+    "day": 13,
+    "eid": "2015091308",
+    "gamekey": "56512",
+    "home": "SD",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091309",
+   {
+    "away": "BAL",
+    "day": 13,
+    "eid": "2015091309",
+    "gamekey": "56513",
+    "home": "DEN",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091310",
+   {
+    "away": "CIN",
+    "day": 13,
+    "eid": "2015091310",
+    "gamekey": "56514",
+    "home": "OAK",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091311",
+   {
+    "away": "TEN",
+    "day": 13,
+    "eid": "2015091311",
+    "gamekey": "56515",
+    "home": "TB",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091312",
+   {
+    "away": "NYG",
+    "day": 13,
+    "eid": "2015091312",
+    "gamekey": "56516",
+    "home": "DAL",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091400",
+   {
+    "away": "PHI",
+    "day": 14,
+    "eid": "2015091400",
+    "gamekey": "56517",
+    "home": "ATL",
+    "month": 9,
+    "season_type": "REG",
+    "time": "7:10",
+    "wday": "Mon",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091401",
+   {
+    "away": "MIN",
+    "day": 14,
+    "eid": "2015091401",
+    "gamekey": "56518",
+    "home": "SF",
+    "month": 9,
+    "season_type": "REG",
+    "time": "10:20",
+    "wday": "Mon",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2015091700",
+   {
+    "away": "DEN",
+    "day": 17,
+    "eid": "2015091700",
+    "gamekey": "56519",
+    "home": "KC",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092000",
+   {
+    "away": "HOU",
+    "day": 20,
+    "eid": "2015092000",
+    "gamekey": "56521",
+    "home": "CAR",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092001",
+   {
+    "away": "NE",
+    "day": 20,
+    "eid": "2015092001",
+    "gamekey": "56520",
+    "home": "BUF",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092002",
+   {
+    "away": "SD",
+    "day": 20,
+    "eid": "2015092002",
+    "gamekey": "56523",
+    "home": "CIN",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092003",
+   {
+    "away": "TEN",
+    "day": 20,
+    "eid": "2015092003",
+    "gamekey": "56524",
+    "home": "CLE",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092004",
+   {
+    "away": "ATL",
+    "day": 20,
+    "eid": "2015092004",
+    "gamekey": "56527",
+    "home": "NYG",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092005",
+   {
+    "away": "STL",
+    "day": 20,
+    "eid": "2015092005",
+    "gamekey": "56529",
+    "home": "WAS",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092006",
+   {
+    "away": "ARI",
+    "day": 20,
+    "eid": "2015092006",
+    "gamekey": "56522",
+    "home": "CHI",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092007",
+   {
+    "away": "DET",
+    "day": 20,
+    "eid": "2015092007",
+    "gamekey": "56525",
+    "home": "MIN",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092008",
+   {
+    "away": "TB",
+    "day": 20,
+    "eid": "2015092008",
+    "gamekey": "56526",
+    "home": "NO",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092009",
+   {
+    "away": "SF",
+    "day": 20,
+    "eid": "2015092009",
+    "gamekey": "56528",
+    "home": "PIT",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092010",
+   {
+    "away": "BAL",
+    "day": 20,
+    "eid": "2015092010",
+    "gamekey": "56531",
+    "home": "OAK",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092011",
+   {
+    "away": "MIA",
+    "day": 20,
+    "eid": "2015092011",
+    "gamekey": "56530",
+    "home": "JAC",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092012",
+   {
+    "away": "DAL",
+    "day": 20,
+    "eid": "2015092012",
+    "gamekey": "56532",
+    "home": "PHI",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092013",
+   {
+    "away": "SEA",
+    "day": 20,
+    "eid": "2015092013",
+    "gamekey": "56533",
+    "home": "GB",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092100",
+   {
+    "away": "NYJ",
+    "day": 21,
+    "eid": "2015092100",
+    "gamekey": "56534",
+    "home": "IND",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 2,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092400",
+   {
+    "away": "WAS",
+    "day": 24,
+    "eid": "2015092400",
+    "gamekey": "56535",
+    "home": "NYG",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092700",
+   {
+    "away": "ATL",
+    "day": 27,
+    "eid": "2015092700",
+    "gamekey": "56539",
+    "home": "DAL",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092701",
+   {
+    "away": "NO",
+    "day": 27,
+    "eid": "2015092701",
+    "gamekey": "56537",
+    "home": "CAR",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092702",
+   {
+    "away": "PHI",
+    "day": 27,
+    "eid": "2015092702",
+    "gamekey": "56543",
+    "home": "NYJ",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092703",
+   {
+    "away": "TB",
+    "day": 27,
+    "eid": "2015092703",
+    "gamekey": "56540",
+    "home": "HOU",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092704",
+   {
+    "away": "SD",
+    "day": 27,
+    "eid": "2015092704",
+    "gamekey": "56541",
+    "home": "MIN",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092705",
+   {
+    "away": "PIT",
+    "day": 27,
+    "eid": "2015092705",
+    "gamekey": "56544",
+    "home": "STL",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092706",
+   {
+    "away": "JAC",
+    "day": 27,
+    "eid": "2015092706",
+    "gamekey": "56542",
+    "home": "NE",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092707",
+   {
+    "away": "CIN",
+    "day": 27,
+    "eid": "2015092707",
+    "gamekey": "56536",
+    "home": "BAL",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092708",
+   {
+    "away": "OAK",
+    "day": 27,
+    "eid": "2015092708",
+    "gamekey": "56538",
+    "home": "CLE",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092709",
+   {
+    "away": "IND",
+    "day": 27,
+    "eid": "2015092709",
+    "gamekey": "56545",
+    "home": "TEN",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092710",
+   {
+    "away": "SF",
+    "day": 27,
+    "eid": "2015092710",
+    "gamekey": "56546",
+    "home": "ARI",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092711",
+   {
+    "away": "CHI",
+    "day": 27,
+    "eid": "2015092711",
+    "gamekey": "56548",
+    "home": "SEA",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092712",
+   {
+    "away": "BUF",
+    "day": 27,
+    "eid": "2015092712",
+    "gamekey": "56547",
+    "home": "MIA",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092713",
+   {
+    "away": "DEN",
+    "day": 27,
+    "eid": "2015092713",
+    "gamekey": "56549",
+    "home": "DET",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015092800",
+   {
+    "away": "KC",
+    "day": 28,
+    "eid": "2015092800",
+    "gamekey": "56550",
+    "home": "GB",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 3,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100100",
+   {
+    "away": "BAL",
+    "day": 1,
+    "eid": "2015100100",
+    "gamekey": "56551",
+    "home": "PIT",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100400",
+   {
+    "away": "NYJ",
+    "day": 4,
+    "eid": "2015100400",
+    "gamekey": "56552",
+    "home": "MIA",
+    "month": 10,
+    "season_type": "REG",
+    "time": "9:30",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100401",
+   {
+    "away": "OAK",
+    "day": 4,
+    "eid": "2015100401",
+    "gamekey": "56555",
+    "home": "CHI",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100402",
+   {
+    "away": "HOU",
+    "day": 4,
+    "eid": "2015100402",
+    "gamekey": "56553",
+    "home": "ATL",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100403",
+   {
+    "away": "KC",
+    "day": 4,
+    "eid": "2015100403",
+    "gamekey": "56556",
+    "home": "CIN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100404",
+   {
+    "away": "JAC",
+    "day": 4,
+    "eid": "2015100404",
+    "gamekey": "56557",
+    "home": "IND",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100405",
+   {
+    "away": "PHI",
+    "day": 4,
+    "eid": "2015100405",
+    "gamekey": "56559",
+    "home": "WAS",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100406",
+   {
+    "away": "CAR",
+    "day": 4,
+    "eid": "2015100406",
+    "gamekey": "56558",
+    "home": "TB",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100407",
+   {
+    "away": "NYG",
+    "day": 4,
+    "eid": "2015100407",
+    "gamekey": "56554",
+    "home": "BUF",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100408",
+   {
+    "away": "CLE",
+    "day": 4,
+    "eid": "2015100408",
+    "gamekey": "56560",
+    "home": "SD",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100409",
+   {
+    "away": "GB",
+    "day": 4,
+    "eid": "2015100409",
+    "gamekey": "56563",
+    "home": "SF",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100410",
+   {
+    "away": "STL",
+    "day": 4,
+    "eid": "2015100410",
+    "gamekey": "56561",
+    "home": "ARI",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100411",
+   {
+    "away": "MIN",
+    "day": 4,
+    "eid": "2015100411",
+    "gamekey": "56562",
+    "home": "DEN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100412",
+   {
+    "away": "DAL",
+    "day": 4,
+    "eid": "2015100412",
+    "gamekey": "56564",
+    "home": "NO",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100500",
+   {
+    "away": "DET",
+    "day": 5,
+    "eid": "2015100500",
+    "gamekey": "56565",
+    "home": "SEA",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 4,
+    "year": 2015
+   }
+  ],
+  [
+   "2015100800",
+   {
+    "away": "IND",
+    "day": 8,
+    "eid": "2015100800",
+    "gamekey": "56566",
+    "home": "HOU",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101100",
+   {
+    "away": "NO",
+    "day": 11,
+    "eid": "2015101100",
+    "gamekey": "56572",
+    "home": "PHI",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101101",
+   {
+    "away": "CHI",
+    "day": 11,
+    "eid": "2015101101",
+    "gamekey": "56571",
+    "home": "KC",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101102",
+   {
+    "away": "SEA",
+    "day": 11,
+    "eid": "2015101102",
+    "gamekey": "56569",
+    "home": "CIN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101103",
+   {
+    "away": "WAS",
+    "day": 11,
+    "eid": "2015101103",
+    "gamekey": "56567",
+    "home": "ATL",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101104",
+   {
+    "away": "JAC",
+    "day": 11,
+    "eid": "2015101104",
+    "gamekey": "56573",
+    "home": "TB",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101105",
+   {
+    "away": "CLE",
+    "day": 11,
+    "eid": "2015101105",
+    "gamekey": "56568",
+    "home": "BAL",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101106",
+   {
+    "away": "BUF",
+    "day": 11,
+    "eid": "2015101106",
+    "gamekey": "56574",
+    "home": "TEN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101107",
+   {
+    "away": "STL",
+    "day": 11,
+    "eid": "2015101107",
+    "gamekey": "56570",
+    "home": "GB",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101108",
+   {
+    "away": "ARI",
+    "day": 11,
+    "eid": "2015101108",
+    "gamekey": "56575",
+    "home": "DET",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101109",
+   {
+    "away": "NE",
+    "day": 11,
+    "eid": "2015101109",
+    "gamekey": "56576",
+    "home": "DAL",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101110",
+   {
+    "away": "DEN",
+    "day": 11,
+    "eid": "2015101110",
+    "gamekey": "56577",
+    "home": "OAK",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101111",
+   {
+    "away": "SF",
+    "day": 11,
+    "eid": "2015101111",
+    "gamekey": "56578",
+    "home": "NYG",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101200",
+   {
+    "away": "PIT",
+    "day": 12,
+    "eid": "2015101200",
+    "gamekey": "56579",
+    "home": "SD",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 5,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101500",
+   {
+    "away": "ATL",
+    "day": 15,
+    "eid": "2015101500",
+    "gamekey": "56580",
+    "home": "NO",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101800",
+   {
+    "away": "CHI",
+    "day": 18,
+    "eid": "2015101800",
+    "gamekey": "56583",
+    "home": "DET",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101801",
+   {
+    "away": "WAS",
+    "day": 18,
+    "eid": "2015101801",
+    "gamekey": "56586",
+    "home": "NYJ",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101802",
+   {
+    "away": "ARI",
+    "day": 18,
+    "eid": "2015101802",
+    "gamekey": "56587",
+    "home": "PIT",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101803",
+   {
+    "away": "KC",
+    "day": 18,
+    "eid": "2015101803",
+    "gamekey": "56585",
+    "home": "MIN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101804",
+   {
+    "away": "CIN",
+    "day": 18,
+    "eid": "2015101804",
+    "gamekey": "56581",
+    "home": "BUF",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101805",
+   {
+    "away": "DEN",
+    "day": 18,
+    "eid": "2015101805",
+    "gamekey": "56582",
+    "home": "CLE",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101806",
+   {
+    "away": "MIA",
+    "day": 18,
+    "eid": "2015101806",
+    "gamekey": "56588",
+    "home": "TEN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101807",
+   {
+    "away": "HOU",
+    "day": 18,
+    "eid": "2015101807",
+    "gamekey": "56584",
+    "home": "JAC",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101808",
+   {
+    "away": "CAR",
+    "day": 18,
+    "eid": "2015101808",
+    "gamekey": "56589",
+    "home": "SEA",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101809",
+   {
+    "away": "SD",
+    "day": 18,
+    "eid": "2015101809",
+    "gamekey": "56590",
+    "home": "GB",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101810",
+   {
+    "away": "BAL",
+    "day": 18,
+    "eid": "2015101810",
+    "gamekey": "56591",
+    "home": "SF",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101811",
+   {
+    "away": "NE",
+    "day": 18,
+    "eid": "2015101811",
+    "gamekey": "56592",
+    "home": "IND",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015101900",
+   {
+    "away": "NYG",
+    "day": 19,
+    "eid": "2015101900",
+    "gamekey": "56593",
+    "home": "PHI",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 6,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102200",
+   {
+    "away": "SEA",
+    "day": 22,
+    "eid": "2015102200",
+    "gamekey": "56594",
+    "home": "SF",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102500",
+   {
+    "away": "BUF",
+    "day": 25,
+    "eid": "2015102500",
+    "gamekey": "56595",
+    "home": "JAC",
+    "month": 10,
+    "season_type": "REG",
+    "time": "9:30",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102501",
+   {
+    "away": "CLE",
+    "day": 25,
+    "eid": "2015102501",
+    "gamekey": "56601",
+    "home": "STL",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102502",
+   {
+    "away": "HOU",
+    "day": 25,
+    "eid": "2015102502",
+    "gamekey": "56599",
+    "home": "MIA",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102503",
+   {
+    "away": "NYJ",
+    "day": 25,
+    "eid": "2015102503",
+    "gamekey": "56600",
+    "home": "NE",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102504",
+   {
+    "away": "PIT",
+    "day": 25,
+    "eid": "2015102504",
+    "gamekey": "56598",
+    "home": "KC",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102505",
+   {
+    "away": "TB",
+    "day": 25,
+    "eid": "2015102505",
+    "gamekey": "56603",
+    "home": "WAS",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102506",
+   {
+    "away": "MIN",
+    "day": 25,
+    "eid": "2015102506",
+    "gamekey": "56596",
+    "home": "DET",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102507",
+   {
+    "away": "NO",
+    "day": 25,
+    "eid": "2015102507",
+    "gamekey": "56597",
+    "home": "IND",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102508",
+   {
+    "away": "ATL",
+    "day": 25,
+    "eid": "2015102508",
+    "gamekey": "56602",
+    "home": "TEN",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102509",
+   {
+    "away": "OAK",
+    "day": 25,
+    "eid": "2015102509",
+    "gamekey": "56604",
+    "home": "SD",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102510",
+   {
+    "away": "DAL",
+    "day": 25,
+    "eid": "2015102510",
+    "gamekey": "56605",
+    "home": "NYG",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102511",
+   {
+    "away": "PHI",
+    "day": 25,
+    "eid": "2015102511",
+    "gamekey": "56606",
+    "home": "CAR",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102600",
+   {
+    "away": "BAL",
+    "day": 26,
+    "eid": "2015102600",
+    "gamekey": "56607",
+    "home": "ARI",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 7,
+    "year": 2015
+   }
+  ],
+  [
+   "2015102900",
+   {
+    "away": "MIA",
+    "day": 29,
+    "eid": "2015102900",
+    "gamekey": "56608",
+    "home": "NE",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110100",
+   {
+    "away": "DET",
+    "day": 1,
+    "eid": "2015110100",
+    "gamekey": "56609",
+    "home": "KC",
+    "month": 11,
+    "season_type": "REG",
+    "time": "9:30",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110101",
+   {
+    "away": "SD",
+    "day": 1,
+    "eid": "2015110101",
+    "gamekey": "56611",
+    "home": "BAL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110102",
+   {
+    "away": "CIN",
+    "day": 1,
+    "eid": "2015110102",
+    "gamekey": "56616",
+    "home": "PIT",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110103",
+   {
+    "away": "TEN",
+    "day": 1,
+    "eid": "2015110103",
+    "gamekey": "56614",
+    "home": "HOU",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110104",
+   {
+    "away": "MIN",
+    "day": 1,
+    "eid": "2015110104",
+    "gamekey": "56612",
+    "home": "CHI",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110105",
+   {
+    "away": "TB",
+    "day": 1,
+    "eid": "2015110105",
+    "gamekey": "56610",
+    "home": "ATL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110106",
+   {
+    "away": "NYG",
+    "day": 1,
+    "eid": "2015110106",
+    "gamekey": "56615",
+    "home": "NO",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110107",
+   {
+    "away": "SF",
+    "day": 1,
+    "eid": "2015110107",
+    "gamekey": "56617",
+    "home": "STL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110108",
+   {
+    "away": "ARI",
+    "day": 1,
+    "eid": "2015110108",
+    "gamekey": "56613",
+    "home": "CLE",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110109",
+   {
+    "away": "NYJ",
+    "day": 1,
+    "eid": "2015110109",
+    "gamekey": "56618",
+    "home": "OAK",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110110",
+   {
+    "away": "SEA",
+    "day": 1,
+    "eid": "2015110110",
+    "gamekey": "56619",
+    "home": "DAL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110111",
+   {
+    "away": "GB",
+    "day": 1,
+    "eid": "2015110111",
+    "gamekey": "56620",
+    "home": "DEN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110200",
+   {
+    "away": "IND",
+    "day": 2,
+    "eid": "2015110200",
+    "gamekey": "56621",
+    "home": "CAR",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 8,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110500",
+   {
+    "away": "CLE",
+    "day": 5,
+    "eid": "2015110500",
+    "gamekey": "56622",
+    "home": "CIN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110800",
+   {
+    "away": "STL",
+    "day": 8,
+    "eid": "2015110800",
+    "gamekey": "56625",
+    "home": "MIN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110801",
+   {
+    "away": "GB",
+    "day": 8,
+    "eid": "2015110801",
+    "gamekey": "56624",
+    "home": "CAR",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110802",
+   {
+    "away": "WAS",
+    "day": 8,
+    "eid": "2015110802",
+    "gamekey": "56626",
+    "home": "NE",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110803",
+   {
+    "away": "TEN",
+    "day": 8,
+    "eid": "2015110803",
+    "gamekey": "56627",
+    "home": "NO",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110804",
+   {
+    "away": "MIA",
+    "day": 8,
+    "eid": "2015110804",
+    "gamekey": "56623",
+    "home": "BUF",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110805",
+   {
+    "away": "JAC",
+    "day": 8,
+    "eid": "2015110805",
+    "gamekey": "56628",
+    "home": "NYJ",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110806",
+   {
+    "away": "OAK",
+    "day": 8,
+    "eid": "2015110806",
+    "gamekey": "56629",
+    "home": "PIT",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110807",
+   {
+    "away": "NYG",
+    "day": 8,
+    "eid": "2015110807",
+    "gamekey": "56631",
+    "home": "TB",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110808",
+   {
+    "away": "ATL",
+    "day": 8,
+    "eid": "2015110808",
+    "gamekey": "56630",
+    "home": "SF",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110809",
+   {
+    "away": "DEN",
+    "day": 8,
+    "eid": "2015110809",
+    "gamekey": "56632",
+    "home": "IND",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110810",
+   {
+    "away": "PHI",
+    "day": 8,
+    "eid": "2015110810",
+    "gamekey": "56633",
+    "home": "DAL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015110900",
+   {
+    "away": "CHI",
+    "day": 9,
+    "eid": "2015110900",
+    "gamekey": "56634",
+    "home": "SD",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 9,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111200",
+   {
+    "away": "BUF",
+    "day": 12,
+    "eid": "2015111200",
+    "gamekey": "56635",
+    "home": "NYJ",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111500",
+   {
+    "away": "NO",
+    "day": 15,
+    "eid": "2015111500",
+    "gamekey": "56643",
+    "home": "WAS",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111501",
+   {
+    "away": "DET",
+    "day": 15,
+    "eid": "2015111501",
+    "gamekey": "56637",
+    "home": "GB",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111502",
+   {
+    "away": "DAL",
+    "day": 15,
+    "eid": "2015111502",
+    "gamekey": "56641",
+    "home": "TB",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111503",
+   {
+    "away": "CAR",
+    "day": 15,
+    "eid": "2015111503",
+    "gamekey": "56642",
+    "home": "TEN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111504",
+   {
+    "away": "CHI",
+    "day": 15,
+    "eid": "2015111504",
+    "gamekey": "56640",
+    "home": "STL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111505",
+   {
+    "away": "MIA",
+    "day": 15,
+    "eid": "2015111505",
+    "gamekey": "56638",
+    "home": "PHI",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111506",
+   {
+    "away": "JAC",
+    "day": 15,
+    "eid": "2015111506",
+    "gamekey": "56636",
+    "home": "BAL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111507",
+   {
+    "away": "CLE",
+    "day": 15,
+    "eid": "2015111507",
+    "gamekey": "56639",
+    "home": "PIT",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111508",
+   {
+    "away": "MIN",
+    "day": 15,
+    "eid": "2015111508",
+    "gamekey": "56644",
+    "home": "OAK",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111509",
+   {
+    "away": "NE",
+    "day": 15,
+    "eid": "2015111509",
+    "gamekey": "56646",
+    "home": "NYG",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111510",
+   {
+    "away": "KC",
+    "day": 15,
+    "eid": "2015111510",
+    "gamekey": "56645",
+    "home": "DEN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111511",
+   {
+    "away": "ARI",
+    "day": 15,
+    "eid": "2015111511",
+    "gamekey": "56647",
+    "home": "SEA",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111600",
+   {
+    "away": "HOU",
+    "day": 16,
+    "eid": "2015111600",
+    "gamekey": "56648",
+    "home": "CIN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 10,
+    "year": 2015
+   }
+  ],
+  [
+   "2015111900",
+   {
+    "away": "TEN",
+    "day": 19,
+    "eid": "2015111900",
+    "gamekey": "56649",
+    "home": "JAC",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112200",
+   {
+    "away": "DEN",
+    "day": 22,
+    "eid": "2015112200",
+    "gamekey": "56653",
+    "home": "CHI",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112201",
+   {
+    "away": "OAK",
+    "day": 22,
+    "eid": "2015112201",
+    "gamekey": "56654",
+    "home": "DET",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112202",
+   {
+    "away": "IND",
+    "day": 22,
+    "eid": "2015112202",
+    "gamekey": "56650",
+    "home": "ATL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112203",
+   {
+    "away": "NYJ",
+    "day": 22,
+    "eid": "2015112203",
+    "gamekey": "56655",
+    "home": "HOU",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112204",
+   {
+    "away": "TB",
+    "day": 22,
+    "eid": "2015112204",
+    "gamekey": "56658",
+    "home": "PHI",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112205",
+   {
+    "away": "GB",
+    "day": 22,
+    "eid": "2015112205",
+    "gamekey": "56657",
+    "home": "MIN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112206",
+   {
+    "away": "WAS",
+    "day": 22,
+    "eid": "2015112206",
+    "gamekey": "56652",
+    "home": "CAR",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112207",
+   {
+    "away": "DAL",
+    "day": 22,
+    "eid": "2015112207",
+    "gamekey": "56656",
+    "home": "MIA",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112208",
+   {
+    "away": "STL",
+    "day": 22,
+    "eid": "2015112208",
+    "gamekey": "56651",
+    "home": "BAL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112209",
+   {
+    "away": "CIN",
+    "day": 22,
+    "eid": "2015112209",
+    "gamekey": "56659",
+    "home": "ARI",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112210",
+   {
+    "away": "SF",
+    "day": 22,
+    "eid": "2015112210",
+    "gamekey": "56660",
+    "home": "SEA",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112211",
+   {
+    "away": "KC",
+    "day": 22,
+    "eid": "2015112211",
+    "gamekey": "56661",
+    "home": "SD",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112300",
+   {
+    "away": "BUF",
+    "day": 23,
+    "eid": "2015112300",
+    "gamekey": "56662",
+    "home": "NE",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 11,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112600",
+   {
+    "away": "PHI",
+    "day": 26,
+    "eid": "2015112600",
+    "gamekey": "56663",
+    "home": "DET",
+    "month": 11,
+    "season_type": "REG",
+    "time": "12:30",
+    "wday": "Thu",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112601",
+   {
+    "away": "CAR",
+    "day": 26,
+    "eid": "2015112601",
+    "gamekey": "56664",
+    "home": "DAL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:30",
+    "wday": "Thu",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112602",
+   {
+    "away": "CHI",
+    "day": 26,
+    "eid": "2015112602",
+    "gamekey": "56665",
+    "home": "GB",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Thu",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112900",
+   {
+    "away": "NYG",
+    "day": 29,
+    "eid": "2015112900",
+    "gamekey": "56674",
+    "home": "WAS",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112901",
+   {
+    "away": "MIN",
+    "day": 29,
+    "eid": "2015112901",
+    "gamekey": "56666",
+    "home": "ATL",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112902",
+   {
+    "away": "STL",
+    "day": 29,
+    "eid": "2015112902",
+    "gamekey": "56667",
+    "home": "CIN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112903",
+   {
+    "away": "NO",
+    "day": 29,
+    "eid": "2015112903",
+    "gamekey": "56668",
+    "home": "HOU",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112904",
+   {
+    "away": "TB",
+    "day": 29,
+    "eid": "2015112904",
+    "gamekey": "56669",
+    "home": "IND",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112905",
+   {
+    "away": "MIA",
+    "day": 29,
+    "eid": "2015112905",
+    "gamekey": "56672",
+    "home": "NYJ",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112906",
+   {
+    "away": "SD",
+    "day": 29,
+    "eid": "2015112906",
+    "gamekey": "56670",
+    "home": "JAC",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112907",
+   {
+    "away": "OAK",
+    "day": 29,
+    "eid": "2015112907",
+    "gamekey": "56673",
+    "home": "TEN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112908",
+   {
+    "away": "BUF",
+    "day": 29,
+    "eid": "2015112908",
+    "gamekey": "56671",
+    "home": "KC",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112909",
+   {
+    "away": "ARI",
+    "day": 29,
+    "eid": "2015112909",
+    "gamekey": "56675",
+    "home": "SF",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112910",
+   {
+    "away": "PIT",
+    "day": 29,
+    "eid": "2015112910",
+    "gamekey": "56676",
+    "home": "SEA",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015112911",
+   {
+    "away": "NE",
+    "day": 29,
+    "eid": "2015112911",
+    "gamekey": "56677",
+    "home": "DEN",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015113000",
+   {
+    "away": "BAL",
+    "day": 30,
+    "eid": "2015113000",
+    "gamekey": "56678",
+    "home": "CLE",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 12,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120300",
+   {
+    "away": "GB",
+    "day": 3,
+    "eid": "2015120300",
+    "gamekey": "56679",
+    "home": "DET",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120600",
+   {
+    "away": "NYJ",
+    "day": 6,
+    "eid": "2015120600",
+    "gamekey": "56686",
+    "home": "NYG",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120601",
+   {
+    "away": "HOU",
+    "day": 6,
+    "eid": "2015120601",
+    "gamekey": "56680",
+    "home": "BUF",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120602",
+   {
+    "away": "BAL",
+    "day": 6,
+    "eid": "2015120602",
+    "gamekey": "56683",
+    "home": "MIA",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120603",
+   {
+    "away": "CIN",
+    "day": 6,
+    "eid": "2015120603",
+    "gamekey": "56682",
+    "home": "CLE",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120604",
+   {
+    "away": "JAC",
+    "day": 6,
+    "eid": "2015120604",
+    "gamekey": "56689",
+    "home": "TEN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120605",
+   {
+    "away": "SF",
+    "day": 6,
+    "eid": "2015120605",
+    "gamekey": "56681",
+    "home": "CHI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120606",
+   {
+    "away": "SEA",
+    "day": 6,
+    "eid": "2015120606",
+    "gamekey": "56684",
+    "home": "MIN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120607",
+   {
+    "away": "CAR",
+    "day": 6,
+    "eid": "2015120607",
+    "gamekey": "56685",
+    "home": "NO",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120608",
+   {
+    "away": "ATL",
+    "day": 6,
+    "eid": "2015120608",
+    "gamekey": "56688",
+    "home": "TB",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120609",
+   {
+    "away": "ARI",
+    "day": 6,
+    "eid": "2015120609",
+    "gamekey": "56687",
+    "home": "STL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120610",
+   {
+    "away": "KC",
+    "day": 6,
+    "eid": "2015120610",
+    "gamekey": "56690",
+    "home": "OAK",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120611",
+   {
+    "away": "DEN",
+    "day": 6,
+    "eid": "2015120611",
+    "gamekey": "56691",
+    "home": "SD",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120612",
+   {
+    "away": "PHI",
+    "day": 6,
+    "eid": "2015120612",
+    "gamekey": "56692",
+    "home": "NE",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120613",
+   {
+    "away": "IND",
+    "day": 6,
+    "eid": "2015120613",
+    "gamekey": "56693",
+    "home": "PIT",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015120700",
+   {
+    "away": "DAL",
+    "day": 7,
+    "eid": "2015120700",
+    "gamekey": "56694",
+    "home": "WAS",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 13,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121000",
+   {
+    "away": "MIN",
+    "day": 10,
+    "eid": "2015121000",
+    "gamekey": "56695",
+    "home": "ARI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121300",
+   {
+    "away": "BUF",
+    "day": 13,
+    "eid": "2015121300",
+    "gamekey": "56704",
+    "home": "PHI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121301",
+   {
+    "away": "TEN",
+    "day": 13,
+    "eid": "2015121301",
+    "gamekey": "56703",
+    "home": "NYJ",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121302",
+   {
+    "away": "PIT",
+    "day": 13,
+    "eid": "2015121302",
+    "gamekey": "56698",
+    "home": "CIN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121303",
+   {
+    "away": "NE",
+    "day": 13,
+    "eid": "2015121303",
+    "gamekey": "56700",
+    "home": "HOU",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121304",
+   {
+    "away": "IND",
+    "day": 13,
+    "eid": "2015121304",
+    "gamekey": "56701",
+    "home": "JAC",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121305",
+   {
+    "away": "SD",
+    "day": 13,
+    "eid": "2015121305",
+    "gamekey": "56702",
+    "home": "KC",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121306",
+   {
+    "away": "WAS",
+    "day": 13,
+    "eid": "2015121306",
+    "gamekey": "56697",
+    "home": "CHI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121307",
+   {
+    "away": "ATL",
+    "day": 13,
+    "eid": "2015121307",
+    "gamekey": "56696",
+    "home": "CAR",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121308",
+   {
+    "away": "NO",
+    "day": 13,
+    "eid": "2015121308",
+    "gamekey": "56706",
+    "home": "TB",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121309",
+   {
+    "away": "DET",
+    "day": 13,
+    "eid": "2015121309",
+    "gamekey": "56705",
+    "home": "STL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121310",
+   {
+    "away": "SF",
+    "day": 13,
+    "eid": "2015121310",
+    "gamekey": "56699",
+    "home": "CLE",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121311",
+   {
+    "away": "OAK",
+    "day": 13,
+    "eid": "2015121311",
+    "gamekey": "56707",
+    "home": "DEN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121312",
+   {
+    "away": "DAL",
+    "day": 13,
+    "eid": "2015121312",
+    "gamekey": "56708",
+    "home": "GB",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121313",
+   {
+    "away": "SEA",
+    "day": 13,
+    "eid": "2015121313",
+    "gamekey": "56709",
+    "home": "BAL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121400",
+   {
+    "away": "NYG",
+    "day": 14,
+    "eid": "2015121400",
+    "gamekey": "56710",
+    "home": "MIA",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 14,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121700",
+   {
+    "away": "TB",
+    "day": 17,
+    "eid": "2015121700",
+    "gamekey": "56711",
+    "home": "STL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015121900",
+   {
+    "away": "NYJ",
+    "day": 19,
+    "eid": "2015121900",
+    "gamekey": "56712",
+    "home": "DAL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Sat",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122000",
+   {
+    "away": "CAR",
+    "day": 20,
+    "eid": "2015122000",
+    "gamekey": "56718",
+    "home": "NYG",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122001",
+   {
+    "away": "ARI",
+    "day": 20,
+    "eid": "2015122001",
+    "gamekey": "56719",
+    "home": "PHI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122002",
+   {
+    "away": "CHI",
+    "day": 20,
+    "eid": "2015122002",
+    "gamekey": "56716",
+    "home": "MIN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122003",
+   {
+    "away": "ATL",
+    "day": 20,
+    "eid": "2015122003",
+    "gamekey": "56715",
+    "home": "JAC",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122004",
+   {
+    "away": "HOU",
+    "day": 20,
+    "eid": "2015122004",
+    "gamekey": "56714",
+    "home": "IND",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122005",
+   {
+    "away": "TEN",
+    "day": 20,
+    "eid": "2015122005",
+    "gamekey": "56717",
+    "home": "NE",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122006",
+   {
+    "away": "KC",
+    "day": 20,
+    "eid": "2015122006",
+    "gamekey": "56713",
+    "home": "BAL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122007",
+   {
+    "away": "BUF",
+    "day": 20,
+    "eid": "2015122007",
+    "gamekey": "56720",
+    "home": "WAS",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122008",
+   {
+    "away": "CLE",
+    "day": 20,
+    "eid": "2015122008",
+    "gamekey": "56722",
+    "home": "SEA",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122009",
+   {
+    "away": "GB",
+    "day": 20,
+    "eid": "2015122009",
+    "gamekey": "56721",
+    "home": "OAK",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122010",
+   {
+    "away": "DEN",
+    "day": 20,
+    "eid": "2015122010",
+    "gamekey": "56723",
+    "home": "PIT",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122011",
+   {
+    "away": "MIA",
+    "day": 20,
+    "eid": "2015122011",
+    "gamekey": "56724",
+    "home": "SD",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122012",
+   {
+    "away": "CIN",
+    "day": 20,
+    "eid": "2015122012",
+    "gamekey": "56725",
+    "home": "SF",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122100",
+   {
+    "away": "DET",
+    "day": 21,
+    "eid": "2015122100",
+    "gamekey": "56726",
+    "home": "NO",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 15,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122400",
+   {
+    "away": "SD",
+    "day": 24,
+    "eid": "2015122400",
+    "gamekey": "56727",
+    "home": "OAK",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122600",
+   {
+    "away": "WAS",
+    "day": 26,
+    "eid": "2015122600",
+    "gamekey": "56728",
+    "home": "PHI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122700",
+   {
+    "away": "JAC",
+    "day": 27,
+    "eid": "2015122700",
+    "gamekey": "56735",
+    "home": "NO",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122701",
+   {
+    "away": "IND",
+    "day": 27,
+    "eid": "2015122701",
+    "gamekey": "56733",
+    "home": "MIA",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122702",
+   {
+    "away": "NE",
+    "day": 27,
+    "eid": "2015122702",
+    "gamekey": "56736",
+    "home": "NYJ",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122703",
+   {
+    "away": "HOU",
+    "day": 27,
+    "eid": "2015122703",
+    "gamekey": "56738",
+    "home": "TEN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122704",
+   {
+    "away": "CLE",
+    "day": 27,
+    "eid": "2015122704",
+    "gamekey": "56732",
+    "home": "KC",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122705",
+   {
+    "away": "SF",
+    "day": 27,
+    "eid": "2015122705",
+    "gamekey": "56731",
+    "home": "DET",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122706",
+   {
+    "away": "NYG",
+    "day": 27,
+    "eid": "2015122706",
+    "gamekey": "56734",
+    "home": "MIN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122707",
+   {
+    "away": "CAR",
+    "day": 27,
+    "eid": "2015122707",
+    "gamekey": "56729",
+    "home": "ATL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122708",
+   {
+    "away": "CHI",
+    "day": 27,
+    "eid": "2015122708",
+    "gamekey": "56737",
+    "home": "TB",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122709",
+   {
+    "away": "DAL",
+    "day": 27,
+    "eid": "2015122709",
+    "gamekey": "56730",
+    "home": "BUF",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122710",
+   {
+    "away": "GB",
+    "day": 27,
+    "eid": "2015122710",
+    "gamekey": "56739",
+    "home": "ARI",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122711",
+   {
+    "away": "STL",
+    "day": 27,
+    "eid": "2015122711",
+    "gamekey": "56740",
+    "home": "SEA",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122712",
+   {
+    "away": "PIT",
+    "day": 27,
+    "eid": "2015122712",
+    "gamekey": "56741",
+    "home": "BAL",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2015122800",
+   {
+    "away": "CIN",
+    "day": 28,
+    "eid": "2015122800",
+    "gamekey": "56742",
+    "home": "DEN",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 16,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010300",
+   {
+    "away": "NYJ",
+    "day": 3,
+    "eid": "2016010300",
+    "gamekey": "56744",
+    "home": "BUF",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010301",
+   {
+    "away": "NE",
+    "day": 3,
+    "eid": "2016010301",
+    "gamekey": "56754",
+    "home": "MIA",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010302",
+   {
+    "away": "BAL",
+    "day": 3,
+    "eid": "2016010302",
+    "gamekey": "56747",
+    "home": "CIN",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010303",
+   {
+    "away": "PIT",
+    "day": 3,
+    "eid": "2016010303",
+    "gamekey": "56748",
+    "home": "CLE",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010304",
+   {
+    "away": "JAC",
+    "day": 3,
+    "eid": "2016010304",
+    "gamekey": "56751",
+    "home": "HOU",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010305",
+   {
+    "away": "TEN",
+    "day": 3,
+    "eid": "2016010305",
+    "gamekey": "56752",
+    "home": "IND",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010306",
+   {
+    "away": "OAK",
+    "day": 3,
+    "eid": "2016010306",
+    "gamekey": "56753",
+    "home": "KC",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010307",
+   {
+    "away": "WAS",
+    "day": 3,
+    "eid": "2016010307",
+    "gamekey": "56749",
+    "home": "DAL",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010308",
+   {
+    "away": "PHI",
+    "day": 3,
+    "eid": "2016010308",
+    "gamekey": "56755",
+    "home": "NYG",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010309",
+   {
+    "away": "DET",
+    "day": 3,
+    "eid": "2016010309",
+    "gamekey": "56746",
+    "home": "CHI",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010310",
+   {
+    "away": "MIN",
+    "day": 3,
+    "eid": "2016010310",
+    "gamekey": "56750",
+    "home": "GB",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010311",
+   {
+    "away": "NO",
+    "day": 3,
+    "eid": "2016010311",
+    "gamekey": "56743",
+    "home": "ATL",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010312",
+   {
+    "away": "TB",
+    "day": 3,
+    "eid": "2016010312",
+    "gamekey": "56745",
+    "home": "CAR",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010313",
+   {
+    "away": "SD",
+    "day": 3,
+    "eid": "2016010313",
+    "gamekey": "56757",
+    "home": "DEN",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010314",
+   {
+    "away": "SEA",
+    "day": 3,
+    "eid": "2016010314",
+    "gamekey": "56756",
+    "home": "ARI",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010315",
+   {
+    "away": "STL",
+    "day": 3,
+    "eid": "2016010315",
+    "gamekey": "56758",
+    "home": "SF",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2015
+   }
   ]
  ],
- "time": 1424526499.230998
+ "time": 1432331031.935826
 }
