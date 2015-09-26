@@ -497,7 +497,7 @@ idmap = {
     },
     54: {
         'cat': 'fumbles',
-        'fields': ['fumbles_tot', 'fumbles_oob'],
+        'fields': ['fumbles_oob'],
         'yds': '',
         'desc': 'Fumble - out of bounds',
         'long': 'Player fumbled the ball, and the ball went out of bounds.',
