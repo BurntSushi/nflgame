@@ -86,6 +86,14 @@ except:
     from ordereddict import OrderedDict  # from PyPI
 import itertools
 
+import sys
+
+if sys.version_info[0] != 2:
+	print("nflgame requires Python 2.6+ and does not yet work with Python 3")
+	print("You are running Python version {}.{}".format(
+		sys.version_info.major, sys.version_info.minor))
+	sys.exit(1)
+
 import nflgame.game
 import nflgame.live
 import nflgame.player

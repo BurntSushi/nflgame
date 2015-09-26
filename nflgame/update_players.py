@@ -52,6 +52,16 @@ import httplib2
 
 from bs4 import BeautifulSoup
 
+try:
+    import lxml.html
+    PARSER = 'lxml'
+except ImportError:
+    try:
+        import html5lib
+        PARSER = 'html5lib'
+    except ImportError:
+        PARSER = 'html.parser'
+
 import nflgame
 import nflgame.live
 import nflgame.player
@@ -120,7 +130,7 @@ def roster_soup(team):
     resp, content = new_http().request(urls['roster'] % team, 'GET')
     if resp['status'] != '200':
         return None
-    return BeautifulSoup(content)
+    return BeautifulSoup(content, PARSER)
 
 
 def try_int(s):
@@ -190,7 +200,7 @@ def meta_from_profile_html(html):
     if not html:
         return html
     try:
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, PARSER)
         pinfo = soup.find(id='player-bio').find(class_='player-info')
 
         # Get the full name and split it into first and last.
