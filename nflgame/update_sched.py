@@ -69,12 +69,45 @@ def week_schedule(year, stype, week):
             'month': int(gsis_id[4:6]),
             'day': int(gsis_id[6:8]),
             'time': g.getAttribute('t'),
+            'meridiem': None,
             'season_type': stype,
             'week': week,
             'home': g.getAttribute('h'),
             'away': g.getAttribute('v'),
             'gamekey': g.getAttribute('gsis'),
         })
+
+    for game in games:
+        h = int(game['time'].split(':')[0])
+        m = int(game['time'].split(':')[1])
+        if 0 < h <= 5:  # All games before "6:00" are PM until proven otherwise
+            game['meridiem'] = 'PM'
+
+        if game['meridiem'] is None:
+
+            days_games = [g for g in games if g['wday'] == game['wday']]
+            preceeding = [g for g in days_games if g['eid'] < game['eid']]
+            proceeding = [g for g in days_games if g['eid'] > game['eid']]
+
+            # If any games *after* this one are AM then so is this
+            if any(g['meridiem'] == 'AM' for g in proceeding):
+                game['meridiem'] = 'AM'
+            # If any games *before* this one are PM then so is this one
+            elif any(g['meridiem'] == 'PM' for g in preceeding):
+                game['meridiem'] = 'PM'
+            # If any games *after* this one have an "earlier" start it's AM
+            elif any(h > t for t in [int(g['time'].split(':')[0]) for g in proceeding]):
+                game['meridiem'] = 'AM'
+            # If any games *before* this one have a "later" start time it's PM
+            elif any(h < t for t in [int(g['time'].split(':')[0]) for g in preceeding]):
+                game['meridiem'] = 'PM'
+
+        if game['meridiem'] is None:
+            if game['wday'] not in ['Sat', 'Sun']:
+                game['meridiem'] = 'PM'
+            if game['season_type'] == 'POST':
+                game['meridiem'] = 'PM'
+
     return games
 
 
