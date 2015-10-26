@@ -84,9 +84,7 @@ def week_schedule(year, stype, week):
         # if (0 <= h < 8) or (h == 8 and m == 0):
             game['meridiem'] = 'PM'
 
-    for game in games:
         if game['meridiem'] is None:
-            h = int(game['time'].split(':')[0])
 
             days_games = [g for g in games if g['wday'] == game['wday']]
             preceeding = [g for g in days_games if g['eid'] < game['eid']]
