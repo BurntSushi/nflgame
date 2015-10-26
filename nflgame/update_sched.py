@@ -80,8 +80,7 @@ def week_schedule(year, stype, week):
     for game in games:
         h = int(game['time'].split(':')[0])
         m = int(game['time'].split(':')[1])
-        if 0 < h <= 8:  # All games before "9:00" are PM until proven otherwise
-        # if (0 <= h < 8) or (h == 8 and m == 0):
+        if 0 < h <= 5:  # All games before "6:00" are PM until proven otherwise
             game['meridiem'] = 'PM'
 
         if game['meridiem'] is None:
@@ -101,6 +100,12 @@ def week_schedule(year, stype, week):
                 game['meridiem'] = 'AM'
             # If any games *before* this one have a "later" start time it's PM
             elif any(h < t for t in [int(g['time'].split(':')[0]) for g in preceeding]):
+                game['meridiem'] = 'PM'
+
+        if game['meridiem'] is None:
+            if game['wday'] not in ['Sat', 'Sun']:
+                game['meridiem'] = 'PM'
+            if game['season_type'] == 'POST':
                 game['meridiem'] = 'PM'
 
     return games
