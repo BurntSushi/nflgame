@@ -69,6 +69,7 @@ def week_schedule(year, stype, week):
             'month': int(gsis_id[4:6]),
             'day': int(gsis_id[6:8]),
             'time': g.getAttribute('t'),
+            'meridiem': None,
             'season_type': stype,
             'week': week,
             'home': g.getAttribute('h'),
@@ -76,24 +77,33 @@ def week_schedule(year, stype, week):
             'gamekey': g.getAttribute('gsis'),
         })
 
-    for i in range(len(games)-1):
-        if 'AM' in games[i]['time'] or 'PM' in games[i]['time']:
-            # Someone beat us to this one
-            pass
-        elif games[i]['wday'] != games[i+1]['wday']:
-            # If the next game in the list is not the same day as this game
-            # then it won't provide much insight
-            games[i]['time'] = games[i]['time'] + ' PM'
-        else:
-            # If the next game is the same day and it is "earlier", then this
-            # game is actually in the AM (assuming chronological order)
-            if games[i]['time'] > games[i+1]['time']:
-                games[i]['time'] = games[i]['time'] + ' AM'
-            else:
-                games[i]['time'] = games[i]['time'] + ' PM'
-            # NOTE: If multiple games kickoff before noon, only the last will
-            # correctly report as "AM" unless *all* games kickoff before noon
-            # in which case *none* of them will correctly report "AM"
+    for game in games:
+        h = int(game['time'].split(':')[0])
+        m = int(game['time'].split(':')[1])
+        if 0 < h <= 8:  # All games before "9:00" are PM until proven otherwise
+        # if (0 <= h < 8) or (h == 8 and m == 0):
+            game['meridiem'] = 'PM'
+
+    for game in games:
+        if game['meridiem'] is None:
+            h = int(game['time'].split(':')[0])
+
+            days_games = [g for g in games if g['wday'] == game['wday']]
+            preceeding = [g for g in days_games if g['eid'] < game['eid']]
+            proceeding = [g for g in days_games if g['eid'] > game['eid']]
+
+            # If any games *after* this one are AM then so is this
+            if any(g['meridiem'] == 'AM' for g in proceeding):
+                game['meridiem'] = 'AM'
+            # If any games *before* this one are PM then so is this one
+            elif any(g['meridiem'] == 'PM' for g in preceeding):
+                game['meridiem'] = 'PM'
+            # If any games *after* this one have an "earlier" start it's AM
+            elif any(h > t for t in [int(g['time'].split(':')[0]) for g in proceeding]):
+                game['meridiem'] = 'AM'
+            # If any games *before* this one have a "later" start time it's PM
+            elif any(h < t for t in [int(g['time'].split(':')[0]) for g in preceeding]):
+                game['meridiem'] = 'PM'
 
     return games
 
