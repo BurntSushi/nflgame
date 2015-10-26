@@ -76,20 +76,9 @@ def week_schedule(year, stype, week):
             'gamekey': g.getAttribute('gsis'),
         })
 
-    games2 = games
-
-    days = set(g['wday'] for g in games2)
-    print(days)
-    for day in days:
-        day_games = [g for g in games2 if g['wday'] == day]
-        print(day, day_games)
-        if len(day_games) == 1:
-            day_games[0]['time'] = day_games[0]['time'] + ' PM'
-    print(games2)
-    print('-'*79)
-
     for i in range(len(games)-1):
         if 'AM' in games[i]['time'] or 'PM' in games[i]['time']:
+            # Someone beat us to this one
             pass
         elif games[i]['wday'] != games[i+1]['wday']:
             # If the next game in the list is not the same day as this game
@@ -102,11 +91,9 @@ def week_schedule(year, stype, week):
                 games[i]['time'] = games[i]['time'] + ' AM'
             else:
                 games[i]['time'] = games[i]['time'] + ' PM'
-            # NOTE1: If all games on a given day kickoff before noon then they
-            # will all incorrectly report as "PM"
-            # NOTE2: If multiple games kickoff before noon, only the last will
-            # correctly report as "AM"
-        print(games[i]['time'])
+            # NOTE: If multiple games kickoff before noon, only the last will
+            # correctly report as "AM" unless *all* games kickoff before noon
+            # in which case *none* of them will correctly report "AM"
 
     return games
 
