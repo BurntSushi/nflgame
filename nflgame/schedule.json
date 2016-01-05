@@ -36814,7 +36814,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:05",
     "wday": "Sun",
     "week": 16,
     "year": 2015
@@ -36916,7 +36916,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "8:30",
     "wday": "Sun",
     "week": 16,
     "year": 2015
@@ -37018,7 +37018,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "8:30",
+    "time": "1:00",
     "wday": "Sun",
     "week": 16,
     "year": 2015
@@ -37154,7 +37154,7 @@
     "meridiem": "PM",
     "month": 1,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sun",
     "week": 17,
     "year": 2015
@@ -37222,7 +37222,7 @@
     "meridiem": "PM",
     "month": 1,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "8:30",
     "wday": "Sun",
     "week": 17,
     "year": 2015
@@ -37256,7 +37256,7 @@
     "meridiem": "PM",
     "month": 1,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sun",
     "week": 17,
     "year": 2015
@@ -37314,5 +37314,5 @@
    }
   ]
  ],
- "time": 1449675068.722158
+ "time": 1451994093.580908
 }
