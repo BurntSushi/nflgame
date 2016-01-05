@@ -37312,7 +37312,75 @@
     "week": 17,
     "year": 2015
    }
+  ],
+  [
+   "2016010900",
+   {
+    "away": "KC",
+    "day": 9,
+    "eid": "2016010900",
+    "gamekey": "56824",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "4:35",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2016010901",
+   {
+    "away": "PIT",
+    "day": 9,
+    "eid": "2016010901",
+    "gamekey": "56825",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "8:15",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2016011000",
+   {
+    "away": "SEA",
+    "day": 10,
+    "eid": "2016011000",
+    "gamekey": "56826",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "1:05",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
+  ],
+  [
+   "2016011001",
+   {
+    "away": "GB",
+    "day": 10,
+    "eid": "2016011001",
+    "gamekey": "56827",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "4:40",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2015
+   }
   ]
  ],
- "time": 1451994093.580908
+ "time": 1451994188.318609
 }
