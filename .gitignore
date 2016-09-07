@@ -10,3 +10,5 @@ playground
 curien-db
 tags
 TAGS
+*.egg-info
+ve

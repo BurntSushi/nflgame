@@ -37397,7 +37397,5464 @@
     "week": 5,
     "year": 2015
    }
+  ],
+  [
+   "2016080751",
+   {
+    "away": "GB",
+    "day": 7,
+    "eid": "2016080751",
+    "gamekey": "56836",
+    "home": "IND",
+    "meridiem": null,
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 0,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081151",
+   {
+    "away": "TB",
+    "day": 11,
+    "eid": "2016081151",
+    "gamekey": "56851",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081152",
+   {
+    "away": "WAS",
+    "day": 11,
+    "eid": "2016081152",
+    "gamekey": "56852",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081153",
+   {
+    "away": "CAR",
+    "day": 11,
+    "eid": "2016081153",
+    "gamekey": "56838",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081154",
+   {
+    "away": "JAX",
+    "day": 11,
+    "eid": "2016081154",
+    "gamekey": "56844",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081155",
+   {
+    "away": "NO",
+    "day": 11,
+    "eid": "2016081155",
+    "gamekey": "56847",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081156",
+   {
+    "away": "DEN",
+    "day": 11,
+    "eid": "2016081156",
+    "gamekey": "56840",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081252",
+   {
+    "away": "MIA",
+    "day": 12,
+    "eid": "2016081252",
+    "gamekey": "56845",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081253",
+   {
+    "away": "DET",
+    "day": 12,
+    "eid": "2016081253",
+    "gamekey": "56841",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081254",
+   {
+    "away": "MIN",
+    "day": 12,
+    "eid": "2016081254",
+    "gamekey": "56846",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081255",
+   {
+    "away": "CLE",
+    "day": 12,
+    "eid": "2016081255",
+    "gamekey": "56839",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081256",
+   {
+    "away": "OAK",
+    "day": 12,
+    "eid": "2016081256",
+    "gamekey": "56848",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Fri",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081351",
+   {
+    "away": "SEA",
+    "day": 13,
+    "eid": "2016081351",
+    "gamekey": "56850",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "4:30",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081352",
+   {
+    "away": "SD",
+    "day": 13,
+    "eid": "2016081352",
+    "gamekey": "56849",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081353",
+   {
+    "away": "DAL",
+    "day": 13,
+    "eid": "2016081353",
+    "gamekey": "56837",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081354",
+   {
+    "away": "IND",
+    "day": 13,
+    "eid": "2016081354",
+    "gamekey": "56843",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081451",
+   {
+    "away": "HOU",
+    "day": 14,
+    "eid": "2016081451",
+    "gamekey": "56842",
+    "home": "SF",
+    "meridiem": null,
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081851",
+   {
+    "away": "PHI",
+    "day": 18,
+    "eid": "2016081851",
+    "gamekey": "56866",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081852",
+   {
+    "away": "CIN",
+    "day": 18,
+    "eid": "2016081852",
+    "gamekey": "56858",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081853",
+   {
+    "away": "ATL",
+    "day": 18,
+    "eid": "2016081853",
+    "gamekey": "56854",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081854",
+   {
+    "away": "CHI",
+    "day": 18,
+    "eid": "2016081854",
+    "gamekey": "56857",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081855",
+   {
+    "away": "OAK",
+    "day": 18,
+    "eid": "2016081855",
+    "gamekey": "56865",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081857",
+   {
+    "away": "MIN",
+    "day": 18,
+    "eid": "2016081857",
+    "gamekey": "56861",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081952",
+   {
+    "away": "NYJ",
+    "day": 19,
+    "eid": "2016081952",
+    "gamekey": "56864",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081953",
+   {
+    "away": "ARI",
+    "day": 19,
+    "eid": "2016081953",
+    "gamekey": "56853",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Fri",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016081955",
+   {
+    "away": "MIA",
+    "day": 19,
+    "eid": "2016081955",
+    "gamekey": "56860",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082051",
+   {
+    "away": "CAR",
+    "day": 20,
+    "eid": "2016082051",
+    "gamekey": "56856",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "3:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082052",
+   {
+    "away": "BAL",
+    "day": 20,
+    "eid": "2016082052",
+    "gamekey": "56855",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082053",
+   {
+    "away": "TB",
+    "day": 20,
+    "eid": "2016082053",
+    "gamekey": "56868",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082054",
+   {
+    "away": "NO",
+    "day": 20,
+    "eid": "2016082054",
+    "gamekey": "56862",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082055",
+   {
+    "away": "SF",
+    "day": 20,
+    "eid": "2016082055",
+    "gamekey": "56867",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082056",
+   {
+    "away": "NYG",
+    "day": 20,
+    "eid": "2016082056",
+    "gamekey": "56863",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "4:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082057",
+   {
+    "away": "KC",
+    "day": 20,
+    "eid": "2016082057",
+    "gamekey": "56859",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Sat",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082551",
+   {
+    "away": "ATL",
+    "day": 25,
+    "eid": "2016082551",
+    "gamekey": "56883",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082552",
+   {
+    "away": "DAL",
+    "day": 25,
+    "eid": "2016082552",
+    "gamekey": "56874",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082651",
+   {
+    "away": "NE",
+    "day": 26,
+    "eid": "2016082651",
+    "gamekey": "56879",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082652",
+   {
+    "away": "PIT",
+    "day": 26,
+    "eid": "2016082652",
+    "gamekey": "56882",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082653",
+   {
+    "away": "CLE",
+    "day": 26,
+    "eid": "2016082653",
+    "gamekey": "56884",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082654",
+   {
+    "away": "GB",
+    "day": 26,
+    "eid": "2016082654",
+    "gamekey": "56876",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082655",
+   {
+    "away": "BUF",
+    "day": 26,
+    "eid": "2016082655",
+    "gamekey": "56873",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Fri",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082751",
+   {
+    "away": "KC",
+    "day": 27,
+    "eid": "2016082751",
+    "gamekey": "56877",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082753",
+   {
+    "away": "DET",
+    "day": 27,
+    "eid": "2016082753",
+    "gamekey": "56875",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082754",
+   {
+    "away": "PHI",
+    "day": 27,
+    "eid": "2016082754",
+    "gamekey": "56881",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082755",
+   {
+    "away": "NYG",
+    "day": 27,
+    "eid": "2016082755",
+    "gamekey": "56880",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082756",
+   {
+    "away": "TEN",
+    "day": 27,
+    "eid": "2016082756",
+    "gamekey": "56869",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082757",
+   {
+    "away": "LA",
+    "day": 27,
+    "eid": "2016082757",
+    "gamekey": "56878",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "9:00",
+    "wday": "Sat",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082851",
+   {
+    "away": "SD",
+    "day": 28,
+    "eid": "2016082851",
+    "gamekey": "56870",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082852",
+   {
+    "away": "ARI",
+    "day": 28,
+    "eid": "2016082852",
+    "gamekey": "56871",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016082853",
+   {
+    "away": "CIN",
+    "day": 28,
+    "eid": "2016082853",
+    "gamekey": "56872",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016083151",
+   {
+    "away": "WAS",
+    "day": 31,
+    "eid": "2016083151",
+    "gamekey": "56893",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 8,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Wed",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090151",
+   {
+    "away": "JAX",
+    "day": 1,
+    "eid": "2016090151",
+    "gamekey": "56885",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090152",
+   {
+    "away": "NE",
+    "day": 1,
+    "eid": "2016090152",
+    "gamekey": "56887",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090153",
+   {
+    "away": "NYJ",
+    "day": 1,
+    "eid": "2016090153",
+    "gamekey": "56888",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090154",
+   {
+    "away": "IND",
+    "day": 1,
+    "eid": "2016090154",
+    "gamekey": "56900",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090155",
+   {
+    "away": "PIT",
+    "day": 1,
+    "eid": "2016090155",
+    "gamekey": "56889",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090157",
+   {
+    "away": "BUF",
+    "day": 1,
+    "eid": "2016090157",
+    "gamekey": "56895",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090158",
+   {
+    "away": "LA",
+    "day": 1,
+    "eid": "2016090158",
+    "gamekey": "56886",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090159",
+   {
+    "away": "TEN",
+    "day": 1,
+    "eid": "2016090159",
+    "gamekey": "56892",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "7:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090160",
+   {
+    "away": "BAL",
+    "day": 1,
+    "eid": "2016090160",
+    "gamekey": "56894",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090161",
+   {
+    "away": "CHI",
+    "day": 1,
+    "eid": "2016090161",
+    "gamekey": "56896",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090162",
+   {
+    "away": "GB",
+    "day": 1,
+    "eid": "2016090162",
+    "gamekey": "56898",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090163",
+   {
+    "away": "HOU",
+    "day": 1,
+    "eid": "2016090163",
+    "gamekey": "56899",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "8:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090164",
+   {
+    "away": "DEN",
+    "day": 1,
+    "eid": "2016090164",
+    "gamekey": "56897",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "9:30",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090165",
+   {
+    "away": "SF",
+    "day": 1,
+    "eid": "2016090165",
+    "gamekey": "56890",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090166",
+   {
+    "away": "SEA",
+    "day": 1,
+    "eid": "2016090166",
+    "gamekey": "56891",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "PRE",
+    "time": "10:00",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016090800",
+   {
+    "away": "CAR",
+    "day": 8,
+    "eid": "2016090800",
+    "gamekey": "56901",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Thu",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091100",
+   {
+    "away": "TB",
+    "day": 11,
+    "eid": "2016091100",
+    "gamekey": "56902",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091101",
+   {
+    "away": "BUF",
+    "day": 11,
+    "eid": "2016091101",
+    "gamekey": "56903",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091102",
+   {
+    "away": "CHI",
+    "day": 11,
+    "eid": "2016091102",
+    "gamekey": "56904",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091103",
+   {
+    "away": "GB",
+    "day": 11,
+    "eid": "2016091103",
+    "gamekey": "56905",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091104",
+   {
+    "away": "SD",
+    "day": 11,
+    "eid": "2016091104",
+    "gamekey": "56906",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091105",
+   {
+    "away": "OAK",
+    "day": 11,
+    "eid": "2016091105",
+    "gamekey": "56907",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091106",
+   {
+    "away": "CIN",
+    "day": 11,
+    "eid": "2016091106",
+    "gamekey": "56908",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091107",
+   {
+    "away": "CLE",
+    "day": 11,
+    "eid": "2016091107",
+    "gamekey": "56909",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091108",
+   {
+    "away": "MIN",
+    "day": 11,
+    "eid": "2016091108",
+    "gamekey": "56910",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091109",
+   {
+    "away": "MIA",
+    "day": 11,
+    "eid": "2016091109",
+    "gamekey": "56911",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091110",
+   {
+    "away": "NYG",
+    "day": 11,
+    "eid": "2016091110",
+    "gamekey": "56912",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091111",
+   {
+    "away": "DET",
+    "day": 11,
+    "eid": "2016091111",
+    "gamekey": "56913",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091112",
+   {
+    "away": "NE",
+    "day": 11,
+    "eid": "2016091112",
+    "gamekey": "56914",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091200",
+   {
+    "away": "PIT",
+    "day": 12,
+    "eid": "2016091200",
+    "gamekey": "56915",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "7:10",
+    "wday": "Mon",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091201",
+   {
+    "away": "LA",
+    "day": 12,
+    "eid": "2016091201",
+    "gamekey": "56916",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "10:20",
+    "wday": "Mon",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091500",
+   {
+    "away": "NYJ",
+    "day": 15,
+    "eid": "2016091500",
+    "gamekey": "56917",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091800",
+   {
+    "away": "SF",
+    "day": 18,
+    "eid": "2016091800",
+    "gamekey": "56918",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091801",
+   {
+    "away": "BAL",
+    "day": 18,
+    "eid": "2016091801",
+    "gamekey": "56919",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091802",
+   {
+    "away": "TEN",
+    "day": 18,
+    "eid": "2016091802",
+    "gamekey": "56920",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091803",
+   {
+    "away": "KC",
+    "day": 18,
+    "eid": "2016091803",
+    "gamekey": "56921",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091804",
+   {
+    "away": "MIA",
+    "day": 18,
+    "eid": "2016091804",
+    "gamekey": "56922",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091805",
+   {
+    "away": "NO",
+    "day": 18,
+    "eid": "2016091805",
+    "gamekey": "56923",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091806",
+   {
+    "away": "CIN",
+    "day": 18,
+    "eid": "2016091806",
+    "gamekey": "56924",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091807",
+   {
+    "away": "DAL",
+    "day": 18,
+    "eid": "2016091807",
+    "gamekey": "56925",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091808",
+   {
+    "away": "TB",
+    "day": 18,
+    "eid": "2016091808",
+    "gamekey": "56926",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091809",
+   {
+    "away": "SEA",
+    "day": 18,
+    "eid": "2016091809",
+    "gamekey": "56927",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091810",
+   {
+    "away": "IND",
+    "day": 18,
+    "eid": "2016091810",
+    "gamekey": "56928",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091811",
+   {
+    "away": "ATL",
+    "day": 18,
+    "eid": "2016091811",
+    "gamekey": "56929",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091812",
+   {
+    "away": "JAX",
+    "day": 18,
+    "eid": "2016091812",
+    "gamekey": "56930",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091813",
+   {
+    "away": "GB",
+    "day": 18,
+    "eid": "2016091813",
+    "gamekey": "56931",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016091900",
+   {
+    "away": "PHI",
+    "day": 19,
+    "eid": "2016091900",
+    "gamekey": "56932",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 2,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092200",
+   {
+    "away": "HOU",
+    "day": 22,
+    "eid": "2016092200",
+    "gamekey": "56933",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092500",
+   {
+    "away": "ARI",
+    "day": 25,
+    "eid": "2016092500",
+    "gamekey": "56934",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092501",
+   {
+    "away": "MIN",
+    "day": 25,
+    "eid": "2016092501",
+    "gamekey": "56935",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092502",
+   {
+    "away": "DEN",
+    "day": 25,
+    "eid": "2016092502",
+    "gamekey": "56936",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092503",
+   {
+    "away": "DET",
+    "day": 25,
+    "eid": "2016092503",
+    "gamekey": "56937",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092504",
+   {
+    "away": "BAL",
+    "day": 25,
+    "eid": "2016092504",
+    "gamekey": "56938",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092505",
+   {
+    "away": "CLE",
+    "day": 25,
+    "eid": "2016092505",
+    "gamekey": "56939",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092506",
+   {
+    "away": "WAS",
+    "day": 25,
+    "eid": "2016092506",
+    "gamekey": "56940",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092507",
+   {
+    "away": "OAK",
+    "day": 25,
+    "eid": "2016092507",
+    "gamekey": "56941",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092508",
+   {
+    "away": "SF",
+    "day": 25,
+    "eid": "2016092508",
+    "gamekey": "56942",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092509",
+   {
+    "away": "LA",
+    "day": 25,
+    "eid": "2016092509",
+    "gamekey": "56943",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092510",
+   {
+    "away": "PIT",
+    "day": 25,
+    "eid": "2016092510",
+    "gamekey": "56946",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092511",
+   {
+    "away": "SD",
+    "day": 25,
+    "eid": "2016092511",
+    "gamekey": "56944",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092512",
+   {
+    "away": "NYJ",
+    "day": 25,
+    "eid": "2016092512",
+    "gamekey": "56945",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092513",
+   {
+    "away": "CHI",
+    "day": 25,
+    "eid": "2016092513",
+    "gamekey": "56947",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092600",
+   {
+    "away": "ATL",
+    "day": 26,
+    "eid": "2016092600",
+    "gamekey": "56948",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 3,
+    "year": 2016
+   }
+  ],
+  [
+   "2016092900",
+   {
+    "away": "MIA",
+    "day": 29,
+    "eid": "2016092900",
+    "gamekey": "56949",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 9,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100200",
+   {
+    "away": "IND",
+    "day": 2,
+    "eid": "2016100200",
+    "gamekey": "56950",
+    "home": "JAX",
+    "meridiem": "AM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "9:30",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100201",
+   {
+    "away": "CAR",
+    "day": 2,
+    "eid": "2016100201",
+    "gamekey": "56951",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100202",
+   {
+    "away": "OAK",
+    "day": 2,
+    "eid": "2016100202",
+    "gamekey": "56952",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100203",
+   {
+    "away": "DET",
+    "day": 2,
+    "eid": "2016100203",
+    "gamekey": "56953",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100204",
+   {
+    "away": "TEN",
+    "day": 2,
+    "eid": "2016100204",
+    "gamekey": "56954",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100205",
+   {
+    "away": "BUF",
+    "day": 2,
+    "eid": "2016100205",
+    "gamekey": "56955",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100206",
+   {
+    "away": "SEA",
+    "day": 2,
+    "eid": "2016100206",
+    "gamekey": "56956",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100207",
+   {
+    "away": "CLE",
+    "day": 2,
+    "eid": "2016100207",
+    "gamekey": "56957",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100208",
+   {
+    "away": "DEN",
+    "day": 2,
+    "eid": "2016100208",
+    "gamekey": "56958",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100209",
+   {
+    "away": "LA",
+    "day": 2,
+    "eid": "2016100209",
+    "gamekey": "56959",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100210",
+   {
+    "away": "NO",
+    "day": 2,
+    "eid": "2016100210",
+    "gamekey": "56960",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100211",
+   {
+    "away": "DAL",
+    "day": 2,
+    "eid": "2016100211",
+    "gamekey": "56961",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100212",
+   {
+    "away": "KC",
+    "day": 2,
+    "eid": "2016100212",
+    "gamekey": "56962",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100300",
+   {
+    "away": "NYG",
+    "day": 3,
+    "eid": "2016100300",
+    "gamekey": "56963",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 4,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100600",
+   {
+    "away": "ARI",
+    "day": 6,
+    "eid": "2016100600",
+    "gamekey": "56964",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100900",
+   {
+    "away": "WAS",
+    "day": 9,
+    "eid": "2016100900",
+    "gamekey": "56965",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100901",
+   {
+    "away": "NE",
+    "day": 9,
+    "eid": "2016100901",
+    "gamekey": "56966",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100902",
+   {
+    "away": "PHI",
+    "day": 9,
+    "eid": "2016100902",
+    "gamekey": "56967",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100903",
+   {
+    "away": "CHI",
+    "day": 9,
+    "eid": "2016100903",
+    "gamekey": "56968",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100904",
+   {
+    "away": "TEN",
+    "day": 9,
+    "eid": "2016100904",
+    "gamekey": "56969",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100905",
+   {
+    "away": "HOU",
+    "day": 9,
+    "eid": "2016100905",
+    "gamekey": "56970",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100906",
+   {
+    "away": "NYJ",
+    "day": 9,
+    "eid": "2016100906",
+    "gamekey": "56971",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100907",
+   {
+    "away": "ATL",
+    "day": 9,
+    "eid": "2016100907",
+    "gamekey": "56972",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100908",
+   {
+    "away": "CIN",
+    "day": 9,
+    "eid": "2016100908",
+    "gamekey": "56973",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100909",
+   {
+    "away": "BUF",
+    "day": 9,
+    "eid": "2016100909",
+    "gamekey": "56974",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100910",
+   {
+    "away": "SD",
+    "day": 9,
+    "eid": "2016100910",
+    "gamekey": "56975",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016100911",
+   {
+    "away": "NYG",
+    "day": 9,
+    "eid": "2016100911",
+    "gamekey": "56976",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101000",
+   {
+    "away": "TB",
+    "day": 10,
+    "eid": "2016101000",
+    "gamekey": "56977",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 5,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101300",
+   {
+    "away": "DEN",
+    "day": 13,
+    "eid": "2016101300",
+    "gamekey": "56978",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101600",
+   {
+    "away": "SF",
+    "day": 16,
+    "eid": "2016101600",
+    "gamekey": "56979",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101601",
+   {
+    "away": "JAX",
+    "day": 16,
+    "eid": "2016101601",
+    "gamekey": "56980",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101602",
+   {
+    "away": "LA",
+    "day": 16,
+    "eid": "2016101602",
+    "gamekey": "56981",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101603",
+   {
+    "away": "PIT",
+    "day": 16,
+    "eid": "2016101603",
+    "gamekey": "56982",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101604",
+   {
+    "away": "CIN",
+    "day": 16,
+    "eid": "2016101604",
+    "gamekey": "56983",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101605",
+   {
+    "away": "CAR",
+    "day": 16,
+    "eid": "2016101605",
+    "gamekey": "56984",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101606",
+   {
+    "away": "BAL",
+    "day": 16,
+    "eid": "2016101606",
+    "gamekey": "56985",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101607",
+   {
+    "away": "CLE",
+    "day": 16,
+    "eid": "2016101607",
+    "gamekey": "56986",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101608",
+   {
+    "away": "PHI",
+    "day": 16,
+    "eid": "2016101608",
+    "gamekey": "56987",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101609",
+   {
+    "away": "KC",
+    "day": 16,
+    "eid": "2016101609",
+    "gamekey": "56988",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101610",
+   {
+    "away": "DAL",
+    "day": 16,
+    "eid": "2016101610",
+    "gamekey": "56989",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101611",
+   {
+    "away": "ATL",
+    "day": 16,
+    "eid": "2016101611",
+    "gamekey": "56990",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101612",
+   {
+    "away": "IND",
+    "day": 16,
+    "eid": "2016101612",
+    "gamekey": "56991",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016101700",
+   {
+    "away": "NYJ",
+    "day": 17,
+    "eid": "2016101700",
+    "gamekey": "56992",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 6,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102000",
+   {
+    "away": "CHI",
+    "day": 20,
+    "eid": "2016102000",
+    "gamekey": "56993",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102300",
+   {
+    "away": "NYG",
+    "day": 23,
+    "eid": "2016102300",
+    "gamekey": "56994",
+    "home": "LA",
+    "meridiem": "AM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "9:30",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102301",
+   {
+    "away": "CLE",
+    "day": 23,
+    "eid": "2016102301",
+    "gamekey": "56995",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102302",
+   {
+    "away": "WAS",
+    "day": 23,
+    "eid": "2016102302",
+    "gamekey": "56996",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102303",
+   {
+    "away": "OAK",
+    "day": 23,
+    "eid": "2016102303",
+    "gamekey": "56997",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102304",
+   {
+    "away": "NO",
+    "day": 23,
+    "eid": "2016102304",
+    "gamekey": "56998",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102305",
+   {
+    "away": "BUF",
+    "day": 23,
+    "eid": "2016102305",
+    "gamekey": "56999",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102306",
+   {
+    "away": "BAL",
+    "day": 23,
+    "eid": "2016102306",
+    "gamekey": "57000",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102307",
+   {
+    "away": "MIN",
+    "day": 23,
+    "eid": "2016102307",
+    "gamekey": "57001",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102308",
+   {
+    "away": "IND",
+    "day": 23,
+    "eid": "2016102308",
+    "gamekey": "57002",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102309",
+   {
+    "away": "SD",
+    "day": 23,
+    "eid": "2016102309",
+    "gamekey": "57003",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102310",
+   {
+    "away": "TB",
+    "day": 23,
+    "eid": "2016102310",
+    "gamekey": "57004",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102311",
+   {
+    "away": "NE",
+    "day": 23,
+    "eid": "2016102311",
+    "gamekey": "57005",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102312",
+   {
+    "away": "SEA",
+    "day": 23,
+    "eid": "2016102312",
+    "gamekey": "57006",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102400",
+   {
+    "away": "HOU",
+    "day": 24,
+    "eid": "2016102400",
+    "gamekey": "57007",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 7,
+    "year": 2016
+   }
+  ],
+  [
+   "2016102700",
+   {
+    "away": "JAX",
+    "day": 27,
+    "eid": "2016102700",
+    "gamekey": "57008",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103000",
+   {
+    "away": "WAS",
+    "day": 30,
+    "eid": "2016103000",
+    "gamekey": "57009",
+    "home": "CIN",
+    "meridiem": "AM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "9:30",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103001",
+   {
+    "away": "GB",
+    "day": 30,
+    "eid": "2016103001",
+    "gamekey": "57010",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103002",
+   {
+    "away": "NE",
+    "day": 30,
+    "eid": "2016103002",
+    "gamekey": "57011",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103003",
+   {
+    "away": "NYJ",
+    "day": 30,
+    "eid": "2016103003",
+    "gamekey": "57012",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103004",
+   {
+    "away": "DET",
+    "day": 30,
+    "eid": "2016103004",
+    "gamekey": "57013",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103005",
+   {
+    "away": "KC",
+    "day": 30,
+    "eid": "2016103005",
+    "gamekey": "57014",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103006",
+   {
+    "away": "SEA",
+    "day": 30,
+    "eid": "2016103006",
+    "gamekey": "57015",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103007",
+   {
+    "away": "OAK",
+    "day": 30,
+    "eid": "2016103007",
+    "gamekey": "57016",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103008",
+   {
+    "away": "SD",
+    "day": 30,
+    "eid": "2016103008",
+    "gamekey": "57017",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103009",
+   {
+    "away": "ARI",
+    "day": 30,
+    "eid": "2016103009",
+    "gamekey": "57018",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103010",
+   {
+    "away": "PHI",
+    "day": 30,
+    "eid": "2016103010",
+    "gamekey": "57019",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016103100",
+   {
+    "away": "MIN",
+    "day": 31,
+    "eid": "2016103100",
+    "gamekey": "57020",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 10,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 8,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110300",
+   {
+    "away": "ATL",
+    "day": 3,
+    "eid": "2016110300",
+    "gamekey": "57021",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110600",
+   {
+    "away": "DEN",
+    "day": 6,
+    "eid": "2016110600",
+    "gamekey": "57032",
+    "home": "OAK",
+    "meridiem": "AM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110601",
+   {
+    "away": "PIT",
+    "day": 6,
+    "eid": "2016110601",
+    "gamekey": "57022",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110602",
+   {
+    "away": "DAL",
+    "day": 6,
+    "eid": "2016110602",
+    "gamekey": "57023",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110603",
+   {
+    "away": "JAX",
+    "day": 6,
+    "eid": "2016110603",
+    "gamekey": "57024",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110604",
+   {
+    "away": "NYJ",
+    "day": 6,
+    "eid": "2016110604",
+    "gamekey": "57025",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110605",
+   {
+    "away": "DET",
+    "day": 6,
+    "eid": "2016110605",
+    "gamekey": "57026",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110606",
+   {
+    "away": "PHI",
+    "day": 6,
+    "eid": "2016110606",
+    "gamekey": "57027",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110607",
+   {
+    "away": "CAR",
+    "day": 6,
+    "eid": "2016110607",
+    "gamekey": "57028",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110608",
+   {
+    "away": "NO",
+    "day": 6,
+    "eid": "2016110608",
+    "gamekey": "57029",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110609",
+   {
+    "away": "IND",
+    "day": 6,
+    "eid": "2016110609",
+    "gamekey": "57030",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110610",
+   {
+    "away": "TEN",
+    "day": 6,
+    "eid": "2016110610",
+    "gamekey": "57031",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016110700",
+   {
+    "away": "BUF",
+    "day": 7,
+    "eid": "2016110700",
+    "gamekey": "57033",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 9,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111000",
+   {
+    "away": "CLE",
+    "day": 10,
+    "eid": "2016111000",
+    "gamekey": "57034",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111301",
+   {
+    "away": "KC",
+    "day": 13,
+    "eid": "2016111301",
+    "gamekey": "57035",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111302",
+   {
+    "away": "HOU",
+    "day": 13,
+    "eid": "2016111302",
+    "gamekey": "57036",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111303",
+   {
+    "away": "DEN",
+    "day": 13,
+    "eid": "2016111303",
+    "gamekey": "57037",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111304",
+   {
+    "away": "LA",
+    "day": 13,
+    "eid": "2016111304",
+    "gamekey": "57038",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111305",
+   {
+    "away": "ATL",
+    "day": 13,
+    "eid": "2016111305",
+    "gamekey": "57039",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111306",
+   {
+    "away": "CHI",
+    "day": 13,
+    "eid": "2016111306",
+    "gamekey": "57040",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111307",
+   {
+    "away": "GB",
+    "day": 13,
+    "eid": "2016111307",
+    "gamekey": "57041",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111308",
+   {
+    "away": "MIN",
+    "day": 13,
+    "eid": "2016111308",
+    "gamekey": "57042",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111309",
+   {
+    "away": "MIA",
+    "day": 13,
+    "eid": "2016111309",
+    "gamekey": "57043",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111310",
+   {
+    "away": "SF",
+    "day": 13,
+    "eid": "2016111310",
+    "gamekey": "57044",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111311",
+   {
+    "away": "DAL",
+    "day": 13,
+    "eid": "2016111311",
+    "gamekey": "57045",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111312",
+   {
+    "away": "SEA",
+    "day": 13,
+    "eid": "2016111312",
+    "gamekey": "57046",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111400",
+   {
+    "away": "CIN",
+    "day": 14,
+    "eid": "2016111400",
+    "gamekey": "57047",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 10,
+    "year": 2016
+   }
+  ],
+  [
+   "2016111700",
+   {
+    "away": "NO",
+    "day": 17,
+    "eid": "2016111700",
+    "gamekey": "57048",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112000",
+   {
+    "away": "BUF",
+    "day": 20,
+    "eid": "2016112000",
+    "gamekey": "57049",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112001",
+   {
+    "away": "PIT",
+    "day": 20,
+    "eid": "2016112001",
+    "gamekey": "57050",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112002",
+   {
+    "away": "BAL",
+    "day": 20,
+    "eid": "2016112002",
+    "gamekey": "57051",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112003",
+   {
+    "away": "JAX",
+    "day": 20,
+    "eid": "2016112003",
+    "gamekey": "57052",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112004",
+   {
+    "away": "TEN",
+    "day": 20,
+    "eid": "2016112004",
+    "gamekey": "57053",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112005",
+   {
+    "away": "TB",
+    "day": 20,
+    "eid": "2016112005",
+    "gamekey": "57054",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112006",
+   {
+    "away": "ARI",
+    "day": 20,
+    "eid": "2016112006",
+    "gamekey": "57055",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112007",
+   {
+    "away": "CHI",
+    "day": 20,
+    "eid": "2016112007",
+    "gamekey": "57056",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112008",
+   {
+    "away": "MIA",
+    "day": 20,
+    "eid": "2016112008",
+    "gamekey": "57057",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112009",
+   {
+    "away": "NE",
+    "day": 20,
+    "eid": "2016112009",
+    "gamekey": "57058",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112010",
+   {
+    "away": "PHI",
+    "day": 20,
+    "eid": "2016112010",
+    "gamekey": "57059",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112011",
+   {
+    "away": "GB",
+    "day": 20,
+    "eid": "2016112011",
+    "gamekey": "57060",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112100",
+   {
+    "away": "HOU",
+    "day": 21,
+    "eid": "2016112100",
+    "gamekey": "57061",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 11,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112400",
+   {
+    "away": "MIN",
+    "day": 24,
+    "eid": "2016112400",
+    "gamekey": "57062",
+    "home": "DET",
+    "meridiem": "AM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "12:30",
+    "wday": "Thu",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112401",
+   {
+    "away": "WAS",
+    "day": 24,
+    "eid": "2016112401",
+    "gamekey": "57063",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:30",
+    "wday": "Thu",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112402",
+   {
+    "away": "PIT",
+    "day": 24,
+    "eid": "2016112402",
+    "gamekey": "57064",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Thu",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112700",
+   {
+    "away": "ARI",
+    "day": 27,
+    "eid": "2016112700",
+    "gamekey": "57065",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112701",
+   {
+    "away": "CIN",
+    "day": 27,
+    "eid": "2016112701",
+    "gamekey": "57066",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112702",
+   {
+    "away": "JAX",
+    "day": 27,
+    "eid": "2016112702",
+    "gamekey": "57067",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112703",
+   {
+    "away": "TEN",
+    "day": 27,
+    "eid": "2016112703",
+    "gamekey": "57068",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112704",
+   {
+    "away": "NYG",
+    "day": 27,
+    "eid": "2016112704",
+    "gamekey": "57069",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112705",
+   {
+    "away": "SD",
+    "day": 27,
+    "eid": "2016112705",
+    "gamekey": "57070",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112706",
+   {
+    "away": "SF",
+    "day": 27,
+    "eid": "2016112706",
+    "gamekey": "57071",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112707",
+   {
+    "away": "LA",
+    "day": 27,
+    "eid": "2016112707",
+    "gamekey": "57072",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112708",
+   {
+    "away": "SEA",
+    "day": 27,
+    "eid": "2016112708",
+    "gamekey": "57073",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112709",
+   {
+    "away": "KC",
+    "day": 27,
+    "eid": "2016112709",
+    "gamekey": "57074",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112710",
+   {
+    "away": "CAR",
+    "day": 27,
+    "eid": "2016112710",
+    "gamekey": "57075",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112711",
+   {
+    "away": "NE",
+    "day": 27,
+    "eid": "2016112711",
+    "gamekey": "57076",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016112800",
+   {
+    "away": "GB",
+    "day": 28,
+    "eid": "2016112800",
+    "gamekey": "57077",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 11,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 12,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120100",
+   {
+    "away": "DAL",
+    "day": 1,
+    "eid": "2016120100",
+    "gamekey": "57078",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120400",
+   {
+    "away": "KC",
+    "day": 4,
+    "eid": "2016120400",
+    "gamekey": "57079",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120401",
+   {
+    "away": "MIA",
+    "day": 4,
+    "eid": "2016120401",
+    "gamekey": "57080",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120402",
+   {
+    "away": "SF",
+    "day": 4,
+    "eid": "2016120402",
+    "gamekey": "57081",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120403",
+   {
+    "away": "PHI",
+    "day": 4,
+    "eid": "2016120403",
+    "gamekey": "57082",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120404",
+   {
+    "away": "HOU",
+    "day": 4,
+    "eid": "2016120404",
+    "gamekey": "57083",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120405",
+   {
+    "away": "DEN",
+    "day": 4,
+    "eid": "2016120405",
+    "gamekey": "57084",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120406",
+   {
+    "away": "LA",
+    "day": 4,
+    "eid": "2016120406",
+    "gamekey": "57085",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120407",
+   {
+    "away": "DET",
+    "day": 4,
+    "eid": "2016120407",
+    "gamekey": "57086",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120408",
+   {
+    "away": "BUF",
+    "day": 4,
+    "eid": "2016120408",
+    "gamekey": "57087",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120409",
+   {
+    "away": "WAS",
+    "day": 4,
+    "eid": "2016120409",
+    "gamekey": "57088",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120410",
+   {
+    "away": "NYG",
+    "day": 4,
+    "eid": "2016120410",
+    "gamekey": "57089",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120411",
+   {
+    "away": "TB",
+    "day": 4,
+    "eid": "2016120411",
+    "gamekey": "57090",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120412",
+   {
+    "away": "CAR",
+    "day": 4,
+    "eid": "2016120412",
+    "gamekey": "57091",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120500",
+   {
+    "away": "IND",
+    "day": 5,
+    "eid": "2016120500",
+    "gamekey": "57092",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 13,
+    "year": 2016
+   }
+  ],
+  [
+   "2016120800",
+   {
+    "away": "OAK",
+    "day": 8,
+    "eid": "2016120800",
+    "gamekey": "57093",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121100",
+   {
+    "away": "PIT",
+    "day": 11,
+    "eid": "2016121100",
+    "gamekey": "57094",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121101",
+   {
+    "away": "SD",
+    "day": 11,
+    "eid": "2016121101",
+    "gamekey": "57095",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121102",
+   {
+    "away": "CIN",
+    "day": 11,
+    "eid": "2016121102",
+    "gamekey": "57096",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121103",
+   {
+    "away": "CHI",
+    "day": 11,
+    "eid": "2016121103",
+    "gamekey": "57097",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121104",
+   {
+    "away": "HOU",
+    "day": 11,
+    "eid": "2016121104",
+    "gamekey": "57098",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121105",
+   {
+    "away": "MIN",
+    "day": 11,
+    "eid": "2016121105",
+    "gamekey": "57099",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121106",
+   {
+    "away": "ARI",
+    "day": 11,
+    "eid": "2016121106",
+    "gamekey": "57100",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121107",
+   {
+    "away": "WAS",
+    "day": 11,
+    "eid": "2016121107",
+    "gamekey": "57101",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121108",
+   {
+    "away": "NO",
+    "day": 11,
+    "eid": "2016121108",
+    "gamekey": "57102",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121109",
+   {
+    "away": "DEN",
+    "day": 11,
+    "eid": "2016121109",
+    "gamekey": "57103",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121110",
+   {
+    "away": "NYJ",
+    "day": 11,
+    "eid": "2016121110",
+    "gamekey": "57104",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121111",
+   {
+    "away": "SEA",
+    "day": 11,
+    "eid": "2016121111",
+    "gamekey": "57105",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121112",
+   {
+    "away": "ATL",
+    "day": 11,
+    "eid": "2016121112",
+    "gamekey": "57106",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121113",
+   {
+    "away": "DAL",
+    "day": 11,
+    "eid": "2016121113",
+    "gamekey": "57107",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121200",
+   {
+    "away": "BAL",
+    "day": 12,
+    "eid": "2016121200",
+    "gamekey": "57108",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 14,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121500",
+   {
+    "away": "LA",
+    "day": 15,
+    "eid": "2016121500",
+    "gamekey": "57109",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121700",
+   {
+    "away": "MIA",
+    "day": 17,
+    "eid": "2016121700",
+    "gamekey": "57110",
+    "home": "NYJ",
+    "meridiem": null,
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Sat",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121800",
+   {
+    "away": "PHI",
+    "day": 18,
+    "eid": "2016121800",
+    "gamekey": "57111",
+    "home": "BAL",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121801",
+   {
+    "away": "CLE",
+    "day": 18,
+    "eid": "2016121801",
+    "gamekey": "57112",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121802",
+   {
+    "away": "GB",
+    "day": 18,
+    "eid": "2016121802",
+    "gamekey": "57113",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121803",
+   {
+    "away": "TB",
+    "day": 18,
+    "eid": "2016121803",
+    "gamekey": "57114",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121804",
+   {
+    "away": "JAX",
+    "day": 18,
+    "eid": "2016121804",
+    "gamekey": "57115",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121805",
+   {
+    "away": "TEN",
+    "day": 18,
+    "eid": "2016121805",
+    "gamekey": "57116",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121806",
+   {
+    "away": "IND",
+    "day": 18,
+    "eid": "2016121806",
+    "gamekey": "57117",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121807",
+   {
+    "away": "DET",
+    "day": 18,
+    "eid": "2016121807",
+    "gamekey": "57118",
+    "home": "NYG",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121808",
+   {
+    "away": "NO",
+    "day": 18,
+    "eid": "2016121808",
+    "gamekey": "57119",
+    "home": "ARI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121809",
+   {
+    "away": "SF",
+    "day": 18,
+    "eid": "2016121809",
+    "gamekey": "57120",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121810",
+   {
+    "away": "NE",
+    "day": 18,
+    "eid": "2016121810",
+    "gamekey": "57121",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121811",
+   {
+    "away": "OAK",
+    "day": 18,
+    "eid": "2016121811",
+    "gamekey": "57122",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121812",
+   {
+    "away": "PIT",
+    "day": 18,
+    "eid": "2016121812",
+    "gamekey": "57123",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016121900",
+   {
+    "away": "CAR",
+    "day": 19,
+    "eid": "2016121900",
+    "gamekey": "57124",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 15,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122200",
+   {
+    "away": "NYG",
+    "day": 22,
+    "eid": "2016122200",
+    "gamekey": "57125",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Thu",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122400",
+   {
+    "away": "MIA",
+    "day": 24,
+    "eid": "2016122400",
+    "gamekey": "57126",
+    "home": "BUF",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122401",
+   {
+    "away": "ATL",
+    "day": 24,
+    "eid": "2016122401",
+    "gamekey": "57127",
+    "home": "CAR",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122402",
+   {
+    "away": "WAS",
+    "day": 24,
+    "eid": "2016122402",
+    "gamekey": "57128",
+    "home": "CHI",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122403",
+   {
+    "away": "SD",
+    "day": 24,
+    "eid": "2016122403",
+    "gamekey": "57129",
+    "home": "CLE",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122404",
+   {
+    "away": "MIN",
+    "day": 24,
+    "eid": "2016122404",
+    "gamekey": "57130",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122405",
+   {
+    "away": "TEN",
+    "day": 24,
+    "eid": "2016122405",
+    "gamekey": "57131",
+    "home": "JAX",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122406",
+   {
+    "away": "NYJ",
+    "day": 24,
+    "eid": "2016122406",
+    "gamekey": "57132",
+    "home": "NE",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122407",
+   {
+    "away": "TB",
+    "day": 24,
+    "eid": "2016122407",
+    "gamekey": "57133",
+    "home": "NO",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122408",
+   {
+    "away": "IND",
+    "day": 24,
+    "eid": "2016122408",
+    "gamekey": "57134",
+    "home": "OAK",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:05",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122409",
+   {
+    "away": "SF",
+    "day": 24,
+    "eid": "2016122409",
+    "gamekey": "57135",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122410",
+   {
+    "away": "ARI",
+    "day": 24,
+    "eid": "2016122410",
+    "gamekey": "57136",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122411",
+   {
+    "away": "CIN",
+    "day": 24,
+    "eid": "2016122411",
+    "gamekey": "57137",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:25",
+    "wday": "Sat",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122500",
+   {
+    "away": "BAL",
+    "day": 25,
+    "eid": "2016122500",
+    "gamekey": "57138",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "4:30",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122501",
+   {
+    "away": "DEN",
+    "day": 25,
+    "eid": "2016122501",
+    "gamekey": "57139",
+    "home": "KC",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Sun",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2016122600",
+   {
+    "away": "DET",
+    "day": 26,
+    "eid": "2016122600",
+    "gamekey": "57140",
+    "home": "DAL",
+    "meridiem": "PM",
+    "month": 12,
+    "season_type": "REG",
+    "time": "8:30",
+    "wday": "Mon",
+    "week": 16,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010100",
+   {
+    "away": "NO",
+    "day": 1,
+    "eid": "2017010100",
+    "gamekey": "57141",
+    "home": "ATL",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010101",
+   {
+    "away": "BAL",
+    "day": 1,
+    "eid": "2017010101",
+    "gamekey": "57142",
+    "home": "CIN",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010102",
+   {
+    "away": "GB",
+    "day": 1,
+    "eid": "2017010102",
+    "gamekey": "57143",
+    "home": "DET",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010103",
+   {
+    "away": "JAX",
+    "day": 1,
+    "eid": "2017010103",
+    "gamekey": "57144",
+    "home": "IND",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010104",
+   {
+    "away": "NE",
+    "day": 1,
+    "eid": "2017010104",
+    "gamekey": "57145",
+    "home": "MIA",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010105",
+   {
+    "away": "CHI",
+    "day": 1,
+    "eid": "2017010105",
+    "gamekey": "57146",
+    "home": "MIN",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010106",
+   {
+    "away": "BUF",
+    "day": 1,
+    "eid": "2017010106",
+    "gamekey": "57147",
+    "home": "NYJ",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010107",
+   {
+    "away": "DAL",
+    "day": 1,
+    "eid": "2017010107",
+    "gamekey": "57148",
+    "home": "PHI",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010108",
+   {
+    "away": "CLE",
+    "day": 1,
+    "eid": "2017010108",
+    "gamekey": "57149",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010109",
+   {
+    "away": "CAR",
+    "day": 1,
+    "eid": "2017010109",
+    "gamekey": "57150",
+    "home": "TB",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010110",
+   {
+    "away": "HOU",
+    "day": 1,
+    "eid": "2017010110",
+    "gamekey": "57151",
+    "home": "TEN",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010111",
+   {
+    "away": "NYG",
+    "day": 1,
+    "eid": "2017010111",
+    "gamekey": "57152",
+    "home": "WAS",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "1:00",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010112",
+   {
+    "away": "OAK",
+    "day": 1,
+    "eid": "2017010112",
+    "gamekey": "57153",
+    "home": "DEN",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010113",
+   {
+    "away": "ARI",
+    "day": 1,
+    "eid": "2017010113",
+    "gamekey": "57154",
+    "home": "LA",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010114",
+   {
+    "away": "KC",
+    "day": 1,
+    "eid": "2017010114",
+    "gamekey": "57155",
+    "home": "SD",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010115",
+   {
+    "away": "SEA",
+    "day": 1,
+    "eid": "2017010115",
+    "gamekey": "57156",
+    "home": "SF",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "REG",
+    "time": "4:25",
+    "wday": "Sun",
+    "week": 17,
+    "year": 2016
+   }
   ]
  ],
- "time": 1454987032.154
+ "time": 1473279779.066306
 }

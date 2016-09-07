@@ -74,7 +74,7 @@ urls = {
 
 def new_http():
     http = httplib2.Http(timeout=10)
-    http.follow_redirects = False
+    http.follow_redirects = True
     return http
 
 
