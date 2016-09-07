@@ -53,11 +53,11 @@ import httplib2
 from bs4 import BeautifulSoup
 
 try:
-    import lxml.html
+    import lxml.html  # noqa
     PARSER = 'lxml'
 except ImportError:
     try:
-        import html5lib
+        import html5lib  # noqa
         PARSER = 'html5lib'
     except ImportError:
         PARSER = 'html.parser'
@@ -316,7 +316,7 @@ def run():
 
     if args.json_update_file is None:
         args.json_update_file = nflgame.player._player_json_file
-    teams = [team[0] for team in nflgame.teams]
+    teams = [team[0] for team in nflgame.teams if team[0] != 'STL']
     pool = multiprocessing.pool.ThreadPool(args.simultaneous_reqs)
 
     # Before doing anything laborious, make sure we have write access to
