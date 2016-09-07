@@ -330,7 +330,7 @@ class GenPlayerStats (Gen):
 
         fieldNames = ["name", "id", "home", "team", "pos"] + fields
         rows = [dict((f, f) for f in fieldNames)] + rows
-        csv.DictWriter(open(fileName, 'wb'), fieldNames).writerows(rows)
+        csv.DictWriter(open(fileName, 'wb+'), fieldNames).writerows(rows)
 
     def __add__(self, other):
         """
