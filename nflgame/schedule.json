@@ -40367,7 +40367,7 @@
     "meridiem": "PM",
     "month": 10,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sun",
     "week": 8,
     "year": 2016
@@ -40503,7 +40503,7 @@
     "meridiem": "PM",
     "month": 10,
     "season_type": "REG",
-    "time": "4:25",
+    "time": "1:00",
     "wday": "Sun",
     "week": 8,
     "year": 2016
@@ -41455,7 +41455,7 @@
     "meridiem": "PM",
     "month": 11,
     "season_type": "REG",
-    "time": "4:25",
+    "time": "8:30",
     "wday": "Sun",
     "week": 12,
     "year": 2016
@@ -41489,7 +41489,7 @@
     "meridiem": "PM",
     "month": 11,
     "season_type": "REG",
-    "time": "8:30",
+    "time": "4:25",
     "wday": "Sun",
     "week": 12,
     "year": 2016
@@ -41931,7 +41931,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sun",
     "week": 14,
     "year": 2016
@@ -42135,7 +42135,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "8:30",
     "wday": "Sun",
     "week": 15,
     "year": 2016
@@ -42288,7 +42288,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "8:30",
+    "time": "1:00",
     "wday": "Sun",
     "week": 15,
     "year": 2016
@@ -42458,7 +42458,7 @@
     "meridiem": "PM",
     "month": 12,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sat",
     "week": 16,
     "year": 2016
@@ -42594,7 +42594,7 @@
     "meridiem": "PM",
     "month": 1,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sun",
     "week": 17,
     "year": 2016
@@ -42628,7 +42628,7 @@
     "meridiem": "PM",
     "month": 1,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "8:30",
     "wday": "Sun",
     "week": 17,
     "year": 2016
@@ -42781,7 +42781,7 @@
     "meridiem": "PM",
     "month": 1,
     "season_type": "REG",
-    "time": "1:00",
+    "time": "4:25",
     "wday": "Sun",
     "week": 17,
     "year": 2016
@@ -42854,7 +42854,75 @@
     "week": 17,
     "year": 2016
    }
+  ],
+  [
+   "2017010700",
+   {
+    "away": "OAK",
+    "day": 7,
+    "eid": "2017010700",
+    "gamekey": "57157",
+    "home": "HOU",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "4:35",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010701",
+   {
+    "away": "DET",
+    "day": 7,
+    "eid": "2017010701",
+    "gamekey": "57158",
+    "home": "SEA",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "8:15",
+    "wday": "Sat",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010800",
+   {
+    "away": "MIA",
+    "day": 8,
+    "eid": "2017010800",
+    "gamekey": "57159",
+    "home": "PIT",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "1:05",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
+  ],
+  [
+   "2017010801",
+   {
+    "away": "NYG",
+    "day": 8,
+    "eid": "2017010801",
+    "gamekey": "57160",
+    "home": "GB",
+    "meridiem": "PM",
+    "month": 1,
+    "season_type": "POST",
+    "time": "4:40",
+    "wday": "Sun",
+    "week": 1,
+    "year": 2016
+   }
   ]
  ],
- "time": 1473280929.938835
+ "time": 1483966449.483
 }
