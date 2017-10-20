@@ -2,8 +2,8 @@ from __future__ import division
 
 import json
 import os.path
+from collections import OrderedDict
 
-from nflgame import OrderedDict
 import nflgame.seq
 import nflgame.statmap
 
