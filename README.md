@@ -124,8 +124,7 @@ Python standard library, but `nflgame.live` depends on `pytz` and the
 All three dependencies are installed automatically if you install nflgame from
 PyPI with `pip`.
 
-nflgame does not yet work on Python 3, but it should work with Python 2.6 and
-2.7.
+nflgame does not yet work on Python 3, but it should work with Python 2.7.
 
 
 ### Updating the player database (e.g., rosters)

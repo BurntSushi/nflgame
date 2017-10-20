@@ -5,10 +5,10 @@ import json
 import os
 import sys
 import urllib2
+from collections import OrderedDict
 import xml.dom.minidom as xml
 
 import nflgame
-from nflgame import OrderedDict
 
 
 def year_phase_week(year=None, phase=None, week=None):

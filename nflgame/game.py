@@ -6,8 +6,8 @@ import json
 import socket
 import sys
 import urllib2
+from collections import OrderedDict
 
-from nflgame import OrderedDict
 import nflgame.player
 import nflgame.sched
 import nflgame.seq

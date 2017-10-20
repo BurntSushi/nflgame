@@ -1,7 +1,4 @@
-try:
-    from collections import OrderedDict
-except:
-    from ordereddict import OrderedDict  # from PyPI
+from collections import OrderedDict
 import datetime
 import json
 import os.path
