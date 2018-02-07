@@ -1,3 +1,5 @@
+**THIS PROJECT IS UNMAINTAINED.**
+
 nflgame is an API to retrieve and read NFL Game Center JSON data.
 It can work with real-time data, which can be used for fantasy football.
 
